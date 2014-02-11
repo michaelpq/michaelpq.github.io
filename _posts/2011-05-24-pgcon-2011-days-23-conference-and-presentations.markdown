@@ -1,0 +1,48 @@
+---
+author: Michael Paquier
+comments: true
+date: 2011-05-24 06:38:43+00:00
+layout: post
+slug: pgcon-2011-days-23-conference-and-presentations
+title: 'PGCon 2011 days 2&3: conference and presentations'
+wordpress_id: 371
+categories:
+- PostgreSQL-2
+tags:
+- '2011'
+- cluster
+- conference
+- connection
+- database
+- duty
+- federated
+- index
+- isolation
+- patch
+- pgcon
+- postgres
+- postgresql
+- presentation
+- review
+- serializable
+- shard
+- snapshot
+- work
+---
+
+19th and 20th of May have been days of the PostgreSQL conference.
+During those 2 days, I saw some good presentations and stuff like that may help (perhaps) in increasing my own database knowledge related to PostgreSQL.
+By the way, for sure, what I heard from this conference will help me not only for my current work but also it could give ideas for future design tasks.
+
+As a lucky one, there were never two presentations happening at the same time even if conference was on 3 tracks. So let's take chronologically each presentation I had the chance to see. In this post I don't give my impression about everything seen, but just on the main matters that I think have a relative importance to facilitate your lecture.
+
+On the 19th I saw first a presentation about Sharding for unlimited growth, given by Robert Treat. Sharding is a technique that could bring scale growth to large database systems (millions of operations, users) through an horizontal scaling (scaling in/out, increase the number of database nodes in terms of servers, and not in term of local resources). The idea behind it is to try to bring to a database the possibility to grow without losing its scalability and resolve SPOF (single point of failure) problems within a database system. For this purpose a couple of solutions were proposed based on data mapping or on the division of applications data into various databases located on multiple nodes (for example a website application may have its user data and forum data on separated nodes). All the ideas based their assumptions on making the application taking care of data mapping, so the database does not need to do anything but just deal with data. So I would say that Sharding is an up-layer of a database application that is focused on the optimization of applications running on top of database node(s).
+
+Then there was an interesting presentation about the review of patches by Stephen Frost. The goal of this presentation was to teach the attendance about all the tools and formats used within and for PostgreSQL. Useful stuff such as when you want to send a patch, who you should contact. If you want to help in reviewing a patch, you can contact such or such person. This presentation told also about the formatting used in PostgreSQL: code refactoring, code quality, code duplication. Still, if a project has no such an organization, it for sure can become a mess quickly. So I personally keep a good impression about it.
+
+The first day was full of surprises, there were another 2 presentations that caught my attention: something about Foreign data wrapper and another by Tom Lane, "How to hack the planner".
+Always by being focused on what I do for Postgres-XC, I am not very familiar with the functionalities introduced since 9.0. So it was a pleasure to find a presentation that introduced the foreign data wrapper functionality and some additional stuff a Japanese functionality is developing based on the feature of 9.0. A foreign data wrapper adds functionalities to enable a Postgres server to interact with a remote database or remote data files and show it in a nice way in your PostgreSQL instance. For instance you can show cvs files stored somewhere directly on a psql terminal. By the way, the presentation by Yotaro Nakayama shew a couple of additional features for foreign data wrappers: the capacity to interact with additional database systems and not only Postgres instances. His team has developed some extra features to be able to create foreign tables that can be seen from Oracle or MySQL instances. This consists more or less of taking into account the specificities used in each db softwares and to translate them in a Postgres-way. Fascinating. For the impression I keep, it looked that the development was at a fairly advanced stage but it wasn't in the plans of Nakayama's team to release publicly the work done :(.
+
+By the end of the day came a presentation about PostgreSQL planner. For sure the presentation which was the most difficult to access to not only by the level of understanding which is necessary to understand what is dealt about but also by the quantity of information that has been discussed about. So in two terms this presentations can be qualified as: qualitative and quantitative. The planner of PostgreSQL is perhaps the hardest part of the code in terms of complexity, so making a presentation about it is even more complex. The presentation begun with some general explanation about Postgres' parser/rewriter/planner/executor but after a couple of minutes quickly came the main dish, and the audience became aware of how planner is complicated not by its general way of working, but by all the cases that have to be taken into account in the most generalized way in their implementation to increase dependencies between each case. However, some cases such as the analysis of JOIN planning made the comprehension even easier. Some general explanation about the key structures also came at the good time to light up the basics of planning. The part that personally caught the most my attention was about costs planning of queries, and particularly the fact that sometimes a cost estimation could lead to cost higher than expected (case of LIMIT). However, to conclude on it, there are still areas of improvement of planner and Postgres is in need of people who could work on it.
+
+The second day, one presentation in particular caught my attention. PostgreSQL 9.1 introduces SSI level, serializable snapshot isolation. One result is particular is amazing... Let's tell more about that. In serializable transactions, you have to take care of cycles of transactions due to their read/write conflicts. For example, let's imagine that you have a transaction performing a read on a tuple being written (by DML, UPDATE, DELETE, INSERT) by another transaction, you need to check if the transaction performing the write does not perform a read on a tuple being modified by a third transaction... This continuing until you know that there are no transactions trying to perform a read on something that has been modified by the first transaction. If you have a read/write conflict cycle, you need to abort one transaction to break the cycle and save all the other transactions from a deadlock condition. However, in order to check that, you have to go through all the transactions that could enter in the cycle, which is really resource consuming. By the way, the idea that caught my mind was that you do not need to check that all the cycle of transactions. You just need to check if the transaction you are on has not at the same time an in and an out read/write conflict. An in read/write conflict means that your transaction reads something that is being updated. An out read/write conflict means that what is updated by your transaction is not read. In case your transaction has at the same time and in and out read/write conflict, you need to abort something on the cycle it is on. However, if such a check is made on each transaction, doesn't it increase the number of transaction being aborted, as there could be transactions in a semi cycle not closed, what would not need to be aborted, but would be aborted to satisfy the SSI check?

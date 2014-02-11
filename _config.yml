@@ -1,0 +1,4 @@
+name: Michael Paquier - Open source developer based in Japan
+markdown: redcarpet
+pygments: true
+permalink: /:categories/:title/
