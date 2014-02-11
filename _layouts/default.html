@@ -30,7 +30,6 @@
         <div class="site">
           <div class="header">
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
           </div>
 
           {{ content }}
@@ -42,6 +41,10 @@
                 Open source developer based in Japan<br />
                 All content is (C)Copyright of Otacoo.com 2010-2014
               </p>
+            </div>
+            <div class="rss">
+              <a class="extra" href="{{site.url}}/feed.xml">RSS feed</a><br />
+              <a class="extra" href="{{site.url}}/feed.postgresql.xml">RSS PostgreSQL</a>
             </div>
             <div class="contact">
               <p>
