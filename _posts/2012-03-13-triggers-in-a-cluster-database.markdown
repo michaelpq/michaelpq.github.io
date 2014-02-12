@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-03-13 06:03:02+00:00
 layout: post
+type: post
 slug: triggers-in-a-cluster-database
 title: Triggers in a cluster database
 wordpress_id: 852

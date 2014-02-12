@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-05-26 02:32:14+00:00
 layout: post
+type: post
 slug: start-a-postgres-xc-cluster-in-more-or-less-10-commands
 title: Start a Postgres-XC cluster in (more or less) 10 commands
 wordpress_id: 1011

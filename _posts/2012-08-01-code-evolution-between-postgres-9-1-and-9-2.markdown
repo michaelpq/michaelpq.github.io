@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-08-01 00:33:22+00:00
 layout: post
+type: post
 slug: code-evolution-between-postgres-9-1-and-9-2
 title: Code evolution between Postgres 9.1 and 9.2
 wordpress_id: 1081

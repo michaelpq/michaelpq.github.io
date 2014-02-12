@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-01-10 02:31:34+00:00
 layout: post
+type: post
 slug: control-dump-file-name-in-linux
 title: Control dump file name in Linux
 wordpress_id: 710

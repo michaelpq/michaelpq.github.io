@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-29 00:29:06+00:00
 layout: post
+type: post
 slug: solve-key-input-issues-with-minecraft-on-linux
 title: Solve key-input issues with minecraft on Linux
 wordpress_id: 650

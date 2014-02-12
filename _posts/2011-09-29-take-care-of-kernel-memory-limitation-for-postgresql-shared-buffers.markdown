@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-09-29 01:39:10+00:00
 layout: post
+type: post
 slug: take-care-of-kernel-memory-limitation-for-postgresql-shared-buffers
 title: Take care of kernel memory limitation for postgresql shared buffers
 wordpress_id: 526

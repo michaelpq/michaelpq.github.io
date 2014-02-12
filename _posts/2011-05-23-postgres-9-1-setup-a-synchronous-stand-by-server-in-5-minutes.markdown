@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-05-23 02:09:58+00:00
 layout: post
+type: post
 slug: postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes
 title: 'Postgres 9.1: Setup a synchronous stand-by server in 5 minutes'
 wordpress_id: 329

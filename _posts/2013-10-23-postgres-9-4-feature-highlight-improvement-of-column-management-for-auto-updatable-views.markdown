@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-10-23 02:09:09+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-improvement-of-column-management-for-auto-updatable-views
 title: 'Postgres 9.4 feature highlight: Improvement of column management for auto-updatable views'
 wordpress_id: 2006

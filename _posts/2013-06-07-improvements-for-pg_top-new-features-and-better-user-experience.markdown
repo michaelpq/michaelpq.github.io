@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-06-07 04:00:18+00:00
 layout: post
+type: post
 slug: improvements-for-pg_top-new-features-and-better-user-experience
 title: 'Improvements for pg_top: new features and better user experience'
 wordpress_id: 1960

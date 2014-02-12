@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-07-04 05:56:51+00:00
 layout: post
+type: post
 slug: postgres-xc-online-data-redistribution
 title: 'Postgres-XC: online data redistribution'
 wordpress_id: 1058

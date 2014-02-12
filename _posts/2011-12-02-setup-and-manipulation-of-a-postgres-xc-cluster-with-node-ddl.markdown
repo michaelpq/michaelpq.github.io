@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-12-02 04:34:31+00:00
 layout: post
+type: post
 slug: setup-and-manipulation-of-a-postgres-xc-cluster-with-node-ddl
 title: Setup and manipulation of a Postgres-XC cluster with node DDL
 wordpress_id: 660

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-08-29 02:10:09+00:00
 layout: post
+type: post
 slug: easy-git-svn-setup
 title: Easy GIT svn setup
 wordpress_id: 473

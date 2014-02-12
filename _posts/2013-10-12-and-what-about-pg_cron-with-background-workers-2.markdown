@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-10-12 06:19:32+00:00
 layout: post
+type: post
 slug: and-what-about-pg_cron-with-background-workers-2
 title: 'And what about pg_cron with background workers?'
 wordpress_id: 2006

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-02-19 00:25:55+00:00
 layout: post
+type: post
 slug: postgres-contrib-module-highlight-pageinspect
 title: 'Postgres contrib module highlight: pageinspect'
 wordpress_id: 1667

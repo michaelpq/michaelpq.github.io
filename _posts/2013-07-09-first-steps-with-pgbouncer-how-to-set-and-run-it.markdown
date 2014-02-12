@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-09 03:00:27+00:00
 layout: post
+type: post
 slug: first-steps-with-pgbouncer-how-to-set-and-run-it
 title: 'First steps with pgbouncer, how to set and run it '
 wordpress_id: 2015

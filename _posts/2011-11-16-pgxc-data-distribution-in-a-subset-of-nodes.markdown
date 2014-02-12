@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-16 02:23:15+00:00
 layout: post
+type: post
 slug: pgxc-data-distribution-in-a-subset-of-nodes
 title: 'PGXC: data distribution in a subset of nodes'
 wordpress_id: 632

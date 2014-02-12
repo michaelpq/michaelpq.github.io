@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-01 03:56:49+00:00
 layout: post
+type: post
 slug: install-hadoop-and-sqoop-in-lucid
 title: Install Hadoop and Sqoop in Lucid
 wordpress_id: 607

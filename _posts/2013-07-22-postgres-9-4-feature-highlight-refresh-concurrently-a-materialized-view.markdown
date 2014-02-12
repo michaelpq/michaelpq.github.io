@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-22 00:51:54+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-refresh-concurrently-a-materialized-view
 title: 'Postgres 9.4 feature highlight: REFRESH CONCURRENTLY a materialized view'
 wordpress_id: 2097

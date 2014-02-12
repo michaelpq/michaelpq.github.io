@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-09-21 02:39:01+00:00
 layout: post
+type: post
 slug: pg_reorg-redistribute-a-table-without-locks
 title: pg_reorg, reorganize a table without locks
 wordpress_id: 1315

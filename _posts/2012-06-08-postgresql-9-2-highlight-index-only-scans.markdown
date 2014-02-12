@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-06-08 02:43:49+00:00
 layout: post
+type: post
 slug: postgresql-9-2-highlight-index-only-scans
 title: 'PostgreSQL 9.2 highlight: Index-only scans'
 wordpress_id: 1036

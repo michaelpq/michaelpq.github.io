@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-08-23 02:19:18+00:00
 layout: post
+type: post
 slug: tuning-disks-and-linux-for-postgres.markdown
 title: 'Tuning disks and Linux for Postgres'
 categories:

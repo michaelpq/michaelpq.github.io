@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-10-09 02:54:29+00:00
 layout: post
+type: post
 slug: manipulating-arrays-in-postgresql
 title: Manipulating arrays in PostgreSQL
 wordpress_id: 559

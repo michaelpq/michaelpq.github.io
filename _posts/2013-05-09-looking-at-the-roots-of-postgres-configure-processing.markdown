@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-05-09 06:14:47+00:00
 layout: post
+type: post
 slug: looking-at-the-roots-of-postgres-configure-processing
 title: 'Looking at the roots of Postgres: configure processing'
 wordpress_id: 1882

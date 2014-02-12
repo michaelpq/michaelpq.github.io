@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-12-25 07:43:49+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-delayed-standbys
 title: 'Postgres 9.4 feature highlight: delayed standbys'
 wordpress_id: 2006

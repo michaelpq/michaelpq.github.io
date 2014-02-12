@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-01-05 04:16:53+00:00
 layout: post
+type: post
 slug: mute-login-sound-in-macosx-lion
 title: Mute login sound in MacOSX Lion
 wordpress_id: 704

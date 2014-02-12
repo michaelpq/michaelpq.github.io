@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-07-27 07:36:00+00:00
 layout: post
+type: post
 slug: japanese-characters-not-appearing
 title: 'Japanese characters not appearing on PDF in Ubuntu '
 wordpress_id: 439

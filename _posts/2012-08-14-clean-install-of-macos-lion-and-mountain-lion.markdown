@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-08-14 03:06:36+00:00
 layout: post
+type: post
 slug: clean-install-of-macos-lion-and-mountain-lion
 title: Clean install of MacOS Lion and Mountain Lion
 wordpress_id: 1151

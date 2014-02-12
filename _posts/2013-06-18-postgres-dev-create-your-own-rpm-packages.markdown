@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-06-18 05:14:23+00:00
 layout: post
+type: post
 slug: postgres-dev-create-your-own-rpm-packages
 title: 'Postgres dev: create your own RPM packages'
 wordpress_id: 1973

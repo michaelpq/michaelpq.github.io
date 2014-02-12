@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-08-15 06:56:58+00:00
 layout: post
+type: post
 slug: postgresql-playing-with-foreign-data-wrappers-1
 title: 'PostgreSQL: playing with foreign data wrappers (1)'
 wordpress_id: 463

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-01-07 09:42:15+00:00
 layout: post
+type: post
 slug: joining-vmware-and-moving-on-to-new-adventures
 title: Joining VMWare and moving on to new adventures with Postgres
 wordpress_id: 1482

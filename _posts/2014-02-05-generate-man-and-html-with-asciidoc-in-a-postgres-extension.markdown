@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2014-02-05 03:54:12+00:00
 layout: post
+type: post
 slug: generate-man-and-html-with-asciidoc-in-a-postgres-extension
 title: 'Generate man and html with asciidoc in a Postgres extension'
 wordpress_id: 2006

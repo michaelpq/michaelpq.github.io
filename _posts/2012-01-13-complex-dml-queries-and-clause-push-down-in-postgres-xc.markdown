@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-01-13 14:44:41+00:00
 layout: post
+type: post
 slug: complex-dml-queries-and-clause-push-down-in-postgres-xc
 title: 'Complex DML queries and clause push-down in Postgres-XC '
 wordpress_id: 731

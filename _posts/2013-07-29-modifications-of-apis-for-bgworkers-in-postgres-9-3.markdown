@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-29 01:47:51+00:00
 layout: post
+type: post
 slug: modifications-of-apis-for-bgworkers-in-postgres-9-3
 title: Modifications of APIs for bgworkers in Postgres 9.3
 wordpress_id: 2102

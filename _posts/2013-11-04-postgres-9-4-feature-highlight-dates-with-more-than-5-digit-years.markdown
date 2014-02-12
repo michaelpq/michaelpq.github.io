@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-11-04 07:22:22+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-dates-with-more-than-5-digit-years
 title: 'Postgres 9.4 feature highlight: dates with more than 5-digit years'
 wordpress_id: 2006

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-06-21 07:42:43+00:00
 layout: post
+type: post
 slug: avoid-escape-characters-in-git
 title: Avoid escape characters in GIT
 wordpress_id: 1050

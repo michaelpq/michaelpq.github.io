@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2014-01-28 02:54:18+00:00
 layout: post
+type: post
 slug: global-sequences-with-postgres_fdw-and-postgres-core
 title: 'Global sequences with postgres_fdw and Postgres core'
 wordpress_id: 2006

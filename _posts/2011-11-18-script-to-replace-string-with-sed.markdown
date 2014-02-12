@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-18 14:23:31+00:00
 layout: post
+type: post
 slug: script-to-replace-string-with-sed
 title: Script to replace string with sed
 wordpress_id: 644

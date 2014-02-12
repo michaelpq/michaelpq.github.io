@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-09-04 03:54:14+00:00
 layout: post
+type: post
 slug: playing-with-large-objects-in-postgres
 title: 'Playing with large objects in Postgres'
 wordpress_id: 2006

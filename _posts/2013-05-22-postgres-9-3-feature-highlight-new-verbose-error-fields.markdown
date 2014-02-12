@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-05-22 18:28:32+00:00
 layout: post
+type: post
 slug: postgres-9-3-feature-highlight-new-verbose-error-fields
 title: 'Postgres 9.3 feature highlight: new verbose error fields'
 wordpress_id: 1904

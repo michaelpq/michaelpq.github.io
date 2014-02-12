@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-05-02 05:01:04+00:00
 layout: post
+type: post
 slug: postgres-9-3-feature-highlight-watch-in-psql
 title: 'Postgres 9.3 feature highlight: \watch in psql'
 wordpress_id: 1870

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-09-18 11:02:39+00:00
 layout: post
+type: post
 slug: reduce-cost-of-select-count-queries-with-trigger-based-method
 title: Reduce cost of select count(*) queries with trigger-based method
 wordpress_id: 512

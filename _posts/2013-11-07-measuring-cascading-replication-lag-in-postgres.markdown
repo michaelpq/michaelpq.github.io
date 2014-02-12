@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-11-07 07:54:18+00:00
 layout: post
+type: post
 slug: measuring-cascading-replication-lag-in-postgres
 title: 'Measuring cascading replication lag in Postgres'
 wordpress_id: 2006

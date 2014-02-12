@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-16 07:33:42+00:00
 layout: post
+type: post
 slug: postgres-module-highlight-pg_rewind-to-recycle-a-postgres-master-into-a-slave
 title: 'Postgres module highlight: pg_rewind, to quickly recycle a Postgres master
   into a slave'

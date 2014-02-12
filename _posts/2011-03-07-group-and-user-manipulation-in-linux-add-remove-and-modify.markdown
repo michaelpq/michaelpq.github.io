@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-03-07 07:59:37+00:00
 layout: post
+type: post
 slug: group-and-user-manipulation-in-linux-add-remove-and-modify
 title: 'Group and user manipulation in Linux: Add, remove and modify'
 wordpress_id: 215

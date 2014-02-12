@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-08-06 08:54:43+00:00
 layout: post
+type: post
 slug: text-search-with-a-commonly-known-book
 title: 'Text search with a commonly-known book'
 wordpress_id: 2006

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-09-05 03:47:06+00:00
 layout: post
+type: post
 slug: rpm-building
 title: RPM building
 wordpress_id: 482

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-10-18 08:29:49+00:00
 layout: post
+type: post
 slug: cascading-replication-in-chain-with-10-100-200-nodes
 title: 'Cascading replication in chain with 10, 100, 200 nodes?'
 wordpress_id: 2006

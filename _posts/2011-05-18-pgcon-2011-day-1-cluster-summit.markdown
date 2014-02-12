@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-05-18 15:22:21+00:00
 layout: post
+type: post
 slug: pgcon-2011-day-1-cluster-summit
 title: 'PGCon 2011, Day 1: Cluster summit'
 wordpress_id: 319

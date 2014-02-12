@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-08-11 00:32:19+00:00
 layout: post
+type: post
 slug: mount-physical-disks-in-linux
 title: Mount physical disks in Linux
 wordpress_id: 455

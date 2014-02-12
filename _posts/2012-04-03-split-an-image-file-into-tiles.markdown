@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-04-03 08:42:08+00:00
 layout: post
+type: post
 slug: split-an-image-file-into-tiles
 title: Split an image file into tiles
 wordpress_id: 885

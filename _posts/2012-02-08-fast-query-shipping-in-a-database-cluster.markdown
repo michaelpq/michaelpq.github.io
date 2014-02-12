@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-02-08 02:05:55+00:00
 layout: post
+type: post
 slug: fast-query-shipping-in-a-database-cluster
 title: Fast query shipping in a database cluster
 wordpress_id: 748

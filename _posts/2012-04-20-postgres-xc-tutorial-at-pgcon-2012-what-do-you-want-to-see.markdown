@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-04-20 02:06:47+00:00
 layout: post
+type: post
 slug: postgres-xc-tutorial-at-pgcon-2012-what-do-you-want-to-see
 title: 'Postgres-XC tutorial at PGCon 2012: What do YOU want to see?'
 wordpress_id: 949

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-04-01 09:47:26+00:00
 layout: post
+type: post
 slug: postgres-xc-0-9-4-released
 title: Postgres-XC 0.9.4 released
 wordpress_id: 288

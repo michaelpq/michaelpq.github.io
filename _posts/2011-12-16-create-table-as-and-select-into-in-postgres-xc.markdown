@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-12-16 02:07:37+00:00
 layout: post
+type: post
 slug: create-table-as-and-select-into-in-postgres-xc
 title: CREATE TABLE AS and SELECT INTO in Postgres-XC
 wordpress_id: 696

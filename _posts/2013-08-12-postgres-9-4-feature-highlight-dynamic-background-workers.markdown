@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-08-12 07:54:18+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-dynamic-background-workers
 title: 'Postgres 9.4 feature highlight: dynamic background workers'
 wordpress_id: 2006

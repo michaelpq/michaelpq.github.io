@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-12-14 23:41:25+00:00
 layout: post
+type: post
 slug: essential-applications-for-macos-lion
 title: Essential applications for MacOS Lion
 wordpress_id: 686

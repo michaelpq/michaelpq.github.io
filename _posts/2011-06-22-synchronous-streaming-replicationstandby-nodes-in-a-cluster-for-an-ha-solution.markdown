@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-06-22 00:55:25+00:00
 layout: post
+type: post
 slug: synchronous-streaming-replicationstandby-nodes-in-a-cluster-for-an-ha-solution
 title: Synchronous streaming replication/Standby nodes in a cluster for an HA solution
 wordpress_id: 419

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-11-25 04:02:12+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-multi-argument-unnest-and-table-for-multiple-functions
 title: 'Postgres 9.4 feature highlight: TABLE for multiple functions and multi-argument unnest()'
 wordpress_id: 2006

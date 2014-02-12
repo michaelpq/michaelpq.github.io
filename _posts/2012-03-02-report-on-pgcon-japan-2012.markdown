@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-03-02 09:19:01+00:00
 layout: post
+type: post
 slug: report-on-pgcon-japan-2012
 title: Report on PgCon Japan 2012
 wordpress_id: 817

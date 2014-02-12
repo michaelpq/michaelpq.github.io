@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-11-14 14:30:15+00:00
 layout: post
+type: post
 slug: redis-first-steps-fetch-install-and-server-creation
 title: 'Redis: first steps, code fetch, install and server creation'
 wordpress_id: 1443

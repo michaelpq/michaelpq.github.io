@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-09-05 06:32:00+00:00
 layout: post
+type: post
 slug: graphs-in-git
 title: Graphs in GIT
 wordpress_id: 481

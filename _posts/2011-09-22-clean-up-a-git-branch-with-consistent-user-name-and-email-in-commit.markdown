@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: false
 date: 2011-09-22 07:14:58+00:00
 layout: post
+type: post
 slug: clean-up-a-git-branch-with-consistent-user-name-and-email-in-commit
 title: Clean up a GIT branch with consistent user name and email in commit
 wordpress_id: 517

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-03-09 15:53:24+00:00
 layout: post
+type: post
 slug: clean-up-dos-files-with-emacs
 title: Clean up dos files with emacs
 wordpress_id: 850

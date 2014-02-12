@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-07 05:12:59+00:00
 layout: post
+type: post
 slug: cascading-replication-in-postgresql
 title: Cascading replication in PostgreSQL
 wordpress_id: 614

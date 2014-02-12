@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-08-29 03:18:45+00:00
 layout: post
+type: post
 slug: postgres-trigger-for-beginners
 title: 'Postgres: TRIGGER for beginners'
 wordpress_id: 1249

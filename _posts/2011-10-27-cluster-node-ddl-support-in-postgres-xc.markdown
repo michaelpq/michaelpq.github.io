@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-10-27 05:15:48+00:00
 layout: post
+type: post
 slug: cluster-node-ddl-support-in-postgres-xc
 title: Cluster node DDL support in Postgres-XC
 wordpress_id: 591

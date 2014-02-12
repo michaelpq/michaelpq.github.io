@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-04-11 05:52:51+00:00
 layout: post
+type: post
 slug: postgres-9-3-feature-highlight-json-operators
 title: 'Postgres 9.3 feature highlight: JSON operators'
 wordpress_id: 1812

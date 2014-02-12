@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-17 06:44:31+00:00
 layout: post
+type: post
 slug: collation-in-postgresql-9-1
 title: Collation in PostgreSQL 9.1
 wordpress_id: 639

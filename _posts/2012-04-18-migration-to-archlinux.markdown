@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-04-18 09:13:40+00:00
 layout: post
+type: post
 slug: migration-to-archlinux
 title: Migration to ArchLinux
 wordpress_id: 946

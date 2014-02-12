@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-06-01 07:50:39+00:00
 layout: post
+type: post
 slug: first-steps-with-dblink-on-postgres
 title: First steps with dblink on Postgres
 wordpress_id: 1023

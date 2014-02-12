@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-02-21 01:10:24+00:00
 layout: post
+type: post
 slug: serial-types-implemented-in-postgres-xc
 title: SERIAL types implemented in Postgres-XC
 wordpress_id: 773

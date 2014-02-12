@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-10-21 06:05:25+00:00
 layout: post
+type: post
 slug: compile-documentation-in-postgres
 title: Compile documentation in postgres
 wordpress_id: 578

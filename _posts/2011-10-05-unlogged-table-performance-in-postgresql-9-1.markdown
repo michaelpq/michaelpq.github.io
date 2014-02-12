@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-10-05 07:20:06+00:00
 layout: post
+type: post
 slug: unlogged-table-performance-in-postgresql-9-1
 title: Unlogged table performance in postgresql 9.1
 wordpress_id: 529

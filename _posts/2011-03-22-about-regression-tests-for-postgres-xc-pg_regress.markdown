@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-03-22 18:25:19+00:00
 layout: post
+type: post
 slug: about-regression-tests-for-postgres-xc-pg_regress
 title: 'About regression tests for Postgres-XC: pg_regress'
 wordpress_id: 275

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-01-13 13:58:39+00:00
 layout: post
+type: post
 slug: transform-a-project-into-a-java-project-in-eclipse
 title: Transform a project into a java project in eclipse
 wordpress_id: 715

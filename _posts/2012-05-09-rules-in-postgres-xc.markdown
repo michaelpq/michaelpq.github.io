@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2012-05-09 00:16:48+00:00
 layout: post
+type: post
 slug: rules-in-postgres-xc
 title: Rules in Postgres-XC
 wordpress_id: 968

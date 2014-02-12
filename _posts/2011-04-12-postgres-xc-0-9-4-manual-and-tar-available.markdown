@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-04-12 01:28:36+00:00
 layout: post
+type: post
 slug: postgres-xc-0-9-4-manual-and-tar-available
 title: Postgres-XC 0.9.4 manual and tar available
 wordpress_id: 308

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-14 14:09:17+00:00
 layout: post
+type: post
 slug: notes-for-later-main-differences-between-lol-and-dota-2
 title: 'Notes for later: main differences between LOL and Dota 2'
 wordpress_id: 2059

@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2014-01-20 03:09:15+00:00
 layout: post
+type: post
 slug: postgres-9-4-feature-highlight-alter-system-set-for-dynamic-configuration
 title: 'Postgres 9.4 feature highlight: ALTER SYSTEM SET for dynamic configuration'
 wordpress_id: 2006

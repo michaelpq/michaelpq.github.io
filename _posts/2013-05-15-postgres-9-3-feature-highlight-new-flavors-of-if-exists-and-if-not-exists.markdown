@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-05-15 11:51:07+00:00
 layout: post
+type: post
 slug: postgres-9-3-feature-highlight-new-flavors-of-if-exists-and-if-not-exists
 title: 'Postgres 9.3 feature highlight: new flavors of IF EXISTS and IF NOT EXISTS'
 wordpress_id: 1889

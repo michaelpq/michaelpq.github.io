@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-07-02 07:54:18+00:00
 layout: post
+type: post
 slug: postgres-9-3-feature-highlight-data-checksums
 title: 'Postgres 9.3 feature highlight: Data Checksums'
 wordpress_id: 2006

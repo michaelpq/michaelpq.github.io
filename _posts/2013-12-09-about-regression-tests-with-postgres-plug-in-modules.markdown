@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2013-12-09 04:01:32+00:00
 layout: post
+type: post
 slug: about-regression-tests-with-postgres-plug-in-modules
 title: 'About regression tests with Postgres plug-in modules'
 wordpress_id: 2006

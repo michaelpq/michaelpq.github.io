@@ -3,6 +3,7 @@ author: Michael Paquier
 comments: true
 date: 2011-11-25 03:20:03+00:00
 layout: post
+type: post
 slug: search-a-string-in-selected-files
 title: Search a string in selected files
 wordpress_id: 647
