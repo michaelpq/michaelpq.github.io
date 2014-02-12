@@ -33,7 +33,7 @@
           </div>
 
           <!-- Print content in presence of a post -->
-          {% if page.type == 'post' %}
+          {% if page.type == 'post' or page.type == 'page' %}
             {{ content }}
           {% else %}
             <!-- This loops through the paginated posts -->
