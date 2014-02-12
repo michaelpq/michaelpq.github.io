@@ -47,12 +47,7 @@
             </p>
             <div class="content">
               <div class="post-content-truncate">
-                {% if post.content contains "<!-- more -->" %}
-                  {{ post.content | split:"<!-- more -->" | first % }}
-                {% else %}
-                  {{ post.content | strip_html | truncatewords:200 }}
-                {% endif %}
-                <br />
+                {{ post.excerpt }}
                 <a href="{{post.url}}">Read more...</a>
               </div>
             </div>
