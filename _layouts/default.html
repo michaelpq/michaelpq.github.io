@@ -32,6 +32,13 @@
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
           </div>
 
+          <!--
+              Quick-and-dirty fix to bypass pagination for posts
+              TODO: remove that.
+            -->
+          {% if page.path contains '_posts' %}
+            {{ content }}
+          {% else %}
           <!-- This loops through the paginated posts -->
           {% for post in paginator.posts %}
             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
@@ -79,6 +86,7 @@
             {% endif %}
           </div>
           {% endif %}
+          {% endif %} <!-- quick-end-dirty pagination fix for posts -->
 
           <div class="footer">
             <div class="contact">
