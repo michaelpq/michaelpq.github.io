@@ -35,7 +35,7 @@ When scanning a relation with a query with a bitmap heap scan and that the bitma
  
     Etsuro Fujita
 
-This can actually be used to calculate the amount of work_mem that could be used to avoid any lossy pages. Here is how to do that based on a formula in tmb\_create@tidbitmap.c (pointed out by Etsuro Fujita on this thread of pgsql hackers).
+This can actually be used to calculate the amount of work\_mem that could be used to avoid any lossy pages. Here is how to do that based on a formula in tmb\_create@tidbitmap.c (pointed out by Etsuro Fujita on this thread of pgsql hackers).
 
     work_mem (bytes) = (Number of lossy pages + number of exact pages) *
       (MAXALIGN(sizeof(HASHELEMENT)) + MAXALIGN(sizeof(PagetableEntry))
@@ -65,7 +65,7 @@ And here is a simple test case usable showing how to trigger recheck on a bitmap
      Total runtime: 2257.272 ms
     (7 rows)
 
-In this case something like 40k pages have been fetched for the recheck condition. By applying the formula above, having approximately 3.2MB of work_mem would be enough to fit all the tuples directly in memory.
+In this case something like 40k pages have been fetched for the recheck condition. By applying the formula above, having approximately 3.2MB of work\_mem would be enough to fit all the tuples directly in memory.
 
     =# SET work_mem to '4MB';
     SET

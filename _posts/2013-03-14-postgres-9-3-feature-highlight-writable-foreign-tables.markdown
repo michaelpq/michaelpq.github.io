@@ -58,7 +58,7 @@ Based on the [documentation](http://www.postgresql.org/docs/devel/static/fdw-cal
 
 INSERT does not need such scan as in this case new data is simply sent to the remote table, the tuple values being computed before sending the query (even for immutable functions). Not really performant but it is the safest approach. Postgres-XC has similar and more advanced features for foreign DDL planning and execution in its core (some of them implemented by me), have a look for example at [this article](http://michael.otacoo.com/postgresql-2/complex-dml-queries-and-clause-push-down-in-postgres-xc/) I wrote a while ago.
 
-It is possible to test writable foreign tables with postgres_fdw as it has been extended to support this new feature. So let's give it a try with two postgres servers using ports 5432 and 5433. Server with port 5432 has postgres_fdw installed and will interact with the remote server running under port 5433. In order to get the basics of postgres_fdw, you can refer to [this article](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-postgres_fdw/) written a couple of weeks ago.
+It is possible to test writable foreign tables with postgres\_fdw as it has been extended to support this new feature. So let's give it a try with two postgres servers using ports 5432 and 5433. Server with port 5432 has postgres\_fdw installed and will interact with the remote server running under port 5433. In order to get the basics of postgres\_fdw, you can refer to [this article](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-postgres_fdw/) written a couple of weeks ago.
 
 Now, it is time to test the feature. First let's create a table on remote server.
 
@@ -113,7 +113,7 @@ Just before the tests, I explained that a scan is done for UPDATE and DELETE bef
             Remote SQL: SELECT a, NULL, ctid FROM public.aa_remote FOR UPDATE
     (5 rows)
 
-In the case of postgres_fdw, selectivity of tuple is done with ctid of tuple, which ensures tuple uniqueness. Note that if you implement your own foreign data wrapper, you might need to use columns having primary keys for selectivity of tuples.
+In the case of postgres\_fdw, selectivity of tuple is done with ctid of tuple, which ensures tuple uniqueness. Note that if you implement your own foreign data wrapper, you might need to use columns having primary keys for selectivity of tuples.
 
 There are also a couple of things to be aware of when using this feature.
 

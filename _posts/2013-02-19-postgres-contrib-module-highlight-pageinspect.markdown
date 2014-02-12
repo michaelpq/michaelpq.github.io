@@ -63,13 +63,13 @@ By doing that the following objects are created in
      function page_header(bytea)
     (8 rows)
 
-In those functions, get_raw_page is the most important one because it allows fetching a raw page of data for a given relation. Its output is not that useful as-is, it is however possible to deparse its output to get various readable information.
+In those functions, get\_raw\_page is the most important one because it allows fetching a raw page of data for a given relation. Its output is not that useful as-is, it is however possible to deparse its output to get various readable information.
 
-  * page_header gives information about the page header with general information like the log sequence number (LSN, WAL number) of the last change done on the page, or information about remaining space on page based on its upper and lower offset, tuples item pointer being stored from the top of the page and tuple data+header being stored at the bottom of the page
-  * get_raw_page gives information about the tuple items, I'll come back to that in more details later in this post
-  * fsm_page_contents gives an output of the FSM (freespace map, used to locate quickly on which page a tuple can be stored based on the free space available)
+  * page\_header gives information about the page header with general information like the log sequence number (LSN, WAL number) of the last change done on the page, or information about remaining space on page based on its upper and lower offset, tuples item pointer being stored from the top of the page and tuple data+header being stored at the bottom of the page
+  * get\_raw\_page gives information about the tuple items, I'll come back to that in more details later in this post
+  * fsm\_page\_contents gives an output of the FSM (freespace map, used to locate quickly on which page a tuple can be stored based on the free space available)
 
-There are also additional functions helping to vizualize information about b-trees with bt_metap, bt_page_items and bt_page_stats.
+There are also additional functions helping to vizualize information about b-trees with bt\_metap, bt\_page\_items and bt\_page_stats.
 
 What I really wanted to show in this post is how you can use pageinspect to visualize the changes on your database if you do some simple DML or maintenance operations. So let's take an example:
 
@@ -86,7 +86,7 @@ Table aa being a fresh relation, its first record has been added in the first pa
 
 When doing an INSERT command, what PostgreSQL does is setting the minimum transaction ID from where the tuple becomes visible for other session backends.
 
-Then, how is used the space available on the page? It is possible to know more about that by having a look at the global page information with page_header.
+Then, how is used the space available on the page? It is possible to know more about that by having a look at the global page information with page\_header.
 
     postgres=# SELECT * from page_header(get_raw_page('aa', 0));
         lsn    | tli | flags | lower | upper | special | pagesize | version | prune_xid 
@@ -115,7 +115,7 @@ After the secind tuple insertion, here is how the page changed.
       2 |     28 |    687 |      0 |   8128
     (2 rows)
 
-In the case of a DELETE, what is done is to update in the page t_xmax for the tuple entry, maximum transaction ID where the tuple is visible.
+In the case of a DELETE, what is done is to update in the page t\_xmax for the tuple entry, maximum transaction ID where the tuple is visible.
 
     postgres=# DELETE FROM aa WHERE a = 2;
     DELETE 1
@@ -126,7 +126,7 @@ In the case of a DELETE, what is done is to update in the page t_xmax for the tu
       2 |     28 |    687 |    688 |   8128
     (2 rows)
 
-For an UPDATE, what actually happens is an INSERT and a DELETE, a new entry is added in page with a fresh t_min, and the old tuple entry has its t_max updated.
+For an UPDATE, what actually happens is an INSERT and a DELETE, a new entry is added in page with a fresh t\_min, and the old tuple entry has its t\_max updated.
 
     postgres=# UPDATE aa SET a = 3 WHERE a = 1;
     UPDATE 1
@@ -157,4 +157,4 @@ A last thing, what happens on those pages when performing a VACUUM?
      0/17A3FA8 |   1 |     5 |    36 |  8160 |    8192 |     8192 |       4 |         0
     (1 row)
 
-When running the VACUUM on relation 'aa', my session was the only one on the server, so what has been done is removing the tuples seen as dead, as no other sessions would need them. Hence tuple entries 1 and 2 are simply removed and can be used for new fresh tuples. Note also the new value of flags for the page header, before it was set to 1 and now it became 5. In this case the page is set as PD_ALL_VISIBLE, meaning that all the tuples are visible to all the backends.
+When running the VACUUM on relation 'aa', my session was the only one on the server, so what has been done is removing the tuples seen as dead, as no other sessions would need them. Hence tuple entries 1 and 2 are simply removed and can be used for new fresh tuples. Note also the new value of flags for the page header, before it was set to 1 and now it became 5. In this case the page is set as PD\_ALL\_VISIBLE, meaning that all the tuples are visible to all the backends.

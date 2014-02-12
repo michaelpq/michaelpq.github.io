@@ -26,7 +26,7 @@ tags:
 - table
 ---
 
-Among one of the many new features implemented in 9.3, pg_dump now offers the possibility to perform parallel dumps. This feature has been introduced by the commit below.
+Among one of the many new features implemented in 9.3, pg\_dump now offers the possibility to perform parallel dumps. This feature has been introduced by the commit below.
 
     commit 9e257a181cc1dc5e19eb5d770ce09cc98f470f5f
     Author: Andrew Dunstan <andrew@dunslane.net>
@@ -47,11 +47,11 @@ Among one of the many new features implemented in 9.3, pg_dump now offers the po
     
     Joachim Wieland, lightly editorialized by Andrew Dunstan
 
-This is an extremely nice improvement of pg_dump as it allows accelerating the speed a dump is taken, particularly for machines having multiple cores as the load can be shared among separate threads.
+This is an extremely nice improvement of pg\_dump as it allows accelerating the speed a dump is taken, particularly for machines having multiple cores as the load can be shared among separate threads.
 
 Note that this option only works with the format called directoyy that can be specified with option -Fd or --format=directory, which outputs the database dump as a directory-format archive. A new option -j/--jobs can also be used to define the number of jobs that will run in parallel when performing the dump.
 
-When using parallel pg_dump, it is important to remember that n+1 connections are opened to the server, n being the number of jobs defined, with an extra master connection to control the shared locks taken on the objects dumped. So be sure that max_connections is set up to a number high enough in accordance to the number of jobs that are planned.
+When using parallel pg\_dump, it is important to remember that n+1 connections are opened to the server, n being the number of jobs defined, with an extra master connection to control the shared locks taken on the objects dumped. So be sure that max\_connections is set up to a number high enough in accordance to the number of jobs that are planned.
 
 Thanks to synchronized snapshots shared among the backends managed by the jobs, the dump is taken consistently ensuring that all the jobs share the same data view. However, as synchronized snapshots are only available since PostgreSQL 9.2, you need to be sure that no external sessions are doing any DML or DDL when performing a dump on servers whose version is lower than 9.2. It is also necessary to specify the option --no-synchronized-snapshots in this case.
 

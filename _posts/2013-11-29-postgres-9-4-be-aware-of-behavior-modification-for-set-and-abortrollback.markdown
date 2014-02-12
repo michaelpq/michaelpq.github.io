@@ -87,7 +87,7 @@ In 9.3 those behaviors are far more inconsistent. SET LOCAL returns nothing (!?)
 
 It is hard to have an opinion about such choices, however the new way of doing for 9.4 is consistent among all the transaction commands, clearly facilitating writing scripts that rely on such checks (be ready to refactor them).
 
-Finally, don't forget that those messages can be silenced by using client_min_messages by setting it to a level higher than WARNING if you don't to be annoyed, this setting being particularly interesting for ABORT.
+Finally, don't forget that those messages can be silenced by using client\_min\_messages by setting it to a level higher than WARNING if you don't to be annoyed, this setting being particularly interesting for ABORT.
 
     =# SET client_min_messages TO ERROR;
     SET

@@ -67,7 +67,7 @@ And here is the same structure at the top commit of REL9_3_STABLE as of the date
 
 The first thing changed is that the background worker name that is not a string anymore. You will need to update your module with for example a snprintf with a fixed length for that. Nothing really complicated.
 
-The second thing to note is that the argument used for bgw_main_arg is not anymore a simple pointer but has Datum. In this case also the modification to bring to your own module is not that hard. When passing an argument value, use the Datum-related APIs of postgres.h. Particularly when you need to pass a structure containing multiple argument use that to change a pointer as a Datum, and vice-versa:
+The second thing to note is that the argument used for bgw\_main\_arg is not anymore a simple pointer but has Datum. In this case also the modification to bring to your own module is not that hard. When passing an argument value, use the Datum-related APIs of postgres.h. Particularly when you need to pass a structure containing multiple argument use that to change a pointer as a Datum, and vice-versa:
 
     #define DatumGetPointer(X) ((Pointer) (X))
     #define PointerGetDatum(X) ((Datum) (X))
@@ -86,7 +86,7 @@ To that:
 
 So be sure to change your functions accordingly to avoid warnings and incompatibilities.
 
-The last thing to note is the removal of bgw_sighup and bgw_sigterm that were being used to register some functions to kick when a given signal (SIGHUP or SIGTERM) was received by the background worker. With the old set of APIs, you would have done something like that when registering the worker:
+The last thing to note is the removal of bgw\_sighup and bgw\_sigterm that were being used to register some functions to kick when a given signal (SIGHUP or SIGTERM) was received by the background worker. With the old set of APIs, you would have done something like that when registering the worker:
 
     void
     _PG_init(void)
@@ -114,4 +114,4 @@ Now you need to do this operation at the beginning of the main function of the w
         [... Continue process ...]
     }
 
-Globally, those modifications do not require much modifications (maximum of 10 lines) so you will be able to catch up easily, don't worry. You can refer to my set of [background worker examples in github](https://github.com/michaelpq/pg_workers) that has been updated to reflect the API changes. There is also the contrib module called worker_spi which has been updated to reflect the API modifications.
+Globally, those modifications do not require much modifications (maximum of 10 lines) so you will be able to catch up easily, don't worry. You can refer to my set of [background worker examples in github](https://github.com/michaelpq/pg_workers) that has been updated to reflect the API changes. There is also the contrib module called worker\_spi which has been updated to reflect the API modifications.

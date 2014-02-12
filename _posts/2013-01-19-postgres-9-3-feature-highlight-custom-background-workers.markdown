@@ -76,7 +76,7 @@ This feature has been introduced by this commit.
 
 You can imagine many scenarios where your own customized workers would be useful, especially for maintainance tasks, and here are some examples:
 
-  * Disconnect automatically idle connections on the server, with a combo of the type pg_stat_activity/pg_terminate_backend
+  * Disconnect automatically idle connections on the server, with a combo of the type pg\_stat\_activity/pg\_terminate\_backend
   * Create customized statistic information
   * Save information related to the database
   * Monitor table indexes and reindex things that have been failing
@@ -84,7 +84,7 @@ You can imagine many scenarios where your own customized workers would be useful
 
 There are of course many other use cases possible...
 
-By the way, in order to show how this feature works, I wrote a really simple example of a customized worker called count_relations that counts every second the number of relations in the database server and that outputs the result in the server logs. 
+By the way, in order to show how this feature works, I wrote a really simple example of a customized worker called count\_relations that counts every second the number of relations in the database server and that outputs the result in the server logs. 
 
 The code written uses as a base the example in contrib/worker_spi/ of Postgres tarball in a really simplified way. It is available for download [here](http://michael.otacoo.com/wp-content/uploads/2013/01/count_relations.tar.gz). 
 
@@ -92,7 +92,7 @@ After playing with this code, I also wanted to share my experience, so here are 
 
 #### Initialize and register the worker correctly
 
-Postgres core uses _PG_init as an entry point to register the customized worker, so be sure to initialize your worker(s) in a way close to that:
+Postgres core uses \_PG\_init as an entry point to register the customized worker, so be sure to initialize your worker(s) in a way close to that:
 
     void
     _PG_init(void)
@@ -134,28 +134,28 @@ The makefile does not need to be that complicated, something like that is suffic
     PGXS := $(shell $(PG_CONFIG) --pgxs)
     include $(PGXS)
 
-In order to install this module correctly, be sure that LD_LIBRARY_PATH is points to the folder where the libraries of postgres are installed, then only do a "make install" and you are done.
+In order to install this module correctly, be sure that LD\_LIBRARY\_PATH is points to the folder where the libraries of postgres are installed, then only do a "make install" and you are done.
 
 #### Set up server and load your library
 
-Before starting your server, you need to set up shared_preload_libraries in postgresql.conf to the name of your customized libraries to have them uploaded at start-up. In the case of count_relations, it consists in adding that:
+Before starting your server, you need to set up shared\_preload\_libraries in postgresql.conf to the name of your customized libraries to have them uploaded at start-up. In the case of count_relations, it consists in adding that:
 
     shared_preload_libraries = 'count_relations'
 
 #### Check worker start
 
 All the workers are called "bgworker: $NAME", depending on the name you chose for your module.
-In the case of count_relations:
+In the case of count\_relations:
 
     ps x | grep bgworker
     25146 ? Ss 0:00 postgres: bgworker: count relations
 
-Then, for count_relations, you can also have a look at the logs of the server and you will see lines of that type, proving that the bgworker is working correctly.
+Then, for count\_relations, you can also have a look at the logs of the server and you will see lines of that type, proving that the bgworker is working correctly.
 
     LOG:  Currently 292 relations in database`
 
-#### Rely on the worker_spi example
+#### Rely on the worker\_spi example
 
-When writing a new worker, try not to write it from scratch but use as a base the code of worker_spi. This code already implements some methods that can be used generically like signal handling, latch management and database connection. So use it and abuse of it!
+When writing a new worker, try not to write it from scratch but use as a base the code of worker\_spi. This code already implements some methods that can be used generically like signal handling, latch management and database connection. So use it and abuse of it!
 
 As a last word, it is important to understand that the example of bgworker made for this post is really basic, and touches only a tiny portion of what is available in the feature APIs, so be sure to have a look at the [documentation](http://www.postgresql.org/docs/devel/static/bgworker.html) for further details.

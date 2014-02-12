@@ -25,7 +25,7 @@ tags:
 - transaction
 ---
 
-pg_top is a monitoring tool designed for PostgreSQL in a way similar to top. When using it you can get a grab at the process activity of your server with an output similar to that:
+pg\_top is a monitoring tool designed for PostgreSQL in a way similar to top. When using it you can get a grab at the process activity of your server with an output similar to that:
 
     last pid:   425;  load avg:  0.07,  0.03,  0.02;       up 0+00:52:08                                                                                             12:22:02
     1 processes: 1 sleeping
@@ -44,15 +44,15 @@ It has many customization options:
   * Possibility to monitor server from remote
   * An interactive mode with the possibility change the output script or even to kill a list of processes
 
-pg_top supports many OSes (OSX, Linux, FreeBSD, hpux, aix). It is designed with a structure such as there is one set of generic APIs designed to get results for different purposes (process-related information mainly), the same function being written multiple times for each different OS but with the same spec. It is then decided which file to include in compilation at configure step by choosing among files named as machine/m_$OS_NAME.c.
+pg\_top supports many OSes (OSX, Linux, FreeBSD, hpux, aix). It is designed with a structure such as there is one set of generic APIs designed to get results for different purposes (process-related information mainly), the same function being written multiple times for each different OS but with the same spec. It is then decided which file to include in compilation at configure step by choosing among files named as machine/m\_$OS\_NAME.c.
 
-These days I have been working on improving the user experience with pg_top, [the first patch I sent](http://lists.pgfoundry.org/pipermail/ptop-hackers/2013-June/000195.html) consisting in improving a bit the documentation, the help message when an incorrect option is used and add support for long options. This was just based on my first impressions with this module, that looks to be powerful but difficult to apprehend for a newcomer.
+These days I have been working on improving the user experience with pg\_top, [the first patch I sent](http://lists.pgfoundry.org/pipermail/ptop-hackers/2013-June/000195.html) consisting in improving a bit the documentation, the help message when an incorrect option is used and add support for long options. This was just based on my first impressions with this module, that looks to be powerful but difficult to apprehend for a newcomer.
 
-However, the plan is not really to stop to that... Based on some optimizations added in the vPostgres version of pg_top, a couple of extra features have been [proposed](http://lists.pgfoundry.org/pipermail/ptop-hackers/2013-June/000196.html).
+However, the plan is not really to stop to that... Based on some optimizations added in the vPostgres version of pg\_top, a couple of extra features have been [proposed](http://lists.pgfoundry.org/pipermail/ptop-hackers/2013-June/000196.html).
 
 #### 1. Database activity
 
-The idea here is to query pg_stat_database and get back raw statistics based on transactions committed, rollbacked, tuples inserted, etc. Then those fields are analyzed and recompiled based on the time diff between two displays to get some TPS values. This is platform-independent as it relies entirely on pg_stat_database and libpq, so a generic function available to all the OS supported would be fine. The output could look like that:
+The idea here is to query pg\_stat\_database and get back raw statistics based on transactions committed, rollbacked, tuples inserted, etc. Then those fields are analyzed and recompiled based on the time diff between two displays to get some TPS values. This is platform-independent as it relies entirely on pg\_stat\_database and libpq, so a generic function available to all the OS supported would be fine. The output could look like that:
 
     Activity: 1 tps, 0 rollbs/s, 0 buffer r/s, 100 hit%, 42 row r/s, 0 row w/s
 
@@ -74,4 +74,4 @@ Once again this is OS-dependent, so it would need an extra generic API.
 
 All of those additional outputs could be printed to screen using some dedicated options, making the default the layer the same as the current one.
 
-And you, do you have other ideas about what could be added in pg_top?
+And you, do you have other ideas about what could be added in pg\_top?

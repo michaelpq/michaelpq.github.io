@@ -107,4 +107,4 @@ Then, you can improve log information related to DDL queries. Here is another ex
 
 Note that implementing this feature with C functions would offer the possibility to log more precise information with session-level data like the user and database involved in the query execution or with the parse tree of query passed to EventTriggerData.
 
-There is also in the documentation a simple example of the usage of sql\_drop and pg\_event\_trigger\_dropped_objects() you should refer to it to get the basics of how this event works and how things like cascading drop affect it.
+There is also in the documentation a simple example of the usage of sql\_drop and pg\_event\_trigger\_dropped\_objects() you should refer to it to get the basics of how this event works and how things like cascading drop affect it.

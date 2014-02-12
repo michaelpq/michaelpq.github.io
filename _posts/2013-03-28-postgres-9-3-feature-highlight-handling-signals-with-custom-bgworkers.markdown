@@ -156,8 +156,8 @@ Finally you need to set up your main loop to use the latch
         [... code for signal handling ...]
     }
 
-You can also set up the latch such as the sleep will stop immediately if a signal is received. Simply add the following call in hello_sighup and hello_sigterm to do that.
+You can also set up the latch such as the sleep will stop immediately if a signal is received. Simply add the following call in hello\_sighup and hello\_sigterm to do that.
 
     SetLatch(&signalLatch;);
 
-This code can be found on Github as repository [pg_workers](https://github.com/michaelpq/pg_workers). I created it to group all the bgworker examples I wrote using the facility of PostgreSQL 9.3 and above. You can find the example presented in this post in the folder hello_signal.
+This code can be found on Github as repository [pg\_workers](https://github.com/michaelpq/pg_workers). I created it to group all the bgworker examples I wrote using the facility of PostgreSQL 9.3 and above. You can find the example presented in this post in the folder hello\_signal.

@@ -83,7 +83,7 @@ Deleting this file and restarting server results in an harmless LOG message tell
 
 Note also that the file is not recreated immediately and that the first ALTER SYSTEM command will do the job.
 
-Parameters modified with ALTER SYSTEM SET are effective on server after either reloading parameters or restarting server, depending on the parameters types, like PGC_SIGHUP or PGC_POSTMASTER. And of course, some parameters like the recently-added data\_checksums that cannot be changed after server initialization, cannot be set. For example, in the case of work\_mem (not really recommended to avoid system-wide plan changes for the queries running but...):
+Parameters modified with ALTER SYSTEM SET are effective on server after either reloading parameters or restarting server, depending on the parameters types, like PGC\_SIGHUP or PGC\_POSTMASTER. And of course, some parameters like the recently-added data\_checksums that cannot be changed after server initialization, cannot be set. For example, in the case of work\_mem (not really recommended to avoid system-wide plan changes for the queries running but...):
 
     =# ALTER SYSTEM SET work_mem TO '10MB';
     ALTER SYSTEM

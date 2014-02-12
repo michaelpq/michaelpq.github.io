@@ -33,12 +33,12 @@ Continuing on the coverage of new JSON features added in Postgres 9.3, and after
 
 The are many new functions introduced:
 
-  * json_each, json_each_text
-  * json_extract_path, json_extract_path_text
-  * json_object_keys
-  * json_populate_record, json_populate_recordset
-  * json_array_length
-  * json_array_elements
+  * json\_each, json\_each\_text
+  * json\_extract\_path, json\_extract\_path\_text
+  * json\_object\_keys
+  * json\_populate\_record, json\_populate\_recordset
+  * json\_array\_length
+  * json\_array\_elements
 
 The following set of data is used in all the examples of this post,.
 
@@ -55,7 +55,7 @@ The following set of data is used in all the examples of this post,.
     postgres=# INSERT INTO aa VALUES (5, '{"f1":[1,"Robert \"M\""],"f2":[2,"Kevin \"K\"",false]}');
     INSERT 0 1
 
-So now let's begin. The most valuable functions might be json_each and json_each_text which can be used to expand JSON data as key/value records.
+So now let's begin. The most valuable functions might be json\_each and json\_each\_text which can be used to expand JSON data as key/value records.
 
     postgres=# SELECT * FROM json_each((SELECT b FROM aa WHERE a = 1));
      key |       value        
@@ -65,7 +65,7 @@ So now let's begin. The most valuable functions might be json_each and json_each
      f3  | "Hi I'm \"Daisy\""
     (3 rows)
 
-The difference between json_each and json_each_text is that the former returns values as legal JSON format and the latter returns it as text. 
+The difference between json\_each and json\_each\_text is that the former returns values as legal JSON format and the latter returns it as text. 
 
     postgres=# SELECT * FROM json_each_text((SELECT b FROM aa WHERE a = 1));
      key |     value      
@@ -92,7 +92,7 @@ And you can also apply this operation on some inner fields by selecting directly
      f12 | 12
     (2 rows)
 
-json_extract_path and json_extract_path_text can be used to extract a field value based on some given keys, or a chain or keys, equivalent to what the operators "->" and "->>" can respectively do.
+json\_extract\_path and json\_extract\_path\_text can be used to extract a field value based on some given keys, or a chain or keys, equivalent to what the operators "->" and "->>" can respectively do.
 
     postgres=# SELECT json_extract_path(b, 'f1') AS f1a, b->'f1' AS f1b FROM aa WHERE a = 4;
              f1a         |         f1b         
@@ -105,7 +105,7 @@ json_extract_path and json_extract_path_text can be used to extract a field valu
      12   | 12
     (1 row)
 
-json_object_keys retrieves the set of keys of a given JSON object on the outermost object. As it returns the field names of all the tuples scanned, be sure to group the results or to select a limited number of tuples.
+json\_object\_keys retrieves the set of keys of a given JSON object on the outermost object. As it returns the field names of all the tuples scanned, be sure to group the results or to select a limited number of tuples.
 
     postgres=# SELECT json_object_keys(b) FROM aa GROUP BY 1 ORDER BY 1;
      json_object_keys 
@@ -121,7 +121,7 @@ json_object_keys retrieves the set of keys of a given JSON object on the outermo
      f12
     (2 rows)
 
-Next, json_populate_record can help in casting a JSON record into a given type.
+Next, json\_populate\_record can help in casting a JSON record into a given type.
 
     postgres=# CREATE TYPE aat AS (f1 int, f2 bool, f3 text);
     CREATE TYPE
@@ -136,7 +136,7 @@ This operation can only be used on a single row.
     postgres=# SELECT * FROM json_populate_record(null::aat, (SELECT b FROM aa WHERE a = 1 OR a = 2)) AS popo;
     ERROR:  more than one row returned by a subquery used as an expression
 
-Similarly to json_populate_record, json_populate_recordset can be used on a set of records. It can become particularly powerful when combined with json_agg.
+Similarly to json\_populate\_record, json\_populate\_recordset can be used on a set of records. It can become particularly powerful when combined with json\_agg.
 
     postgres=# SELECT * FROM json_populate_recordset(null::aat, (SELECT json_agg(b) FROM aa WHERE a < 4)) AS popo;
      f1 | f2 |       f3       
@@ -151,7 +151,7 @@ Note that this operation does not work on nested objects, aka when the JSON fiel
     postgres=# SELECT * FROM json_populate_recordset(null::aat, (SELECT json_agg(b) FROM aa WHERE a = 1 OR a = 4), false) AS popo;
     ERROR:  cannot call json_populate_recordset on a nested object
 
-Finally there are two functions focused on the manipulation and analysis of JSON arrays. The first function is called json_array_length. With this you can get the number of elements in a JSON array.
+Finally there are two functions focused on the manipulation and analysis of JSON arrays. The first function is called json\_array\_length. With this you can get the number of elements in a JSON array.
 
     SELECT json_array_length(b->'f1') FROM aa WHERE a = 5;
      json_array_length 
@@ -171,7 +171,7 @@ If used on an object that is not an array, this function complains with a nice e
     postgres=# SELECT json_array_length(b->'f1') FROM aa WHERE a = 4;
     ERROR:  cannot get array length of a non-array
 
-The second one is json_array_elements which expends a JSON array to a set of elements.
+The second one is json\_array\_elements which expends a JSON array to a set of elements.
 
     postgres=# SELECT json_array_elements(b->'f1') FROM aa WHERE a = 5;
      json_array_elements 

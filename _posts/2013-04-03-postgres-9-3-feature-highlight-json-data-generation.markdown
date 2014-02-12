@@ -77,7 +77,7 @@ The first function called to_json permits to return a given value as valid JSON.
 
 Boolean values are returned as plain true/false, texts are quoted as valid JSON fields.
 
-json_agg is a function that can transform a record into a JSON array.
+json\_agg is a function that can transform a record into a JSON array.
 
     postgres=# SELECT json_agg(aa) FROM aa;
                    json_agg                
@@ -86,7 +86,7 @@ json_agg is a function that can transform a record into a JSON array.
       {"a":false,"b":null}]
     (1 row)
 
-The other tools for data generation are included in the contrib module hstore. Do you remember? This module can be used to store [key/value pairs in a single table column](http://michael.otacoo.com/postgresql-2/postgres-feature-highlight-hstore/). It is now possible to cast hstore data as json with some native casting or with function hstore_to_json.
+The other tools for data generation are included in the contrib module hstore. Do you remember? This module can be used to store [key/value pairs in a single table column](http://michael.otacoo.com/postgresql-2/postgres-feature-highlight-hstore/). It is now possible to cast hstore data as json with some native casting or with function hstore\_to\_json.
 
     postgres=# CREATE TABLE aa (id int, txt hstore);
     CREATE TABLE
@@ -100,7 +100,7 @@ The other tools for data generation are included in the contrib module hstore. D
 
 Note that in this case boolean and numerical values are treated as plain text when casted.
 
-hstore_to_json_loose can enforce the conversion of boolean and numerical values to a better format, like that:
+hstore\_to\_json\_loose can enforce the conversion of boolean and numerical values to a better format, like that:
 
     postgres=# SELECT id, hstore_to_json_loose(txt) FROM aa;
      id |             hstore_to_json_loose              

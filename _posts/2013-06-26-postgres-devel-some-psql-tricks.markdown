@@ -58,7 +58,7 @@ And it displays like that:
     psql (9.4devel)
     Type "help" for help.
 
-Once you know how to make the user aware of customized options, use the command \set to actually define them. Here is for example a command to display for how long current session is running (more simple with pg_postmaster_start_time btw).
+Once you know how to make the user aware of customized options, use the command \set to actually define them. Here is for example a command to display for how long current session is running (more simple with pg\_postmaster\_start\_time btw).
 
     \set uptime 'select now() - backend_start as uptime from pg_stat_activity where pid = pg_backend_pid();'
 

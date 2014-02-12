@@ -66,7 +66,7 @@ This feature introduces four new SQL commands:
 
 CREATE, ALTER and DROP are common DDL commands here to manipulate the definition of materialized views. What is important here is the new command REFRESH (its name has been a long debate inside the community). This command can be used to update the materialized view with fresh data by running once again the scanning query. Note that REFRESH can also be used to *truncate* (not really though) the data of the relation by running it with the clause WITH NO DATA.
 
-Materialized views have their own advantages in many scenarios: faster access to data than needs to be brought from a remote server (read a file on postgres server through file_fdw, etc.), using data that needs to be refreshed periodically (cache system), projecting data with embedded ORDER BY from a large table, running an expensive join in background periodically, etc.
+Materialized views have their own advantages in many scenarios: faster access to data than needs to be brought from a remote server (read a file on postgres server through file\_fdw, etc.), using data that needs to be refreshed periodically (cache system), projecting data with embedded ORDER BY from a large table, running an expensive join in background periodically, etc.
 
 I can also imagine some nice combinations with data refresh and custom background workers. Who said that automatic data refresh on a materialized view was not possible?
 
@@ -116,7 +116,7 @@ A materialized view can also be set as not scannable thanks to the clause WITH N
     ERROR:  materialized view "aam" has not been populated
     HINT:  Use the REFRESH MATERIALIZED VIEW command.
 
-There is a new catalog table to help you find the current state of materialized views called pg_matviews.
+There is a new catalog table to help you find the current state of materialized views called pg\_matviews.
 
     postgres=# SELECT matviewname, isscannable FROM pg_matviews;
      matviewname | isscannable 

@@ -53,7 +53,7 @@ An advice when you manage some extension code with git, always add those entries
 
 This might save from some unfortunate platform-dependent results pushed to a remote git repository. Everybody has ever done that... Just don't do it.
 
-Using this infrastructure is enough when developing an extension that interacts with one single server and does not manipulate the server settings as they can directly rely on pg_regress by having "make check" passing extension names to load on server with the option -load-extension. In the case of modules using hooks (use LOAD at the top of the input SQL script, passwordcheck has no regression tests but could use that) or custom objects, this is fine. However for modules that need to have more fundamental settings at the server level like for example external tools that interact with the server or manage cluster, or even background workers, this can be tricked in a way similar to what pg_upgrade does with a custom "make check" that kicks a script doing the test.
+Using this infrastructure is enough when developing an extension that interacts with one single server and does not manipulate the server settings as they can directly rely on pg\_regress by having "make check" passing extension names to load on server with the option -load-extension. In the case of modules using hooks (use LOAD at the top of the input SQL script, passwordcheck has no regression tests but could use that) or custom objects, this is fine. However for modules that need to have more fundamental settings at the server level like for example external tools that interact with the server or manage cluster, or even background workers, this can be tricked in a way similar to what pg\_upgrade does with a custom "make check" that kicks a script doing the test.
 
 This does not seem as elegant as using a list of SQLs defined with REGRESS, but you can do anything, like using another programming language for your tests, as long as you keep in mind that the test passes if it returns 0, or else it fails.
 
@@ -64,7 +64,7 @@ Another possibility when using scripts is to still use a sql/expected structure,
 
 Then the output result is simply the output of the bash scripts to be compared.
 
-Here is for example what is being used for pg_rewind, after some refactoring of its test code scripts:
+Here is for example what is being used for pg\_rewind, after some refactoring of its test code scripts:
 
     check: test.sh all
         # Use a remote connection with source server
@@ -83,7 +83,7 @@ Simply by using that at the top of your script:
 
 ### Dynamic calculation of listening server port ####
 
-Like pg_regress, check if a port is already in use when creating a new server, something like...
+Like pg\_regress, check if a port is already in use when creating a new server, something like...
 
     while psql -X postgres -p $PORT
     do

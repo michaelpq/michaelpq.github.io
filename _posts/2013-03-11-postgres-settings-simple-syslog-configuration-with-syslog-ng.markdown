@@ -42,7 +42,7 @@ Then, you need to add those settings in postgresql.conf.
     syslog_facility='LOCAL0'
     syslog_ident='postgres'
 
-Based on the [documentation](http://www.postgresql.org/docs/9.1/static/runtime-config-logging.html#GUC-SYSLOG-FACILITY), syslog_facility can be set from LOCAL0 to LOCAL7.
+Based on the [documentation](http://www.postgresql.org/docs/9.1/static/runtime-config-logging.html#GUC-SYSLOG-FACILITY), syslog\_facility can be set from LOCAL0 to LOCAL7.
 Don't forget that you can also specify multiple log destinations. For example when using stderr and syslog at the same time, simply do that:
 
     log_destination = 'stderr,syslog'

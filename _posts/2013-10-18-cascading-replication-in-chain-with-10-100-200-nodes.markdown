@@ -88,7 +88,7 @@ It does nothing extraordinary, simply initializing a master node, and then it cr
   * -q PORT to define the port where node needs to connect if it is a standby
   * -c SUFFIX is an internal mechanism used to enforce the node initialization to use a set of parameters for postgresql.conf, in this case the memory values minimized
 
-This script remains simple, as it is assumed that all the nodes run locally, particularly useful for development purposes. The second script, called postgres_get_node, scans psql ports already in use and gets a new one. There is nothing complicated in, and it can be easily broken as well. But for development on a VM, this is more than enough when you need to deploy your tools quickly and efficiently... And in this case only a git clone is enough.
+This script remains simple, as it is assumed that all the nodes run locally, particularly useful for development purposes. The second script, called postgres\_get\_node, scans psql ports already in use and gets a new one. There is nothing complicated in, and it can be easily broken as well. But for development on a VM, this is more than enough when you need to deploy your tools quickly and efficiently... And in this case only a git clone is enough.
 
 Using those things, how many nodes have run in chain? Here are the results of this experiment...
 At 100 nodes, still fine...

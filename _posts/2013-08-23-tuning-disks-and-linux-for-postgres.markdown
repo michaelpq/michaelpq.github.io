@@ -46,9 +46,9 @@ First, be sure to have a correct RAID strategy for your disks, depending partial
 
 Then, about the file system of your disks, the commonly-used ones are ext3, ext4 and xfs. ext3 has reached maturity and is considered as really stable, but it is not as fast as ext4, this last being not considered that stable. A good choice these days is xfs, it is considered as pretty stable and has good performance. Note that it is also going to become [the default file system for the next RHEL distributions](http://www.serverwatch.com/server-news/where-is-red-hat-enterprise-linux-7.html).
 
-Also, when mounting your disks, be sure to always use the option "noatime". This makes the file system not update information of files that have been updated, information that we do not care about for a database server. Be sure to always put your data folder on a separate disk. Separating certain tables highly read or written on dedicated disks, as well as having pg_xlog on another disk can improve things as well.
+Also, when mounting your disks, be sure to always use the option "noatime". This makes the file system not update information of files that have been updated, information that we do not care about for a database server. Be sure to always put your data folder on a separate disk. Separating certain tables highly read or written on dedicated disks, as well as having pg\_xlog on another disk can improve things as well.
 
-The I/O scheduler is also something that can play a role in your application performance. Its value can be found in /sys/block/$DISK_NAME/queue/scheduler and the scheduler name can be changed like that:
+The I/O scheduler is also something that can play a role in your application performance. Its value can be found in /sys/block/$DISK\_NAME/queue/scheduler and the scheduler name can be changed like that:
 
     echo $SCHEDULER > /sys/block/sda/queue/scheduler
 

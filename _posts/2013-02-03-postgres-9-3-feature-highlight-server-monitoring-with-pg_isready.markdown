@@ -40,9 +40,10 @@ PostgreSQL 9.3 adds a new feature related to monitoring with the commit below.
     
     Phil Sorber, reviewed by Michael Paquier and Peter Eisentraut
 
-Called pg_isready, this allows to ping a wanted server to get a status of its activity. This module is a simple wrapper of PQping that can be called directly and customized with a set of options.
+Called pg\_isready, this allows to ping a wanted server to get a status of its activity. This module is a simple wrapper of PQping that can be called directly and customized with a set of options.
 
 Here are the possible options.
+
     $ pg_isready --help
     pg_isready issues a connection check to a PostgreSQL database.
     
@@ -76,7 +77,7 @@ For a server rejecting connections.
     pg_isready -p 5432 -h $SERVER_IP
     $SERVER_IP:5432 - rejecting connections
 
-The feature has also a quiet mode. So scripts can use the output value of pg_isready to check the server activity. Once again with the previous examples.
+The feature has also a quiet mode. So scripts can use the output value of pg\_isready to check the server activity. Once again with the previous examples.
 
     $ pg_isready -p 5432 -h localhost -q; echo $?
     0

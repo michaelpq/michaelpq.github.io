@@ -36,7 +36,7 @@ Depending on the version or the package you want to build, simply move into the 
 
     cd $VERSION/$PACKAGE_NAME/$DISTRIBUTION
 
-$VERSION should be something like 9.3, $PACKAGE_NAME named as postgresql, and $DISTRIBUTION be like EL-6 or F-17 depending on the Linux distribution where you want to build the packages.
+$VERSION should be something like 9.3, $PACKAGE\_NAME named as postgresql, and $DISTRIBUTION be like EL-6 or F-17 depending on the Linux distribution where you want to build the packages.
 
 Then run this command to create the packages.
 
@@ -77,7 +77,7 @@ This is only a command defined in common/Makefile.global, but I think it is good
 
 Once done, the following RPMs (here for 9.2) will be generated:
 
-  * postgresql92-*.rpm, containing some client binaries (pg_dump, createdb...)
+  * postgresql92-*.rpm, containing some client binaries (pg\_dump, createdb...)
   * postgresql92-libs-*.rpm, containing some client libraries (expg, libpq, libpgtype)
   * postgresql92-server-*.rpm, containing server side binaries (initdb, postgres...)
   * postgresql92-docs-*.rpm, with the documentation

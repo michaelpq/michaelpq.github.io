@@ -54,10 +54,10 @@ This feature can only be enabled at server initialization by using the newly-add
 
 There are a couple of things to be aware when using this feature though. First, using checksums has a cost in performance as it introduces extra calculations for each data page (8kB by default), so be aware of the tradeoff between data security and performance when using it.
 
-Also, this feature introduces a new GUC parameter called ignore_checksum_failure allowing to skip a checksum error and return to the client a warning instead of an error if a failure is found. Be aware that a checksum failure means that the data on disk is corrupted, so ignoring such errors might lead to data corruption propagation or even crashes. Hence, I would personally recommend not to set that parameter to true if checksums are enabled.
+Also, this feature introduces a new GUC parameter called ignore\_checksum\_failure allowing to skip a checksum error and return to the client a warning instead of an error if a failure is found. Be aware that a checksum failure means that the data on disk is corrupted, so ignoring such errors might lead to data corruption propagation or even crashes. Hence, I would personally recommend not to set that parameter to true if checksums are enabled.
 
-The checksum algorithm used in 9.3 is CRC32 reduced to 16 bits, you can have a look at PageCalcChecksum16 in bufpage.c for more details. Future versions of PostgreSQL will probably support some other types of algorithms in the future as necessary infrastructure has been added in pg_controldata for this purpose.
+The checksum algorithm used in 9.3 is CRC32 reduced to 16 bits, you can have a look at PageCalcChecksum16 in bufpage.c for more details. Future versions of PostgreSQL will probably support some other types of algorithms in the future as necessary infrastructure has been added in pg\_controldata for this purpose.
 
-Note also that pg_upgrade will fail if the cluster to-be-upgraded and the new cluster do not use the same checksum algorithm. If the algorithms used are different between the old and new clusters, pg_upgrade will fail with the following incompatibility error:
+Note also that pg\_upgrade will fail if the cluster to-be-upgraded and the new cluster do not use the same checksum algorithm. If the algorithms used are different between the old and new clusters, pg\_upgrade will fail with the following incompatibility error:
 
     old and new pg_controldata checksum versions are invalid or do not match

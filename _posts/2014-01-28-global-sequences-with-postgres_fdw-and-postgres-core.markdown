@@ -40,9 +40,9 @@ Doing something similar with only Postgres and postgres\_fdw is actually possibl
     =# CREATE VIEW seq_view AS SELECT nextval('seq') as a;
     CREATE VIEW
 
-So the view "seq_view" returns a row with a single column of type bigint whose value is the next value of sequence "seq". Simple, no?
+So the view "seq\_view" returns a row with a single column of type bigint whose value is the next value of sequence "seq". Simple, no?
 
-Now, let's create the foreign table on server A that queries seq_view (Don't forget to create the extension postgres\_fdw!).
+Now, let's create the foreign table on server A that queries seq\_view (Don't forget to create the extension postgres\_fdw!).
 
     =# CREATE EXTENSION postgres_fdw;
     CREATE EXTENSION

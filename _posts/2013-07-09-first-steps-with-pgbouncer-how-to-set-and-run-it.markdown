@@ -46,7 +46,7 @@ Compiling the code can be done as follows.
     make
     make install
 
-Once done, the binary of pgbouncer will be available in $INSTALL_REPO/bin. Some documentation and configuration file templates is installed in $INSTALL_REPO/share/doc/pgbouncer.
+Once done, the binary of pgbouncer will be available in $INSTALL\_REPO/bin. Some documentation and configuration file templates is installed in $INSTALL\_REPO/share/doc/pgbouncer.
 
 The use of a configuration file is mandatory. If this file does not exist when launching the application, pgbouncer complains like that:
 
@@ -75,7 +75,7 @@ By the way, here is a minimal configuration file you could use for a development
     logfile = pgbouncer.log
     pidfile = pgbouncer.pid
 
-auth_type set to 'any' is extremely permissive, as all the users can log in as administrators. There are also [many more options available](http://pgbouncer.projects.pgfoundry.org/doc/config.html) to help customizing the level of security at the user and database level. In section "databases", be aware that it is necessary to specify a user name for the default database name, usually a user with low permission level, but in a development environent it doesn'T really matter...
+auth\_type set to 'any' is extremely permissive, as all the users can log in as administrators. There are also [many more options available](http://pgbouncer.projects.pgfoundry.org/doc/config.html) to help customizing the level of security at the user and database level. In section "databases", be aware that it is necessary to specify a user name for the default database name, usually a user with low permission level, but in a development environent it doesn'T really matter...
 
 Here is an example of section "databases" to redirect a given database to a slave (here on same host with port 5532).
 

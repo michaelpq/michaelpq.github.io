@@ -111,7 +111,7 @@ Now let's have a look at this feature.
     postgres=# CREATE VIEW aav1 AS SELECT * FROM aa;
     CREATE VIEW
 
-Two new system functions called pg_view_is_insertable and pg_view_is_updatable have been introduced to check if a view can receive an INSERT or UPDATE directly.
+Two new system functions called pg\_view\_is\_insertable and pg\_view\_is\_updatable have been introduced to check if a view can receive an INSERT or UPDATE directly.
 
     postgres=# select pg_view_is_updatable('aav1'::regclass),
     postgres-# pg_view_is_insertable('aav1'::regclass);
@@ -145,7 +145,7 @@ So it looks to be the case for the view aav1, then let's try it.
 
 INSERT, UPDATE and DELETE queries have been executed without the need of additional triggers or rules. Yeah.
 
-One last thing, it is possible to check if a view is auto-updatable by looking at its information in information_schema.tables. Let's add here also the example of a view that cannot be auto-updatable.
+One last thing, it is possible to check if a view is auto-updatable by looking at its information in information\_schema.tables. Let's add here also the example of a view that cannot be auto-updatable.
 
     postgres=# CREATE VIEW aav2 AS SELECT count(*) FROM aa;
     CREATE VIEW

@@ -24,7 +24,7 @@ tags:
 - search
 - text
 ---
-Just yesterday on hackers, [a post by Kevin Grittner](http://www.postgresql.org/message-id/1375457112.43393.YahooMailNeo@web162905.mail.bf1.yahoo.com) mentionned using [pg_trgm](http://www.postgresql.org/docs/current/static/pgtrgm.html) to find similar sentences in a text. His example involved using "War and Peace" (which is under the public domain). When trying to tune queries, you might want to use always the same set of examples to actually analyze easily if there is a potential gain for your query. Just by thinking about that, using classic books available directly is a great way for people to evaluate the performance of a text search algorithm or a given application implementation. This could be even useful to compare the performance of several database systems regarding index scans because the data is the same, only counts the search speed, assuming that all the systems have been tuned to scan data the same way (for example all data on memory).
+Just yesterday on hackers, [a post by Kevin Grittner](http://www.postgresql.org/message-id/1375457112.43393.YahooMailNeo@web162905.mail.bf1.yahoo.com) mentionned using [pg\_trgm](http://www.postgresql.org/docs/current/static/pgtrgm.html) to find similar sentences in a text. His example involved using "War and Peace" (which is under the public domain). When trying to tune queries, you might want to use always the same set of examples to actually analyze easily if there is a potential gain for your query. Just by thinking about that, using classic books available directly is a great way for people to evaluate the performance of a text search algorithm or a given application implementation. This could be even useful to compare the performance of several database systems regarding index scans because the data is the same, only counts the search speed, assuming that all the systems have been tuned to scan data the same way (for example all data on memory).
 
 By the way, there are many books available in the public domain (just do a bit of googling) that you can use for this purpose. In the case of Postgres, here is an example of text search using "Les Miserables" of Victor Hugo. Let's first create its table, in this case with one row per line.
 
@@ -35,7 +35,7 @@ By the way, there are many books available in the public domain (just do a bit o
 
 This gives a table with 70k rows ready to be scanned.
 
-Before playing with text similarity, just be sure to install pg_trgm from the contrib modules.
+Before playing with text similarity, just be sure to install pg\_trgm from the contrib modules.
 
     postgres=# CREATE EXTENSION pg_trgm;
     CREATE EXTENSION
