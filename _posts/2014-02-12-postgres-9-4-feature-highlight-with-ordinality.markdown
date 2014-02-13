@@ -52,7 +52,7 @@ Here is how it works with a simple function returning rows.
 
 The default column name is called "ordinality", but it is possible to associate an alias to it, like that for example:
 
-    =# SELECT * FROM json_object_keys('\{"a1":"1","a2":"2","a3":"3"\}')
+    =# SELECT * FROM json_object_keys('{"a1":"1","a2":"2","a3":"3"}')
        WITH ORDINALITY AS t(keys, n);
      keys | n 
     ------+---
@@ -63,7 +63,7 @@ The default column name is called "ordinality", but it is possible to associate 
 
 This feature is actually pretty useful when used with arrays when decomposing them with unnest().
 
-    =# SELECT * from unnest('\{\{14,41,7\},\{54,9,49\}\}'::int[])
+    =# SELECT * from unnest(array[array[14,41,7],array[54,9,49]]'::int[])
        WITH ORDINALITY AS t(elts, num);
      elts | num 
     ------+-----
@@ -77,7 +77,7 @@ This feature is actually pretty useful when used with arrays when decomposing th
 
 And it is actually far more interesting with the new feature called [ROWS FROM](http://michael.otacoo.com/postgresql-2/postgres-9-4-feature-highlight-multi-argument-unnest-and-table-for-multiple-functions/) (or multi-argument unnest), because you can associate a counter usable for some ORDER BY operations easily with that.
 
-    =# SELECT * FROM unnest('\{1,2,3\}'::int[], '\{4,5,6,7\}'::int[])
+    =# SELECT * FROM unnest('{1,2,3}'::int[], '{4,5,6,7}'::int[])
        WITH ORDINALITY AS t(a1, a2, num) ORDER BY t.num DESC;
       a1  | a2 | num 
     ------+----+-----
