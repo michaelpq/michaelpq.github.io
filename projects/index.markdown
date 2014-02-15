@@ -22,5 +22,5 @@ tags:
 ---
 The following items are available from here:
 
-  * [home](/projects/home/)
+  * [Home - Environment management with Git](/projects/home/)
   * [PostgreSQL](/projects/postgres/)

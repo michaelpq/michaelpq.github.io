@@ -18,10 +18,10 @@ tags:
 
 The following sub-sections are available from here:
 
-  * [archlinux](/manuals/arch-linux/)
-  * [esx-and-vsphere](/manuals/esx-and-vsphere/)
-  * [gdb-manual](/manuals/gdb-manual/)
-  * [git-manual](/manuals/git-manual/)
-  * [jenkins](/manuals/jenkins/)
-  * [postgresql](/manuals/postgreql/)
-  * [raspberry-pi](/manuals/raspberry-pi/)
+  * [Archlinux](/manuals/arch-linux/)
+  * [ESX and vSphere](/manuals/esx-and-vsphere/)
+  * [GDB](/manuals/gdb-manual/)
+  * [Git](/manuals/git-manual/)
+  * [Jenkins](/manuals/jenkins/)
+  * [PostgreSQL](/manuals/postgreql/)
+  * [Raspberry PI](/manuals/raspberry-pi/)

@@ -26,7 +26,7 @@ tags:
 ---
 From here, the following subsections are as well available.
 
-  * [submodules](/manuals/git-manual/submodules/)
+  * [Submodules](/manuals/git-manual/submodules/)
   * [CVS to GIT](/manuals/git-manual/cvs-to-git/)
 
 Git is a largely-expended cvs program. Have a look also [here](http://git-scm.com/). This manual supposes that user installed git v1.7 (apt package) at least in his environment. It is not made for user experts but just for people looking for things that work simply.
