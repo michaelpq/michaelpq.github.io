@@ -8,7 +8,7 @@ slug: control-dump-file-name-in-linux
 title: Control dump file name in Linux
 wordpress_id: 710
 categories:
-- Linux
+- Linux-2
 tags:
 - control
 - core

@@ -8,7 +8,7 @@ slug: split-an-image-file-into-tiles
 title: Split an image file into tiles
 wordpress_id: 885
 categories:
-- Linux
+- Linux-2
 tags:
 - convert
 - crop

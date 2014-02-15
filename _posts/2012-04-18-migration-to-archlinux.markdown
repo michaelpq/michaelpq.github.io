@@ -8,7 +8,7 @@ slug: migration-to-archlinux
 title: Migration to ArchLinux
 wordpress_id: 946
 categories:
-- Linux
+- Linux-2
 tags:
 - archlinux
 - experience

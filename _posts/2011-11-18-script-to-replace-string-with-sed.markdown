@@ -8,7 +8,7 @@ slug: script-to-replace-string-with-sed
 title: Script to replace string with sed
 wordpress_id: 644
 categories:
-- Linux
+- Linux-2
 tags:
 - bash
 - extension

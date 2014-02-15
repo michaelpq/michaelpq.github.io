@@ -8,7 +8,7 @@ slug: japanese-characters-not-appearing
 title: 'Japanese characters not appearing on PDF in Ubuntu '
 wordpress_id: 439
 categories:
-- Linux
+- Linux-2
 tags:
 - character
 - japanese

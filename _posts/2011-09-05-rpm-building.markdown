@@ -8,7 +8,7 @@ slug: rpm-building
 title: RPM building
 wordpress_id: 482
 categories:
-- Linux
+- Linux-2
 tags:
 - building
 - centos

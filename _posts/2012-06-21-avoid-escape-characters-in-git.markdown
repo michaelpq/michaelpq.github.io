@@ -8,7 +8,7 @@ slug: avoid-escape-characters-in-git
 title: Avoid escape characters in GIT
 wordpress_id: 1050
 categories:
-- Linux
+- Linux-2
 tags:
 - avoid
 - character

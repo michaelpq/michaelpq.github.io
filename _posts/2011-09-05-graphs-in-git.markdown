@@ -8,7 +8,7 @@ slug: graphs-in-git
 title: Graphs in GIT
 wordpress_id: 481
 categories:
-- Linux
+- Linux-2
 tags:
 - alias
 - command

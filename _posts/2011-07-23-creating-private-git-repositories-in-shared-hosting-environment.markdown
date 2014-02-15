@@ -8,7 +8,7 @@ slug: creating-private-git-repositories-in-shared-hosting-environment
 title: Creating private GIT repositories in shared hosting environment
 wordpress_id: 435
 categories:
-- Linux
+- Linux-2
 tags:
 - apache
 - cgi
