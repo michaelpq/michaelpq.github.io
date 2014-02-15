@@ -1,6 +1,36 @@
 ---
 layout: default
 ---
+<!-- Some space with top menu -->
+<br />
+
+<!-- breadcrumb -->
+<!--
+  Split URL into sections. If index.html is in the middle of an URL
+  this algorithm is broken but honestly is this really going to
+  happen?!
+  -->
+{% assign words = page.url | remove: "index.html" |  split: "/" %}
+<!-- Initialize breadcrumb variable -->
+{% assign breadcrumb_url = '' %}
+
+{% assign count = 0 %}
+<!-- Build each breadcrumb item -->
+{% for item in words %}
+  {% assign count = count | plus: 1 %}
+  {% assign breadcrumb_url = breadcrumb_url | append: item | append: '/' %}
+  <!-- Particular case for base folder -->
+  {% if breadcrumb_url == '/' %}
+    <a href="{{breadcrumb_url}}">Home</a>
+  {% else %}
+    <a href="{{breadcrumb_url}}">{{item}}</a>
+  {% endif %}
+  <!-- Skip last element -->
+  {% if words.size != count %}
+    &#187;
+  {% endif %}
+{% endfor %}
+
 <h2>{{ page.title }}</h2>
 
 <div class="page">
