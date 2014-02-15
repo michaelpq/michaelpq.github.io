@@ -4,18 +4,18 @@ body {
 	border:0;	/* This removes the border around the viewport
 			 * in old versions of IE */
 	width:100%;
-	background:#fff;
+	background:#ffffff;
 	min-width:600px; /* Minimum width of layout - remove line if not
 			  * required. The min-width property does not work
 			  * in old versions of Internet Explorer */
 	font: 15.34px Helvetica, Arial, sans-serif;
 }
 a {
-	color:#369;
+	color:#336699;
 }
 a:hover {
-	color:#fff;
-	background:#369;
+	color:#ffffff;
+	background:#336699;
 	text-decoration:none;
 }
 h1, h2, h3 {
@@ -33,7 +33,7 @@ pre{
         background-color: #F7F7F7;
         padding: 1px 10px 1px 10px;
 	margin: 0px 20px 0px 20px;
-        border: 1px solid #888
+        border: 1px solid #888888
 }
 img {
 	margin:10px 0 5px;
@@ -50,7 +50,7 @@ img {
 	width:100%;
 }
 #header {
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #000000;
 }
 #header p,
 #header h1,
@@ -79,20 +79,20 @@ img {
 	padding:3px 10px;
 	text-align:center;
 	background:#eee;
-	color:#000;
+	color:#000000;
 	text-decoration:none;
 	position:relative;
 	left:15px;
 	line-height:1.3em;
 }
 #header ul li a:hover {
-	background:#369;
-	color:#fff;
+	background:#336699;
+	color:#ffffff;
 }
 #header ul li a.active,
 #header ul li a.active:hover {
-	color:#fff;
-	background:#000;
+	color:#ffffff;
+	background:#000000;
 	font-weight:bold;
 }
 #header ul li a span {
@@ -101,8 +101,8 @@ img {
 /* 'widths' sub menu */
 #layoutdims {
 	clear:both;
-	background:#eee;
-	border-top:4px solid #000;
+	background:#eeeeee;
+	border-top:4px solid #000000;
 	margin:0;
 	padding:6px 15px !important;
 	text-align:right;
@@ -137,11 +137,11 @@ img {
  * - Right part contains consistent content across pages
  */
 .menu {
-	background:#eee;	/* Right column background colour */
+	background:#eeeeee;	/* Right column background colour */
 }
 .menu .colleft {
 	right:25%;		/* Right column width */
-	background:#fff;	/* Left column background colour */
+	background:#ffffff;	/* Left column background colour */
 }
 .menu .col1 {
 	width:71%;	/* Left column content width (left column width
@@ -160,7 +160,7 @@ img {
 	clear:both;
 	float:left;
 	width:100%;
-	border-top:1px solid #000;
+	border-top:1px solid #000000;
 }
 #footer p {
 	padding:10px;
