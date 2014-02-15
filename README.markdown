@@ -21,9 +21,12 @@ The installation of this blog can be done with the following steps.
 
     jekyll serve
 
-## License
+## Licenses
 
-See [LICENSE](https://github.com/jekyll/jekyll/blob/master/LICENSE).
+The code building this site (_layouts/, css/, feeds) are under the license
+specified in LICENSE.
 
 Content materials in content/materials are under the license provided on
 each document.
+
+Blog articles and pages are licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
