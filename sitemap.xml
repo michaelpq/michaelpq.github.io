@@ -5,7 +5,11 @@
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      <lastmod>{{ post.date }}</lastmod>
+      {% if post.lastmod == null %}
+      <lastmod>2011-02-10</lastmod>
+      {% else %}
+      <lastmod>{{ post.lastmod }}</lastmod>
+      {% endif %}
       <changefreq>weekly</changefreq>
       <priority>0.2</priority>
     </url>
@@ -13,7 +17,11 @@
   {% for page in site.pages %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>2014-02-10T12:25:11+00:00</lastmod>
+      {% if page.lastmod == null %}
+      <lastmod>2011-02-10</lastmod>
+      {% else %}
+      <lastmod>{{ page.lastmod }}</lastmod>
+      {% endif %}
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>

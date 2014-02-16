@@ -1,6 +1,7 @@
 ---
 author: Michael Paquier
 comments: true
+lastmod: 2011-11-29
 date: 2011-11-29 00:29:06+00:00
 layout: post
 type: post
