@@ -64,6 +64,7 @@ Each test case has been run with the following command:
     time pg_dump -Fd -f $DUMP_DIRECTORY -j $NUM_JOBS $DATABASE_NAME
 
 Jobs - Runs(s) | 1 | 2 | 3 | 4 | 5 | Avg
+---------------|---|---|---|---|---|----
 1 | 56.714 | 54.385 | 54.242 | 59.300 | 57.705 | 56.47
 2 | 27.023 | 26.207 | 27.211 | 26.112 | 25.206 | 26.35
 4 | 12.641 | 12.797 | 12.484 | 12.604 | 12.486 | 12.60
