@@ -23,5 +23,5 @@ The following sub-sections are available from here:
   * [GDB](/manuals/gdb-manual/)
   * [Git](/manuals/git-manual/)
   * [Jenkins](/manuals/jenkins/)
-  * [PostgreSQL](/manuals/postgreql/)
+  * [PostgreSQL](/manuals/postgresql/)
   * [Raspberry PI](/manuals/raspberry-pi/)
