@@ -87,7 +87,7 @@ Finally edit /etc/fstab with a line like that to mount your new disk:
 
     UUID=$newdisk_uuid /mnt/newdisk    ext3    defaults 0 0
 
-And be sure to replace $newdisk_uuid by the ID of your new disk partition.
+And be sure to replace $newdisk\_uuid by the ID of your new disk partition.
 
 With /etc/fstab correctly completed, your new disk will be mounted automatically at each boot. If you don't want to reboot your machine, simply type:
 

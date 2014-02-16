@@ -86,7 +86,7 @@ You can get directly the lower and upper bounds of a given range with the functi
      30001 | 20000
      35001 | 28000
      70001 | 50000
-(3 rows)
+    (3 rows)
 
 You can check if a given value is included.
 
@@ -121,16 +121,17 @@ Here for example the salary range of junior and senior position overlap, this wo
 
 You can also use infinite range values by not defining either an upper or lower bound value. You are also free to have both infinite values for lower and upper bounds. Let's take an extremely realistic example here:
 
-    postgres# UPDATE salary_grid SET salary_range = '[50000,)' WHERE position_name = 'postgres developer';
+    postgres# UPDATE salary_grid SET salary_range = '[50000,)'
+              WHERE position_name = 'postgres developer';
     UPDATE 0 1
     postgres=# SELECT salary_range @> 60000000 as check
-    postgres-# FROM salary_grid WHERE position_name = 'postgres developer';
+               FROM salary_grid WHERE position_name = 'postgres developer';
      check 
     -------
      t
     (1 row)
 
-You can also use the functions lower_inf or upper_inf to check the infinity of a range.
+You can also use the functions lower\_inf or upper\_inf to check the infinity of a range.
 
 There are other built-in functions already implemented in core (isempty, etc.), so be sure to have a look at the documentation of Postgres for more information.
 This is all for this short introduction of range types.

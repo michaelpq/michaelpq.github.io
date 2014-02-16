@@ -58,7 +58,7 @@ Here are the list of functionalities that will be added for the support of synch
 
 ##### Catalog addition
 
-A catalog called pgxc_nodes will be added with the following columns:
+A catalog called pgxc\_nodes will be added with the following columns:
 
   * node type
   * node ID number
@@ -73,8 +73,8 @@ This table has as a primary key constraint on node number and node type.
 
 ##### Cluster startup
 
-  * As a limitation, all the configuration files of postgres-XC coordinator nodes only contain master Coordinator numbers.With that, the initialization of the catalog table pgxc_nodes is made only with data of master nodes. In the case of a master node, "node immediate master ID" is filled with 0.
-  * Once the cluster is up with a fixed number of nodes, the administrator has he possibility to update pgxc_nodes catalog with slaves already on that have already there configuration files set correctly to connect to the wanted node.
+  * As a limitation, all the configuration files of postgres-XC coordinator nodes only contain master Coordinator numbers.With that, the initialization of the catalog table pgxc\_nodes is made only with data of master nodes. In the case of a master node, "node immediate master ID" is filled with 0.
+  * Once the cluster is up with a fixed number of nodes, the administrator has he possibility to update pgxc\_nodes catalog with slaves already on that have already there configuration files set correctly to connect to the wanted node.
 
 ##### SQL interface
 
@@ -99,7 +99,7 @@ Following SQL is sent to Coordinators:
     ALTER [COORDINATOR | DATANODE] SLAVE id PROMOTE TO MASTER
     {WITH CONNECTION ( [:$port | $host: | $host:$port] )};
 
-This will modify pgxc_nodes like this for a coordinator for example:
+This will modify pgxc\_nodes like this for a coordinator for example:
 
   * Former tuples:
     * Master: C, ID: 1, host:localhost, port:5432, master ID: 0
@@ -111,8 +111,8 @@ This will modify pgxc_nodes like this for a coordinator for example:
 The following restrictions apply at promotion
 
   * Before promoting the slave as a new master it is necessary to restart slave new parameters. Postgres-XC does not take responsabilities in kicking new nodes.
-  * Promotion can be made on a synchronous slave only, this check is made on pgxc_nodes.
-  * Before promoting, a check is made on slave to be sure that it has not been modified from synchronous to asynchronous mode when beginning the promotion. This check is done locally on pgxc_nodes.
+  * Promotion can be made on a synchronous slave only, this check is made on pgxc\_nodes.
+  * Before promoting, a check is made on slave to be sure that it has not been modified from synchronous to asynchronous mode when beginning the promotion. This check is done locally on pgxc\_nodes.
   * When promoting, make a check on slave node to be sure that its standby mode is off. This has to be kicked from an external utility and not by XC itself.
 
 ###### Changing a slave status
@@ -124,7 +124,7 @@ Following SQL is sent to Coordinators:
 
 The following rules are applied:
 
-  * Take an exclusive lock on pgxc_table to make other backends waiting on pgxc_nodes
+  * Take an exclusive lock on pgxc\_table to make other backends waiting on pgxc\_nodes
   * The lock is taken externally with LOCK TABLE and sent to all the Coordinators first. Then the table is updated. Then lock is released on all the Coordinators from remote Coordinator
   * When changing replication mode, connect to slave node and check if mode has effectively been changed correctly by an external application kick.
 
@@ -136,25 +136,25 @@ Following SQL is Sent to Datanodes:
 
 The following rules are applied:
 
-  * Take an exclusive lock (SHARE ROW EXCLUSIVE MODE?) on pgxc_nodes and send this lock to all the Coordinators before performing the deletion from pgxc_nodes
+  * Take an exclusive lock (SHARE ROW EXCLUSIVE MODE?) on pgxc\_nodes and send this lock to all the Coordinators before performing the deletion from pgxc\_nodes
   * Lock is released once deletion on all the nodes is completed
 
 ##### Pooler process modification
 
 Connection pooling has to be modified with following guidelines:
 
-  * At initialization phase, Pooler fills in the catalog table pgxc_nodes with initial value in global memory context with values found in postgresql.conf: pgxc_nodes has to be accessible from postmaster and child processes.
-  * When a new slave is added with a new code ID, Pooler caches this new connection data on each Coordinator once pgxc_nodes has been updated on Coordinator associated with new node ID.
+  * At initialization phase, Pooler fills in the catalog table pgxc\_nodes with initial value in global memory context with values found in postgresql.conf: pgxc\_nodes has to be accessible from postmaster and child processes.
+  * When a new slave is added with a new code ID, Pooler caches this new connection data on each Coordinator once pgxc\_nodes has been updated on Coordinator associated with new node ID.
   * When a slave is dropped, Pooler information cached is updated also.
   * Pooler saves in shared memory information related to master nodes at cluster initialization.
 
-Important: Pooler only remains in charge in distributing connections. It does not have to know if connection is to a slave or a master. This is the reponsability of postgres child as it takes a row shared lock on pgxc_nodes when beginning a transaction on certain nodes.
+Important: Pooler only remains in charge in distributing connections. It does not have to know if connection is to a slave or a master. This is the reponsability of postgres child as it takes a row shared lock on pgxc\_nodes when beginning a transaction on certain nodes.
 
 ##### Postmaster child process modification
 
-  * A child returns an error to application in case it cannot read pgxc_nodes.
-  * When a postmaster child determines the list of nodes for transaction, it needs to know if current transaction is read-only or write depending on SQL. Then node list is built from information in pgxc_nodes when requesting new connections.
-  * When a child postmaster uses connection information of a slave/master when taking new connections, it takes a row shared lock on the associated tuples of pgxc_nodes where it took connections. This preserves catalog modification when running a transaction on those nodes.
+  * A child returns an error to application in case it cannot read pgxc\_nodes.
+  * When a postmaster child determines the list of nodes for transaction, it needs to know if current transaction is read-only or write depending on SQL. Then node list is built from information in pgxc\_nodes when requesting new connections.
+  * When a child postmaster uses connection information of a slave/master when taking new connections, it takes a row shared lock on the associated tuples of pgxc\_nodes where it took connections. This preserves catalog modification when running a transaction on those nodes.
     * If the transaction is read-only, connections to master/slave are both possible. Choice is made with round-robin.
     * If the transaction first requested read-only connections, but launches on the way a DML, new connections are requested from pooler to necessary masters.
     * If transaction was first write, then does read operations, keep going with connections to master.

@@ -43,8 +43,8 @@ Then setup the repository to fetch the svn URL you are looking for. I found that
     git svn fetch $SVN_REPO [-r$REV_NUMBER]
     git svn rebase $SVN_REPO
 
-SVN_REPO is the identifier you want to associate with your local repository.
-REV_NUMBER can be added to specify a version number to check out.
+SVN\_REPO is the identifier you want to associate with your local repository.
+REV\_NUMBER can be added to specify a version number to check out.
 What happens here is that the SVN repository is checked out as a remote branch.
 
     ~/code/test(master) $ git branch -a

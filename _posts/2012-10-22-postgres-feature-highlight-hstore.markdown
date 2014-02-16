@@ -40,7 +40,7 @@ So after downloading the source code and installing the core, do the following c
     cd contrib/hstore
     make install
 
-At this point all the libraries and files related to hstore are installaed in $INSTALL_FOLDER/share/extension.
+At this point all the libraries and files related to hstore are installaed in $INSTALL\_FOLDER/share/extension.
 
     $ ls $INSTALL_FOLDER/share/extension
     hstore--1.0--1.1.sql  hstore--1.1.sql  hstore--unpackaged--1.0.sql  hstore.control

@@ -78,7 +78,7 @@ However, you have to take care of the following settings in postgresql.conf:
     hot_standby = on
     port = 25433
 
-You can setup slave1, and slave2 as synchronously with master by using synchronous_standby_names in postgresql.conf of master.
+You can setup slave1, and slave2 as synchronously with master by using synchronous\_standby\_names in postgresql.conf of master.
 This is set a little bit later after initializing the master backup.
 
 You need to change recovery.conf of slave 1 and slave 2 with those parameters:
@@ -87,9 +87,9 @@ You need to change recovery.conf of slave 1 and slave 2 with those parameters:
     primary_conninfo = 'host=localhost port=5432 application_name=$SLAVE_NAME'
     restore_command = 'cp -i $HOME/bin/postgres/archive/%f %p'
 
-$SLAVE_NAME being slave1 for slave 1, and slave2 for slave 2.
+$SLAVE\_NAME being slave1 for slave 1, and slave2 for slave 2.
 
-Then as, slave 1-1 and 1-2 have to connect to slave 1, use the same values as above for standby_mode and restore_command, but setup primary_conninfo like this:
+Then as, slave 1-1 and 1-2 have to connect to slave 1, use the same values as above for standby\_mode and restore\_command, but setup primary\_conninfo like this:
 
     primary_conninfo = 'host=localhost port=15432 application_name=$SLAVE_NAME'
     $SLAVE_NAME being slave11 for slave 1-1, and slave12 for slave 1-2.
@@ -201,7 +201,7 @@ OK now let's check if it works well.
      slave2           | streaming |             2 | potential
     (2 rows)
 
-On master, slave1 has priority 1 for synchronization (synchronous_standby_nodes has been set up 'slave1,slave2'). It looks to be correctly synchronized.
+On master, slave1 has priority 1 for synchronization (synchronous\_standby\_nodes has been set up 'slave1,slave2'). It looks to be correctly synchronized.
 
 Then let's do the same check from slave1.
 

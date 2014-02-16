@@ -60,10 +60,10 @@ Here are the parameters you have to set for postgresql.conf file of master.
     archive_command = 'cp -i %p $HOME/bin/postgres/archive/%f'
     max_wal_senders = 10
 
-archive_command is the command used when launching pg_start_backup. This allows slave to restore master data not from scratch, really accelerating slave's start up. In this case, directory for archives is $HOME/bin/postgres/archive.
-max_wal_senders is the number of processes allowed to send WAL data, it cannot be 0, or master cannot send data to slave.
-For the time being synchronous_standby_names is not set to avoid master hanging on a slave commit.
-It is also necessary to set up your master to authorize connection from slave for replication purposes. In this case, you have to add those lines in pg_hba.conf:
+archive\_command is the command used when launching pg\_start\_backup. This allows slave to restore master data not from scratch, really accelerating slave's start up. In this case, directory for archives is $HOME/bin/postgres/archive.
+max\_wal\_senders is the number of processes allowed to send WAL data, it cannot be 0, or master cannot send data to slave.
+For the time being synchronous\_standby\_names is not set to avoid master hanging on a slave commit.
+It is also necessary to set up your master to authorize connection from slave for replication purposes. In this case, you have to add those lines in pg\_hba.conf:
 
     host    replication     michael        127.0.0.1/32            trust
     host    replication     michael        ::1/128                 trust`
@@ -82,8 +82,8 @@ Rename it to recovery.conf and copy it to the slave's data folder. Then modify t
     primary_conninfo = 'host=localhost port=5432 application_name=slave1'
     restore_command = 'cp -i $HOME/bin/postgres/archive/%f %p'
 
-primary_conninfo contains all the connection parameters to allow slave to connect to master, for streaming replication purposes. In this parameter, application_name is the name used to identify slave on master.
-restore_command contains a shell command that is used to copy archive files. This helps in speeding up slave startup by not having to copy all the WAL from scratch. In this case restore command picks up archive files in the same place where it has been saved by master.
+primary\_conninfo contains all the connection parameters to allow slave to connect to master, for streaming replication purposes. In this parameter, application\_name is the name used to identify slave on master.
+restore\_command contains a shell command that is used to copy archive files. This helps in speeding up slave startup by not having to copy all the WAL from scratch. In this case restore command picks up archive files in the same place where it has been saved by master.
 
 Now, let's have a look at how to use your master/slave configuration.
 Master port is 5432 (PostgreSQL default). Slave port is 5433.
@@ -206,19 +206,6 @@ Now only slave is running, but it cannot perform any write operation, so fallbac
     echo "port = 5432" >> slave/postgresql.conf
     ./bin/pg_ctl -D slave restart
 
-Setting standby_mode to off makes the slave react as a new master.
+Setting standby\_mode to off makes the slave react as a new master.
 After restarting, recovery.conf has its name changed to recovery.done to prevent to reenter to a new backup.
 After that a new master is up, based on the old slave. You can connect to it as if it was a normal master, and perform normal operations on it.
-
-If you want to set up your own servers, here are the [Standby setup files (tar archive)](http://michael.otacoo.com/wp-content/uploads/2011/05/standby_files.tar.gz) used in this post. It contains the following files:
-
-  * Configuration files (saved in $PSQL_CONFIG for the automatized process)
-  * Master: postgresql.conf file
-  * Master: pg_hba.conf file
-  * Slave: postgresql.conf file
-  * Slave: recovery,conf file
-
-Scripts:
-
-  * Setup Master/Slave servers
-  * Fallback to Slave

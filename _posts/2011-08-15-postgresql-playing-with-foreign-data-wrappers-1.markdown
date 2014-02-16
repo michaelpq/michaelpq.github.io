@@ -28,12 +28,12 @@ This post presents some basics when using foreign data wrappers with PostgreSQL 
 FOREIGN DATA WRAPPER is a part of SQL/MED (Management of external data with SQL) and its implementation has begun since Postgres 8.4. This mechanism is based on COPY FROM to import data files directly into your database.
 Those tests have been done with 9.2 (development version).
 
-First be sure that the contrib module file_fdw is correctly installed for your server.
+First be sure that the contrib module file\_fdw is correctly installed for your server.
 
     cd /to/postgres/folder/contrib/file_fdw
     make install
 
-At the time of this post, PostgreSQL tar just contains a fdw library for external files (file_fdw). Some complementary work for PostgreSQL fdw will be done as a development for 9.2.
+At the time of this post, PostgreSQL tar just contains a fdw library for external files (file\_fdw). Some complementary work for PostgreSQL fdw will be done as a development for 9.2.
 
 If you do not install that, you may get the following error when trying to create an extension.
 

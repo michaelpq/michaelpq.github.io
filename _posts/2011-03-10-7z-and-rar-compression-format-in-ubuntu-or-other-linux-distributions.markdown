@@ -52,10 +52,10 @@ To decompress a file with p7zip, you have to do the following command:
 
     7z x $FILE_NAME
 
-$FILE_NAME being the name of your 7z file.
+$FILE\_NAME being the name of your 7z file.
 
 To decompress a file with unrar-free, you have to do the following command:
 
     unrar-free x $FILE_NAME
 
-$FILE_NAME being the name of your rar file.
+$FILE\_NAME being the name of your rar file.

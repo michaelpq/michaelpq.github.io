@@ -28,33 +28,30 @@ Arrays can be created easily in PostgreSQL using the additional syntax [] when d
 
 Arrays follow some special grammar. You can insert array data directly with '\{data1,data2\}' format or by using things like ARRAY[data1,data2].
 
-    postgres=# INSERT INTO aa VALUES (1, '\{1,2,3,4\}');
+    postgres=# INSERT INTO aa VALUES (1, '{1,2,3,4}');
     INSERT 0 1
     postgres=# INSERT INTO aa VALUES (2, ARRAY[1,2,3,4]);
     INSERT 0 1
     postgres=# select * from aa;
      a |     b     
     ---+-----------
-     1 | \{1,2,3,4\}
-     2 | \{1,2,3,4\}
+     1 | {1,2,3,4}
+     2 | {1,2,3,4}
     (2 rows)
 
 An array in postgres does not have any dimension restrictions. You can create arrays with multiple dimensions if desired.
 
-    postgres=# INSERT INTO aa VALUES (3, '\{\{1,2\},\{3,4\}\}');
+    postgres=# INSERT INTO aa VALUES (3, ARRAY[ARRAY[1,2],ARRAY[3,4]]);
     INSERT 0 1
     postgres=# INSERT INTO aa VALUES (4, ARRAY[ARRAY[1,2],ARRAY[3,4]]);
     INSERT 0 1
-    postgres=# select * from aa;
-     a |       b       
-    ---+---------------
-     1 | \{1,2,3,4\}
-     2 | \{1,2,3,4\}
-     3 | \{\{1,2\},\{3,4\}\}
-     4 | \{\{1,2\},\{3,4\}\}
-    (4 rows)
+    postgres=# select * from aa WHERE a = 1;
+     a |     b       
+    ---+-----------
+     1 | {1,2,3,4}
+    (1 row)
 
-A special function called array_dims allows to get dimensions of an array.
+A special function called array\_dims allows to get dimensions of an array.
 
     postgres=# select a, array_dims(b) from aa;
      a | array_dims 
@@ -65,7 +62,7 @@ A special function called array_dims allows to get dimensions of an array.
      4 | [1:2][1:2]
     (4 rows)
 
-An array length can be obtained by array_length.
+An array length can be obtained by array\_length.
 
     postgres=# select array_length(b,1) from aa where a = 1;
      array_length 
@@ -75,8 +72,8 @@ An array length can be obtained by array_length.
 
 There are another couple of useful functions like:
 
-  * array_append, array_prepend, to add values directly to an array	
-  * array_cat, to assemble arrays
+  * array\_append, array\_prepend, to add values directly to an array	
+  * array\_cat, to assemble arrays
 
 Here is an example.
 
@@ -88,9 +85,9 @@ Here is an example.
      1 | \{1,2,3,4,5\}
     (1 row)
 
-The contribution module int_array contains additional functions on integer arrays to sort elements.
+The contribution module int\_array contains additional functions on integer arrays to sort elements.
 
-The last function that looks useful for array manipulation are unnest and array_string. array_string returns data of a array as a string (Oh!) with a given separator.
+The last function that looks useful for array manipulation are unnest and array\_string. array\_string returns data of a array as a string (Oh!) with a given separator.
 
     postgres=# select array_to_string(b,';') from aa where a = 1;
      array_to_string 

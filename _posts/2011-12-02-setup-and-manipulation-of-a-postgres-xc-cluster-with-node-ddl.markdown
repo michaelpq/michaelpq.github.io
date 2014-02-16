@@ -87,7 +87,7 @@ Just lately, I committed this commit.
 So what is behing this looooong commit text? Well, it is a feature that will simplify your life.
 It is strongly related the feature called Node DDL. Just to recall, node DDL is a feature allowing to manage the cluster nodes with catalog tables such as you don't have to bother about heavy settings in postgresql.conf. However, even if node DDL have been supported, it does not mean that dropping, creating or altering a node is visible to the connection pooling. You had to restart a node, increasing by that much the downtime of each Coordinators.
 
-This commit, in one word, introduces this => pgxc_pool_reload. It is a new system function used to check whose details are described here used to reload all the server sessions and pooler connection information without having to restart a Coordinator. In other words, it simplifies the way to set up a cluster.
+This commit, in one word, introduces this => pgxc\_pool\_reload. It is a new system function used to check whose details are described here used to reload all the server sessions and pooler connection information without having to restart a Coordinator. In other words, it simplifies the way to set up a cluster.
 
 Now let's enter in the main subject: the cluster setting, what can be done with the following steps:
 
@@ -96,17 +96,17 @@ Now let's enter in the main subject: the cluster setting, what can be done with 
   * Start up all the nodes
   * Connect to a Coordinator
   * Create all the nodes initialized with node DDL
-  * Reload connection data with "select pgxc_node_reload();"
+  * Reload connection data with "select pgxc\_node\_reload();"
 
 Here are a couple of details:
 
-  * There is a new mandatory option in initdb called --nodename that is used to setup the name of the node being initialized. This is a Postgres-XC specific option. This option is used to define itself in pgxc_node catalog the node being initialized. It also sets automatically pgxc_node_name in postgresql.conf.
-  * You can check the consistency of the information cached in pooler and catalogs by calling the system function pgxc_pool_check. It returns a boolean on operation success or failure.
+  * There is a new mandatory option in initdb called --nodename that is used to setup the name of the node being initialized. This is a Postgres-XC specific option. This option is used to define itself in pgxc\_node catalog the node being initialized. It also sets automatically pgxc\_node\_name in postgresql.conf.
+  * You can check the consistency of the information cached in pooler and catalogs by calling the system function pgxc\_pool\_check. It returns a boolean on operation success or failure.
   * The specifications of node DDL is located at those pages: CREATE NODE, DROP NODE and ALTER NODE
-  * Invocating pgxc_pool_reload aborts the current transaction, and drops all the prepared and temporary objects in session. This is effective in all the session of the server
+  * Invocating pgxc\_pool\_reload aborts the current transaction, and drops all the prepared and temporary objects in session. This is effective in all the session of the server
   * Node DDL run locally, so you need to launch the same node DDL on all Coordinators of the cluster. This allows more smoothness in case Coordinators view the same Datanode with different IPs.
 
-It is also possible to manipulate cluster nodes even after initialization. It doesn't matter how many times you change it as long as pgxc_pool_reload is used to update data cached in sessions and connection pool.
+It is also possible to manipulate cluster nodes even after initialization. It doesn't matter how many times you change it as long as pgxc\_pool\_reload is used to update data cached in sessions and connection pool.
 
 Here is also a bonus, a script that you can use to setup easily a cluster with a chosen number of Coordinators and Datanodes on a local machine. Port numbers are fixed, but it helps in trying Postgres-XC.
 

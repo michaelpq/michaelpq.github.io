@@ -33,7 +33,7 @@ Postgres-XC, read&write-scalable; multi-master symmetric cluster based on Postgr
 This project is seen as an open-source alternative to costly products such as OracleRAC. Postgres-XC is based on the code of PostgreSQL, so it can naturally use all its technologies, which are enhaunced to have a shared-nothing multi-master PostgreSQL-based database cluster.
 
 This first stable version is based on PostgreSQL 9.1.4. All the patches in PostgreSQL 9.1 stable branch have been merged up to commit 873d1c1 (1st of June 2012).
-This includes the security fix related to pg_crypto dated of 30th of May.
+This includes the security fix related to pg\_crypto dated of 30th of May.
 You can download the source tarball directly from [here](https://sourceforge.net/projects/postgres-xc/files/latest/download)
 This tarball contains all the HTML and man documentation.
 
@@ -51,7 +51,7 @@ Compared to version Postgres-XC 0.9.7, the following features have been added:
   * Fast query shipping (FQS), quick identification of expressions in a query that can be pushed down to remote nodes
   * SERIAL types
   * TABLESPACE
-  * Utility to clean up 2PC transactions in cluster (pgxc_clean)
+  * Utility to clean up 2PC transactions in cluster (pgxc\_clean)
   * Utility for initialization of GTM (global transaction manager, utility called initgtm)
   * Relation-size functions and locking functions
   * Regression stabilization

@@ -81,9 +81,9 @@ The new clause is written as:
 So you can specify a list of node names or a node group. A node group is simply an alias for a node list.
 Let's try it.
 
-  * test12_rep is a replicated table whose data is distributed in nodes 1 and 2
-  * test34_hash is a hash table whose data is distributed in nodes 3 and 4
-  * test234_rep is a replicated table whose data is distributed in nodes 2, 3 and 4
+  * test12\_rep is a replicated table whose data is distributed in nodes 1 and 2
+  * test34\_hash is a hash table whose data is distributed in nodes 3 and 4
+  * test234\_rep is a replicated table whose data is distributed in nodes 2, 3 and 4
 
     postgres=# create table test12_rep (a int) distribute by replication to node dn1,dn2;
     CREATE TABLE
@@ -144,9 +144,9 @@ Then is data of test12_rep correctly distributed?
     ---
     (0 rows)
 
-test12_rep is only replicated in nodes dn1 and dn2 only.
+test12\_rep is only replicated in nodes dn1 and dn2 only.
 
-Let's do the same checks for test234_rep and test34_hash.
+Let's do the same checks for test234\_rep and test34\_hash.
 
     --First for test34_hash
     postgres=# execute direct on node dn1 'select * from test34_hash';
@@ -195,7 +195,7 @@ Let's do the same checks for test234_rep and test34_hash.
      3
     (3 rows)
 
-So test234_rep is correctly replicated in nodes 2, 3 and 4. test34_hash is correctly hash-partitioned in nodes 3 and 4.
+So test234\_rep is correctly replicated in nodes 2, 3 and 4. test34\_hash is correctly hash-partitioned in nodes 3 and 4.
 
 Now let's do some join and push down checks.
 
@@ -206,7 +206,7 @@ Now let's do some join and push down checks.
     Output: test34_hash.a
     (2 rows)
 
-In this case replicated table test234_rep is completely mapped by test34_hash so a push down is possible to nodes 3 and 4 directly.
+In this case replicated table test234\_rep is completely mapped by test34_hash so a push down is possible to nodes 3 and 4 directly.
 
     postgres=# explain verbose select a from test34_hash join test12_rep using (a);
                                                QUERY PLAN                                            
@@ -224,6 +224,6 @@ In this case replicated table test234_rep is completely mapped by test34_hash so
             Output: test12_rep.a
     (11 rows)
 
-In this case test34_hash and test12_rep are distributed on a disjoint list of nodes, so performing a join needs to first fetch data from Datanodes then materialize it on Coordinator.
+In this case test34\_hash and test12\_rep are distributed on a disjoined list of nodes, so performing a join needs to first fetch data from Datanodes then materialize it on Coordinator.
 
 There is still no way to change the table distribution type or the node list after table creation. This is one of the next plans, based on ALTER TABLE this time.

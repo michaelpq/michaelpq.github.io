@@ -52,23 +52,23 @@ This commits adds support for the following new DDL:
 
 The following parameters are deleted from postgresql.conf:
 
-  * num_data_nodes
-  * preferred_data_nodes
-  * data_node_hosts
+  * num\_data\_nodes
+  * preferred\_data\_nodes
+  * data\_node\_hosts
   * data_node_ports
-  * primary_data_node
-  * num_coordinators
-  * coordinator_hosts
-  * coordinator_ports
+  * primary\_data\_node
+  * num\_coordinators
+  * coordinator\_hosts
+  * coordinator\_ports
 
-pgxc_node_id is replaced by pgxc_node_name to identify the node-self.
+pgxc\_node\_id is replaced by pgxc\_node\_name to identify the node-self.
 
 Documentation is added for the new queries. Functionalities such as
 EXECUTE DIRECT, CLEAN CONNECTION use node names instead of node numbers now.
 
 So what is it about? Until now Postgres-XC has only used a heavy configuration to set up node connection information. There were 8 parameters dedicated to Coordinators and Datanodes, and those parameters had to follow a special format.
 Now, the following SQL queries can be issued to set up cluster connection information, and information is cached once user session is up.
-For the time being, a file called cluster_nodes.sql has to be set in share folder for initdb. But soon functionalities will be added to update pooler connection information based on node information update, insert or deletion.
+For the time being, a file called cluster\_nodes.sql has to be set in share folder for initdb. But soon functionalities will be added to update pooler connection information based on node information update, insert or deletion.
 This brings a lot of simplicity in cluster setting. And now, nodes are not identified by their position number in a GUC string, but by a unique global name that maintains consistency in the whole cluster.
 
 Here are some examples of cluster settings.

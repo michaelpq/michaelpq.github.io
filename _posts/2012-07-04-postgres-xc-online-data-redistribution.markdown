@@ -52,7 +52,7 @@ The redistribution funcionality is still pretty basic, but what is simply does i
   3. Update the catalogs to the new distribution type
   4. Redistribute the data cached on Coordinator
 
-A tuple store is used to cache the data on Coordinator at phase 1, which can be customized with work_mem. A COPY protocol is used to exchange the data between nodes as fastly as possible. This functionality also includes some new stuff to materialize in a tuple slot the data received with COPY protocol (reverse operation also implemented), essential when a tuple has to be redirected to a given node based on a hash value. And it looks that such a materialization mechanism would be a milestone to a more complex mechanism for global constraints and triggers in XC.
+A tuple store is used to cache the data on Coordinator at phase 1, which can be customized with work\_mem. A COPY protocol is used to exchange the data between nodes as fastly as possible. This functionality also includes some new stuff to materialize in a tuple slot the data received with COPY protocol (reverse operation also implemented), essential when a tuple has to be redirected to a given node based on a hash value. And it looks that such a materialization mechanism would be a milestone to a more complex mechanism for global constraints and triggers in XC.
 This is still a basic implementation, and the following improvements are planned once the basic stuff is committed:
 
   * Save materialization if it is not necessary (new distribution set to round robin, replication)	

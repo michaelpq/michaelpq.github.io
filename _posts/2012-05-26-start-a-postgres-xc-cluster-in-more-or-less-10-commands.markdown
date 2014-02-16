@@ -33,14 +33,14 @@ Then open the tarball and install the binaries as you would do with a normal Pos
     make
     make install
 
-$INSTALL_FOLDER is the folder where to install the sources. In this post $PATH redirects to $INSTALL_FOLDER so no need to specify a folder when launching commands.
+$INSTALL\_FOLDER is the folder where to install the sources. In this post $PATH redirects to $INSTALL\_FOLDER so no need to specify a folder when launching commands.
 
 Next, the goal is to install a cluster when few simple commands.
 Assuming that you are familiar with Postgres-XC architecture, this cluster is made with 1 Coordinator (to which your application connects), 2 Datanodes (meaning that your table data can be distributed up to 2 nodes) and a GTM, mandatory unique component distributing transaction ID and snapshot in the cluster.
 If you are not familiar with the architecture, you can still refer to documents located [here](https://sourceforge.net/projects/postgres-xc/files/Presentation/). Among the documents available, the [tutorial done at PGCon 2012](https://sourceforge.net/projects/postgres-xc/files/Presentation/20120516_PGConTutorial/20120515_PGXC_Tutorial_global.pdf/download) is a good beginning.
 For simplicity's sake, all the nodes are installed on a local machine.
 
-Like PostgreSQL, each node of Postgres-XC needs a data folder. All of them are located in $DATA_FOLDER.
+Like PostgreSQL, each node of Postgres-XC needs a data folder. All of them are located in $DATA\_FOLDER.
 So let's move in and initialize each node.
 
     cd $HOME/pgsql

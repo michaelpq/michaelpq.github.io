@@ -27,11 +27,11 @@ tags:
 - vacuum
 ---
 
-pg_reorg is a postgresql module developped and maintained by NTT that allows to redistribute a table without taking locks on it.
-The code is hosted by pg_foundry [here](http://pgfoundry.org/projects/reorg/).
+pg\_reorg is a postgresql module developped and maintained by NTT that allows to redistribute a table without taking locks on it.
+The code is hosted by pg\_foundry [here](http://pgfoundry.org/projects/reorg/).
 However, pgfoundry uses CVS :(, so I am also maintaining a fork in github in sync with pgfoundry [here](https://github.com/michaelpq/pg_reorg).
 
-What pg_reorg can do for you is to reorganize a whole table in the same fashion way as a CLUSTER or a VACUUM FULL, while allowing write operations on the table being reorganized at the same time. No locks are needed.
+What pg\_reorg can do for you is to reorganize a whole table in the same fashion way as a CLUSTER or a VACUUM FULL, while allowing write operations on the table being reorganized at the same time. No locks are needed.
 
 Once you have downloaded the code, you just need to install it on your server.
 

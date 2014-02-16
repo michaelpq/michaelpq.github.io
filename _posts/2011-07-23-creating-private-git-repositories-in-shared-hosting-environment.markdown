@@ -48,11 +48,11 @@ So, to set your GIT repositories, what is needed first is GIT installed on your 
 
 The important point is to have support of the command git-http-backend.
 
-This done, you also need the apache modules mod_cgi, mod_alias, and mod_env to be activated.
+This done, you also need the apache modules mod\_cgi, mod\_alias, and mod\_env to be activated.
 
 Now, let's go through the whole setting process. In the case of this tutorial, our goal is to create a private repository for a project called foo-project. The private repositories that will be set are protected in read and write by apache group management.
 
-From the root repository of your domain http://www.example.com/, if you have a connection through ssh, go to the root repository that should be called public_html. Then type the following command:
+From the root repository of your domain http://www.example.com/, if you have a connection through ssh, go to the root repository that should be called public\_html. Then type the following command:
 
     htpasswd -c .htpasswd user-name
 
@@ -74,7 +74,7 @@ Then create a file called .htgroup. It contains the following data:
 
 This file will be used to control the group data of apache. You can create for each private repository a group with a list of users. One line has to be used for each group. Keep in mind that it is easier to maintain the group list in a common file. However you can set group file in different files if you wish. Just don't forget to list those files in appropriate .htaccess files.
 
-Then it is time to create the access control to private repositories. Create a folder called git in the root folder public_html and move in it:
+Then it is time to create the access control to private repositories. Create a folder called git in the root folder public\_html and move in it:
 
     mkdir git
     cd git
@@ -93,7 +93,7 @@ There you need to create a new CGI script that will be used to rewrite requested
     #and run your git-http-backend
     /usr/bin/git-http-backend
 
-GIT_PROJECT_ROOT is an environment variable pointing to the root folder of your GIT repositories. A mistake here may lead to an error 500...
+GIT\_PROJECT\_ROOT is an environment variable pointing to the root folder of your GIT repositories. A mistake here may lead to an error 500...
 
 Depending on the server of your shared hosting service, git-http-backend may not be in /usr/bin/ but in /usr/lib/git-core/ or whatever. Be sure to check where it is with the command:
 
@@ -121,7 +121,7 @@ Then it is time to create the GIT repository of foo-project and move in it.
     mkdir foo-project.git
     cd foo-project.git
 
-Now you should be in folder /to/site/folder/public_html/git/foo-project.git.
+Now you should be in folder /to/site/folder/public\_html/git/foo-project.git.
 
 Then initialize your GIT repository with the following commands.
 
@@ -133,7 +133,7 @@ Then initialize your GIT repository with the following commands.
 
 This basically makes all the necessary settings to allow your folder to use smart http mode. If you don't care about GIT details, just copy/paste that!
 
-What finally remains is to create an .htaccess file in public_html/git/foo-project.git to control access to this repository.
+What finally remains is to create an .htaccess file in public\_html/git/foo-project.git to control access to this repository.
 
     Allow from all
     Order allow,deny

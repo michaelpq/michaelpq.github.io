@@ -25,10 +25,7 @@ tags:
 - timeline
 ---
 
-Since PostgreSQL 9.1, it is possible to switch a standby server to follow another server that has been freshly promoted after the master node of a cluster is out due to a failure (disaster or another).
-This can be summarized by the schema below.
-[caption id="attachment_1491" align="aligncenter" width="695"][![Timeline switch picture](http://michael.otacoo.com/wp-content/uploads/2012/12/timeline_switch-1024x562.png)](http://michael.otacoo.com/wp-content/uploads/2012/12/timeline_switch.png) Timeline switch schema[/caption]
-In this example, a master and two slaves are running on the same machine. The master running with port 5432 fails, Slave 1 is promoted as the new master:
+Since PostgreSQL 9.1, it is possible to switch a standby server to follow another server that has been freshly promoted after the master node of a cluster is out due to a failure (disaster or another). In this example, a master and two slaves are running on the same machine. The master running with port 5432 fails, Slave 1 is promoted as the new master:
 
     pg_ctl promote -D $SLAVE1_DATA
 
@@ -41,7 +38,7 @@ Finally restart Slave 2 to continue recovery from the new master.
 
     pg_ctl restart -D $SLAVE2_DATA
 
-When doing this in PostgreSQL 9.1 and 9.2, you need a WAL archive (archive_mode = 'on' on all servers) to allow a standby to recover WAL files that are missing in order to complete the timeline change (please note that you can also copy the WAL files from the slave node directly). If no archive is available, a standby trying to reconnect to a promoted node will stop its recovery with those types of errors due to missing WAL information:
+When doing this in PostgreSQL 9.1 and 9.2, you need a WAL archive (archive\_mode = 'on' on all servers) to allow a standby to recover WAL files that are missing in order to complete the timeline change (please note that you can also copy the WAL files from the slave node directly). If no archive is available, a standby trying to reconnect to a promoted node will stop its recovery with those types of errors due to missing WAL information:
 
     FATAL:  timeline 2 of the primary does not match recovery target timeline 1
 
@@ -82,7 +79,7 @@ However, in order to make Postgres cluster management far more flexible, the fol
     Many thanks to Amit Kapila for testing and reviewing various versions of
     this patch.
 
-This feature allows to switch to the latest timeline on a standby server just by using streaming replication, a WAL archive becoming non-mandatory (archive_mode = 'off' on all servers). In order to complete that, a new streaming replication command called TIMELINE_HISTORY has been created, which makes the standby recover all the missing timeline history files from the node it connects to, facilitating the switch to the latest timeline available.
+This feature allows to switch to the latest timeline on a standby server just by using streaming replication, a WAL archive becoming non-mandatory (archive\_mode = 'off' on all servers). In order to complete that, a new streaming replication command called TIMELINE\_HISTORY has been created, which makes the standby recover all the missing timeline history files from the node it connects to, facilitating the switch to the latest timeline available.
 
 When timeline history files are requested from another node, the following things are logged:
 

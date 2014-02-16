@@ -26,7 +26,7 @@ tags:
 
 Here is a shortcut to correct all the commits of a branch and set them to a specific user name and user email.
 This does not correct commit messages in themselves.
-Replace $USER_NAME by the user name and $USER_EMAIL by the email wanted.
+Replace $USER\_NAME by the user name and $USER\_EMAIL by the email wanted.
 
     git filter-branch --env-filter 'export GIT_AUTHOR_EMAIL="$USER_EMAIL";GIT_AUTHOR_NAME="$USER_NAME"'
 

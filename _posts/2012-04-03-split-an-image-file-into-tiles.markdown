@@ -30,8 +30,6 @@ With the following parameters.
   * $WIDTH, the width of each tile splitted
   * $HEIGHT, the height of each tile splitted
 
-
-
 Here is an example to split a file into tiles of size 16x32 pixels:
 
     convert -crop 16x32@ huge_file.png  tile_%d.png

@@ -44,7 +44,7 @@ Compared to version 0.9.7, the following features have been added:
   * Fast query shipping (FQS), quick identification of expressions in a query that can be pushed down to remote nodes
   * SERIAL types
   * TABLESPACE
-  * Utility to clean up 2PC transactions in cluster (pgxc_clean)
+  * Utility to clean up 2PC transactions in cluster (pgxc\_clean)
   * Utility for initialization of GTM (global transaction manager, utility called initgtm)
   * Relation-size functions
   * Regression stabilization

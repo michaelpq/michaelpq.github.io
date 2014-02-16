@@ -65,7 +65,7 @@ So let's define a view on it and check that an UPDATE on a view is possible.
     (4 rows)
 
 So yes, RULES are now completely supported in Postgres-XC. And it is included in 1.0. The secret of how it works? The thing that took me 4 weeks to figure out?
-Well, some extensions have been added in standard planner for DELETE, INSERT and UPDATE remote planning (ModifyTable used as TopPlan). For people willing to look at the code, all the secrets are located in functions create_remoteinsert_plan, create_remoteupdate_plan and create_remotedelete_plan of createplan.c. Those functions have been built and adapted to former scan plan of PostgreSQL to react as a wrapper for inner remote table scans within PostgreSQL standard planner. The trick is to create a DML query generated based on the scan plans generated for each tables that has to be updated, deleted or insert.
+Well, some extensions have been added in standard planner for DELETE, INSERT and UPDATE remote planning (ModifyTable used as TopPlan). For people willing to look at the code, all the secrets are located in functions create\_remoteinsert\_plan, create\_remoteupdate\_plan and create\_remotedelete\_plan of createplan.c. Those functions have been built and adapted to former scan plan of PostgreSQL to react as a wrapper for inner remote table scans within PostgreSQL standard planner. The trick is to create a DML query generated based on the scan plans generated for each tables that has to be updated, deleted or insert.
 
 One of the limitations? The use of constraints.
 Depending on the distribution strategy used, you may not be able to check the consistency of constraints globally.

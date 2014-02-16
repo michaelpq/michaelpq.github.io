@@ -28,9 +28,9 @@ tags:
 - ubuntu
 ---
 
-When tuning a PostgreSQL server, one the major setting parameters is the one controlling the amount of shared memory allowed with shared_buffers.
-PostgreSQL has a default shared_buffers value at 32MB, what is enough for small configurations but it is said that this parameter should be set at 25% of the system's RAM. This allows your system to keep a good performance in parallel with the database server.
-So in the case of a machine with 4GB of RAM, you should set shared_buffers at 1GB.
+When tuning a PostgreSQL server, one the major setting parameters is the one controlling the amount of shared memory allowed with shared\_buffers.
+PostgreSQL has a default shared\_buffers value at 32MB, what is enough for small configurations but it is said that this parameter should be set at 25% of the system's RAM. This allows your system to keep a good performance in parallel with the database server.
+So in the case of a machine with 4GB of RAM, you should set shared\_buffers at 1GB.
 
 In the case of ubuntu servers, you may find the following error when starting a PostgreSQL instance.
 

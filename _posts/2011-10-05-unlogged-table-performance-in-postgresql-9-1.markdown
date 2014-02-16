@@ -45,10 +45,10 @@ This is a performance feature, so let's see how much gain you could expect with 
 Environment used is a 2.6GHz Dual core i5 with 4GB of memory.
 PostgreSQL server has the following settings:
 
-  * shared_buffers = 1GB
-  * synchronous_commit = off
-  * checkpoint_segments = 32
-  * checkpoint_completion_target = 0.9
+  * shared\_buffers = 1GB
+  * synchronous\_commit = off
+  * checkpoint\_segments = 32
+  * checkpoint\_completion\_target = 0.9
 
 By default, pgbench is not able to use unlogged tables, so the code has been a bit modified to change all DDL definitions when tests are made on unlogged tables.
 First, pgbench can be found in contrib directory. Once installed, you can initialize with pgbench with the following commands:
@@ -56,23 +56,24 @@ First, pgbench can be found in contrib directory. Once installed, you can initia
     createdb benchtest
     pgbench -i -s $SCALE_FACTOR benchtest`
 
-SCALE_FACTOR is used at 10 and 100 for this study. Roughly, it represents the number of tables. I do not advice using default value to avoid lock contention.
+SCALE\_FACTOR is used at 10 and 100 for this study. Roughly, it represents the number of tables. I do not advice using default value to avoid lock contention.
 
 Then you can launch pgbench with commands like:
 
     pgbench -c $CLIENT_NUM -T 300 benchtest
 
-CLIENT_NUM is the number of clients connected to the database. Here we use successively 1, 24 and 48.
+CLIENT\_NUM is the number of clients connected to the database. Here we use successively 1, 24 and 48.
 For each configuration, 5 tests of a duration of 5 minutes are made. The lowest and highest values are not taken into account, and the average based on the other values is calculated.
 
 Here are the results found in TPS (transaction/second).
 
-Clients | Scale factor | Normal tables | Unlogged tables | Gain (Unlogged - Perm)/avg(Unlogged, Perm)
-1 | 10 | 561.63 | 632.55 | 11.87%
-24 | 10 | 1419.30 | 1678.23 | 16.71%
-48 | 10 | 1323.78 | 1555.40 | 16.08%
-1 | 100 | 510.25 | 436.87 | 13.22%
-24 | 100 | 1252.38 | 1493.44 | 17.55%
-48 | 100 | 1260.09 | 1462.92 | 14.89%
+| Clients | Scale factor | Normal tables | Unlogged tables | Gain (Unlogged - Perm)/avg(Unlogged, Perm) |
+| ------- | ------------ | ------------- | --------------- | ----------------------------------------- |
+| 1 | 10 | 561.63 | 632.55 | 11.87% |
+| 24 | 10 | 1419.30 | 1678.23 | 16.71% |
+| 48 | 10 | 1323.78 | 1555.40 | 16.08% |
+| 1 | 100 | 510.25 | 436.87 | 13.22% |
+| 24 | 100 | 1252.38 | 1493.44 | 17.55% |
+| 48 | 100 | 1260.09 | 1462.92 | 14.89% |
 
 So in short, in the environment tested unlogged tables have shown an increase of output by 13~17%.

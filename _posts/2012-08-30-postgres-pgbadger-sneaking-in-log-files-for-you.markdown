@@ -70,7 +70,7 @@ As told before, pgbadger is a log file deparser, so you need to set up the outpu
     log_temp_files = 0
 
 You will need to customize those options depending on the information you want, just do not forget that setting up the root correctly is the key for success.
-At the state of pgbadger 2.0, log_statement and log_duration cannot be activated, so take care not to use them.
+At the state of pgbadger 2.0, log\_statement and log\_duration cannot be activated, so take care not to use them.
 
 For the purpose of this post and in order to produce a couple of log files, I ran a 5-minute pgbench test on a fresh Postgres server.
 So the logs I obtained are not at all production-like, but enough to show what pgbadger can do.

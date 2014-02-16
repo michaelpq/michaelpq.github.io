@@ -36,10 +36,10 @@ However, after this small regression... It has been honestly an interesting expe
 	
   * Separation of PGPROC into PGXACT and PGPROC. The new structure PGXACT contains information related to vacuum and snapshot. This really improves the performance for multi-core
   * Removal of RecentGlobalXmin from snapshot data
-  * Addition of clause IF EXISTS in several DDL. You should avoid to use missing_ok in RangeVarGetRelid to false in order to get correct error messages
+  * Addition of clause IF EXISTS in several DDL. You should avoid to use missing\_ok in RangeVarGetRelid to false in order to get correct error messages
   * Check if a table column has a dependency with a rule and do not drop it when it is the case
   * Return messages presenting details of tuple data back to client for tuples that failed to satisfy a constraint
-  * Removal of inner_plan and outer_plan from deparse_namespace
+  * Removal of inner\_plan and outer\_plan from deparse\_namespace
   * Creation of a new utility command for CREATE TABLE AS, called CreateTableAsStmt. Before CTAS was included in Query with intoClause, this clause has been removed and now both SELECT INTO and CREATE TABLE AS are transformed into this utility at query analysis. Honestly this is cleaner like this
   * Management of cached plans largely modified. In short, the way plans cached have been changed in plancache.c has been really refactored
   * Management of tuple sorting in tuplesort.c. SortSupport is now used instead of ScanKeys

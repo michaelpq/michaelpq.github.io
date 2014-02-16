@@ -26,8 +26,7 @@ tags:
 - reorganize
 - version
 ---
-
-Last week, I had an interesting [discussion in the Postgres hackers mailing list](http://archives.postgresql.org/pgsql-hackers/2012-09/msg00746.php) about integrating pg_reorg features (possibility to reorganize a table without locks on it) directly into postgres core. Community strongly suggested that pg_reorg cannot be integrated as-is in the contribution modules of postgres core, and instead postgres should provide native ways to reorganize a table without taking heavy locks. This means that a table could be reindexed or clustered, and at the same time read and writes operations could still happen in parallel. What is particularly useful when an index is broken in a production database, as you could keep your table free of access for the other sessions running while the table is reorganized.
+Last week, I had an interesting [discussion in the Postgres hackers mailing list](http://archives.postgresql.org/pgsql-hackers/2012-09/msg00746.php) about integrating pg\_reorg features (possibility to reorganize a table without locks on it) directly into postgres core. Community strongly suggested that pg\_reorg cannot be integrated as-is in the contribution modules of postgres core, and instead postgres should provide native ways to reorganize a table without taking heavy locks. This means that a table could be reindexed or clustered, and at the same time read and writes operations could still happen in parallel. What is particularly useful when an index is broken in a production database, as you could keep your table free of access for the other sessions running while the table is reorganized.
 
 So, the following suggestions have been made:
 	
@@ -56,7 +55,7 @@ REINDEX CONCURRENTLY has the following restrictions:
 
 Here are more details about the algorithm used. Roughly, a secondary index is created in parallel of the first one, it is completed. Then the old and fresh indexes are switched. For a more complete description (the beginning of the process is similar to CREATE INDEX CONCURRENTLY):
 
-  1. creation of a new index based on the same columns and restrictions as the index that is rebuilt (called here old index). This new index has as name $OLDINDEX_cct. So only a suffix _cct is added. It is marked as invalid and not ready
+  1. creation of a new index based on the same columns and restrictions as the index that is rebuilt (called here old index). This new index has as name $OLDINDEX\_cct. So only a suffix \_cct is added. It is marked as invalid and not ready
   2. Take session locks on old and new index(es), and the parent table to prevent unfortunate drops
   3. Commit and start a new transaction
   4. Wait until no running transactions could have the table open with the old list of indexes
@@ -85,7 +84,7 @@ Some technical details...
   * Code is relying a maximum on existing index creation, building and validation functions for maintainability.
   * Documentation, as well as regression tests have been added in the first version of the patch.
   * Concurrent operations are longer, require additional CPU, IO and memory but they are lock free. The parent relation and indexes cannot be dropped during process.
-  * If an error occurs during process, the table will finish with invalid indexes (marked with suffix _cct in their names). It is the responsability of the user to drop them.
+  * If an error occurs during process, the table will finish with invalid indexes (marked with suffix \_cct in their names). It is the responsability of the user to drop them.
   * If you are looking for the patch, have a look [here](http://archives.postgresql.org/pgsql-hackers/2012-10/msg00128.php).
 
 Please note that those specification notes are based on the first version of the patch proposed, and are subject to change depending on the community and reviewers' feedback.

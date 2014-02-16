@@ -33,14 +33,14 @@ The first thing that you need to do is to install the sources of dblink. You can
     ./configure --prefix $INSTALL_FOLDER
     make install-world
 
-$INSTALL_FOLDER is the folder where you wish to install PostgreSQL binaries.
+$INSTALL\_FOLDER is the folder where you wish to install PostgreSQL binaries.
 
 Or if you wish only to install dblink (you might have already installed PostgreSQL ressources), do it directly from its source folder.
 
     cd contrib/dblink
     make install
 
-The installed files for dblink can be found in $INSTALL_FOLDER/share/extensions.
+The installed files for dblink can be found in $INSTALL\_FOLDER/share/extensions.
 
     $ cd $INSTALL_FOLDER/share/extension
     $ ls dblink*
@@ -95,9 +95,9 @@ Do not forget to use aliases in the FROM clause to avoid errors of the following
     ERROR:  statement returning results not allowed
 
 It is also possible to do more fancy stuff with dblink functions.
-dblink_connect allows you to create a permanent connection to a remote server. Such connections are defined by names you can choose. This avoids to have to create new connections to remote servers all the time at invocating of function dblink, allowing to gain more time by maintaining connections alive. In case you wish to use the connection created, simply invocate its name when using dblink functions.
+dblink\_connect allows you to create a permanent connection to a remote server. Such connections are defined by names you can choose. This avoids to have to create new connections to remote servers all the time at invocating of function dblink, allowing to gain more time by maintaining connections alive. In case you wish to use the connection created, simply invocate its name when using dblink functions.
 
-Execution of other queries, like DDL or DML, can be done with function dblink_exec.
+Execution of other queries, like DDL or DML, can be done with function dblink\_exec.
 
     postgres=# select dblink_exec('port=5433 dbname=postgres', 'create table aa (a int, b int)');
      dblink_exec  

@@ -46,7 +46,7 @@ Let's first create 2 tables.
     CREATE TABLE my_table (a int);
     CREATE TABLE table_cnt (table_oid Oid PRIMARY KEY, count int);
 
-my_table is a generic table whose tuples will be counted with triggers on it. table_cnt counts the number of tuples in the application tables. It contains 2 columns, one based on the table Oid whose tuples are counted and an integer which is used to determine the total number of tuples in this table. A primary key is defined on the table Oid (object ID)... Well as we are sure that a table Oid is unique in a PostgreSQL instance, this does not really matter but may avoid future conflicts in the system.
+my\_table is a generic table whose tuples will be counted with triggers on it. table\_cnt counts the number of tuples in the application tables. It contains 2 columns, one based on the table Oid whose tuples are counted and an integer which is used to determine the total number of tuples in this table. A primary key is defined on the table Oid (object ID)... Well as we are sure that a table Oid is unique in a PostgreSQL instance, this does not really matter but may avoid future conflicts in the system.
 
 In order to count the number of tuples in a given table, two functions in charge of count management are created, one for incrementation and one for decrementation.
 
@@ -61,7 +61,7 @@ In order to count the number of tuples in a given table, two functions in charge
     RETURN NEW;
     END $_$ LANGUAGE 'plpgsql';
 
-Those two functions will be called by the table triggers. One important point to notice is the use of the variable called TG_RELID, which is the relation ID of the table that invocated this function with its trigger. PostgreSQL contains other variables related to PL/PGSQL functions like the type of action involved, etc. Please refer to PostgreSQL manuals for more details.
+Those two functions will be called by the table triggers. One important point to notice is the use of the variable called TG\_RELID, which is the relation ID of the table that invocated this function with its trigger. PostgreSQL contains other variables related to PL/PGSQL functions like the type of action involved, etc. Please refer to PostgreSQL manuals for more details.
 
 Then it is time to create the triggers on the table.
 
@@ -74,7 +74,7 @@ When creating the tables and everything, also do not forget to initialize the co
 
     INSERT INTO table_cnt VALUES ('my_table'::regclass, 0);
 
-'my_table'::regclass permits to use the table Oid instead of a plain table name string.
+'my\_table'::regclass permits to use the table Oid instead of a plain table name string.
 
 Once all the system is in place, all you need to do to obtain the total number of tuples on a table is to use:
 
@@ -123,7 +123,7 @@ Query needs 1000 less time to run, you just get a result directly from a table. 
 
 Just a note about the results, all the queries have been run in a non-tuned server. The important point here was the comparison of time to run each method so system characteristics do not really matter.
 
-Here is a remark about data generation with generate_series. It is dangerous to use generate_series on a table using triggers as it really heavies the whole insertion process. But once again, this was just use to check the optimized count-method with triggers.
+Here is a remark about data generation with generate\_series. It is dangerous to use generate\_series on a table using triggers as it really heavies the whole insertion process. But once again, this was just use to check the optimized count-method with triggers.
 Here is how the generation time changes.
 1) On a table with triggers fired on it.
 

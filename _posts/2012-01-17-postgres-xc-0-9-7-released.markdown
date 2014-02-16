@@ -50,4 +50,4 @@ The code is also available on GIT:
 
     git://postgres-xc.git.sourceforge.net/gitroot/postgres-xc/postgres-xc
 
-A new maintenance branch called XC0_9_7_PG9_1 only for 0.9.7.
+A new maintenance branch called XC0\_9\_7\_PG9\_1 only for 0.9.7.

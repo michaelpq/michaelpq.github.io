@@ -36,7 +36,7 @@ In case you installed support for language French, you can have a look at all th
 
 So here, this system supports French from Luxembourg, Belgium, France, Canada and Switzerland.
 
-Here is an easy example of a table suing collated columns. First a local collation based on French is created. Then table is created and filled with data.
+Here is an easy example of a table using collated columns. First a local collation based on French is created. Then table is created and filled with data.
 
     postgres=# create collation fr_FR (locale = 'fr_FR.utf8');
     CREATE COLLATION
@@ -94,6 +94,7 @@ However collation is very useful when doing string comparisons in different lang
     HINT:  Use the COLLATE clause to set the collation explicitly.
 
 But you can enforce the order by the another collation in a kind of cast style.
+
     postgres=# select * from test where french_name < (eng_name collate fr_FR);
      french_name | eng_name 
     -------------+----------

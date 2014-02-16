@@ -32,7 +32,7 @@ You need first the correct folder tree for package creation.
     mkdir $RPMREPO
     cp -r /usr/src/redhat/* $RPMREPO
 
-Then what is necessary is a spec file (Ex: spec_file.spec). It contains all the directives necessary to create the package.
+Then what is necessary is a spec file (Ex: spec\_file.spec). It contains all the directives necessary to create the package.
 You may find examples of spec files in RedHat SVN repositories like the one of [PostgreSQL 9.0 package](http://postgres-xc.git.sourceforge.net/git/gitweb.cgi?p=postgres-xc/pgxcrpm;a=summary).
 With a spec file, you may need a PAM file (Ex: file.pam), containing data like:
 

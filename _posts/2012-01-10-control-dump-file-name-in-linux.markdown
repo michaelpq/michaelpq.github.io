@@ -22,7 +22,6 @@ tags:
 - name
 - ubuntu
 ---
-
 Modifying the format name of dump file in a Linux system can be made with sysctl like this.
 
     sysctl -w kernel.core_pattern=core.%e.%p

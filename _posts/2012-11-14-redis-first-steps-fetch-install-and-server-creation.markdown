@@ -26,7 +26,6 @@ tags:
 - store
 - value
 ---
-
 [Redis](http://redis.io/) is an open source project providing key/value store features in a database server. This means that basically you can store in the database a value that has a given key and then retrieve the value using its key.
 It supports advanced data types like strings, lists (elements sorted by insertion order), sets (unordered collection of elements) and sorted sets (collection of elements ordered by a key given by user). There are also other things supported like hashes or atomic integer incrementation. Feel free to have a look at the [documentation](http://redis.io/documentation) about that.
 
@@ -89,7 +88,7 @@ There is also a template of redis.conf in the root tree of source code.
 All the options of redis.conf can be specified via command line, here are some of them I find pretty useful for beginners.
 
   * --dir $DIR, to specify the directory where database dump file or log files are written to. The default value is "./", so all the files are written in this case in the folder where redis-server is launched. I personally find that not really intuitive but...
-  * --port $PORT_NUMBER, port number where server listens to. Default is 6379.
+  * --port $PORT\_NUMBER, port number where server listens to. Default is 6379.
   * --logfile, name of file where logs are written. Default is stdout. Once again here I recommend using a clear file name combined with --dir to bring clarity to your database servers.
 
 Then, in order to connect to the server, simply use redis-cli (see redis-cli --help for details about the options).
@@ -106,8 +105,8 @@ Then you are ready to operate on your server. Let's do here a simple get/set.
 
 A last thing, I quickly wrote two scripts in case you are interested:
 
-  * redis_compile, script that can be used to compile code, perform tests and do some other tricks
-  * redis_start, script that can be used to set up a Redis cluster with master and slaves
+  * redis\_compile, script that can be used to compile code, perform tests and do some other tricks
+  * redis\_start, script that can be used to set up a Redis cluster with master and slaves
 
 Please note that those scripts do not have the granularity necessary for a use in production and they are only dedicated to development.
 
