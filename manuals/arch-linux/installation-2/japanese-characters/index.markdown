@@ -25,7 +25,7 @@ Everything necessary to set up an environment with Japanese character manipulati
 
 Add a Japanese font.
 
-   pacman -S ttf-sazanami
+    pacman -S ttf-sazanami
 
 Initialize UIM, for example in ~/.xinitrc.
 
