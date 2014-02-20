@@ -1,8 +1,8 @@
 # Michael Paquier, personal blog
 
-This blog relates about many things related to PostgreSQL, and is based
-on Jekyll for performance and facility of deployment. Manuals and pages
-are included as well.
+This blog has content about many things related to PostgreSQL, and is
+based on Jekyll for performance and facility of deployment. Manuals and
+pages are included as well.
 
 ## Installation and deployment
 
@@ -23,10 +23,11 @@ The installation of this blog can be done with the following steps.
 
 ## Licenses
 
-The code building this site (_layouts/, css/, feeds) are under the license
+The code building this site (_layouts/, css/, feeds) is under the license
 specified in LICENSE.
 
 Content materials in content/materials are under the license provided on
 each document.
 
-Blog articles and pages are licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/).
+Blog articles and pages are licensed under [CC BY-SA 3.0]
+(http://creativecommons.org/licenses/by-sa/3.0/).
