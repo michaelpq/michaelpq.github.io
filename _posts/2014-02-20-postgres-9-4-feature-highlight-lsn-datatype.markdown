@@ -33,7 +33,14 @@ tags:
 - content
 - validation
 ---
-In PostgreSQL terminology, an LSN (Log Sequence Number) is a 64-bit integer used to determine a position in [WAL](http://www.postgresql.org/docs/devel/static/wal-intro.html) (Write ahead log), used to preserve data integrity. Internally in code, it is managed as XLogRecPtr, a simple 64-bit integer. An LSN is represented with two hexadecimal numbers of 8 digits each separated with "/". For example, when looking on server what is the current position of WAL, you can do something like that:
+In PostgreSQL terminology, an LSN (Log Sequence Number) is a 64-bit integer
+used to determine a position in
+[WAL](http://www.postgresql.org/docs/devel/static/wal-intro.html) (Write
+ahead log), used to preserve data integrity. Internally in code, it is
+managed as XLogRecPtr, a simple 64-bit integer. An LSN is represented with
+two hexadecimal numbers of 8 digits each separated with "/". For example,
+when looking on server what is the current position of WAL, you can do
+something like that:
 
     =# SELECT pg_current_xlog_location();
      pg_current_xlog_location 
@@ -41,7 +48,17 @@ In PostgreSQL terminology, an LSN (Log Sequence Number) is a 64-bit integer used
      16/3002D50
     (1 row)
 
-The first hexadecimal number corresponds to a block ID, incremented once segments, represented by the second hexadecimal number, are filled. Up to 9.3, all the functions using LSN have been using as a substitute "text" to represent an LSN number, so all the functions using LSN numbers had to transform manual the output into a text before sending back the result to client. 9.4 improves the situation by using a [datatype dedicated to LSN](http://www.postgresql.org/docs/devel/static/datatype-pg-lsn.html), introduced by this commit and called pg_lsn:
+The first hexadecimal number corresponds to a logical xlog file with 256
+segments of 16MB (total of 4096MB), incremented once segments are filled.
+Segments are represented by the second hexadecimal number, as an offset of
+the logical xlog file, and can go up to FFFFFFFF (FF000000 up to 9.3,
+for a maximum of 4080MB for a single logical xlog file). Up to 9.3, all
+the functions using LSN have been using as a substitute "text" to represent
+an LSN number, so all the functions using LSN numbers had to transform
+manual the output into a text before sending back the result to client.
+9.4 improves the situation by using a [datatype dedicated to LSN]
+(http://www.postgresql.org/docs/devel/static/datatype-pg-lsn.html),
+introduced by this commit and called pg_lsn:
 
     commit 7d03a83f4d0736ba869fa6f93973f7623a27038a
     Author: Robert Haas <rhaas@postgresql.org>
@@ -51,7 +68,8 @@ The first hexadecimal number corresponds to a block ID, incremented once segment
 
     Robert Haas and Michael Paquier
 
-This has been completed later on by another patch switching a couple of system functions to use this datatype. Here are the functions:
+This has been completed later on by another patch switching a couple of
+system functions to use this datatype. Here are the functions:
 
   * pg\_start\_backup
   * pg\_stop\_backup
@@ -67,14 +85,20 @@ This has been completed later on by another patch switching a couple of system f
   * pg\_create\_physical\_replication\_slot
   * pg\_get\_replication\_slots
 
-Even if this is actually not backward-compatible, it is thought that this should not have much consequence on user applications. Using a dedicated datatype has as well several advantages:
+Even if this is actually not backward-compatible, it is thought that this
+should not have much consequence on user applications. Using a dedicated
+datatype has as well several advantages:
 
-  * Internal PostgreSQL code (extensions as well, I saw that many times) does not need to manipulate anymore internally XLogRecPtr to change it into an LSN.
-  * Validation of LSN format (2 8-digit hexadecimal numbers separated by "/") is now inside the data type itself.
+  * Internal PostgreSQL code (extensions as well, I saw that many times)
+does not need to manipulate anymore internally XLogRecPtr to change it
+into an LSN.
+  * Validation of LSN format (2 8-digit hexadecimal numbers separated by
+"/") is now inside the data type itself.
   * External utilities can really take advantage of that.
   * Basic operators (=, !=, <, >, <=, >=, -) are included in the data type.
 
-To finish, here are a couple of things doable now when manipulating LSNs, like validation of LSN record format:
+To finish, here are a couple of things doable now when manipulating LSNs,
+like validation of LSN record format:
 
     =# SELECT 'G/0'::pg_lsn;
     ERROR:  22P02: invalid input syntax for type pg_lsn: "G/0"
@@ -95,7 +119,11 @@ Or some simple arithmetic operations:
      f
     (1 row)
 
-The operator "-" reduces the interest of pg\_xlog\_location\_diff, but it needs to be kept for backward compatibility purposes (actually what this does now is only calling pg_lsn_mi, the function of type pg_lsn called behind operator "-"). Also, when using "-", the difference in bytes between two LSN positions is calculated:
+The operator "-" reduces the interest of pg\_xlog\_location\_diff, but it
+needs to be kept for backward compatibility purposes (actually what this
+does now is only calling pg\_lsn\_mi, the function of type pg_lsn called behind
+operator "-"). Also, when using "-", the difference in bytes between two LSN
+positions is calculated:
 
     =# \dfS+ pg_lsn_mi
     List of functions
@@ -119,4 +147,5 @@ The operator "-" reduces the interest of pg\_xlog\_location\_diff, but it needs 
      12896
     (1 row)
 
-This is going to make the code of some tools, like recovery/backup things, much more simplified...
+This is going to make the code of some tools, like recovery/backup things,
+much more simplified...
