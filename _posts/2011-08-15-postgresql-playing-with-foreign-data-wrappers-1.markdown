@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgresql-playing-with-foreign-data-wrappers-1
 title: 'PostgreSQL: playing with foreign data wrappers (1)'
-wordpress_id: 463
 categories:
 - PostgreSQL-2
 tags:

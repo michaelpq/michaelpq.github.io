@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: text-search-with-a-commonly-known-book
 title: 'Text search with a commonly-known book'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

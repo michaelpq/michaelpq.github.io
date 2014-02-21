@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: reduce-cost-of-select-count-queries-with-trigger-based-method
 title: Reduce cost of select count(*) queries with trigger-based method
-wordpress_id: 512
 categories:
 - PostgreSQL-2
 tags:

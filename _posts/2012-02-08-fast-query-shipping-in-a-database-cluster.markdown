@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: fast-query-shipping-in-a-database-cluster
 title: Fast query shipping in a database cluster
-wordpress_id: 748
 categories:
 - PostgreSQL-2
 tags:

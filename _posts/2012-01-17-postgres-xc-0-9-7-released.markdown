@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-0-9-7-released
 title: Postgres-XC 0.9.7 released
-wordpress_id: 737
 categories:
 - PostgreSQL-2
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-watch-in-psql
 title: 'Postgres 9.3 feature highlight: \watch in psql'
-wordpress_id: 1870
 categories:
 - PostgreSQL-2
 tags:

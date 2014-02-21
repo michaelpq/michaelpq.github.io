@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: essential-applications-for-macos-lion
 title: Essential applications for MacOS Lion
-wordpress_id: 686
 categories:
 - MacOS
 tags:

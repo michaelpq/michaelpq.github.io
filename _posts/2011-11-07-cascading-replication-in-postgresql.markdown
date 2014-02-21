@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: cascading-replication-in-postgresql
 title: Cascading replication in PostgreSQL
-wordpress_id: 614
 categories:
 - PostgreSQL-2
 tags:

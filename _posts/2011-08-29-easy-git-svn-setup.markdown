@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: easy-git-svn-setup
 title: Easy GIT svn setup
-wordpress_id: 473
 categories:
 - Linux-2
 tags:

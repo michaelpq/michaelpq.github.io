@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-writable-foreign-tables
 title: 'Postgres 9.3 feature highlight: writable foreign tables'
-wordpress_id: 1747
 categories:
 - PostgreSQL-2
 tags:

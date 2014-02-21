@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: about-regression-tests-for-postgres-xc-pg_regress
 title: 'About regression tests for Postgres-XC: pg_regress'
-wordpress_id: 275
 categories:
 - PostgreSQL-2
 tags:

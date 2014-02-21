@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-be-aware-of-behavior-modification-for-set-and-abortrollback
 title: 'Postgres 9.4: Be aware of behavior modification for SET and ABORT/ROLLBACK'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

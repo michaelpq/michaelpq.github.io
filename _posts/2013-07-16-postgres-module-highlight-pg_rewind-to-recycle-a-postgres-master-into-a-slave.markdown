@@ -8,7 +8,6 @@ type: post
 slug: postgres-module-highlight-pg_rewind-to-recycle-a-postgres-master-into-a-slave
 title: 'Postgres module highlight: pg_rewind, to quickly recycle a Postgres master
   into a slave'
-wordpress_id: 2067
 categories:
 - PostgreSQL-2
 tags:

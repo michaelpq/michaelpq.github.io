@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-2-highlight-json-data-type
 title: 'Postgres 9.2 highlight: JSON data type'
-wordpress_id: 1347
 categories:
 - PostgreSQL-2
 tags:

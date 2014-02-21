@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-custom-background-workers
 title: 'Postgres 9.3 feature highlight: custom background workers'
-wordpress_id: 1572
 categories:
 - PostgreSQL-2
 tags:

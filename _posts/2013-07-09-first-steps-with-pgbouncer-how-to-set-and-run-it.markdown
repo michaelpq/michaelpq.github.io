@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: first-steps-with-pgbouncer-how-to-set-and-run-it
 title: 'First steps with pgbouncer, how to set and run it '
-wordpress_id: 2015
 categories:
 - PostgreSQL-2
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-feature-highlight-delayed-standbys
 title: 'Postgres 9.4 feature highlight: delayed standbys'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

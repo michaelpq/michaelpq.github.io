@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-0-9-4-manual-and-tar-available
 title: Postgres-XC 0.9.4 manual and tar available
-wordpress_id: 308
 categories:
 - PostgreSQL-2
 tags:

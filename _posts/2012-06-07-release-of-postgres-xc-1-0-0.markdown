@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: release-of-postgres-xc-1-0-0
 title: Release of Postgres-XC 1.0.0
-wordpress_id: 1033
 categories:
 - PostgreSQL-2
 tags:

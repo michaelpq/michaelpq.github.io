@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: serial-types-implemented-in-postgres-xc
 title: SERIAL types implemented in Postgres-XC
-wordpress_id: 773
 categories:
 - PostgreSQL-2
 tags:

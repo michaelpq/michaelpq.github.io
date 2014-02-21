@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-settings-simple-syslog-configuration-with-syslog-ng
 title: 'Postgres settings: simple syslog configuration with syslog-ng'
-wordpress_id: 1740
 categories:
 - PostgreSQL-2
 tags:

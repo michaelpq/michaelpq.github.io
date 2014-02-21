@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: rpm-building
 title: RPM building
-wordpress_id: 482
 categories:
 - Linux-2
 tags:

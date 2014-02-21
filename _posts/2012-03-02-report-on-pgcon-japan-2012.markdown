@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: report-on-pgcon-japan-2012
 title: Report on PgCon Japan 2012
-wordpress_id: 817
 categories:
 - PostgreSQL-2
 tags:

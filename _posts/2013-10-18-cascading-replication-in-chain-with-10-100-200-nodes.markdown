@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: cascading-replication-in-chain-with-10-100-200-nodes
 title: 'Cascading replication in chain with 10, 100, 200 nodes?'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

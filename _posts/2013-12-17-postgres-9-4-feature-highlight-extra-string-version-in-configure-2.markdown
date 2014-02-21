@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-feature-highlight-extra-string-version-in-configure-2
 title: 'Postgres 9.4 feature highlight: extra string version in configure'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: manipulating-arrays-in-postgresql
 title: Manipulating arrays in PostgreSQL
-wordpress_id: 559
 categories:
 - PostgreSQL-2
 tags:

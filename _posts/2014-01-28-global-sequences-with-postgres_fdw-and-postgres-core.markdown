@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: global-sequences-with-postgres_fdw-and-postgres-core
 title: 'Global sequences with postgres_fdw and Postgres core'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-tutorial-at-pgcon-2012-what-do-you-want-to-see
 title: 'Postgres-XC tutorial at PGCon 2012: What do YOU want to see?'
-wordpress_id: 949
 categories:
 - PostgreSQL-2
 tags:

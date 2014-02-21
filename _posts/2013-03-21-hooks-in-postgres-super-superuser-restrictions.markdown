@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: hooks-in-postgres-super-superuser-restrictions
 title: 'Hooks in Postgres: super-superuser restrictions'
-wordpress_id: 1761
 categories:
 - PostgreSQL-2
 tags:

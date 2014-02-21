@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: mute-login-sound-in-macosx-lion
 title: Mute login sound in MacOSX Lion
-wordpress_id: 704
 categories:
 - MacOS
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-copy-freeze
 title: 'Postgres 9.3 feature highlight: COPY FREEZE'
-wordpress_id: 1602
 categories:
 - PostgreSQL-2
 tags:

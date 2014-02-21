@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: new-replication-features-of-vfabric-postgres-9-2-4
 title: New replication features of vFabric Postgres 9.2.4
-wordpress_id: 1914
 categories:
 - vmware
 tags:

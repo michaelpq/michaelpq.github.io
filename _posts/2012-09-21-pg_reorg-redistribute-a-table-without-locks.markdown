@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: pg_reorg-redistribute-a-table-without-locks
 title: pg_reorg, reorganize a table without locks
-wordpress_id: 1315
 categories:
 - PostgreSQL-2
 tags:

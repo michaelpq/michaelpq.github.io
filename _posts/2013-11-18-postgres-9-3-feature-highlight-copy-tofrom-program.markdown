@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-copy-tofrom-program
 title: 'Postgres 9.3 feature highlight: COPY TO/FROM PROGRAM'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

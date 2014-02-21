@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: create-table-as-and-select-into-in-postgres-xc
 title: CREATE TABLE AS and SELECT INTO in Postgres-XC
-wordpress_id: 696
 categories:
 - PostgreSQL-2
 tags:

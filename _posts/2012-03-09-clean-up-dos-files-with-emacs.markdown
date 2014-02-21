@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: clean-up-dos-files-with-emacs
 title: Clean up dos files with emacs
-wordpress_id: 850
 categories:
 - Linux-2
 tags:

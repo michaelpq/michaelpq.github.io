@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: measuring-cascading-replication-lag-in-postgres
 title: 'Measuring cascading replication lag in Postgres'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

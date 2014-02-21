@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: group-and-user-manipulation-in-linux-add-remove-and-modify
 title: 'Group and user manipulation in Linux: Add, remove and modify'
-wordpress_id: 215
 categories:
 - Linux-2
 tags:

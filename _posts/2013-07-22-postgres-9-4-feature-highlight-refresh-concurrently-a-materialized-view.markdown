@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-feature-highlight-refresh-concurrently-a-materialized-view
 title: 'Postgres 9.4 feature highlight: REFRESH CONCURRENTLY a materialized view'
-wordpress_id: 2097
 categories:
 - PostgreSQL-2
 tags:

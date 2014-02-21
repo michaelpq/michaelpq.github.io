@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: solve-key-input-issues-with-minecraft-on-linux
 title: Solve key-input issues with minecraft on Linux
-wordpress_id: 650
 categories:
 - Linux-2
 - Minecraft

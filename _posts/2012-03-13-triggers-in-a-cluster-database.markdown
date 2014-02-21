@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: triggers-in-a-cluster-database
 title: Triggers in a cluster database
-wordpress_id: 852
 categories:
 - PostgreSQL-2
 tags:

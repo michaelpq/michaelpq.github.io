@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: rules-in-postgres-xc
 title: Rules in Postgres-XC
-wordpress_id: 968
 categories:
 - PostgreSQL-2
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: collation-in-postgresql-9-1
 title: Collation in PostgreSQL 9.1
-wordpress_id: 639
 categories:
 - PostgreSQL-2
 tags:

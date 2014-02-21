@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: clean-up-a-git-branch-with-consistent-user-name-and-email-in-commit
 title: Clean up a GIT branch with consistent user name and email in commit
-wordpress_id: 517
 categories:
 - Linux-2
 tags:

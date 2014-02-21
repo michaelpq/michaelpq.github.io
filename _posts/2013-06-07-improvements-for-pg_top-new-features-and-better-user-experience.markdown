@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: improvements-for-pg_top-new-features-and-better-user-experience
 title: 'Improvements for pg_top: new features and better user experience'
-wordpress_id: 1960
 categories:
 - PostgreSQL-2
 tags:

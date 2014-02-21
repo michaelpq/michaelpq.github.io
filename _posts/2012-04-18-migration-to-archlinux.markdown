@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: migration-to-archlinux
 title: Migration to ArchLinux
-wordpress_id: 946
 categories:
 - Linux-2
 tags:

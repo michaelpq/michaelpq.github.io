@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-dev-create-your-own-rpm-packages
 title: 'Postgres dev: create your own RPM packages'
-wordpress_id: 1973
 categories:
 - PostgreSQL-2
 tags:

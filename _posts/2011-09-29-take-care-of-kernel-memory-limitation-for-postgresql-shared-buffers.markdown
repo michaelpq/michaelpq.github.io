@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: take-care-of-kernel-memory-limitation-for-postgresql-shared-buffers
 title: Take care of kernel memory limitation for postgresql shared buffers
-wordpress_id: 526
 categories:
 - PostgreSQL-2
 tags:

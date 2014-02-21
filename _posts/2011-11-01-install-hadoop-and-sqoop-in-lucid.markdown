@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: install-hadoop-and-sqoop-in-lucid
 title: Install Hadoop and Sqoop in Lucid
-wordpress_id: 607
 categories:
 - Linux-2
 tags:

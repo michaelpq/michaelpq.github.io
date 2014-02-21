@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: joining-vmware-and-moving-on-to-new-adventures
 title: Joining VMWare and moving on to new adventures with Postgres
-wordpress_id: 1482
 categories:
 - work
 tags:

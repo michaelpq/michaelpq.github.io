@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes
 title: 'Postgres 9.1: Setup a synchronous stand-by server in 5 minutes'
-wordpress_id: 329
 categories:
 - PostgreSQL-2
 tags:

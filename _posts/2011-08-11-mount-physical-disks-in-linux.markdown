@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: mount-physical-disks-in-linux
 title: Mount physical disks in Linux
-wordpress_id: 455
 categories:
 - Linux-2
 tags:

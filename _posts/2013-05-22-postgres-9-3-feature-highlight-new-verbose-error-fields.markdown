@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-new-verbose-error-fields
 title: 'Postgres 9.3 feature highlight: new verbose error fields'
-wordpress_id: 1904
 categories:
 - PostgreSQL-2
 tags:

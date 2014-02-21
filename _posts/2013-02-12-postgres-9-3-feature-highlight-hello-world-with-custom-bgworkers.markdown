@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-hello-world-with-custom-bgworkers
 title: 'Postgres 9.3 feature highlight: "Hello World" with custom bgworkers'
-wordpress_id: 1647
 categories:
 - PostgreSQL-2
 tags:

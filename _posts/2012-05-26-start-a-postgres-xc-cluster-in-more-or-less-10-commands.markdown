@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: start-a-postgres-xc-cluster-in-more-or-less-10-commands
 title: Start a Postgres-XC cluster in (more or less) 10 commands
-wordpress_id: 1011
 categories:
 - PostgreSQL-2
 tags:

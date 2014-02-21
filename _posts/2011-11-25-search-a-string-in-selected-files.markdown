@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: search-a-string-in-selected-files
 title: Search a string in selected files
-wordpress_id: 647
 categories:
 - Linux-2
 tags:

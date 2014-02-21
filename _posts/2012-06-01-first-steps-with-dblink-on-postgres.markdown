@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: first-steps-with-dblink-on-postgres
 title: First steps with dblink on Postgres
-wordpress_id: 1023
 categories:
 - PostgreSQL-2
 tags:

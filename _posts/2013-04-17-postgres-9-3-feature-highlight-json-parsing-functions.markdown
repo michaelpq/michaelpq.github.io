@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-json-parsing-functions
 title: 'Postgres 9.3 feature highlight: JSON parsing functions'
-wordpress_id: 1836
 categories:
 - PostgreSQL-2
 tags:

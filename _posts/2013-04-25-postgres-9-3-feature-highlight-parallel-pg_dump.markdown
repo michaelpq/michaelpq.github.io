@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-parallel-pg_dump
 title: 'Postgres 9.3 feature highlight: parallel pg_dump'
-wordpress_id: 1849
 categories:
 - PostgreSQL-2
 tags:

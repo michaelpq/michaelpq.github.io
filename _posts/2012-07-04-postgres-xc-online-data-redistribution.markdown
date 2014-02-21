@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-online-data-redistribution
 title: 'Postgres-XC: online data redistribution'
-wordpress_id: 1058
 categories:
 - PostgreSQL-2
 tags:

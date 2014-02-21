@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: about-regression-tests-with-postgres-plug-in-modules
 title: 'About regression tests with Postgres plug-in modules'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

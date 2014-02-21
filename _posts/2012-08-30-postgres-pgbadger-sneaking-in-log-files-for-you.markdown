@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-pgbadger-sneaking-in-log-files-for-you
 title: 'Postgres: pgbadger sneaking in log files for you'
-wordpress_id: 1268
 categories:
 - PostgreSQL-2
 tags:

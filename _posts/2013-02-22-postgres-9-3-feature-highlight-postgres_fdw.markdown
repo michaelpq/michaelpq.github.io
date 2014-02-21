@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-postgres_fdw
 title: 'Postgres 9.3 feature highlight: postgres_fdw'
-wordpress_id: 1678
 categories:
 - PostgreSQL-2
 tags:

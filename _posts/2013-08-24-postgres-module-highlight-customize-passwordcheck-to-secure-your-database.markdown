@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-module-highlight-customize-passwordcheck-to-secure-your-database
 title: 'Postgres module highlight: customize passwordcheck to secure your database'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

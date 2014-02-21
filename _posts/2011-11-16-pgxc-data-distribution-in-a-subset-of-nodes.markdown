@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: pgxc-data-distribution-in-a-subset-of-nodes
 title: 'PGXC: data distribution in a subset of nodes'
-wordpress_id: 632
 categories:
 - PostgreSQL-2
 tags:

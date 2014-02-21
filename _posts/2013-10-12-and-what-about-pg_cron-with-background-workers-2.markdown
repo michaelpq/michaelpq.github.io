@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: and-what-about-pg_cron-with-background-workers-2
 title: 'And what about pg_cron with background workers?'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

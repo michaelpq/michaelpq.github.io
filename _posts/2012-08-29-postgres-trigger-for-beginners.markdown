@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-trigger-for-beginners
 title: 'Postgres: TRIGGER for beginners'
-wordpress_id: 1249
 categories:
 - PostgreSQL-2
 tags:

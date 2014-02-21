@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-devel-some-psql-tricks
 title: 'Postgres devel: some psql tricks'
-wordpress_id: 1993
 categories:
 - PostgreSQL-2
 tags:

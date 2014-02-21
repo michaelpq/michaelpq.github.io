@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-feature-highlight-wal_log_hints-for-consistent-relation-page-tracking
 title: 'Postgres 9.4 feature highlight: wal_log_hints for consistent relation page tracking in WAL'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

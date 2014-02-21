@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: playing-with-large-objects-in-postgres
 title: 'Playing with large objects in Postgres'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

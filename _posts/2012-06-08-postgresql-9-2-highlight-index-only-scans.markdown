@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgresql-9-2-highlight-index-only-scans
 title: 'PostgreSQL 9.2 highlight: Index-only scans'
-wordpress_id: 1036
 categories:
 - PostgreSQL-2
 tags:

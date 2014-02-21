@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: clean-install-of-macos-lion-and-mountain-lion
 title: Clean install of MacOS Lion and Mountain Lion
-wordpress_id: 1151
 categories:
 - MacOS
 tags:

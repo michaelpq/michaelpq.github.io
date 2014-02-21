@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: redis-first-steps-fetch-install-and-server-creation
 title: 'Redis: first steps, code fetch, install and server creation'
-wordpress_id: 1443
 categories:
 - redis
 tags:

@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-1-0beta1-released
 title: Postgres-XC 1.0beta1 released
-wordpress_id: 909
 categories:
 - PostgreSQL-2
 tags:

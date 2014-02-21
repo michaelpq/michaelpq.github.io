@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: looking-at-the-roots-of-postgres-configure-processing
 title: 'Looking at the roots of Postgres: configure processing'
-wordpress_id: 1882
 categories:
 - PostgreSQL-2
 tags:

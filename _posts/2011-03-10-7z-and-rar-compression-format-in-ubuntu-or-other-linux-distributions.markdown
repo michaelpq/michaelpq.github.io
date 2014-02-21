@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: 7z-and-rar-compression-format-in-ubuntu-or-other-linux-distributions
 title: 7z and rar compression format in Ubuntu or other Linux distributions
-wordpress_id: 233
 categories:
 - Linux-2
 tags:

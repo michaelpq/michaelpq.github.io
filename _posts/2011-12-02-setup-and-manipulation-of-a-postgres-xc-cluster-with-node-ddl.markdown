@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: setup-and-manipulation-of-a-postgres-xc-cluster-with-node-ddl
 title: Setup and manipulation of a Postgres-XC cluster with node DDL
-wordpress_id: 660
 categories:
 - PostgreSQL-2
 tags:

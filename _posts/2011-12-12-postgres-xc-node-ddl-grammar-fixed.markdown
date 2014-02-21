@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-xc-node-ddl-grammar-fixed
 title: 'Postgres-XC: Node DDL grammar fixed'
-wordpress_id: 674
 categories:
 - PostgreSQL-2
 tags:

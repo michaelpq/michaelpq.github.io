@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: code-evolution-between-postgres-9-1-and-9-2
 title: Code evolution between Postgres 9.1 and 9.2
-wordpress_id: 1081
 categories:
 - PostgreSQL-2
 tags:

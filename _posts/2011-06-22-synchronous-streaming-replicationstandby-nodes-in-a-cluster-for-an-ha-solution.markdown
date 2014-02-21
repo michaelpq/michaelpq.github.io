@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: synchronous-streaming-replicationstandby-nodes-in-a-cluster-for-an-ha-solution
 title: Synchronous streaming replication/Standby nodes in a cluster for an HA solution
-wordpress_id: 419
 categories:
 - PostgreSQL-2
 tags:

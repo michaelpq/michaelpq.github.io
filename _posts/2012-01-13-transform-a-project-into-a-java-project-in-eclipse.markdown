@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: transform-a-project-into-a-java-project-in-eclipse
 title: Transform a project into a java project in eclipse
-wordpress_id: 715
 categories:
 - Java
 tags:

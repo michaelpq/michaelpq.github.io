@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: pgcon-2011-days-23-conference-and-presentations
 title: 'PGCon 2011 days 2&3: conference and presentations'
-wordpress_id: 371
 categories:
 - PostgreSQL-2
 tags:

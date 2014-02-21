@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: cluster-node-ddl-support-in-postgres-xc
 title: Cluster node DDL support in Postgres-XC
-wordpress_id: 591
 categories:
 - PostgreSQL-2
 tags:

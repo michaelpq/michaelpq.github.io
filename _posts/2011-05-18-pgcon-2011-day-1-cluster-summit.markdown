@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: pgcon-2011-day-1-cluster-summit
 title: 'PGCon 2011, Day 1: Cluster summit'
-wordpress_id: 319
 categories:
 - PostgreSQL-2
 tags:

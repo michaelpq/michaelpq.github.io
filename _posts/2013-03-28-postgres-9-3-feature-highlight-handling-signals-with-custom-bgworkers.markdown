@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-handling-signals-with-custom-bgworkers
 title: 'Postgres 9.3 feature highlight: handling signals with custom bgworkers'
-wordpress_id: 1787
 categories:
 - PostgreSQL-2
 tags:

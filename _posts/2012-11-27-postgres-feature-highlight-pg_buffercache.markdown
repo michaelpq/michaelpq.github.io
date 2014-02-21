@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-feature-highlight-pg_buffercache
 title: 'Postgres feature highlight: pg_buffercache'
-wordpress_id: 1453
 categories:
 - PostgreSQL-2
 tags:

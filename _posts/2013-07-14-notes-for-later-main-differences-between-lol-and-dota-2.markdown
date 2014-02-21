@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: notes-for-later-main-differences-between-lol-and-dota-2
 title: 'Notes for later: main differences between LOL and Dota 2'
-wordpress_id: 2059
 categories:
 - Games
 tags:

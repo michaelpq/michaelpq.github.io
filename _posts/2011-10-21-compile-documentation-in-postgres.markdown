@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: compile-documentation-in-postgres
 title: Compile documentation in postgres
-wordpress_id: 578
 categories:
 - PostgreSQL-2
 tags:

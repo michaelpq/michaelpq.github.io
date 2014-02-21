@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-4-feature-highlight-multi-argument-unnest-and-table-for-multiple-functions
 title: 'Postgres 9.4 feature highlight: TABLE for multiple functions and multi-argument unnest()'
-wordpress_id: 2006
 categories:
 - PostgreSQL-2
 tags:

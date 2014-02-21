@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-3-feature-highlight-materialized-views
 title: 'Postgres 9.3 feature highlight: Materialized views'
-wordpress_id: 1721
 categories:
 - PostgreSQL-2
 tags:

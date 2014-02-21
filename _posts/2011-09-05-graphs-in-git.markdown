@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: graphs-in-git
 title: Graphs in GIT
-wordpress_id: 481
 categories:
 - Linux-2
 tags:

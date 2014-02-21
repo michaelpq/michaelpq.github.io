@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-feature-highlight-hstore
 title: 'Postgres feature highlight: hstore'
-wordpress_id: 1399
 categories:
 - PostgreSQL-2
 tags:

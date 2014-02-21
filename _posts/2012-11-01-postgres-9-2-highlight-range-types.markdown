@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: postgres-9-2-highlight-range-types
 title: 'Postgres 9.2 highlight: range types'
-wordpress_id: 1409
 categories:
 - PostgreSQL-2
 tags:

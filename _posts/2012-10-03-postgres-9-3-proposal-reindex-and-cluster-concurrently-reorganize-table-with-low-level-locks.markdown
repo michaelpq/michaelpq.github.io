@@ -8,7 +8,6 @@ type: post
 slug: postgres-9-3-proposal-reindex-and-cluster-concurrently-reorganize-table-with-low-level-locks
 title: 'Postgres 9.3 proposal: REINDEX and CLUSTER CONCURRENTLY, reorganize table
   with low-level locks?'
-wordpress_id: 1330
 categories:
 - PostgreSQL-2
 tags:

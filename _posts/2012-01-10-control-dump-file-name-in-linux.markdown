@@ -7,7 +7,6 @@ layout: post
 type: post
 slug: control-dump-file-name-in-linux
 title: Control dump file name in Linux
-wordpress_id: 710
 categories:
 - Linux-2
 tags:
