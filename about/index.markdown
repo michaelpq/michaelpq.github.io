@@ -38,3 +38,5 @@ The code of this blog is maintained on [github](https://github.com/michaelpq/mic
 so if you have any comments or if you want to provide any corrections
 that could benefit other viewers, don't hesitate to send patches or
 report issues [there](https://github.com/michaelpq/michaelpq.github.io).
+
+Bitcoin wallet address: 1HFRvuQdwVuJZkjE3go9CWhCpgstMe8JXT
