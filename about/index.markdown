@@ -39,4 +39,7 @@ so if you have any comments or if you want to provide any corrections
 that could benefit other viewers, don't hesitate to send patches or
 report issues [there](https://github.com/michaelpq/michaelpq.github.io).
 
+This site uses no ads. There is as well no tracking of any information,
+no hidden logging process, and no statistics gatherer.
+
 Bitcoin wallet address: 1HFRvuQdwVuJZkjE3go9CWhCpgstMe8JXT
