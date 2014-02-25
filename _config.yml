@@ -8,3 +8,6 @@ pygments: true
 permalink: /:categories/:title/
 paginate: 10
 paginate_path: page:num
+tag_title_prefix: 'Posts tagged as &ldquo;'
+tag_title_suffix: '&ldquo;'
+tag_dir: 'tag'

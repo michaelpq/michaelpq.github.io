@@ -48,7 +48,7 @@
    <div class="colleft">
       <div class="col1">
         <!-- Print content in presence of a post -->
-        {% if page.type == 'post' or page.type == 'page' or page.type == 'error' %}
+        {% if page.type == 'post' or page.type == 'page' or page.type == 'error' or page.type == 'tag' %}
           {{ content }}
         {% else %}
           <!-- This loops through the paginated posts -->
