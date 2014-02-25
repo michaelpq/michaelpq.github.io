@@ -21,6 +21,19 @@ The installation of this blog can be done with the following steps.
 
     jekyll serve
 
+## Branch model
+
+As this blog contains some plugins, for tag generation for example, and
+because Github pages use --safe with Jekyll, disabling the use of plugins,
+the following branch model is used:
+
+  * master, with only static content generated previously. This is
+published live on site.
+  * dynamic, where actually occur the development
+
+Content in master branch should be generated from branch dynamic with
+Jekyll.
+
 ## Licenses
 
 The code building this site (_layouts/, css/, feeds) is under the license
