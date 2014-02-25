@@ -6,4 +6,17 @@ layout: default
 
 <div class="post">
 {{ content }}
+
+<!-- List tags at the bottom of post -->
+<p class="meta">
+Tags:
+{% for tag in page.tags %}
+  <!-- Do not use a comma only for last tag -->
+  {% if forloop.last == false %}
+    <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>,
+  {% else %}
+    <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>
+  {% endif %}
+{% endfor %}
+</p>
 </div>
