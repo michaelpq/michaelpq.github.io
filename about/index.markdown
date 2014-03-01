@@ -29,7 +29,7 @@ acting as a contributor of the [PostgreSQL](http://postgresql.org/) and
 involved in its community for a couple of years now. Main areas of focus
 are replication with for example technologies of the type multi-master
 (as a committer of [Postgres-XC]
-(http://sourceforge.net/apps/mediawiki/postgres-xc/index.php?title=Main_Page),
+(http://sourceforge.net/apps/mediawiki/postgres-xc/index.php?title=Main_Page)),
 concurrent DDLs, parallel query processing, and many other things like
 as well HA and recovery/backup.
 
