@@ -33,6 +33,7 @@ Personal information
 
   * Location: Tokyo, Japan
   * Nationality: French
+  * Contact: michael at otacoo dot com
 
 Work area
 ---------
