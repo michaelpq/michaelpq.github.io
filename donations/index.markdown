@@ -17,6 +17,7 @@ tags:
 - job
 - litecoin
 - bitcoin
+- peercoin
 - donation
 - inquiry
 - contribution
@@ -31,5 +32,6 @@ To donate to the author of this blog, use one of the following options:
 
   * Bitcoin wallet address: 1HFRvuQdwVuJZkjE3go9CWhCpgstMe8JXT
   * Litecoin wallet address: La2EWbjVNC32mdtA16UtaygVGgmERQ6kk8
+  * Peercoin wallet address: PQFsctSUexu8n9y8LAtsn97HwZHi6QEQjF
 
 Thanks for your contributions!
