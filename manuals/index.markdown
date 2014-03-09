@@ -20,6 +20,7 @@ The following sub-sections are available from here:
 
   * [Archlinux](/manuals/arch-linux/)
   * [ESX and vSphere](/manuals/esx-and-vsphere/)
+  * [Cryptocurrency](/manuals/cryptocurrency/)
   * [GDB](/manuals/gdb-manual/)
   * [Git](/manuals/git-manual/)
   * [Jenkins](/manuals/jenkins/)
