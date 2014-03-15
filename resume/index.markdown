@@ -57,13 +57,6 @@ Professional experience
   * PostgreSQL module developer
   * Postgres-XC committer
 
-### January 2009-December 2012
-
-  * **NTT Data Intellilink**, Tokyo, Japan
-  * Solutions teams, Open Source solution division
-  * Packaging of solutions based on Open Source Softwares (mainly DB)
-  * Community-based work and support of PostgreSQL and Postgres-XC.
-
 ### October 2010-Now
 
   * **Otacoo.com**
@@ -73,6 +66,13 @@ Professional experience
    * Game wiki (Monster Hunter Portable 3rd)
    * Personal blog and some other DB/appli utilities
    * 30,000 pages views/month
+
+### January 2009-December 2012
+
+  * **NTT Data Intellilink**, Tokyo, Japan
+  * Solutions teams, Open Source solution division
+  * Packaging of solutions based on Open Source Softwares (mainly DB)
+  * Community-based work and support of PostgreSQL and Postgres-XC.
 
 ### Mars 2008-Aout 2008
 
