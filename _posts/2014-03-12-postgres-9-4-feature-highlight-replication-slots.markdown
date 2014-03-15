@@ -145,12 +145,26 @@ note however that it is not possible to drop an active slot:
     ERROR:  55006: replication slot "slot_1" is already active
     LOCATION:  ReplicationSlotAcquire, slot.c:339
 
-A last thing, do not finish like that:
+A last thing, do not finish like that, where the slot is still seen as
+active from the master, and pg_xlog continues to grow in size (if the
+slot is not active, you could directly drop the slot to free up pg_xlog
+space):
 
     $ psql -c 'SELECT slot_name, active, restart_lsn FROM pg_replication_slots'
      slot_name | active | restart_lsn 
     -----------+--------+-------------
-     slot_1    | f      | 0/4000278
+     slot_1    | t      | 0/4000278
     (1 row)
     $ du -h $PGDATA/pg_xlog | tail -n 1 | cut -f 1
     17.8G
+
+This situation could actually be faced when the standby has failed and its
+walsender is down for whatever reason. Accelerating this failure detection
+is doable by doing the following:
+
+  1. setting wal\_sender\_timeout to a low value
+  2. reload server parameters
+  3. call pg\_drop\_replication_slot('slot_1')
+
+You might as well use tcp_keepalive settings on the master to detect quickly
+a failure connection with the walsender.
