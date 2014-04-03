@@ -24,7 +24,7 @@ of a server, or a process. This is useful to find the bottlenecks of
 a query processing or simply of a server running and improve those.
 
 It is usually found in the package "perf", at least it is the case
-of RHEL, CentOS and ArchLinux
+of RHEL, CentOS and ArchLinux.
 
 /proc/sys/kernel/perf\_event\_paranoid can be used to restrict access
 to the performance counters.
