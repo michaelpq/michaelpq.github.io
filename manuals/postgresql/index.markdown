@@ -22,5 +22,6 @@ The following sections are available from here:
   * [Hardware](/manuals/postgresql/hardware/)
   * [Maintenance](/manuals/postgresql/maintenance/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
+  * [Profiling with perf](/manuals/postgresql/perf/)
   * [Settings](/manuals/postgresql/settings/)
   * [Useful queries](/manuals/postgresql/useful-queries/)
