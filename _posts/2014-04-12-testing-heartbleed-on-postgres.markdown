@@ -51,9 +51,10 @@ further processing.
 
 Taking that into account, an example of script usable to test Heartbleed
 vulnerability on a Postgres server can be found [here]
-(https://gist.github.com/hlinnaka/10458000), written by my colleague
-Heikki Linnakangas. Particularly, note this portion of the code to
-handle the PostgreSQL custom protocol:
+(https://gist.github.com/hlinnaka/10458000), extended by my colleague
+Heikki Linnakangas and forked from [here](https://gist.github.com/sh1n0b1/10100394).
+Particularly, note this portion of the code to handle the PostgreSQL custom
+protocol:
 
     sslrequest = h2bin('''
     00 00 00 08 04 D2 16 2F
