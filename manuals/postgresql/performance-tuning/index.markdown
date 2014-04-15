@@ -68,3 +68,19 @@ If autovacuum is slowing down the system, increase autovacuum\_vacuum\_cost\_lim
 ### 6. Analyze
 
 Analyze collects statistics on the data to help the planner choose a good plan. This is done automatically as a part of autovacuum. You should always do it manually after substantial database changes (loads, etc.), and also do it as part of any VACUUM process done manually.
+
+### 7. I/O scheduler
+
+The Linux kernel comes up with a set of scheduler that can be used to
+alleviate the I/O behavior on disks and partitions.
+
+  * noop, fine with SSDs, but can kill local disks on no-reordering
+of writes. Has more effects for sequential I/O writes like WAL flush
+by having pg_xlog on a different partition for example.
+  * deadline, great for Postgres but interactive workloads are impacted
+by it.
+  * cfq, a good balance for everything, and it is the default on Linux.
+
+It is usually better to stick with the default scheduler except when
+trying to solve a specific issue, also everything else than cfq would
+perform badly on non-enterprise class storages (SAN).
