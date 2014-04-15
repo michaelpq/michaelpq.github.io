@@ -14,13 +14,15 @@ tags:
 - advanced
 - relational
 - menu
+- debugging
 ---
 The following sections are available from here:
 
   * [Buildfarm](/manuals/postgresql/buildfarm/)
-  * [Parse configuration files](/manuals/postgresql/parse-config-files/)
+  * [Debugging](/manuals/postgresql/debugging/)
   * [Hardware](/manuals/postgresql/hardware/)
   * [Maintenance](/manuals/postgresql/maintenance/)
+  * [Parse configuration files](/manuals/postgresql/parse-config-files/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
   * [Profiling with perf](/manuals/postgresql/perf/)
   * [Settings](/manuals/postgresql/settings/)
