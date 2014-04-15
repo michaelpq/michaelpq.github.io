@@ -30,7 +30,8 @@ Here are a couple of tips to boost the performance of a PostgreSQL database serv
 ### 1. What to avoid
 
   * Do not run anything besides PostgreSQL on the host
-  * If PostgreSQL is in a VM, remember all of the other VMs on the same host
+  * If PostgreSQL is in a VM, remember all of the other VMs on the same
+host
   * Disable the Linux OOM killer
   * Sessions in the database
   * Constantly-updated accumulator records
@@ -43,17 +44,27 @@ Here are a couple of tips to boost the performance of a PostgreSQL database serv
 
 ### 2. Some general tricks
 
-If one model has a constantly updated section and a rarely updated section (like a user record with a name and a last-seen-on-site field), split those 2 into 2 tables. This allows to the lock taken at tuple level and reinforces the read on the second field. The tuple of the field read a lot might be locked a lot die to the other field being continuously updated so you can really improve performance here.
+If one model has a constantly updated section and a rarely updated section
+(like a user record with a name and a last-seen-on-site field), split those
+2 into 2 tables. This allows to the lock taken at tuple level and
+reinforces the read on the second field. The tuple of the field read a lot
+might be locked a lot die to the other field being continuously updated so
+you can really improve performance here.
 
 ### 3. Ugly SQL queries
 
   * Gigantic IN clauses
-  * Unanchored text queries like ‘%this%’; use the built-in full text search instead
-  * Small, high-volume queries processed by the application (Hello "SELECT * FROM table")
+  * Unanchored text queries like ‘%this%’; use the built-in full text
+search instead
+  * Small, high-volume queries processed by the application (Hello
+"SELECT * FROM table")
 
 ### 4. Indexing
 
-A good index has a high selectivity on commonly-performed queries or is required to enforce a constraint. A bad index is everything else: non-selective, rarely used, expensive to maintain. Only the first column of a multi-column index can be used separately.
+A good index has a high selectivity on commonly-performed queries or
+is required to enforce a constraint. A bad index is everything else:
+non-selective, rarely used, expensive to maintain. Only the first
+column of a multi-column index can be used separately.
 
 So...
 
@@ -63,11 +74,17 @@ So...
 
 ### 5. Vacuum
 
-If autovacuum is slowing down the system, increase autovacuum\_vacuum\_cost\_limit. If load is periodic, do manual VACUUM instead at low times. Do not forget that you must VACUUM regularly.
+If autovacuum is slowing down the system, increase
+autovacuum\_vacuum\_cost\_limit. If load is periodic, do manual VACUUM
+instead at low times. Do not forget that you must VACUUM regularly.
 
 ### 6. Analyze
 
-Analyze collects statistics on the data to help the planner choose a good plan. This is done automatically as a part of autovacuum. You should always do it manually after substantial database changes (loads, etc.), and also do it as part of any VACUUM process done manually.
+Analyze collects statistics on the data to help the planner choose a
+good plan. This is done automatically as a part of autovacuum. You
+should always do it manually after substantial database changes
+(loads, etc.), and also do it as part of any VACUUM process done
+manually.
 
 ### 7. I/O scheduler
 
