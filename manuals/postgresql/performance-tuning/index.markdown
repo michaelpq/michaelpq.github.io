@@ -101,3 +101,24 @@ by it.
 It is usually better to stick with the default scheduler except when
 trying to solve a specific issue, also everything else than cfq would
 perform badly on non-enterprise class storages (SAN).
+
+### 8. stats_temp_directory on a ramdisk
+
+stats\_temp\_directory is a directory where temporary statistics are
+stored, and they do not need to persist. pg\_stat\_tmp is the default.
+Its size is usually a couple of hundred kilobytes. Here is how to set
+a ramdisk for that.
+
+Create the ramdisk partition.
+
+    mkdir -p $TEMP_STAT_FOLDER
+    chmod 777 $TEMP_STAT_FOLDER
+    chmod +t $TEMP_STAT_FOLDER
+
+Add new partition to /etc/fstab with a new dedicated entry:
+
+    tmpfs $TEMP_STAT_FOLDER tmpfs size=2G,uid=$USER,gid=$GROUP 0 0
+
+In postgresql.conf, add that, and then reload it:
+
+    stats_temp_directory = '$TEMP_STAT_FOLDER'
