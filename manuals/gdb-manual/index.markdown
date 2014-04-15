@@ -65,9 +65,29 @@ Delete all breakpoints, this will ask for confirmation.
 
     del
 
-It is also possible to stop with a condition.
+It is also possible to stop with a condition, based for example on a
+numerical condition. A breakpoint on the line where this condition is
+checked is still necessary though.
 
-    condition 1 $OBJECT_NAME == $VALUE
+    b $C_FILE:$LINE_DEBUGGED
+    condition 1 $OBJECT_NAME==$VALUE
+    cond 1 $OBJECT_NAME==$VALUE
+
+For strings, it can be a bit trickier, for example with a code like
+that:
+
+    1: while (true) {
+    2:    char *data = getInputFromSource();
+    3:    doActionWithSource(data);
+    4: }
+
+Here is how to stop at a breakpoint only for a given value of the
+source, here simply "MyData".
+
+    b foo.cpp:3
+    set $my_data = "MyData"
+    cond 1 strcmp($secret_code, c) == 0
+    run
 
 Makes the program stop when the object chosen has its value equal. It is also possible to use this functionnality with other operators.
 
