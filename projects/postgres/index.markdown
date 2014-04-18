@@ -32,5 +32,5 @@ As a community member, on top of maintaining this blog, here are the things I tr
   * Committer of [Postgres-XC](http://sourceforge.net/apps/mediawiki/postgres-xc/index.php?title=Main_Page), fork of Postgres providing some multi-master capabilities using data replication and sharding.
   * Some development activities
    * [Dev postgres](https://github.com/michaelpq/postgres), a mirror of vanilla with only master branch and a set of patches in development
-   * [pg_arman](https://github.com/michaelpq/pg_arman), backup and recovery manager
-   * [pg_workers](https://github.com/michaelpq/pg_workers), some background workers that can be used as a base for more complex implementations
+   * [pg\_arman](https://github.com/michaelpq/pg_arman), backup and recovery manager
+   * [pg\_plugins](https://github.com/michaelpq/pg_plugins), some background workers that can be used as a base for more complex implementations

@@ -115,4 +115,4 @@ Now you need to do this operation at the beginning of the main function of the w
         [... Continue process ...]
     }
 
-Globally, those modifications do not require much modifications (maximum of 10 lines) so you will be able to catch up easily, don't worry. You can refer to my set of [background worker examples in github](https://github.com/michaelpq/pg_workers) that has been updated to reflect the API changes. There is also the contrib module called worker\_spi which has been updated to reflect the API modifications.
+Globally, those modifications do not require much modifications (maximum of 10 lines) so you will be able to catch up easily, don't worry. You can refer to my set of [background worker examples in github](https://github.com/michaelpq/pg_plugins) that has been updated to reflect the API changes. There is also the contrib module called worker\_spi which has been updated to reflect the API modifications.

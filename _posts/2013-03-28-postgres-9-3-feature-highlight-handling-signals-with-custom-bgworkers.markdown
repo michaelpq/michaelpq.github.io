@@ -23,7 +23,7 @@ tags:
 - latency
 - log
 - open source
-- pg_workers
+- pg_plugins
 - postgres
 - postgresql
 - postmaster
@@ -161,4 +161,4 @@ You can also set up the latch such as the sleep will stop immediately if a signa
 
     SetLatch(&signalLatch;);
 
-This code can be found on Github as repository [pg\_workers](https://github.com/michaelpq/pg_workers). I created it to group all the bgworker examples I wrote using the facility of PostgreSQL 9.3 and above. You can find the example presented in this post in the folder hello\_signal.
+This code can be found on Github as repository [pg\_plugins](https://github.com/michaelpq/pg_plugins). I created it to group all the bgworker examples I wrote using the facility of PostgreSQL 9.3 and above. You can find the example presented in this post in the folder hello\_signal.
