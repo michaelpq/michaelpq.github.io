@@ -101,7 +101,7 @@ using a replication connection starts the logical decoding with this slot:
 The next step is to enable the utility consuming the decoded changes,
 pg\_recvlogical, like that for example:
 
-    pg_recvlogical --slot -d postgres --slot my_slot --start -f -
+    pg_recvlogical -d postgres --slot my_slot --start -f -
 
 Note that you need to connect to the database where the replication slot
 has been created, in my case "postgres". This command will also make all
