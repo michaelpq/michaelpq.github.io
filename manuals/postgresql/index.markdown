@@ -27,3 +27,4 @@ The following sections are available from here:
   * [Profiling with perf](/manuals/postgresql/perf/)
   * [Settings](/manuals/postgresql/settings/)
   * [Useful queries](/manuals/postgresql/useful-queries/)
+  * [Windows](/manuals/postgresql/windows/)
