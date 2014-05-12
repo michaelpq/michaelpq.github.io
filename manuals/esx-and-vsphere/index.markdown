@@ -27,7 +27,8 @@ Connect USB and create partition on it. Then use fdisk with that:
   4. p to check that partition is correct
   5. w to write partition and quit
 
-The create file system on new partition (need package dosfstools on Archlinux).
+The create file system on new partition (need package dosfstools on
+Archlinux).
 
     mkfs.vfat -F 32 -n USB /dev/sdb1
 
@@ -64,5 +65,17 @@ Now the USB key can boot ESX installer.
 
 ### Intel NUC
 
-ESXi 5.1 does not have network drivers for the model DYE of Intel NUC. So installing it has needed to create a custom ISO with the network driver included.
-The driver was called E1001E.tgz and program used to compile new ISO was called ESXi-customizer. Look at that on the net if needed... At least in my case it worked correctly.
+ESXi 5.1 does not have network drivers for the model DYE of Intel NUC. So
+installing it has needed to create a custom ISO with the network driver
+included. The driver is called E1001E.tgz and program used to compile new
+ISO was called ESXi-customizer. Look at that on the net if needed... At
+least it worked correctly.
+
+### ovftool
+
+ovftool is a generic VMware command that can be used to save and deploy
+VMs in ESX, vSphere, vCenter, Fusion, etc. Here is an example of how to
+save an ova file (VM template with spec and disks compressed) from an
+existing vmx file:
+
+    ovftool $HOME/path/vm/machine.vmx $HOME/path/res/machine.ova
