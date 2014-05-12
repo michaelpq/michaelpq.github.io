@@ -53,7 +53,7 @@ has as well on its branch windows, scripts already compatible with Windows
 that are derived from the ones in the Unix/Linux branches. This contains
 as well Perl and Bison. Perl is *not* compatible with MSVC so be sure to
 rename it to something else such as there are no conflicts with Active
-Record which is solid rock and used with MSVC (msysgit's Perl does not
+State which is solid rock and used with MSVC (msysgit's Perl does not
 work properly because of a lack of libraries for Win32).
 
 ### MinGW
