@@ -5,7 +5,7 @@ lastmod: 2014-05-10
 date: 2014-05-10 4:58:23+00:00
 layout: post
 type: post
-slug: postgres-9-4-make-postgres-sing-mingw
+slug: make-postgres-sing-mingw
 title: 'Make Postgres sing with MinGW on Windows'
 categories:
 - PostgreSQL-2
