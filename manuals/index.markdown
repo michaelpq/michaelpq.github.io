@@ -15,7 +15,6 @@ tags:
 - choice
 - stuff
 ---
-
 The following sub-sections are available from here:
 
   * [Archlinux](/manuals/arch-linux/)
@@ -26,3 +25,4 @@ The following sub-sections are available from here:
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Raspberry PI](/manuals/raspberry-pi/)
+  * [Windows](/manuals/windows/)

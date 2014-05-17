@@ -21,41 +21,6 @@ tags:
 Here are a couple of tips to remember when developing PostgreSQL on
 Windows.
 
-### General things
-
-First, when using a Japanese keyboard, you might want to set up correctly
-a [JP106 keyboard](http://support.microsoft.com/kb/927824/en-us).
-
-Installing emacs on Windows is as well damn easy as GNU proposes packages
-to deploy [here](http://ftp.gnu.org/gnu/emacs/windows/).
-
-Windows does not use PATH, but Path to detect the folders where binaries
-are automatically looked for. In order to modify it, a simple method
-consists in doing.
-
-  * Left-click on "My Computer" -> "Properties"
-  * Click "Advanced System Settings"
-  * In tab "System Properties" click the "Environment Variables"
-  * Update Path as followed: Path => c:\path1;c:\path2;etc.
-
-Environment variables can be viewed with command set.
-
-7zip is essential for your survival as it is extrenely useful for
-decompressing things that you need to install like emacs.
-
-Here is a command to launch something not in Path with cmd.exe:
-
-    cmd /c c:\path\to\bin\command --args
-
-[msysgit](http://msysgit.github.io/) provides an excellent way to have a
-Unix-like environment on Windows. [Home](https://github.com/michaelpq/home)
-has as well on its branch windows, scripts already compatible with Windows
-that are derived from the ones in the Unix/Linux branches. This contains
-as well Perl and Bison. Perl is *not* compatible with MSVC so be sure to
-rename it to something else such as there are no conflicts with Active
-State which is solid rock and used with MSVC (msysgit's Perl does not
-work properly because of a lack of libraries for Win32).
-
 ### MinGW
 
 Here is how to do development of PostgreSQL with MinGW. First install a
@@ -74,8 +39,8 @@ is proved to work. This does not contain make commands though, so...
 (http://sourceforge.net/apps/trac/mingw-w64/wiki/Make), then fetch it
 from one of the stabls releases like x64-4.8.1-release-posix-seh-rev5.7z.
 
-Then install MinGW in a path like c:\mingw and add c\:mingw to Path (or
-PATH for msysgit). msysgit is btw recommended to facilitate development
+Then install MinGW in a path like c:\\mingw and add itto Path (or PATH
+for msysgit). msysgit is btw recommended to facilitate development
 with MinGW as it is necessary to begin to do things like configure and
 make [install] manually. Compilation is as well slower than MSVC outputs.
 
