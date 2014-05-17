@@ -15,14 +15,16 @@ tags:
 - dependency
 - search
 ---
-
-Here are a list of useful commands to be used with pacman. It may require some specific settings if your environment is behind a proxy, so you should have a look [here](/manuals/arch-linux/proxy-settings/).
+Here are a list of useful commands to be used with pacman. It may require
+some specific settings if your environment is behind a proxy, so you
+should have a look [here](/manuals/arch-linux/proxy-settings/).
 
 Update and install the list of package.
 
     pacman -Suy
 
-Perform a full upgrade, is necessary if some libraries are missing to recompile systemt properly.
+Perform a full upgrade, is necessary if some libraries are missing to
+recompile system properly.
 
     pacman -Syyu
 

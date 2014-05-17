@@ -18,8 +18,9 @@ tags:
 ---
 Transferring a CVS repository to a GIT one is pretty simple.
 
-You need first to install the following packages: git-cvs cvsps.
-In ArchLinux, git-cvs is lacking of support in ArchLinux, so I used an RPM-based box.
+You need first to install the following packages: git-cvs cvsps. In
+ArchLinux, git-cvs is lacking of support in ArchLinux, so I used an
+RPM-based box.
 
     yum install git-cvs cvsps
 
@@ -27,4 +28,5 @@ Then, simply run the following command in a given folder $FOLDER.
 
     mkdir $FOLDER
     cd $FOLDER
-    git cvsimport -v -d :pserver:anonymous@example.com:/sources/classpath $MODULE_NAME
+    git cvsimport -v -d :pserver:anonymous@example.com:/sources/classpath \
+        $MODULE_NAME

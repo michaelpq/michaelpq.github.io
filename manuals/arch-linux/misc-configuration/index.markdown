@@ -22,7 +22,8 @@ The following sub-sections are available from here:
   * [rtorrent](/manuals/arch-linux/misc-configuration/rtorrent/)
   * [Intel NUC](/manuals/arch-linux/misc-configuration/intel-nuc/)
   * [Kernel Settings](/manuals/arch-linux/misc-configuration/kernel-settings/)
-  * [Postgres docs and sgml catalogs](/manuals/arch-linux/misc-configuration/postgres-docs-and-sgml-catalogs/)
+  * [Postgres docs and sgml catalogs]
+(/manuals/arch-linux/misc-configuration/postgres-docs-and-sgml-catalogs/)
   * [ssl](/manuals/arch-linux/misc-configuration/ssl/)
   * [iptables](/manuals/arch-linux/misc-configuration/iptables/)
   * [Mounting drives](/manuals/arch-linux/misc-configuration/mount-drives/)

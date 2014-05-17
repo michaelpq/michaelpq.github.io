@@ -17,7 +17,10 @@ tags:
 - manage
 ---
 
-A submodule consists of a soft link in a Git repo to another repository, defined on parent by a path and a commit ID. Since git 1.8.3, a branch can as well be given to synchronize a submodule based on the latest commit of a branch.
+A submodule consists of a soft link in a Git repo to another repository,
+defined on parent by a path and a commit ID. Since git 1.8.3, a branch can
+as well be given to synchronize a submodule based on the latest commit of
+a branch.
 
 #### Initialization
 
