@@ -61,9 +61,12 @@ Example of iptables files.
     -A INPUT -j DROP
     COMMIT
 
-Accept all the http and ssh connection. Drop if nothing suits. And log if it arrives at this level. Accept all the local connections done with loopback.
+Accept all the http and ssh connection. Drop if nothing suits. And log
+if it arrives at this level. Accept all the local connections done with
+loopback.
 
-This example includes some restrictions on ssh to limit the number of connections per IP in a given interval of time.
+This example includes some restrictions on ssh to limit the number of
+connections per IP in a given interval of time.
 
     *filter
     :INPUT ACCEPT [0:0]
@@ -84,4 +87,7 @@ This can also be enabled with the following commands.
     iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent --set
     iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent --update --seconds 60 --hitcount 4 -j DROP`
 
-Default rule file for iptables is defined in /etc/rc.d/iptables with the environment variable IPTABLES\_CONF=/etc/iptables/iptables.rules. Be sure to save your rules in this file or change IPTABLES\_CONF in consequence.
+Default rule file for iptables is defined in /etc/rc.d/iptables with
+the environment variable IPTABLES\_CONF=/etc/iptables/iptables.rules.
+Be sure to save your rules in this file or change IPTABLES\_CONF in
+consequence.

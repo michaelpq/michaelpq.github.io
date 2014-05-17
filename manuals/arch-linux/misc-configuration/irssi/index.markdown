@@ -18,7 +18,8 @@ tags:
 - configuration
 - install
 ---
-irssi is a light-weight IRC client. Set up user name (default being the account name).
+irssi is a light-weight IRC client. Set up user name (default being the
+account name).
 
     /SET user_name $USER_NAME
 
@@ -34,7 +35,9 @@ It is always possible to add a dedicated name to a network later on.
 
     /NETWORK ADD -user $USERNAME $NETWORK_NAME
 
-Adding a server to connect to (connect automatically to it when launching irssi, no password needed here in the case of freenode as authentication is done at the network level):
+Adding a server to connect to (connect automatically to it when launching
+irssi, no password needed here in the case of freenode as authentication
+is done at the network level):
 
     /SERVER ADD -auto -network $NETWORK_NAME irc.example.com 6667
 
@@ -70,9 +73,12 @@ Some other things:
 
   * Ctl-P/Ctl-N to switch windows
 
-Some notes for Freenode: here are [some steps](http://www.wikihow.com/Register-a-User-Name-on-Freenode) about how to register a nickname in freenode.
+Some notes for Freenode: here are [some steps]
+(http://www.wikihow.com/Register-a-User-Name-on-Freenode) about how to
+register a nickname in freenode.
 
-Register a new account (need to choose previously an account name with /nick):
+Register a new account (need to choose previously an account name with
+/nick):
 
     /msg nickserv register $PASSWORD $EMAIL
 
@@ -87,7 +93,8 @@ Drop an account.
 
 ### screen
 
-Using screen can be a good deal to when keeping a server online. Create a new screen.
+Using screen can be a good deal to when keeping a server online. Create
+a new screen.
 
     screen
     irssi

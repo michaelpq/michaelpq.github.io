@@ -14,15 +14,18 @@ tags:
 - archlinux
 - kvm
 ---
-
-The installation of virtual box in ArchLinux can be done with the following command.
+The installation of virtual box in ArchLinux can be done with the following
+command.
 
     pacman -S virtualbox
 
-Once installation has been done, it is necessary to load the kernel module of virtual box driver. There are 2 ways to do that. Launch the module manually at each reboot.
+Once installation has been done, it is necessary to load the kernel module
+of virtual box driver. There are 2 ways to do that. Launch the module manually
+at each reboot.
 
     modprobe vboxdrv
 
-Or modify /etc/rc.conf by adding vboxdrv in the array MODULES for a result like this:
+Or modify /etc/rc.conf by adding vboxdrv in the array MODULES for a result
+like this:
 
     MODULES=(vboxdrv)

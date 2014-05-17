@@ -19,7 +19,9 @@ tags:
 - platform
 - settings
 ---
-Main resource is [here](http://wiki.postgresql.org/wiki/PostgreSQL_Buildfarm_Howto). The important point is to check that all the scripts work with perl -cw to be sure that no perl modules are missing.
+Main resource is [here](http://wiki.postgresql.org/wiki/PostgreSQL_Buildfarm_Howto).
+The important point is to check that all the scripts work with perl -cw
+to be sure that no perl modules are missing.
 
 Here are the packages to install on top of that:
 
@@ -31,7 +33,8 @@ Here are the packages to install on top of that:
     tcl
     libxslt
 
-Check that build has necessary packages with command like that (simply copy-paste that and don't think more, no python support here):
+Check that build has necessary packages with command like that (simply copy-paste
+that and don't think more, no python support here):
 
     ./configure --enable-cassert --enable-debug \
         --enable-nls --enable-integer-datetimes \

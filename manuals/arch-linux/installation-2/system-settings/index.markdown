@@ -35,7 +35,8 @@ Or with that:
 
     timedatectl set-ntp 1
 
-Then check the status of the software clock with this command, "NTP enabled" shoud print "yes".
+Then check the status of the software clock with this command, "NTP enabled"
+should print "yes".
 
     # timedatectl status
           Local time: Wed 2013-07-10 15:39:56 JST
@@ -56,13 +57,16 @@ Finally start the daemon if you do not want to reboot the server.
 
 ### timezone
 
-Create a synbolic link from /etc/localtime to /usr/share/zoneinfo/$ZONE/$SUBZONE. Replace $ZONE and $SUBZONE to your time zone. For example:
+Create a synbolic link from /etc/localtime to
+/usr/share/zoneinfo/$ZONE/$SUBZONE. Replace $ZONE and $SUBZONE to your
+time zone. For example:
 
     ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 ### locale
 
-Set locale preferences in /etc/locale.conf. Uncomment the selected locale in /etc/locale.gen and generate it with:
+Set locale preferences in /etc/locale.conf. Uncomment the selected
+locale in /etc/locale.gen and generate it with:
 
     locale-gen
 

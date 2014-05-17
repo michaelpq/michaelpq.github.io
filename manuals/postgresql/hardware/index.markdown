@@ -21,7 +21,8 @@ tags:
 - trick
 - performance
 ---
-On this page are presented recommendations and general guidelines for hardware usage with PostgreSQL
+On this page are presented recommendations and general guidelines for
+hardware usage with PostgreSQL
 
   1. Personal hardware
   2. Cloud
@@ -40,10 +41,12 @@ On this page are presented recommendations and general guidelines for hardware u
 
 ### 2. Cloud
 
-Some guidelines to choose correct hardware for a PostgreSQL server for a cloud.
+Some guidelines to choose correct hardware for a PostgreSQL server for a
+cloud.
 
   * Get as much memory as you can
-  * Get one CPU core per 2 active connections (usually, few connections are active...)
+  * Get one CPU core per 2 active connections (usually, few connections
+are active...)
   * And hope that the I/O subsystem can keep up with your traffic
 
 ### 3. Amazon Web Services (AWS)

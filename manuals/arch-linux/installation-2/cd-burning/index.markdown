@@ -19,4 +19,7 @@ A very useful solution for that introducing minimal dependencies is xfburn.
 
     pacman -S xfburn
 
-With that you can burn, create iso images as well as burn a CD based on a set of data. Note: I personally tested brasero but fell on issues with blank CD detection. This looks to be related with dbus... However xfburn worked like a charm.
+With that you can burn, create iso images as well as burn a CD based on a
+set of data. Note: I personally tested brasero but fell on issues with blank
+CD detection. This looks to be related with dbus... However xfburn worked
+like a charm.

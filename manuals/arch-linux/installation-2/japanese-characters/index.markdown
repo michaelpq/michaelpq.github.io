@@ -18,8 +18,8 @@ tags:
 - uim
 - anthy
 ---
-
-Everything necessary to set up an environment with Japanese character manipulation. Install uim and anthy, managing input of characters.
+Everything necessary to set up an environment with Japanese character
+manipulation. Install uim and anthy, managing input of characters.
 
     pacman -S uim anthy
 
@@ -38,7 +38,8 @@ Initialize UIM, for example in ~/.xinitrc.
     #Toolbar for anthy
     uim-toolbar-gtk &
 
-Then, in Settings->Input Methods (for XFCE), use those input methods (some are perhaps not really necessary):
+Then, in Settings->Input Methods (for XFCE), use those input methods
+(some are perhaps not really necessary):
 
     Anthy
     Anthy (UTF-8)
@@ -46,7 +47,8 @@ Then, in Settings->Input Methods (for XFCE), use those input methods (some are p
     m17n-ja-anthy
     m17n-ja-tcode`
 
-In order for the characters to be recognized, you might need to change /etc/locale.conf to set up the locale for the whole environment.
+In order for the characters to be recognized, you might need to change
+/etc/locale.conf to set up the locale for the whole environment.
 
     LANG="ja_JP.UTF-8"
     LOCALE="en_US.UTF-8"

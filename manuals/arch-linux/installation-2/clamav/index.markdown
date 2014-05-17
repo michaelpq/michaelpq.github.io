@@ -16,7 +16,8 @@ tags:
 - pacman
 - settings
 ---
-Clamav is an open-source anti-virus software. The name of its package is clamav.
+Clamav is an open-source anti-virus software. The name of its package is
+clamav.
 
     pacman -S clamav
 
@@ -24,7 +25,8 @@ Activate the daemon with systemctl.
 
     systemctl enable clamd.service
 
-Here is a script to launch an script to scan all the folders of your system except /sys, /proc, /dev and the log files.
+Here is a script to launch an script to scan all the folders of your
+system except /sys, /proc, /dev and the log files.
 
     #!/bin/bash
     # Daily scan for clamscan
@@ -54,7 +56,10 @@ Here is a script to update the database automatically.
         --quiet \
         --log="$LOG_FILE"
 
-You need to update the permission of those scripts to 755 and then place it to run them in cron like in /etc/cron.daily. You can also set up cron to launch then everyday at a certain time. Assuming both scripts are installed in /root/bin... First launch crontab.
+You need to update the permission of those scripts to 755 and then
+place it to run them in cron like in /etc/cron.daily. You can also set
+up cron to launch then everyday at a certain time. Assuming both
+scripts are installed in /root/bin... First launch crontab.
 
     export EDITOR=vim && crontab -e
 
@@ -67,12 +72,14 @@ You can check the contents of crontab with:
 
     crontab -l
 
-Inside the configuration files /etc/clamav/clamd.conf and /etc/clamav/freshclam.conf, you need to uncomment the following lines.
+Inside the configuration files /etc/clamav/clamd.conf and
+/etc/clamav/freshclam.conf, you need to uncomment the following lines.
 
     # Comment or remove the line below.
     # Example
 
-You might need to setup some HTTP proxy for freshclam to work properly in /etc/clamav/freshclam.conf.
+You might need to setup some HTTP proxy for freshclam to work properly
+in /etc/clamav/freshclam.conf.
 
     # Proxy settings
     # Default: disabled

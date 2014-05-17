@@ -18,7 +18,12 @@ tags:
 - extract
 - parse
 ---
-It may be possible that you do not have access to the configuration files of a PostgreSQL server due to some administration permission issues. There are several options available to get a look at the configuration files without having a session on server. There are configuration parameters indicating the place of each configuration file, called config\_file, hba\_file and ident\_file.
+It may be possible that you do not have access to the configuration
+files of a PostgreSQL server due to some administration permission issues.
+There are several options available to get a look at the configuration
+files without having a session on server. There are configuration
+parameters indicating the place of each configuration file, called
+config\_file, hba\_file and ident\_file.
 
     postgres=# show config_file;
                     config_file                

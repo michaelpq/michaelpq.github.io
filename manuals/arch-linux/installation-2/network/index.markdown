@@ -15,9 +15,8 @@ tags:
 - dhcp
 - systemctl
 ---
-
-There are multiple ways to install the network depending on what you are looking for.
-
+There are multiple ways to install the network depending on what you are
+looking for.
 
 ### Dynamic IP
 
@@ -57,9 +56,12 @@ Install the following packages.
 
     pacman -S ifplugd wireless_tools wpa_supplicant wpa_actiond dialog
 
-Archlinux uses now [netctl](https://wiki.archlinux.org/index.php/Netctl) instead of netcfg.
+Archlinux uses now [netctl](https://wiki.archlinux.org/index.php/Netctl)
+instead of netcfg.
 
-If your wireless adapter requires a firmware (as described in the above Establish an internet connection section and also here), install the package containing your firmware. For example:
+If your wireless adapter requires a firmware (as described in the above
+Establish an internet connection section and also here), install the
+package containing your firmware. For example:
 
     pacman -S zd1211-firmware
 
@@ -69,11 +71,16 @@ Then load the module for kernel.
 
     echo ipw2200-fw >> /etc/modules-load.d/wificard.conf
 
-Connect to the network with wifi-menu (optionally checking the interface name with ip link, but usually it's wlan0), which will generate a profile file in /etc/network.d named after the SSID. There are also templates available in /etc/network.d/examples/ for manual configuration. This will also create a profile present in /etc/netctl.
+Connect to the network with wifi-menu (optionally checking the interface
+name with ip link, but usually it's wlan0), which will generate a profile
+file in /etc/network.d named after the SSID. There are also templates
+available in /etc/network.d/examples/ for manual configuration. This will
+also create a profile present in /etc/netctl.
 
     wifi-menu $INTERFACE
 
-You might need to look at iwconfig or "id addr show" to find what is the interface of the Wifi card. Enable the profile (with single profile).
+You might need to look at iwconfig or "id addr show" to find what is the
+interface of the Wifi card. Enable the profile (with single profile).
 
     netctl enable $PROFILE
 

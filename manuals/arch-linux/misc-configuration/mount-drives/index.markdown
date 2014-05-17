@@ -15,10 +15,13 @@ tags:
 - laptop
 - desktop
 ---
-In order to automatically mount drives in ArchLinux, you can use udiskie which is a wrapper of the natively available udev. You can install it with the command below.
+In order to automatically mount drives in ArchLinux, you can use udiskie
+which is a wrapper of the natively available udev. You can install it
+with the command below.
 
     pacman -S python2-udiskie
 
-Once installed, you need to launch udiskie at session start-up. In order to do that, add this line in .xinitrc before launching the window manager.
+Once installed, you need to launch udiskie at session start-up. In order
+to do that, add this line in .xinitrc before launching the window manager.
 
     udiskie &

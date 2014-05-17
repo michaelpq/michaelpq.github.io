@@ -14,12 +14,14 @@ tags:
 - deployment
 - automate
 ---
-
-nginx is an excellent alternative to move out from Apache. Here are some notes to set up nginx correctly.
+nginx is an excellent alternative to move out from Apache. Here are
+some notes to set up nginx correctly.
 
 ### Prevent DDOS
 
-DDOS (Distributed deny of service) can be easily avoided by limiting the number of connections from a given IP with such settings in a server block.
+DDOS (Distributed deny of service) can be easily avoided by limiting
+the number of connections from a given IP with such settings in a
+server block.
 
     http {
         limit_conn_zone $binary_remote_addr zone=addr:10m;
@@ -97,4 +99,3 @@ Here is a sample of configuration file for nginx.conf.
             }
         }
     }
-

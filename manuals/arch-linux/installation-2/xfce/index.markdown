@@ -17,5 +17,6 @@ tags:
 ---
 For here the following sections are available:
 
-  * [XFCE with Virtual Box or Nvidia](/manuals/arch-linux/installation-2/xfce/installation-of-xfce-in-virtualbox-or-nvidia-driver/)
+  * [XFCE with Virtual Box or Nvidia]
+(/manuals/arch-linux/installation-2/xfce/installation-of-xfce-in-virtualbox-or-nvidia-driver/)
   * [Window manager](/manuals/arch-linux/installation-2/xfce/window-manager/)

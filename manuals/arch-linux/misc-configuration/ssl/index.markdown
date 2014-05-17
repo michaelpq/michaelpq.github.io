@@ -29,7 +29,8 @@ tags:
 
 ### Limit user access via ssh
 
-Edit the file /etc/ssh/sshd\_config and add the following to limit access to a list of users.
+Edit the file /etc/ssh/sshd\_config and add the following to limit
+access to a list of users.
 
     AllowUsers $USER1 $USER2
 

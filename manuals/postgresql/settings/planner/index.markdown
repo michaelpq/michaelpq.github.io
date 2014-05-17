@@ -18,7 +18,8 @@ tags:
 ---
 Here are a couple of tips for planner settings.
 	
-  * **effective\_io\_concurrency**, set to the number of I/O channels or ignore it	
+  * **effective\_io\_concurrency**, set to the number of I/O channels or
+ignore it
   * **random\_page\_cost**
    * 3.0 for a typical RAID10 array
    * 2.0 for a SAN

@@ -19,7 +19,8 @@ tags:
 - cache
 - maintenance
 ---
-Here is a list of recommended parameters for memory management in PostgreSQL. You should take into account mainly the following parameters.
+Here is a list of recommended parameters for memory management in PostgreSQL.
+You should take into account mainly the following parameters.
 
     shared_buffers
     work_mem
@@ -32,8 +33,9 @@ About **shared\_buffers**:
   * Below 32GB, set to 25% of total system memory.
   * Above 32GB, set to 8GB
 
-About **work\_mem**, this parameter can cause a huge speed-up if set properly, however it can use that amount of memory per planning node.
-Here are some recommendations to set it up.
+About **work\_mem**, this parameter can cause a huge speed-up if set properly,
+however it can use that amount of memory per planning node. Here are some
+recommendations to set it up.
 
   * Start low: 32-64MB
   * Look for ‘temporary file’ lines in logs

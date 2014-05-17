@@ -19,7 +19,9 @@ tags:
 - index
 - trick
 ---
-Here are a couple of tips to boost the performance of a PostgreSQL database server.
+Here are a couple of tips to boost the performance of a PostgreSQL database
+server.
+
   1. What to avoid
   2. Some general tricks
   3. Ugly SQL queries

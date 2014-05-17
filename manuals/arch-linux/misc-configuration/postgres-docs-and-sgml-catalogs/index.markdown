@@ -23,10 +23,12 @@ tags:
 PostgreSQL documentation does not compile natively on ArchLinux.
 There are 2 problems explaining why.
 
-  * Those catalog files were not added in jade package for html files
-  * docbook 4.2 are not included correctly in installation, has to be installed manually
+  * Those catalog files were not added in jade package for html files.
+  * docbook 4.2 are not included correctly in installation, has to be
+installed manually.
 
-You might need to install first those packages, some of them being available only from AUR with [yaourt](/manuals/arch-linux/yaourt/).
+You might need to install first those packages, some of them being
+available only from AUR with [yaourt](/manuals/arch-linux/yaourt/).
 
     jade
     docbook-dsssl
@@ -34,12 +36,15 @@ You might need to install first those packages, some of them being available onl
     docbook2x
     docbook-xsl
 
-Necessary files to compile postgresql documentation on ArchLinux are available here:
+Necessary files to compile postgresql documentation on ArchLinux are
+available here:
 	
   * [jade\_catalog\_postgres.tar.gz](/content/pgdocs/jade_catalog_postgres.tar.gz)
   * [docbook-4.2\_postgres.tar.gz](/content/pgdocs/docbook-4.2_postgres.tar.gz)
 
-In order to install those files, you need to do the following things, in 2 steps. jade\_postgres needs to be decompiled and copied in /usr/share/sgml.
+In order to install those files, you need to do the following things, in
+2 steps. jade\_postgres needs to be decompiled and copied in
+/usr/share/sgml.
 
 Then docbook needs to be decompressed and installed like this:
 
@@ -57,13 +62,20 @@ Then docbook needs to be decompressed and installed like this:
     install-catalog --add /etc/sgml/sgml-docbook-dtd-4.2.cat \
     /etc/sgml/sgml-docbook.cat
 
-Finally, in order to allow Postgres documentation to compile correctly, you need to set SGML\_CATALOG\_FILES like this:
+Finally, in order to allow Postgres documentation to compile correctly,
+you need to set SGML\_CATALOG\_FILES like this:
 
     export SGML_CATALOG_FILES=/etc/sgml/catalog:/usr/share/sgml/jade/catalog
 
 ### About docbook-dsssl
 
-The package docbook-dsssl is sometimes not available on yaourt due to a low remote server uptime, download directly its tarball from [here](/content/pgdocs/docbook-dsssl-1.79.tar.gz). This is version 1.79. Then Download the PKGBUILD folder from [here](https://aur.archlinux.org/packages/docbook-dsssl) and copy the downloaded tarball in the root of PKGBUILD folder. Finally launch the following command to install.
+The package docbook-dsssl is sometimes not available on yaourt due to a
+low remote server uptime, download directly its tarball from [here]
+(/content/pgdocs/docbook-dsssl-1.79.tar.gz). This is version 1.79. Then
+Download the PKGBUILD folder from [here]
+(https://aur.archlinux.org/packages/docbook-dsssl) and copy the downloaded
+tarball in the root of PKGBUILD folder. Finally launch the following
+command to install.
 
     makepkg -si --skipchecksums
 
