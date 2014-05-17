@@ -39,7 +39,7 @@ is proved to work. This does not contain make commands though, so...
 (http://sourceforge.net/apps/trac/mingw-w64/wiki/Make), then fetch it
 from one of the stabls releases like x64-4.8.1-release-posix-seh-rev5.7z.
 
-Then install MinGW in a path like c:\\mingw and add itto Path (or PATH
+Then install MinGW in a path like c:\\mingw and add it to Path (or PATH
 for msysgit). msysgit is btw recommended to facilitate development
 with MinGW as it is necessary to begin to do things like configure and
 make [install] manually. Compilation is as well slower than MSVC outputs.
