@@ -69,3 +69,14 @@ Command to launch something not in Path with cmd.exe:
 Kick an installation with command line:
 
     msiexec /i product.msi PARAM1=$VAL1 PARAM2=$VAL2
+
+Getting the version number of a binary or library can be tedious, first
+create the following vbscript, called for example my_script.vbs:
+
+    Set args = WScript.Arguments
+    Set objFSO = CreateObject("Scripting.FileSystemObject")
+    Wscript.Echo objFSO.GetFileVersion(args.Item(0))
+
+Then run this command:
+
+    cscript /nologo my_script.vbs file_to_check.exe
