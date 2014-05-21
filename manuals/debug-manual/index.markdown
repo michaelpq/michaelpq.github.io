@@ -4,9 +4,12 @@ date: 2011-02-28 13:06:25+00:00
 layout: page
 type: page
 slug: gdb-manual
-title: 'Manual for gdb'
+title: 'Manual for debugging - gdb and lldb'
 tags:
 - gdb
+- lldb
+- linux
+- windows
 - debug
 - manual
 - beginner
@@ -19,7 +22,7 @@ tags:
 - linux
 - osx
 ---
-## GDB manual
+## gdb
 
 Young developpers are always facing problems with the use of debuggers.
 This manual is for them. It contains some simple tips and essential
@@ -269,3 +272,14 @@ If you run into problems with the name mangling,show the C style names
 for your class methods.
 
     nm
+
+## lldb
+
+Attach process to debugger:
+
+    lldb -p $PID
+
+Have a look at a core file:
+
+    lldb $BINARY_NAME
+    > target prepare -c/--core $CORE_FILE

@@ -18,9 +18,9 @@ tags:
 The following sub-sections are available from here:
 
   * [Archlinux](/manuals/arch-linux/)
-  * [ESX and vSphere](/manuals/esx-and-vsphere/)
   * [Cryptocurrency](/manuals/cryptocurrency/)
-  * [GDB](/manuals/gdb-manual/)
+  * [Debuggers](/manuals/debug-manual/)
+  * [ESX and vSphere](/manuals/esx-and-vsphere/)
   * [Git](/manuals/git-manual/)
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
