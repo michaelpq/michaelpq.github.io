@@ -331,3 +331,16 @@ is a special exit code that can be used to make the commit as untestable.
 When bisect analysis is finished, use that to finish the process:
 
     git bisect reset
+
+### 10. Maintenance
+
+It is recommended to use fsck to check the validity of the database.
+
+    git fsck
+
+After doing some work, it is possible that you created some dangling
+commits, which are commits not referenced by any existing branches.
+Those ones are by default reported by fsck. Removing them can be done
+with the following command:
+
+    git gc --prune=now
