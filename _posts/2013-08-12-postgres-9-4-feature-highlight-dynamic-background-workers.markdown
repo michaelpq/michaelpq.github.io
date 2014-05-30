@@ -24,7 +24,7 @@ tags:
 - slave
 - worker
 ---
-Following the [recent API modifications](http://michael.otacoo.com/postgresql-2/modifications-of-apis-for-bgworkers-in-postgres-9-3/) done in Postgres 9.3 for background worker processes, here is more information about the latest features of background workers currently being developped for Postgres 9.4, and introduced by this commit:
+Following the [recent API modifications](http://michael.otacoo.com/postgresql-2/modifications-of-apis-for-bgworkers-in-postgres-9-3/) done in Postgres 9.3 for background worker processes, here is more information about the latest features of background workers currently being developed for Postgres 9.4, and introduced by this commit:
 
     commit 7f7485a0cde92aa4ba235a1ffe4dda0ca0b6cc9a
     Author: Robert Haas
@@ -41,7 +41,7 @@ Following the [recent API modifications](http://michael.otacoo.com/postgresql-2/
 
 The possibility to start background workers at will is a necessary condition for more complex features like parallel query processing. In this case a given server backend processing a read query with a huge ORDER BY could balance the execution load among multiple CPUs used other slave backends, or workers, started dynamically to accelerate the operation. Starting and stopping backends would be in this case in charge of the master backend at the execution level, while the number of backends to use would need to be determined at the query planning phase. The possibility to pass tuples, transaction snapshots, execution plans or any data between backends is still in the works, yet the possibility to control backends at will is a good step in this direction.
 
-In Postgres 9.4, at least at the moment this post is written, here is how looks the structure visible to users developping a background worker module.
+In Postgres 9.4, at least at the moment this post is written, here is how looks the structure visible to users developing a background worker module.
 
     typedef struct BackgroundWorker
     {

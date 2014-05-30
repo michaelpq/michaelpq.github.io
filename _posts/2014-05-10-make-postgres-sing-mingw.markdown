@@ -54,7 +54,7 @@ for quite a long time now, involving for example the Windows SDK and even
 Visual C++ (MSVC), but as well another, more hacky way using MinGW. This
 may be even an easier way to enter in the world of Windows development
 if you are used to Unix-like OSes as you do not need to rely on some
-externally-developped SDK and still need to type by yourself commands
+externally-developed SDK and still need to type by yourself commands
 like ./configure and make.
 
 First of all, once you have your hands on a Windows box, perhaps the

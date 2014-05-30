@@ -26,7 +26,7 @@ tags:
 - vacuum
 ---
 
-pg\_reorg is a postgresql module developped and maintained by NTT that allows to redistribute a table without taking locks on it.
+pg\_reorg is a postgresql module developed and maintained by NTT that allows to redistribute a table without taking locks on it.
 The code is hosted by pg\_foundry [here](http://pgfoundry.org/projects/reorg/).
 However, pgfoundry uses CVS :(, so I am also maintaining a fork in github in sync with pgfoundry [here](https://github.com/michaelpq/pg_reorg).
 

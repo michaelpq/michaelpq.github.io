@@ -113,4 +113,4 @@ A last example: kill periodically backends (here every 60s) that have not been a
     --------
     (0 rows)
 
-In short, a lot of things are doable with \watch, you can automatize for example actions easily with a psql client, like the refresh of a materialized view. At least I won't need anymore to type 50 times the same query when developping an application using Postgres or creating a new feature.
+In short, a lot of things are doable with \watch, you can automatize for example actions easily with a psql client, like the refresh of a materialized view. At least I won't need anymore to type 50 times the same query when developing an application using Postgres or creating a new feature.

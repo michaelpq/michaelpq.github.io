@@ -24,7 +24,7 @@ tags:
 - start
 - slot
 ---
-When developping a logical change receiver with the new [logical decoding]
+When developing a logical change receiver with the new [logical decoding]
 (http://www.postgresql.org/docs/devel/static/logicaldecoding.html) facility
 of Postgres 9.4, there are a couple of new commands and a certain libpq
 protocol to be aware of before beginning any development for a logical
