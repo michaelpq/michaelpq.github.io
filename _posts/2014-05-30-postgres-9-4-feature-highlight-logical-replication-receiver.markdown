@@ -43,11 +43,9 @@ from it, which are in this case ready-to-be-applied raw queries. Those
 changes are then applied on the database one by one using the [SPI]
 (http://www.postgresql.org/docs/devel/static/spi.html) through  a loop
 process that sleeps during a customizable amount of nap time. Note that
-receiver\_raw is not *that* performant as it only applies one single
-query per process loop, and loop sleeps for a given amount of time which
-is of course customizable with a GUC. More complicated processing like
-applying batches of changes could be done as well but as a proof of concept
-this plugin is enough as it is.
+receiver\_raw is actually designed to be performant as it applies one single
+batch of changes using only one transaction in a single loop process.
+That's the best doable particularly for long transactions.
 
 By the way, here are a couple of things to be aware of when developing
 your own logical change receiver.
