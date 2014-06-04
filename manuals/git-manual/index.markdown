@@ -24,11 +24,6 @@ tags:
 - manage
 - cvs
 ---
-From here, the following subsections are as well available.
-
-  * [Submodules](/manuals/git-manual/submodules/)
-  * [CVS to GIT](/manuals/git-manual/cvs-to-git/)
-
 Git is a code tree management largely present in many development teams.
 Have a look also [here](http://git-scm.com/).
 
@@ -161,6 +156,18 @@ delete a remote branch listed locally:
 
     git branch -rd $PROJECT_NAME/$BRANCH_NAME
 
+Assigning a description to a branch is useful to keep track on the work
+being done on a bug or a feature. To set a description run this command
+that will open an editor:
+
+    git branch --edit-description
+
+It may be useful to use that to keep notes of what was being done, like
+future plans, next steps or remaining tasks. It is then possible to read
+again the description saved previously with this command:
+
+    git config branch.$BRANCH_NAME.description
+
 ### 5. Play with branches in remote repository
 
 This will push your local branch BRANCH_NAME to your remote project
@@ -246,16 +253,20 @@ this case it is necessary to treat them one by one.
 
     git rebase --continue
 
-makes rebase continue to the next conflict.
+Makes rebase continue to the next conflict.
 
     git rebase --abort
 
-stops rebase.
+Stops rebase.
 
     git rebase --skip
 
-skip this conflict. Once a conflict is solved on a file, do not forget
-to add it with "git add" before continue rebase.
+Skip this conflict. Once a conflict is solved on a file, do not forget
+to add it with "git add" before continue rebase. The interactive mode
+is useful as well and far more flexible if you need to edit, amend or
+merge a couple of commits during the rebase.
+
+    git rebase --interactive $BRANCH_NAME
 
 When only few commits are being moved, git cherry-pick is also useful.
 For example, by being on $CURRENT_BRANCH:
@@ -344,3 +355,68 @@ Those ones are by default reported by fsck. Removing them can be done
 with the following command:
 
     git gc --prune=now
+
+### 11. History
+
+reflog helps to track the history of the actions that occurred on
+a local repository in the order they have occurred when applied. So
+for example HEAD@{N} means the position where HEAD was N moves ago.
+
+    git reflog [show]
+
+Deleting entried in the reflog is possible with this command:
+
+    git reflog delete $REFERENCE
+
+### 12. Hooks
+
+Here are some hooks facilitating the life of developers. Note that
+hooks need to be made executable.
+
+Hook to update all the submodules after a branch checkout. Save it
+as .git/hooks/post-checkout.
+
+    #!/bin/bash
+    # Update submodules after a branch checkout
+    CURRENT_FOLDER=`pwd`
+
+    # Move to the root of this folder
+    cd `git rev-parse --show-toplevel`
+
+    # After a checkout, enforce an update of submodules for this folder
+    git submodule update --init --recursive
+
+    # Move back to current folder
+    cd $CURRENT_FOLDER
+
+You can as well test if code compiles correctly after a patch by
+creating a pre-push hook running the compile commands. Save it as
+.git/hooks/pre-push.
+
+### 13. submodules
+
+A submodule consists of a soft link in a Git repo to another repository,
+defined on parent by a path and a commit ID. Since git 1.8.3, a branch can
+as well be given to synchronize a submodule based on the latest commit of
+a branch. Here is a way to initialize everything easily:
+
+    git submodule update --init --recursive
+
+Watch the status of the submodules.
+
+### 14. Migration
+
+Transferring a CVS repository to a GIT one is pretty simple.
+
+You need first to install the following packages: git-cvs cvsps. In
+ArchLinux, git-cvs is lacking of support in ArchLinux, so I used an
+RPM-based box.
+
+    yum install git-cvs cvsps
+
+Then, simply run the following command in a given folder $FOLDER.
+
+    mkdir $FOLDER
+    cd $FOLDER
+    git cvsimport -v -d :pserver:anonymous@example.com:/sources/classpath \
+        $MODULE_NAME
