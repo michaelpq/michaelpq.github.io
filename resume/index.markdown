@@ -15,7 +15,6 @@ tags:
 - source
 - postgresql
 - xc
-- mongodb
 - core
 - extension
 - france
@@ -27,7 +26,6 @@ tags:
 - vitae
 - resume
 ---
-
 Personal information
 --------------------
 
@@ -40,7 +38,8 @@ Work area
 
   * Open source Developer
   * Relational Database Developer - PostgreSQL
-  * Goal: Develop state-of-the-art Database and Open Source softwares
+  * Goal: Develop state-of-the-art Database and Open Source softwares,
+protect 80 characters per line of code.
 
 Professional experience
 -----------------------
@@ -62,7 +61,8 @@ Professional experience
   * **Otacoo.com**
   * Website administrator during spare time
   * Main projects:
-   * Creator of [Dwarfare](http://dwarfare.otacoo.com), text based mmorpg in php
+   * Creator of [Dwarfare](http://dwarfare.otacoo.com), text based mmorpg
+in php
    * Game wiki (Monster Hunter Portable 3rd)
    * Personal blog and some other DB/appli utilities
    * 30,000 pages views/month
@@ -77,23 +77,28 @@ Professional experience
 ### Mars 2008-Aout 2008
 
   * **Astek Sud-est**, Sophia-Antipolis, France
-  * Consultant for **Amadeus**, specialized in flight ticket booking systems.
-  * Development of C++/C solutions, support to other teams and customer request actions.
+  * Consultant for **Amadeus**, specialized in flight ticket booking
+systems.
+  * Development of C++/C solutions, support to other teams and customer
+request actions.
 
 ### January 2007-August 2007
 
   * **Hitachi Ltd**, Hitachi City, Japan
   * Program Vulcanus in Japan. **40 participants for 1,000 applicants**
-  * Member of a team in charge of the development of electronic packages with new
+  * Member of a team in charge of the development of electronic packages
+with new
   * Conception of heat materials.
-  * Creation of cooling designs for electronic package cooled by low-speed airflow (patented). Work in Japanese
+  * Creation of cooling designs for electronic package cooled by low-speed
+airflow (patented). Work in Japanese
 
 ### June 2006-August 2006
 
   * **CEMAGREF**, Bordeaux, France
   * Statistical forecast of pipe failures in a water network.
   * Comparison of the efficiency of 2 statistical processes: Yule and Weibull.
-  * Creation of a comparison method to evaluate the age of water network of Saint-Etienne
+  * Creation of a comparison method to evaluate the age of water network of
+Saint-Etienne
 
 Education
 ---------
@@ -102,7 +107,8 @@ Education
 
   * **ENSEEIHT**, Toulouse, France
   * 3rd year engineer student.
-  * Computational fluid dynamics (CFD): Multiphase flows, turbulence models, combustion
+  * Computational fluid dynamics (CFD): Multiphase flows, turbulence models,
+combustion
   * Development of efficient software solutions for fluid simulation.
   * Master's degree
   * **Among 10% best students.**
@@ -124,7 +130,8 @@ Education
 ### September 2004-May 2005
 
   * **ENSEEIHT**, Toulouse, France
-  * National polytechnic Institute of engineering in Electro-technology, Electronics, Computer Science, Hydraulics and Telecommunications
+  * National polytechnic Institute of engineering in Electro-technology,
+Electronics, Computer Science, Hydraulics and Telecommunications
   * 1st year engineer student.
   * Statistics, mechanical engineering, material science.
   * Basic programming: C, C++, Fortran introduction.
@@ -133,8 +140,10 @@ Education
 ### September 2002-July 2004
 
   * **Lycee Berthollet**, Annecy, France
-  * Preparatory classes for entrance exams into national engineering schools (Grandes ecoles).
-  * Deep Mathematics and physics theorical studies: MPSI and MP* (Math Otaku times!)
+  * Preparatory classes for entrance exams into national engineering
+schools (Grandes ecoles).
+  * Deep Mathematics and physics theorical studies: MPSI and MP* (Math
+Otaku times!)
 
 Languages
 ---------
@@ -158,7 +167,8 @@ IT skills
 ### Programming skills
 
   * Programming Languages: C, C++, Fortran, Java, Perl, Python and Ruby
-  * Environment scripting: bash, shell. Emacs user! (minimum amount of vi to keep being clean)
+  * Environment scripting: bash, shell. Emacs user! (minimum amount of vi
+to keep being clean)
   * Web applications: HTML, php, some javascript
   * Database stuff: SQL, MySQL, PostgreSQL and related tools
 
@@ -177,5 +187,8 @@ Extra-curricular activities
 
 ### Awards
 
-  * June 1999 : 3rd of the Maths Olympics of Rhone-Alpes area, France (approximately 1,000 participants)
-  * September 2006 : Award from Vulcanus in Japan program, chosen with 40 other participants among 1,000 applications. Sponsorised by the EU-Japan Center for Industrial Cooperation based in Brussels.
+  * June 1999 : 3rd of the Maths Olympics of Rhone-Alpes area, France
+(approximately 1,000 participants)
+  * September 2006 : Award from Vulcanus in Japan program, chosen with
+40 other participants among 1,000 applications. Sponsorised by the EU-Japan
+Center for Industrial Cooperation based in Brussels.
