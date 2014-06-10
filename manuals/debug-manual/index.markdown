@@ -273,6 +273,14 @@ for your class methods.
 
     nm
 
+If gdb initialization fails when attaching a process like that:
+
+    ptrace 'operation not permitted'
+
+Simply set up that:
+
+    echo 0 > /proc/sys/kernel/yama/ptrace_scope
+
 ## lldb
 
 Attach process to debugger:
