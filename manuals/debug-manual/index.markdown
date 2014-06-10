@@ -283,3 +283,7 @@ Have a look at a core file:
 
     lldb $BINARY_NAME
     > target prepare -c/--core $CORE_FILE
+
+Start debugger with a command line:
+
+    lldb -- $COMMAND $ARG1 $ARG2
