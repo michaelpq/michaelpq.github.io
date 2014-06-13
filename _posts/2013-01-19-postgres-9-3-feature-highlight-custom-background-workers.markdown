@@ -109,7 +109,7 @@ Postgres core uses \_PG\_init as an entry point to register the customized worke
         worker.bgw_name = "count relations";
         worker.bgw_restart_time = BGW_NEVER_RESTART;
         worker.bgw_main_arg = NULL;
-       RegisterBackgroundWorker(&worker;);
+       RegisterBackgroundWorker(&worker);
     }
 
 #### Respect the transaction flow

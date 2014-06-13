@@ -74,7 +74,7 @@ PG\_MODULE\_MAGIC is absolutely necessary for libraries loaded via shared\_prelo
         worker.bgw_name = "hello world";
         worker.bgw_restart_time = BGW_NEVER_RESTART;
         worker.bgw_main_arg = NULL;
-        RegisterBackgroundWorker(&worker;);
+        RegisterBackgroundWorker(&worker);
     }
 
 This portion of code is used to register the new worker. In this example bgw\_start\_time is set to start only once the system has reached a stable read-write state. The process is also allowed access to shared memory with the flag BGWORKER\_SHMEM\_ACCESS (this is used for MyProc, as this is statically included in procarray.c). Finally there are definitiosn for the functions used first as a main loop for logging of "Hello World" and for the function to kick when there is a SIGTERM on background worker. The process is requested not to restart in case of a crash.  

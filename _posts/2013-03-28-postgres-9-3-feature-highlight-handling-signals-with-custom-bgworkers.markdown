@@ -101,7 +101,7 @@ Once you have this basic infrastructure in place, you need to register this work
         /* Wait 10 seconds for restart before crash */
         worker.bgw_restart_time = 10;
         worker.bgw_main_arg = NULL;
-        RegisterBackgroundWorker(&worker;);
+        RegisterBackgroundWorker(&worker);
     }
 
 Also don't forget that you need a header similar to that to have this code working properly.
@@ -136,7 +136,7 @@ In order to bring more fluidity to you custom worker and not have it use all the
 Then when entering in the main loop process, initialize the latch with that:
 
     InitializeLatchSupport();
-    InitLatch(&signalLatch;);
+    InitLatch(&signalLatch);
 
 Finally you need to set up your main loop to use the latch
 
@@ -148,7 +148,7 @@ Finally you need to set up your main loop to use the latch
         rc = WaitLatch(&signalLatch;,
                 WL_LATCH_SET | WL_TIMEOUT | WL_POSTMASTER_DEATH,
                 1000L);
-        ResetLatch(&signalLatch;);
+        ResetLatch(&signalLatch);
         
         /* Emergency bailout if postmaster has died */
         if (rc & WL_POSTMASTER_DEATH)
@@ -159,6 +159,6 @@ Finally you need to set up your main loop to use the latch
 
 You can also set up the latch such as the sleep will stop immediately if a signal is received. Simply add the following call in hello\_sighup and hello\_sigterm to do that.
 
-    SetLatch(&signalLatch;);
+    SetLatch(&signalLatch);
 
 This code can be found on Github as repository [pg\_plugins](https://github.com/michaelpq/pg_plugins). I created it to group all the bgworker examples I wrote using the facility of PostgreSQL 9.3 and above. You can find the example presented in this post in the folder hello\_signal.
