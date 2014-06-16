@@ -51,20 +51,20 @@ Note that the default operator for this data type remains btree for
 historical reasons and that the new GiST operator needs to be specified
 as follows using inet_ops:
 
-    =# CREATE TABLE aa (a inet);
+    =# CREATE TABLE inet_table (data inet);
     CREATE TABLE
-    =# CREATE INDEX aai ON aa(a);
+    =# CREATE INDEX inet_btree ON inet_table(data);
     CREATE INDEX
-    =# CREATE INDEX aai2 ON aa USING gist (a inet_ops);
+    =# CREATE INDEX inet_gist ON inet_table USING gist (data inet_ops);
     CREATE INDEX
-    =# \d aa
-         Table "public.aa"
+    =# \d inet_table
+     Table "public.inet_table"
      Column | Type | Modifiers 
     --------+------+-----------
-     a      | inet | 
+     data   | inet | 
     Indexes:
-        "aai" btree (a)
-        "aai2" gist (a inet_ops)
+         "inet_btree" btree (data)
+         "inet_gist" gist (data inet_ops)
 
 By looking at [the documentation listing all the operators available for
 those datatypes](http://www.postgresql.org/docs/9.4/static/functions-net.html)
