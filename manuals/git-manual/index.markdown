@@ -104,7 +104,7 @@ this command).
 
     git status
 
-### 4. Play with branches in local repository
+### 4. Branches
 
 Print out a list of all the existing branches (* marks the current branch
 being developed).
@@ -155,6 +155,10 @@ it may happen that a branch deleted on remote is still listed locally. To
 delete a remote branch listed locally:
 
     git branch -rd $PROJECT_NAME/$BRANCH_NAME
+
+Check which branches contain a given commit.
+
+    git branch --contains $COMMIT_ID
 
 Assigning a description to a branch is useful to keep track on the work
 being done on a bug or a feature. To set a description run this command
