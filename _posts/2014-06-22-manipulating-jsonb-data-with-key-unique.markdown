@@ -6,7 +6,7 @@ date: 2014-06-22 15:04:23+00:00
 layout: post
 type: post
 slug: manipulating-jsonb-data-with-key-unique
-title: 'Manipulating jsonb data with its key uniqueness'
+title: 'Manipulating jsonb data by abusing of key uniqueness'
 categories:
 - PostgreSQL-2
 tags:
