@@ -37,9 +37,6 @@ If you have any comments about this blog or its content, or in case of
 inquiries related to PostgreSQL or anything, please feel free to
 contact <b>michael at otacoo dot com</b>.
 
-If you wish to support the author of this blog, be sure to visit the page
-about [Donations](/donations/).
-
 The code of this blog is maintained on [github]
 (https://github.com/michaelpq/michaelpq.github.io) so if you have any
 comments or if you want to provide any corrections that could benefit
