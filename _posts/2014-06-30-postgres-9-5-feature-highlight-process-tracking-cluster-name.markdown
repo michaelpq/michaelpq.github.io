@@ -2,7 +2,7 @@
 author: Michael Paquier
 comments: true
 lastmod: 2014-06-30
-date: 2014-06-30 11:07:29+00:00
+date: 2014-06-30 13:51:29+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-process-tracking-cluster-name
@@ -77,9 +77,9 @@ way!).
 
 Non-ascii characters are printed as question marks.
 
-   $ grep cluster_name $PGDATA/postgresql.conf
-   cluster_name = 'éèê'
-   $ ps x | grep postgres | head -n1
-   81485   ??  Ss     0:00.00 postgres: ??????: logger process
+    $ grep cluster_name $PGDATA/postgresql.conf
+    cluster_name = 'éèê'
+    $ ps x | grep postgres | head -n1
+    81485   ??  Ss     0:00.00 postgres: ??????: logger process
 
 For development purposes, this makes debugging easier...
