@@ -46,7 +46,7 @@ Up to now, there have been two ECHO modes:
 
   * "all", to print to the standard output all the queries before they are
 parsed or executed. This can be set when starting psql with option -a.
-  * "queries", to have psql print all the queries sent to server, This can
+  * "queries", to have psql print all the queries sent to server. This can
 be set additionally with option -e of psql.
 
 The new mode is called "errors" and can be either set with the option -b
