@@ -80,3 +80,31 @@ create the following vbscript, called for example my_script.vbs:
 Then run this command:
 
     cscript /nologo my_script.vbs file_to_check.exe
+
+### Tasks
+
+Print list of processes running as tasks.
+
+    tasklist
+
+Print list of processes running given executable.
+
+    tasklist /FI "IMAGENAME eq prog.exe"
+
+Print a given service listed in a task.
+
+    tasklist /svc /fi "SERVICE eq $SERVICE_NAME"
+
+Kill a process.
+
+    taskkill /PID $PID_NUMBER /f
+
+### Services
+
+Start or stop a service.
+
+    sc start|stop $SERVICE_NAME
+
+Query a service to test it.
+
+    sc query $SERVICE_NAME
