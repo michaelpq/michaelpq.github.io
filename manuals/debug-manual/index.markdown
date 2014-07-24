@@ -169,6 +169,11 @@ the code. Print a value.
     print $OBJECT_NAME
     p $OBJECT_NAME
 
+Print a value in another format:
+
+    p/x $OBJECT_NAME # Hexadecimal
+    p/t $OBJECT_NAME # Binary
+
 Print the value of a pointer or an array element.
 
     print $OBJECT_NAME[i]
