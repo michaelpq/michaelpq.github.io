@@ -53,7 +53,7 @@ This post is not here to deal with the new bgworker features that are being deve
         bgworker_sighdlr_type bgw_sighup;
         bgworker_sighdlr_type bgw_sigterm;
     } BackgroundWorker
-`
+
 And here is the same structure at the top commit of REL9_3_STABLE as of the date of this post (which will be normally its final shape for release 9.3):
 
     typedef struct BackgroundWorker
