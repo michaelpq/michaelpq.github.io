@@ -182,4 +182,6 @@ The following results are obtained:
     Flushed = 2204
 
 There are of course many possibilities with this facility, so be sure to
-adapt it to your own needs and use it wisely.
+adapt it to your own needs and use it wisely. [perf]
+(https://wiki.postgresql.org/wiki/Profiling_with_perf) offers as well
+similar features for probe functions, and can work on existing binaries.
