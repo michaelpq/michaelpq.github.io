@@ -3,12 +3,12 @@ author: Michael Paquier
 date: 2014-07-31 13:10:48+00:00
 layout: page
 type: page
-slug: mg
-title: 'mg'
+slug: lem
+title: 'lem'
 tags:
 - editor
 - emacs
-- mg
+- lem
 - light
 - weight
 - custom
@@ -21,13 +21,13 @@ tags:
 - maintenance
 - project
 ---
-[mg](https://github.com/michaelpq/mg) is an emacs-like light-weight editor,
-formerly named MicroGnuEmacs. For my own needs and to improve its portability,
+[lem](https://github.com/michaelpq/lem) is an emacs-like light-weight editor,
+based on mg. For my own needs and to improve its portability and it maintenance
 I have been hacking it a bit, finishing with a fork of it that has a couple
 of modifications:
 
   * Use of 4-space tab by default
-  * Removal of ctags support to remove dependency on clens
+  * Removal of independent extensions, removing dependency on clens
   * Update of BSD-related functions to more global things
    * strtonum to strtol
    * strlcat and strlcpy managed using a dedicated port file
@@ -35,4 +35,4 @@ of modifications:
 
 This code can be fetched with the following command:
 
-    git clone https://github.com/michaelpq/mg.git
+    git clone https://github.com/michaelpq/lem.git
