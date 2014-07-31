@@ -23,5 +23,5 @@ tags:
 The following items are available from here:
 
   * [Home - Environment management with Git](/projects/home/)
-  * [lem - light-weight emacs-like editor](/projects/mg/)
+  * [lem - light-weight emacs-like editor](/projects/lem/)
   * [PostgreSQL](/projects/postgres/)
