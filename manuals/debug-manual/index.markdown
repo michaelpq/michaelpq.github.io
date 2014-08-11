@@ -286,6 +286,11 @@ Simply set up that:
 
     echo 0 > /proc/sys/kernel/yama/ptrace_scope
 
+To make the change permanent you can add this line to
+/etc/sysctl.d/10-ptrace.conf:
+
+    kernel.yama.ptrace_scope = 0
+
 ## lldb
 
 Attach process to debugger:
