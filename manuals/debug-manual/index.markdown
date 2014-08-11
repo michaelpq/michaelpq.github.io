@@ -273,7 +273,7 @@ If you want to set certain breakpoints and watchpoints for a project,
 you can put the gdb commands in a file and start gdb with "-x filename".
 This will run those commands just like they were typed on the console.
 
-If you run into problems with the name mangling,show the C style names
+If you run into problems with the name mangling, show the C style names
 for your class methods.
 
     nm
