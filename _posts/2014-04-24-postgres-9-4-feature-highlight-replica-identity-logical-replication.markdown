@@ -49,9 +49,9 @@ to set up a server using [test_decoding]
 replication slot.
 
     =# SELECT * FROM pg_create_logical_replication_slot('my_slot', 'test_decoding');
-     slotname | xlog_position 
-    ----------+---------------
-     my_slot  | 0/16CB0F8
+     slot_name | xlog_position 
+    -----------+---------------
+     my_slot   | 0/16CB0F8
     (1 row)
 
 The replication slot used here will be used in combination with

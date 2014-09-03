@@ -76,9 +76,9 @@ pg\_create\_logical\_replication\_slot like that. Providing a plugin
 name is mandatory:
 
     =# SELECT * FROM pg_create_logical_replication_slot('my_slot', 'test_decoding');
-     slotname | xlog_position
-    ----------+---------------
-     my_slot  | 0/16CB0C0
+     slot_name | xlog_position
+    -----------+---------------
+     my_slot   | 0/16CB0C0
     (1 row)
 
 xlog_position corresponds to the XLOG position where logical decoding

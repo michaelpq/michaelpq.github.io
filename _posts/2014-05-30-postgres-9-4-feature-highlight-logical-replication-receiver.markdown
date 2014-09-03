@@ -139,9 +139,9 @@ node listening to port 5432 runs the logical decoder decoder\_raw.
 A logical slot has been created on it, under the database "postgres".
 
     $ psql -p 5432 postgres \
-       -c 'SELECT slotname FROM pg_create_logical_replication_slot('slot', 'decoder_raw');
-     slotname 
-    ----------
+       -c 'SELECT slot_name FROM pg_create_logical_replication_slot('slot', 'decoder_raw');
+     slot_name 
+    -----------
      slot
     (1 row)
 

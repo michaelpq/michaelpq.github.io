@@ -66,9 +66,9 @@ receiver\_raw naps 100ms after a process loop (processing a single batch
 of changes). And of course both nodes need to have a replication slot
 created with name "slot". Let's use at the same time a simple schema.
 
-    =# SELECT slotname FROM pg_create_logical_replication_slot('slot', 'decoder_raw');
-     slotname 
-    ----------
+    =# SELECT slot_name FROM pg_create_logical_replication_slot('slot', 'decoder_raw');
+     slot_name 
+    -----------
      slot
     (1 row)
     =# CREATE TABLE aa (a int);

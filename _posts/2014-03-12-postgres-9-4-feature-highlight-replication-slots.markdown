@@ -96,9 +96,9 @@ create a physical replication slot on the master node of your cluster:
      f
     (1 row)
     =# SELECT * FROM pg_create_physical_replication_slot('slot_1');
-     slotname | xlog_position 
-    ----------+---------------
-     slot_1   | null
+     slot_name | xlog_position 
+    -----------+---------------
+     slot_1    | null
     (1 row)
 
 A necessary condition to be able to create replication slots is to set
@@ -109,12 +109,12 @@ happens:
     ERROR:  55000: replication slots can only be used if max_replication_slots > 0
     LOCATION:  CheckSlotRequirements, slot.c:760
 
-And then set primary\_slotname in [recovery.conf]
+And then set primary\_slot\_name in [recovery.conf]
 (http://www.postgresql.org/docs/devel/static/standby-settings.html).
 This setting has no effect if primary\_conninfo is not set. recovery.conf
 will look like that:
 
-    primary_slotname = 'slot_1'
+    primary_slot_name = 'slot_1'
     primary_conninfo = 'port=5432 application_name=node_5433'
     standby_mode = on
 

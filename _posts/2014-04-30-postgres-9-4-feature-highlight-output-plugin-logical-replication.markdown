@@ -154,10 +154,10 @@ a complete relation name with both namespace and table name:
 Now let's see how this works, with for example the following SQL sequence:
 
     =# -- Create slot
-    =# SELECT slotname
+    =# SELECT slot_name
        FROM pg_create_logical_replication_slot('custom_slot', 'decoder_raw');
-      slotname
-    -------------
+      slot_name
+    --------------
      custom_slot
     (1 row)
     =# -- A table using DEFAULT as REPLICA IDENTITY and some operations
