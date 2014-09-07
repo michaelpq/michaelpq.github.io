@@ -34,6 +34,15 @@ You can change the layer of your keyboard with this command.
 
     loadkeys layout
 
+Or set up the locale like this with localectl (more useful when using
+for example xorg coupled with awesome).
+
+    localctl set-x11-keymap layout jp106
+
+Then check its status.
+
+    localectl status
+
 All the available layers are located in /usr/share/kbd/keymaps/. For
 example in my case, the Japanese keyboard is jp106.
 
