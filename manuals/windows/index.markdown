@@ -108,3 +108,13 @@ Start or stop a service.
 Query a service to test it.
 
     sc query $SERVICE_NAME
+
+### Permissions
+
+Deny access to a folder for a given user.
+
+    icacls c:\to\path /deny %USERNAME%:(D)
+
+Check access permissions to this path.
+
+    rd /S /Q c:\to\path
