@@ -1,23 +1,32 @@
 ---
 author: Michael Paquier
-date: 2012-04-18 08:59:26+00:00
+date: 2012-10-17 01:56:58+00:00
 layout: page
 type: page
-slug: installation-of-xfce-in-virtualbox-or-nvidia-driver
-title: XFCE - Basics
+slug: xfce
+title: XFCE
 tags:
 - xfce
-- installation
-- deployment
-- pacman
+- install
 - archlinux
-- window
-- desktop
-- initialize
-- slim
 - graphic
+- card
+- slim
+- installation
+- linux
+- xfce
+- i3
+- awesome
+
 ---
-Here are the details to install XFCE, a light-weight desktop system.
+Here are the details to install a window manager. There are many
+choices available under-the-hood, among them:
+
+  * XFCE, a light-weight desktop system.
+  * i3, a light-weight window tiling manager
+  * awesome, other light-weight window tiling manager, using lua for
+  configuration
+
 With the unusable Unity and Gnome switching to Gnome 3, more and more
 people are moving to such light environments. This page supposes that
 you already installed an ArchLinux environment (went to the end of the
@@ -25,15 +34,15 @@ ISO install). You might have installed this iso in a new machine or a
 VirtualBox, this page covers both cases as desktop install is very
 close for both environments.
 
-When installing a system recommend the following packages:
+When installing a system the following packages are recommended:
 
   * mlocate, when installing from a core image, you may find some
-corrupted package keys, and may be forced to use pacman-key --init,
-in this case the command updatedb can accelerate the process
+  corrupted package keys, and may be forced to use pacman-key --init,
+  in this case the command updatedb can accelerate the process
   * readline, zlib and base-devel. Useful for an environment for
-PostgreSQL
+  PostgreSQL
   * iptables, you need absolutely a firewall. But be sure to add
-iptables in daemons with "systemctl enable iptables"
+  iptables in daemons with "systemctl enable iptables"
 
 A tip here, you can change virtual desktop with Alt+Fn, there are
 6 virtual terminals available :). Don't forget to update your list of
@@ -47,8 +56,9 @@ This guide is divided into several parts.
   * 2. Xorg stuff
   * 3. Install dbus
   * 4. Graphical drivers
-  * 5. Install Desktop
-  * 6. Desktop launcher
+  * 5. Monitor
+  * 6. Window manager
+  * 7. Desktop launcher
 
 ### 1. Setting up user
 
@@ -66,6 +76,11 @@ Then modify its password with this command.
 Install those packages.
 
     pacman -S xorg-server xorg-xinit
+
+Here is a package installing xsetroot, able to set a monocolor font
+as desktop background.
+
+    pacman -S xorg-xsetroot
 
 ### 3. Install dbus
 
@@ -109,7 +124,7 @@ libva-intel-driver is useful for acceleration on newer GPU.
 Install the following packages.
 
     pacman -S virtualbox-guest-modules virtualbox-guest-utils \
-        kernel26-headers
+            kernel26-headers
 
 You also need to set the kernel so as the vbox modules are launched
 automatically at each boot. It is necessary to create a configuration
@@ -124,22 +139,11 @@ boot.
 
     modprobe -a vboxguest vboxsf vboxvideo
 
-### 5. Install desktop
+### 5. Monitor
 
-Install those packages, first XFCE stuff.
-
-    pacman -S xfce4
-
-Then its goodies (highly recommended).
-
-    pacman -S xfce4-goodies
-
-Desktop is now basically installed, but you need a launcher.
-
-### 6. Desktop launcher
-
-There are several ways to do that, I prefer using slim which is light-weight
-and fast, so... There are other options also.
+Xorg needs a monitor that will work as an extra layer with the window
+manager. Slim is light, and may be a good choice (at least it has never
+failed the other of this site).
 
     pacman -S slim
 
@@ -148,30 +152,22 @@ Then activate slim to become your active display manager.
     systemctl enable slim.service
 
 This makes your session to balance to slim instead of moving to a terminal
-at boot. Then the final part, you need to initialize your session to launch
-XFCE at login. If this is not done correctly, you will finish with an error
-at login screen "cannot execute login command". So create the file ~/.xinitrc.
-You can also copy the content below:
+at boot.
 
-    #!/bin/sh
-    #
-    # ~/.xinitrc
-    #
-    # Executed by startx (run your window manager from here)
-    if [ -d /etc/X11/xinit/xinitrc.d ]; then
-      for f in /etc/X11/xinit/xinitrc.d/*; do
-        [ -x "$f" ] && . "$f"
-      done
-      unset f
-    fi
-    # exec gnome-session
-    # exec startkde
-    # exec startxfce4
-    # ...or the Window Manager of your choice
+### 6. Window manager
+
+This heavily depends on the system you want, here are some examples. For
+XFCE4, here are the packages.
+
+    pacman -S [ xfce4 xfce4-goodies | i3 | awesome ]
+
+Packages for i3, or even awesome are available. After installation what
+is needed is ~/.xinitrc with something like that (depends on the window
+manager installed though).
+
     exec ck-launch-session startxfce4
-
-Here the essential part is "exec ck-launch-session startxfce4" used to
-launch your xfce session for chosen user.
+    exec i3
+    exec awesome
 
 ### Specific drivers
 
