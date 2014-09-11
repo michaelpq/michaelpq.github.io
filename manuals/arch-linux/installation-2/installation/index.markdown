@@ -37,7 +37,7 @@ You can change the layer of your keyboard with this command.
 Or set up the locale like this with localectl (more useful when using
 for example xorg coupled with awesome).
 
-    localctl set-x11-keymap layout jp106
+    localectl set-x11-keymap layout jp106
 
 Then check its status.
 

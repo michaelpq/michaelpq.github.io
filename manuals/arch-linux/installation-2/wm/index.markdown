@@ -54,11 +54,10 @@ This guide is divided into several parts.
 
   * 1. Setting up user
   * 2. Xorg stuff
-  * 3. Install dbus
-  * 4. Graphical drivers
-  * 5. Monitor
-  * 6. Window manager
-  * 7. Desktop launcher
+  * 3. Graphical drivers
+  * 4. Monitor
+  * 5. Window manager
+  * 6. Specific drivers
 
 ### 1. Setting up user
 
@@ -82,21 +81,7 @@ as desktop background.
 
     pacman -S xorg-xsetroot
 
-### 3. Install dbus
-
-Install this package.
-
-    pacman -S dbus
-
-Start service.
-
-    rc.d start dbus
-
-Add dbus in the list of bootable daemons.
-
-    systemctl enable dbus
-
-### 4. Graphical drivers
+### 3. Graphical drivers
 
 This part differs if you use a VirtualBox or an environment with nvidia
 drivers.
@@ -139,7 +124,7 @@ boot.
 
     modprobe -a vboxguest vboxsf vboxvideo
 
-### 5. Monitor
+### 4. Monitor
 
 Xorg needs a monitor that will work as an extra layer with the window
 manager. Slim is light, and may be a good choice (at least it has never
@@ -154,7 +139,7 @@ Then activate slim to become your active display manager.
 This makes your session to balance to slim instead of moving to a terminal
 at boot.
 
-### 6. Window manager
+### 5. Window manager
 
 This heavily depends on the system you want, here are some examples. For
 XFCE4, here are the packages.
@@ -169,7 +154,7 @@ manager installed though).
     exec i3
     exec awesome
 
-### Specific drivers
+### 6. Specific drivers
 
 In a virtual environment, you might find the error:
 
