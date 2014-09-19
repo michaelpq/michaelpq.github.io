@@ -24,6 +24,18 @@ tags:
 - open source
 ---
 
+#### Postgres Open 2014: Understanding logical decoding
+
+  * [pdf of PGOpen](/content/materials/20140919_pgopen_logirep.pdf)
+  * Place: Chicago, US
+  * Date: 2014/09/19
+  * Duration: 50~60mins
+
+Presentation about logical decoding and its interactions with replication.
+A material for advanced hackers with good Postgres skill and understanding
+of the internals of the server, as well as of its external protocols.
+Not to be put in the hands of beginners.
+
 #### Postgres Open 2013: Taking advantage of custom background workers
 
   * [pdf of PGOpen](/content/materials/20130916_pgopen_bgworker.pdf)
