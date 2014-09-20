@@ -1,2 +1,5 @@
 # Automatically generated site content
 _site/
+
+# Entries created by OSX
+.DS_Store
