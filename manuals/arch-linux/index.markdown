@@ -17,6 +17,7 @@ tags:
 ---
 The following sub-sections are available from here:
 
-  * [Installation](/manuals/arch-linux/installation-2/)
+  * [Coding](/manuals/arch-linux/coding/)
   * [Configuration](/manuals/arch-linux/misc-configuration/)
+  * [Installation](/manuals/arch-linux/installation-2/)
   * [Packaging](/manuals/arch-linux/packaging/)
