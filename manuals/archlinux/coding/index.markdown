@@ -3,8 +3,8 @@ author: Michael Paquier
 date: 2014-09-20 05:13:59+00:00
 layout: page
 type: page
-slug: arch-linux
-title: 'Arch Linux - Coding'
+slug: archlinux
+title: 'Archlinux - Coding'
 tags:
 - manual
 - linux

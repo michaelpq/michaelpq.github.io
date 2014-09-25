@@ -18,7 +18,7 @@ tags:
 yaourt is a package manager in ArchLinux complementary to pacman. It is
 useful to get packages that cannot be found through pacman. yaourt may
 require some specific settings if your environment is behind a proxy,
-so you should have a look [here](/manuals/arch-linux/proxy-settings/).  
+so you should have a look [here](/manuals/archlinux/proxy-settings/).  
 
 ### Installation
 

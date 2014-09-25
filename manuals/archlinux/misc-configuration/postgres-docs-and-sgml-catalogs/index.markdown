@@ -28,7 +28,7 @@ There are 2 problems explaining why.
 installed manually.
 
 You might need to install first those packages, some of them being
-available only from AUR with [yaourt](/manuals/arch-linux/yaourt/).
+available only from AUR with [yaourt](/manuals/archlinux/yaourt/).
 
     jade
     docbook-dsssl

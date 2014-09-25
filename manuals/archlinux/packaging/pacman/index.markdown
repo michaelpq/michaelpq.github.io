@@ -17,7 +17,7 @@ tags:
 ---
 Here are a list of useful commands to be used with pacman. It may require
 some specific settings if your environment is behind a proxy, so you
-should have a look [here](/manuals/arch-linux/proxy-settings/).
+should have a look [here](/manuals/archlinux/proxy-settings/).
 
 Update and install the list of package.
 

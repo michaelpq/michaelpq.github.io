@@ -17,5 +17,5 @@ tags:
 ---
 The following sub-sections are available from here:
 
-  * [pacman](/manuals/arch-linux/packaging/pacman/)
-  * [yaourt](/manuals/arch-linux/packaging/yaourt/)
+  * [pacman](/manuals/archlinux/packaging/pacman/)
+  * [yaourt](/manuals/archlinux/packaging/yaourt/)

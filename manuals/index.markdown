@@ -17,7 +17,7 @@ tags:
 ---
 The following sub-sections are available from here:
 
-  * [Archlinux](/manuals/arch-linux/)
+  * [Archlinux](/manuals/archlinux/)
   * [Cryptocurrency](/manuals/cryptocurrency/)
   * [Debuggers](/manuals/debug-manual/)
   * [ESX and vSphere](/manuals/esx-and-vsphere/)
