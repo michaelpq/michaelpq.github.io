@@ -27,7 +27,7 @@ tags:
 
 The post presents a proposal to implement an HA solution based on PostgreSQL streaming replication and Standby node structure. This solution is still in construction, so the final implementation design that will be chosen for Postgres-XC may slightly change.
 
-Before reading this post and if you are not experienced with PostgreSQL 9.0/9.1 features, you should refer to the [background about PostgreSQL Master/Slave fallback](http://michael.otacoo.com/postgresql-2/postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes/).
+Before reading this post and if you are not experienced with PostgreSQL 9.0/9.1 features, you should refer to the [background about PostgreSQL Master/Slave fallback](/postgresql-2/postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes/).
 
 ### Synchronous streaming replication for Postgres-XC
 

@@ -47,7 +47,7 @@ So let's try to use it with a simple configuration of one master and four slaves
 Data files of master, slaves and archive folder are located in $HOME/bin/postgres.
 You need to checkout the master branch of PostgreSQL GIT to try this feature.
 
-The settings are pretty similar to what you can find [here](http://michael.otacoo.com/postgresql-2/postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes/).
+The settings are pretty similar to what you can find [here](/postgresql-2/postgres-9-1-setup-a-synchronous-stand-by-server-in-5-minutes/).
 However, you have to take care of the following settings in postgresql.conf:
 
   * Master

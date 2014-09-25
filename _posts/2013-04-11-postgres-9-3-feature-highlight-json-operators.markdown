@@ -27,7 +27,7 @@ tags:
 - write
 ---
 
-Postgres 9.3 is going to be a great release for JSON data type. After having a look at the [new functions for data generation](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/), let's look at the new JSON features that the commit below brings.
+Postgres 9.3 is going to be a great release for JSON data type. After having a look at the [new functions for data generation](/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/), let's look at the new JSON features that the commit below brings.
 
     commit a570c98d7fa0841f17bbf51d62d02d9e493c7fcc
     Author: Andrew Dunstan <andrew@dunslane.net>

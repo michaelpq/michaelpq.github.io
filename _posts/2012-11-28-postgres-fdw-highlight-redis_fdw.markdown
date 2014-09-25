@@ -44,7 +44,7 @@ The installation of a FDW can be done since PostgreSQL 9.1 with the use of CREAT
 
 Note: Once I thought about a git FDW as git is itself a NoSQL database managing concurrency of commits and branches its own way... But got no time to design or code it.
 
-By the way, the FDW this post is focused on is called [redis\_fdw](https://github.com/dpage/redis_fdw), which allows to fetch data from a foreign Redis server and materialize it directly on Postgres side. Before continuing reading this post, be sure that you already have running a [Redis server](http://michael.otacoo.com/redis/redis-first-steps-fetch-install-and-server-creation/) and a Postgres server.
+By the way, the FDW this post is focused on is called [redis\_fdw](https://github.com/dpage/redis_fdw), which allows to fetch data from a foreign Redis server and materialize it directly on Postgres side. Before continuing reading this post, be sure that you already have running a [Redis server](/redis/redis-first-steps-fetch-install-and-server-creation/) and a Postgres server.
 Here both Redis and Postgres server run on a local machine with respectively 6379 and 5432 as port numbers (default values).
 
 Then it is time to install redis\_fdw. First fetch the code.

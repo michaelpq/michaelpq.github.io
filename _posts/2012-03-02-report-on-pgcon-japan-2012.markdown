@@ -48,7 +48,7 @@ Then there was the presentation of Robert, about all the new features of 9.2. To
   * Scalability performance
   * JSON type is available in 9.2, basic support, there are still bugs in it but still nice
   * Index only scans
-  * [Cascading replication](http://michael.otacoo.com/postgresql-2/cascading-replication-in-postgresql/)
+  * [Cascading replication](/postgresql-2/cascading-replication-in-postgresql/)
   * Reduction of power consumption (nice for hosting services)
 
 This post is getting long, but here is some feedback about the presentation I gave about Postgres-XC. I got the feeling that people are expected a lot from the project (too much??). The public has been very enthusiastic about the technology presented and few people slept this time :). This was a very general presentation showing the policy we try to respect for 1.0 release. Here is a list of the questions I got, well there were a lot of things about failure and HA, nothing really on performance or feature:

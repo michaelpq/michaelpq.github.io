@@ -87,7 +87,7 @@ There are of course many other use cases possible...
 
 By the way, in order to show how this feature works, I wrote a really simple example of a customized worker called count\_relations that counts every second the number of relations in the database server and that outputs the result in the server logs. 
 
-The code written uses as a base the example in contrib/worker_spi/ of Postgres tarball in a really simplified way. It is available for download [here](http://michael.otacoo.com/wp-content/uploads/2013/01/count_relations.tar.gz). 
+The code written uses as a base the example in contrib/worker_spi/ of Postgres tarball in a really simplified way. It is available for download [here](/wp-content/uploads/2013/01/count_relations.tar.gz). 
 
 After playing with this code, I also wanted to share my experience, so here are a couple of points you should take care of when writing your own customized worker.
 

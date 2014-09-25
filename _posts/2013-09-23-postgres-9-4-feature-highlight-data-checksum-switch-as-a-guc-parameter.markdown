@@ -27,7 +27,7 @@ tags:
 - postgresql
 - server
 ---
-Postgres 9.3 has introduced [data checksums](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-data-checksums/) at the data page level, using a CRC-16 algorithm for the checksum calculation.
+Postgres 9.3 has introduced [data checksums](/postgresql-2/postgres-9-3-feature-highlight-data-checksums/) at the data page level, using a CRC-16 algorithm for the checksum calculation.
 
 With 9.3, the only way to check if an existing server has checksums enabled was to have a look at the data folder using pg\_controldata like that...
 

@@ -77,7 +77,7 @@ In consequence, here is how to create a cluster with a freshly-started Coordinat
      dn2       | D         |     15434 | localhost | f              | f
     (3 rows)
 
-In bonus to this article, you can find [here](http://michael.otacoo.com/wp-content/uploads/2011/12/start_cluster_2.tar.gz) an updated version of the script that can setup a cluster on a local machine with the following options:
+In bonus to this article, you can find [here](/wp-content/uploads/2011/12/start_cluster_2.tar.gz) an updated version of the script that can setup a cluster on a local machine with the following options:
 
   * -c to indicate the number of Coordinators
   * -n to indicate the number of Datanodes

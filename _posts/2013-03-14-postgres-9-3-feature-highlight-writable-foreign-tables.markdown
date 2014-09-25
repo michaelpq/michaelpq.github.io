@@ -57,9 +57,9 @@ Based on the [documentation](http://www.postgresql.org/docs/devel/static/fdw-cal
   * Scan remote table and fetch back to local server the tuples to be manipulated
   * Process UPDATE or DELETE based on the tuples fetched
 
-INSERT does not need such scan as in this case new data is simply sent to the remote table, the tuple values being computed before sending the query (even for immutable functions). Not really performant but it is the safest approach. Postgres-XC has similar and more advanced features for foreign DDL planning and execution in its core (some of them implemented by me), have a look for example at [this article](http://michael.otacoo.com/postgresql-2/complex-dml-queries-and-clause-push-down-in-postgres-xc/) I wrote a while ago.
+INSERT does not need such scan as in this case new data is simply sent to the remote table, the tuple values being computed before sending the query (even for immutable functions). Not really performant but it is the safest approach. Postgres-XC has similar and more advanced features for foreign DDL planning and execution in its core (some of them implemented by me), have a look for example at [this article](/postgresql-2/complex-dml-queries-and-clause-push-down-in-postgres-xc/) I wrote a while ago.
 
-It is possible to test writable foreign tables with postgres\_fdw as it has been extended to support this new feature. So let's give it a try with two postgres servers using ports 5432 and 5433. Server with port 5432 has postgres\_fdw installed and will interact with the remote server running under port 5433. In order to get the basics of postgres\_fdw, you can refer to [this article](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-postgres_fdw/) written a couple of weeks ago.
+It is possible to test writable foreign tables with postgres\_fdw as it has been extended to support this new feature. So let's give it a try with two postgres servers using ports 5432 and 5433. Server with port 5432 has postgres\_fdw installed and will interact with the remote server running under port 5433. In order to get the basics of postgres\_fdw, you can refer to [this article](/postgresql-2/postgres-9-3-feature-highlight-postgres_fdw/) written a couple of weeks ago.
 
 Now, it is time to test the feature. First let's create a table on remote server.
 

@@ -34,7 +34,7 @@ tags:
 - website
 ---
 
-Postgres 9.2 has introduced [JSON as a server data type](http://michael.otacoo.com/postgresql-2/postgres-9-2-highlight-json-data-type/). At this point, the data was simply stored on server side with integrated wrappers checking that data had a correct JSON format. It was a good first step in order to store directly JSON data on server side but core features in 9.2 have its limitations in terms of JSON data manipulation and transformation.
+Postgres 9.2 has introduced [JSON as a server data type](/postgresql-2/postgres-9-2-highlight-json-data-type/). At this point, the data was simply stored on server side with integrated wrappers checking that data had a correct JSON format. It was a good first step in order to store directly JSON data on server side but core features in 9.2 have its limitations in terms of JSON data manipulation and transformation.
 
 Two new sets of JSON features have been added to PostgreSQL 9.3 planned to be released this year: functions related to data generation and a new set of APIs for data processing. The one this post deals with the ability to generate JSON data based on existing data types. The second set of features (operators and new processing functions) will be explained in a future post.
 
@@ -87,7 +87,7 @@ json\_agg is a function that can transform a record into a JSON array.
       {"a":false,"b":null}]
     (1 row)
 
-The other tools for data generation are included in the contrib module hstore. Do you remember? This module can be used to store [key/value pairs in a single table column](http://michael.otacoo.com/postgresql-2/postgres-feature-highlight-hstore/). It is now possible to cast hstore data as json with some native casting or with function hstore\_to\_json.
+The other tools for data generation are included in the contrib module hstore. Do you remember? This module can be used to store [key/value pairs in a single table column](/postgresql-2/postgres-feature-highlight-hstore/). It is now possible to cast hstore data as json with some native casting or with function hstore\_to\_json.
 
     postgres=# CREATE TABLE aa (id int, txt hstore);
     CREATE TABLE

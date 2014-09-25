@@ -76,7 +76,7 @@ This feature is actually pretty useful when used with arrays when decomposing th
        49 |   6
     (6 rows)
 
-And it is actually far more interesting with the new feature called [ROWS FROM](http://michael.otacoo.com/postgresql-2/postgres-9-4-feature-highlight-multi-argument-unnest-and-table-for-multiple-functions/) (or multi-argument unnest), because you can associate a counter usable for some ORDER BY operations easily with that.
+And it is actually far more interesting with the new feature called [ROWS FROM](/postgresql-2/postgres-9-4-feature-highlight-multi-argument-unnest-and-table-for-multiple-functions/) (or multi-argument unnest), because you can associate a counter usable for some ORDER BY operations easily with that.
 
     =# SELECT * FROM unnest('{1,2,3}'::int[], '{4,5,6,7}'::int[])
        WITH ORDINALITY AS t(a1, a2, num) ORDER BY t.num DESC;

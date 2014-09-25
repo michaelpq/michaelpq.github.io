@@ -114,7 +114,7 @@ mounted.
     pacstrap /mnt base base-devel
 
 If you need to go through a proxy, you need special settings for pacman
-[here](http://michael.otacoo.com/manuals/archlinux/proxy-settings/).
+[here](/manuals/archlinux/proxy-settings/).
 
 ### Generate fstab
 

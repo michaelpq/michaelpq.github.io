@@ -125,7 +125,7 @@ There is a new catalog table to help you find the current state of materialized 
      aam         | f
     (1 row)
 
-It is also not possible to run DML queries on it. This makes sense as the data this view has might not reflect the current state of its parent relation(s). On the contrary, a simple view runs its underlying query each time it is needed, so a parent table could be modified through it (per se [updatable views](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-auto-updatable-views/)).
+It is also not possible to run DML queries on it. This makes sense as the data this view has might not reflect the current state of its parent relation(s). On the contrary, a simple view runs its underlying query each time it is needed, so a parent table could be modified through it (per se [updatable views](/postgresql-2/postgres-9-3-feature-highlight-auto-updatable-views/)).
 
     postgres=# INSERT INTO aam VALUES (1);
     ERROR:  cannot change materialized view "aam"

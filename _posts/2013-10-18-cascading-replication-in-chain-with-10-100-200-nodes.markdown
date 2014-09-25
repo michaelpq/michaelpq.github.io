@@ -28,7 +28,7 @@ tags:
 - replication
 - shell
 ---
-[Cascading replication](http://michael.otacoo.com/postgresql-2/cascading-replication-in-postgresql/) has been introduced in 9.2, but have you ever tried long chains of cascading nodes in Postgres?
+[Cascading replication](/postgresql-2/cascading-replication-in-postgresql/) has been introduced in 9.2, but have you ever tried long chains of cascading nodes in Postgres?
 
 In the case of this post, I simply tried to run as many nodes as possible in a VM with 4GB of memory. Each node has the following set of parameters, the goal being to minimize the use of memory for each one.
 

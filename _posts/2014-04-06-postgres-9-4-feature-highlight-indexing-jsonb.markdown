@@ -35,13 +35,13 @@ this feature, one of the most important of the upcoming release, if not the
 most important, puts Postgres directly in good position in the field of
 document-oriented database systems.
 
-Since 9.2, an integrated [JSON datatype](http://michael.otacoo.com/postgresql-2/postgres-9-2-highlight-json-data-type/)
+Since 9.2, an integrated [JSON datatype](/postgresql-2/postgres-9-2-highlight-json-data-type/)
 already exists, completed with a set of functions ([data generation]
-(http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/)
+(/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/)
 and [parsing functions]
-(http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-json-parsing-functions/))
+(/postgresql-2/postgres-9-3-feature-highlight-json-parsing-functions/))
 as well as [operators]
-(http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-json-operators/)
+(/postgresql-2/postgres-9-3-feature-highlight-json-operators/)
 added in 9.3. When using "json" data type, data is stored as an exact
 copy of the input text which functions working on it need to reparse causing
 some processing overhead.

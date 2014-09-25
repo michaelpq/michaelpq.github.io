@@ -153,5 +153,5 @@ However user "foo" can drop it freely.
 
 As LOAD command is session-based, I had to reload the restriction library each time a reconnection to server was done, but you can make this change permanent by setting shared\_preload\_libraries appropriately in postgresql.conf.
 
-Feel free to play with the code, it is attached to this post as [dbrestrict.tar.gz](http://michael.otacoo.com/wp-content/uploads/2013/03/dbrestrict.tar.gz).
+Feel free to play with the code, it is attached to this post as [dbrestrict.tar.gz](/wp-content/uploads/2013/03/dbrestrict.tar.gz).
 See ya~

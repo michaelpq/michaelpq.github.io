@@ -24,7 +24,7 @@ tags:
 - slave
 - worker
 ---
-Following the [recent API modifications](http://michael.otacoo.com/postgresql-2/modifications-of-apis-for-bgworkers-in-postgres-9-3/) done in Postgres 9.3 for background worker processes, here is more information about the latest features of background workers currently being developed for Postgres 9.4, and introduced by this commit:
+Following the [recent API modifications](/postgresql-2/modifications-of-apis-for-bgworkers-in-postgres-9-3/) done in Postgres 9.3 for background worker processes, here is more information about the latest features of background workers currently being developed for Postgres 9.4, and introduced by this commit:
 
     commit 7f7485a0cde92aa4ba235a1ffe4dda0ca0b6cc9a
     Author: Robert Haas

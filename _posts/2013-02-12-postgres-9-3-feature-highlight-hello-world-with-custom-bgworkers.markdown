@@ -29,7 +29,7 @@ tags:
 - worker
 ---
 
-Based on my [previous experience using custom background workers](http://michael.otacoo.com/postgresql-2/postgres-9-3-feature-highlight-custom-background-workers/) (new feature of PostgreSQL 9.3), here is more detailed example of bgworker doing a simple "Hello World" in the server logs.
+Based on my [previous experience using custom background workers](/postgresql-2/postgres-9-3-feature-highlight-custom-background-workers/) (new feature of PostgreSQL 9.3), here is more detailed example of bgworker doing a simple "Hello World" in the server logs.
 
 Well, the example provided in this post does a little bit more than logging a simple "Hello World", as logging is controlled by a loop running at a given interval of time. Also, the process can be immediately stopped even during its sleep with SIGTERM. So here is in more details how this is done.
 

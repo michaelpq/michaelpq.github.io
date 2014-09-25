@@ -27,7 +27,7 @@ tags:
 - slow
 - time
 ---
-Based on the scripts developed in a [previous post](http://michael.otacoo.com/postgresql-2/cascading-replication-in-chain-with-10-100-200-nodes/) where a couple of hundred of Postgres servers were linked with replication cascading, let's now have a look at the lag that cascading nodes have when creating several database objects.
+Based on the scripts developed in a [previous post](/postgresql-2/cascading-replication-in-chain-with-10-100-200-nodes/) where a couple of hundred of Postgres servers were linked with replication cascading, let's now have a look at the lag that cascading nodes have when creating several database objects.
 
 The method used in this post to evaluate the lag is pretty simple, and is centralized on the use of pg\_stat\_file (thanks Jean-Guillaume from [Dalibo](http://www.dalibo.com/) for this tip), which allows to get information of a file in the data folder of the Postgres server. The idea here is simply to create an object (database or table), and then to scan in the data folder when a file related to this object has been created by the server. In order to do that, there are first two things to know:
 
