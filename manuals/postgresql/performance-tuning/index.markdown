@@ -28,6 +28,9 @@ server.
   4. Indexing
   5. Vacuum
   6. Analyze
+  7. I/O scheduler
+  8. stats\_temp\_directory on a ramdisk
+  9. Kernel tuning
 
 ### 1. What to avoid
 
@@ -95,7 +98,7 @@ alleviate the I/O behavior on disks and partitions.
 
   * noop, fine with SSDs, but can kill local disks on no-reordering
 of writes. Has more effects for sequential I/O writes like WAL flush
-by having pg_xlog on a different partition for example.
+by having pg\_xlog on a different partition for example.
   * deadline, great for Postgres but interactive workloads are impacted
 by it.
   * cfq, a good balance for everything, and it is the default on Linux.
@@ -124,3 +127,13 @@ Add new partition to /etc/fstab with a new dedicated entry:
 In postgresql.conf, add that, and then reload it:
 
     stats_temp_directory = '$TEMP_STAT_FOLDER'
+
+### 9. Kernel tuning
+
+On systems facing heavy write load, tuning /etc/sysctl.conf like that
+is worth doing:
+
+    vm.dirty_background_ratio = 0
+    vm.dirty_ratio = 0
+
+Turning off swap may be as well a good idea.
