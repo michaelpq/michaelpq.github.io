@@ -70,6 +70,10 @@ Kick an installation with command line:
 
     msiexec /i product.msi PARAM1=$VAL1 PARAM2=$VAL2
 
+To apply a minor update:
+
+    msiexec /fvomus updated_product.msi
+
 Getting the version number of a binary or library can be tedious, first
 create the following vbscript, called for example my_script.vbs:
 
