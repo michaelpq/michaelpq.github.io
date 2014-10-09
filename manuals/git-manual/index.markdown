@@ -206,10 +206,12 @@ wants to put a mark in his project so as to show that an important
 step has been done. Tags can play a role to associate a commit in
 a branch with a tag name. Create a tag:
 
-    git tag -a $TAG_NAME -m "message"
+    git tag -a $TAG_NAME -m "message" $COMMIT_OF_TAG
 
 If multiple m options are used, messages are written as separate
 paragraphs. Show all the existing tags and their associated message.
+COMMIT\_OF\_TAG is as well not mandatory, just useful to avoid creating
+a new local exatr branch just to create a dedicated tag on a given point.
 
     git tag -l -n
 
