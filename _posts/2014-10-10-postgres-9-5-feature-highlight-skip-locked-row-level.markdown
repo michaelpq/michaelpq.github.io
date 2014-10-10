@@ -2,7 +2,7 @@
 author: Michael Paquier
 comments: true
 lastmod: 2014-10-10
-date: 2014-10-10 19:10:44+00:00
+date: 2014-10-10 07:10:44+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-skip-locked-row-level
