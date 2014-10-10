@@ -36,6 +36,9 @@ available only from AUR with [yaourt](/manuals/archlinux/yaourt/).
     docbook2x
     docbook-xsl
 
+Note: For RHEL, CentOS and Fedora instead of docbook-dsssl,
+docbook-style-dsssl should be used.
+
 Necessary files to compile postgresql documentation on ArchLinux are
 available here:
 	
