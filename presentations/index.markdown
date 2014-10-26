@@ -24,11 +24,11 @@ tags:
 - open source
 ---
 
-#### Postgres Open 2014: Understanding logical decoding
+#### 2014: Understanding logical decoding and replication
 
   * [pdf of PGOpen](/content/materials/20140919_pgopen_logirep.pdf)
-  * Place: Chicago, US
-  * Date: 2014/09/19
+  * Place: Postgres Open in Chicago, US. Date: 2014/09/19
+  * Place: Postgres Europe in Madrid, Spain. Date: 2014/10/23
   * Duration: 50~60mins
 
 Presentation about logical decoding and its interactions with replication.
@@ -36,14 +36,12 @@ A material for advanced hackers with good Postgres skill and understanding
 of the internals of the server, as well as of its external protocols.
 Not to be put in the hands of beginners.
 
-#### Postgres Open 2013: Taking advantage of custom background workers
+#### 2013: Taking advantage of custom background workers
 
   * [pdf of PGOpen](/content/materials/20130916_pgopen_bgworker.pdf)
   * [pdf of PG-EU 2013](/content/materials/20131029_pgopen_bgworker.pdf)
-  * Place: Chicago, US
-  * Date: 2013/09/17
-  * Place: Dublin, Ireland
-  * Date: 2013/10/31, slightly modified slides.
+  * Place: Postgres Open in Chicago, US Date: 2013/09/17
+  * Place: Postgres Europe in Dublin, Ireland Date: 2013/10/31, slightly modified slides.
   * Duration: 50~60mins
 
 Presentation about custom background workers, presenting basics of this
@@ -61,7 +59,7 @@ in your production environments.
 Short presentation about some new features of postgres_fdw, writable
 foreign tables and some basics about background workers.
 
-#### PG-unconf#2 2013: new flavors of pg_top
+#### PG-unconf#2 2013: New flavors of pg_top
 
   * [pdf](/content/materials/20130713_pgunconf_pg_top.pdf)
   * [odp](/content/materials/20130713_pgunconf_pg_top.odp)
@@ -84,7 +82,7 @@ Short presentation about pg_rewind, a Postgres module able to resync an
 old data folder whose WAL has forked with another one, making it possible
 to reconnect it to an existing cluster.
 
-#### PG-unconf 2013: custom background workers
+#### PG-unconf 2013: Custom background workers
 
   * [pdf](/content/materials/20120216_pgunconf_bgworker.pdf)
   * [odp](/content/materials/20120216_pgunconf_bgworker.odp)
