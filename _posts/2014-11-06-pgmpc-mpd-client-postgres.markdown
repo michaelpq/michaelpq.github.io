@@ -45,7 +45,7 @@ directly with Postgres.
 In order to compile it, be sure to have libmpdclient installed on your
 system. Note as well that pgmpc is shaped as an [extension]
 (http://www.postgresql.org/docs/devel/static/extend-extensions.html), so
-once its source installed it needs to be enabled on a Postgres server
+once its source is installed it needs to be enabled on a Postgres server
 using [CREATE EXTENSION]
 (http://www.postgresql.org/docs/devel/static/sql-createextension.html).
 
