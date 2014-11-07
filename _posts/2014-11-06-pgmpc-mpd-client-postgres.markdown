@@ -37,10 +37,10 @@ being surely mpc, ncmpc and gmpc. There are as well more fancy client
 interfaces like for example libmpdee.el, an elisp module for emacs.
 Now, PostgreSQL has always lacked a dedicated client interface, that's
 where [pgmpc]
-(https://github.com/michaelpq/pg_plugins/tree/master/pgmpc) fills the
-need (is there one btw?), by providing a set of SQL functions able to
-interact with an mpd instance, so you can control your music player
-directly with Postgres.
+(https://github.com/michaelpq/pg_plugins/tree/master/pgmpc) satisfies
+this need by providing a set of SQL functions able to interact with an
+instance of mpd, so you can control your music player directly with
+Postgres.
 
 In order to compile it, be sure to have libmpdclient installed on your
 system. Note as well that pgmpc is shaped as an [extension]
