@@ -27,7 +27,7 @@ tags:
 
 ---
 
-A new index type, called BRIN. or Block Range INdex is showing up in
+A new index type, called BRIN or Block Range INdex is showing up in
 PostgreSQL 9.5, introduced by this commit:
 
     commit: 7516f5259411c02ae89e49084452dc342aadb2ae
