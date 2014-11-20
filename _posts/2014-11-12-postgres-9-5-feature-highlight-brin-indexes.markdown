@@ -15,6 +15,8 @@ tags:
 - open source
 - database
 - development
+- highlight
+- 9.5
 - extension
 - brin
 - index
