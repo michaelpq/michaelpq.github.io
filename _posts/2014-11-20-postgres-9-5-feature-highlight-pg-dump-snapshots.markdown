@@ -47,7 +47,7 @@ committed and will be in Postgres 9.5:
 
     Simon Riggs and Michael Paquier
 
-First, let's talk briefly about [exported snapshot]
+First, let's talk briefly about [exported snapshots]
 (http://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION),
 a feature that has been introduced in PostgreSQL 9.2. With it, it is possible
 to export a snapshot from a first session with pg\_export\_snapshot, and
@@ -79,18 +79,18 @@ sessions that already imported it).
     COMMIT
 
 Note that the transaction that exported the snapshot needs to remain active
-as long as the other sessions that have not consumed it with SET TRANSACTION.
+as long as the other sessions have not consumed it with SET TRANSACTION.
 This snapshot export and import dance is actually used by pg\_dump since 9.3
-for parallel dumps to accelerate the dump acquisition across the threads,
+for parallel dumps to make consistent the dump acquisition across the threads,
 whose number is defined by --jobs, doing the work.
 
 Now, this commit adding the option --snapshot is simply what a transaction
 importing a snapshot does: caller can export a snapshot within the transaction
 of a session and then re-use it with pg\_dump to take an image of a given
-database consistent with the previous session. Well, doing only that is not
-that useful in itself. The fun begins actually by knowing that there is an
-other situation where a caller can get back a snapshot name, and this
-situation exists since 9.4 because it is the moment a [logical slot]
+database consistent with the previous session transaction. Well, doing only
+that is not that useful in itself. The fun begins actually by knowing that
+there is a different situation where a caller can get back a snapshot name,
+and this situation exists since 9.4 because it is the moment a [logical slot]
 (http://www.postgresql.org/docs/devel/static/logicaldecoding-explanation.html#AEN66595).
 is created through a replication connection.
 
@@ -118,7 +118,7 @@ This is where this feature takes all its sense: it is possible to get an
 image of the database at the *moment* the slot has been created, or putting
 it in other words *before* any changes in the replication slot have been
 consumed, something aimed to be extremely useful for replication solutions
-or cases like online migration and upgrade of databases because it means
+or cases like online migration/upgrade of databases because it means
 that the dump can be used as a base image on which changes could be replayed
 without data lost. Then, the dump can simply be done like that:
 
