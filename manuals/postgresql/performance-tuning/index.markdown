@@ -136,4 +136,9 @@ is worth doing:
     vm.dirty_background_ratio = 0
     vm.dirty_ratio = 0
 
+In concurrent heavy-read loads, this setting can be useful for 3.13
+kernels.
+
+    kernel.sched_autogroup_enabled
+
 Turning off swap may be as well a good idea.
