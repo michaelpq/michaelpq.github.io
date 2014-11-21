@@ -31,3 +31,10 @@ really important to not truncate the relation file once a block is changed:
     dd if=/dev/random bs=8192 count=1 \
         seek=$BLOCK_ID of=base/$DBOID/$RELFILENODE
         conv=notrunc
+
+### Data structures
+
+pahole, which is part of the dwarf utilities, is useful to see the size
+of structures using compiled files.
+
+    pahole source.o class_name
