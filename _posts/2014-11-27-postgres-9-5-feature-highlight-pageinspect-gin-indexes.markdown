@@ -54,10 +54,10 @@ a relation page (fetched using get\_raw\_page):
   * gin\_leafpage\_items, giving some information about the content of a GIN
   leaf page.
 
-Such functions are useful for developers TODOTODO
-First let's create an index using the GIN operators of [pg\_trgm]
-(http://www.postgresql.org/docs/devel/static/pgtrgm.html) on the book
-"Les Miserables", English translation.
+Such functions are useful for developers aiming at creating new operators
+for this index type. First let's create an index using the GIN operators
+of [pg\_trgm] (http://www.postgresql.org/docs/devel/static/pgtrgm.html) on
+the book "Les Miserables", English translation.
 
     =# CREATE EXTENSION pg_trgm;
     CREATE EXTENSION
