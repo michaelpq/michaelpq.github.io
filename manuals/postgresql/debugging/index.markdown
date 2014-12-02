@@ -23,6 +23,17 @@ to attach breakpoints to the process tested.
 
     PGOPTIONS="-W n"
 
+### valgrind
+
+valgrind is useful to find memory problems in Postgres, try to use with
+something like the attached.
+
+    valgrind --suppress
+    valgrind \
+        --suppressions=$PG_SOURCE/src/tools/valgrind.supp \
+        --trace-children=yes --track-origins=yes --read-var-info=yes \
+        postgres -D REST_OF_ARGS
+
 ### Corrupting pages
 
 A way to manually corrupt data may be to use dd like that, notrunc being
