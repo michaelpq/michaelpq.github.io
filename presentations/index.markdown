@@ -24,6 +24,17 @@ tags:
 - open source
 ---
 
+#### 2014: New features of PostgreSQL 9.4
+
+  * Subtitle: In the field of NoSQL and advanced replica8on
+  * [pdf](/content/materials/20141205_postgres_94_features.pdf)
+  * Place: PGCon Japan 2014 in Tokyo. Date: 2014/12/05
+  * Duration: 45 mins + questions.
+
+Presentation about the new features of PostgreSQL 9.4, where Postgres
+makes a huge step in the field of NoSQL: jsonb, background workers and
+logical replication.
+
 #### 2014: Understanding logical decoding and replication
 
   * [pdf of PGOpen](/content/materials/20140919_pgopen_logirep.pdf)
