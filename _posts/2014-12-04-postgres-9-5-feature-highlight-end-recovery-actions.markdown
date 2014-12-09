@@ -54,7 +54,10 @@ improvements in this area with the following commit:
 Its use is rather simple, when a standby has hot\_standby enabled in
 postgresql.conf, meaning that it is able to execute read queries while
 being in recovery, it is possible to perform the set of actions defined
-above using action\_at\_recovery\_target in recovery.conf:
+above using recovery\_target\_action in recovery.conf. Note that the
+former parameter name was action\_at\_recovery\_target, it has been
+renamed to recovery\_target\_action afterwards in commit [b8e33a8]
+(http://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=b8e33a):
 
   * pause, acting the same as when pause\_at\_recovery\_target is enabled
   to have the standby pause any replay actions so as it is possible to
@@ -64,7 +67,7 @@ above using action\_at\_recovery\_target in recovery.conf:
   * promote, to perform automatically a promotion of the node and have
   it just to the next timeline, making it available for write queries
   as well. This is the same as when pause\_at\_recovery\_target or
-  action\_at\_recovery\_target are not used, or when only
+  recovery\_target\_action are not used, or when only
   pause\_at\_recovery\_target is used and set to false.
   * shutdown, to simply shutdown the standby once target is reached.
   This is the real new addition that this feature brings in because this
@@ -80,7 +83,7 @@ Now let's put in recovery a standby that has the following parameters
 in recovery.conf:
 
     recovery_target_time = '2014-12-04 22:21:52.922328'
-    action_at_recovery_target = 'shutdown'
+    recovery_target_action = 'shutdown'
     restore_command = 'cp -i /path/to/archive/%f %p'
 
 When a recovery target is reached (timestamp, XID, name), the following
@@ -92,10 +95,11 @@ logs will show up if shutdown is set up for the end of recovery.
 
 Also, note that both parameters cannot be used at the same time. An
 error being returned by server as follows as pause\_at\_recovery\_target
-is logically deprecated.
+is logically deprecated (note that this old parameter may be removed
+in a couple of months altogether).
 
     FATAL:  cannot set both "pause_at_recovery_target" and
-            "action_at_recovery_target" recovery parameters
+            "recovery_target_action" recovery parameters
     HINT:  The "pause_at_recovery_target" is deprecated.
 
 That's nice stuff, useful for the control of nodes to-be-promoted when
