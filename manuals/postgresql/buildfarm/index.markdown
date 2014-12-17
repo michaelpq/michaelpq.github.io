@@ -33,6 +33,7 @@ Here are the packages to install on top of that:
     flex
     gcc
     git-core
+    make
     tcl
     libxslt
 
