@@ -24,5 +24,4 @@ The following sub-sections are available from here:
   * [Git](/manuals/git-manual/)
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
-  * [Raspberry PI](/manuals/raspberry-pi/)
   * [Windows](/manuals/windows/)
