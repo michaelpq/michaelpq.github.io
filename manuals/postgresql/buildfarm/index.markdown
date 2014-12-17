@@ -29,7 +29,10 @@ Here are the packages to install on top of that:
     perl sha1 module
     ccache
     bison
+    cronie
     flex
+    gcc
+    git-core
     tcl
     libxslt
 
