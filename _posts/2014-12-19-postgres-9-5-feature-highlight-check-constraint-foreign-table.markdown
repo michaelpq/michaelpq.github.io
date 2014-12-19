@@ -90,7 +90,6 @@ And then for CHECK:
     CREATE FOREIGN TABLE
 	=# INSERT INTO tab_foreign2 VALUES (-1,2,3);
 	INSERT 0 1
-	Time: 9.983 ms
 	=# SELECT * FROM tab_foreign2;
      a  | b |  c
     ----+---+------
