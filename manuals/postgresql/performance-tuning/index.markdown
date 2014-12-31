@@ -122,7 +122,7 @@ Create the ramdisk partition.
 
 Add new partition to /etc/fstab with a new dedicated entry:
 
-    tmpfs $TEMP_STAT_FOLDER tmpfs size=2G,uid=$USER,gid=$GROUP 0 0
+    tmpfs $TEMP_STAT_FOLDER tmpfs size=2M,uid=$USER,gid=$GROUP 0 0
 
 In postgresql.conf, add that, and then reload it:
 
