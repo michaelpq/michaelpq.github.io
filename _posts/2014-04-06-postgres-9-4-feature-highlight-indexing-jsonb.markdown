@@ -133,13 +133,13 @@ using GIN, as well as the existence operators ?, ?| and ?& (to check if given
 key(s) exist) by the way. GIN indexing is possible with two operator classes:
 
   * Default operator class that all four operators listed previously
-  * jsonb_hash_ops, supporting only @> but performing better when searching
+  * jsonb\_path\_ops, supporting only @> but performing better when searching
 data and having a smaller on-disk size.
 
 Here is how it works:
 
     =# CREATE INDEX geodata_gin ON geodata_jsonb
-          USING GIN (data jsonb_hash_ops);
+          USING GIN (data jsonb_path_ops);
     CREATE INDEX
     =# SELECT (data->>'population')::int as population,
           data->'latitude' as latitude,
