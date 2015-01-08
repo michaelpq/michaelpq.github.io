@@ -58,10 +58,9 @@ exposing the block information at a higher level.
 This patch has introduced some additional infrastructure in the files xlog*.c
 managing WAL record insertion and decoding, and this is proving to be actually
 a net gain in terms of code readability in other portions of the code doing
-WAL insertions. For example here is how a WAL record was roughly inserted in
+WAL insertions. For example, here is how a WAL record was roughly inserted in
 9.4 and older versions, consisting in having each code paths filling in
-sets of XLogRecData. For example here is the simple case of the initialization
-of a sequence relation:
+sets of XLogRecData (case of the initialization of a sequence relation):
 
     XLogRecData rdata[2];
 
@@ -88,7 +87,7 @@ And here is how it is changed in 9.5:
 
 The important point in those APIs is XLogRegisterBuffer that can be used
 to add information related to a data block in a WAL record. Then the facility
-in xlogreader.[c|h] (already present in 9.4), particularly XLogReadRecord can
+in xlogreader.c/h (already present in 9.4), particularly XLogReadRecord, can
 be used by either backend or frontend tools to decode the record information.
 
 Let's see for example how this has affected pg_rewind, which is a facility
@@ -153,8 +152,9 @@ is now done with something like that:
     }
 
 Note that XLogRecord record now directly contains the number of blocks touched,
-the new API XLogRecGetBlockTag allowing to directly retrieve the relation
-nformation of those blocks. In terms of numbers, the result is a neat reduction
-of [600 lines](https://github.com/vmware/pg_rewind/commit/82ce0be93d81d5b07ff0c4dae687d1a47fede906)
-of the code of pg_rewind, as well as many hours saved in maintenance for any tool
-developer doing any differential operation based on the analysis of the WAL content.
+the new API XLogRecGetBlockTag allowing to retrieve the relation information
+of those blocks. In terms of numbers, the result is a neat reduction of [600 lines]
+(https://github.com/vmware/pg_rewind/commit/82ce0be93d81d5b07ff0c4dae687d1a47fede906)
+of the code of pg_rewind, as well as many hours saved in maintenance for developer
+working on tools doing differential operation based on the analysis of the WAL
+content.
