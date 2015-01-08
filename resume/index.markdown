@@ -1,6 +1,5 @@
 ---
 author: Michael Paquier
-comments: true
 date: 2011-02-27 12:13:51+00:00
 layout: page
 type: page
@@ -25,7 +24,9 @@ tags:
 - curriculum
 - vitae
 - resume
+
 ---
+
 Personal information
 --------------------
 

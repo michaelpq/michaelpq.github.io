@@ -1,6 +1,5 @@
 ---
 author: Michael Paquier
-comments: true
 lastmod: 2012-06-08
 date: 2012-06-08 02:43:49+00:00
 layout: post
