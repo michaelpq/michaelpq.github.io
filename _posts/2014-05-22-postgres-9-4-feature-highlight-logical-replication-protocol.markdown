@@ -95,7 +95,11 @@ Here is an example with decoder_raw:
 
 This command will send back a response of type PGRES_COPY_BOTH, containing
 data that can be retrieved with [PQgetCopyData]
-(http://www.postgresql.org/docs/devel/static/libpq-copy.html#LIBPQ-COPY-RECEIVE).
+(http://www.postgresql.org/docs/devel/static/libpq-copy.html#LIBPQ-COPY-RECEIVE),
+so it is not something that for example psql directly support or you may
+finish with an error of this type:
+
+    unexpected PQresultStatus: 8
 
 Before rushing into coding, have a look at pg_recvlogical. It can provide a
 good base for developing a custom receiver.
