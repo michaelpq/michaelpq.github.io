@@ -80,7 +80,7 @@ using a normal connection to server.
 
 This command already exists in versions of PostgreSQL older than 9.4, it has
 been extended for the needs of logical replication. For example, to start
-logical replication from a certain LSN using the clot created above, a command
+logical replication from a certain LSN using the slot created above, a command
 like that sent through a replication slot is enough.
  like that in the case of
 the slot created above:
@@ -91,7 +91,7 @@ restart_lsn can be used to specify from which point logical replication
 begins. With a given decoding plugin, you can as well pass custom options.
 Here is an example with decoder_raw:
 
-    START_REPLICATION SLOT custom_clot LOGICAL restart_lsn ("include-transaction" 'off');
+    START_REPLICATION SLOT custom_slot LOGICAL restart_lsn ("include-transaction" 'off');
 
 This command will send back a response of type PGRES_COPY_BOTH, containing
 data that can be retrieved with [PQgetCopyData]
