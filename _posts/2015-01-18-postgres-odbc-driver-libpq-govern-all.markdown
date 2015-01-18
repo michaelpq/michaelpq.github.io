@@ -85,6 +85,6 @@ legwork done in the upcoming 9.5 to allow support of other SSL implementations
 by making the infrastructure more pluggable with commit [680513a]
 (http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=680513a),
 opening the door for things like [SChannel on Windows] 
-(http://www.postgresql.org/message-id/53959E44.1070001@vmware.com), making
-the existing Postgres installer even more pluggable, and more interesting by
-letting users the choice in the dependencies a custom build uses.
+(http://www.postgresql.org/message-id/53959E44.1070001@vmware.com), new
+implementations being interesting because this gives more freedom in the choice
+of dependencies a custom build has.
