@@ -93,7 +93,7 @@ and this situation exists since 9.4 because it is the moment a [logical slot]
 (http://www.postgresql.org/docs/devel/static/logicaldecoding-explanation.html#AEN66595).
 is created through a replication connection.
 
-    $ psql "replication=database dbname=ioltas"
+    $ psql "replication=database dbname=dbname"
     [...]
     =# CREATE_REPLICATION_SLOT foo3 LOGICAL test_decoding;
      slot_name | consistent_point | snapshot_name | output_plugin

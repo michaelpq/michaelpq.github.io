@@ -77,7 +77,7 @@ Deleting this file and restarting server results in an harmless LOG message tell
     done
     server stopped
     server starting
-    LOG: skipping missing configuration file "/Users/ioltas/bin/pgsql/node_5432/postgresql.auto.conf"
+    LOG: skipping missing configuration file "/to/pgdata/postgresql.auto.conf"
     LOG: redirecting log output to logging collector process
     HINT: Future log output will appear in directory "pg_log".
 

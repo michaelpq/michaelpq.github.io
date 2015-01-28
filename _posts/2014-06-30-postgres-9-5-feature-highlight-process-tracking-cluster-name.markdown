@@ -72,7 +72,7 @@ way!).
     80661   ??  Ss     0:00.01 postgres: master: archiver process
     80662   ??  Ss     0:00.05 postgres: master: stats collector process
     80669   ??  Ss     0:00.76 postgres: standby: wal receiver process   streaming 0/4000428
-    80670   ??  Ss     0:00.01 postgres: master: wal sender process ioltas 127.0.0.1(55677) streaming 0/4000428
+    80670   ??  Ss     0:00.01 postgres: master: wal sender process postgres 127.0.0.1(55677) streaming 0/4000428
 
 Non-ascii characters are printed as question marks.
 

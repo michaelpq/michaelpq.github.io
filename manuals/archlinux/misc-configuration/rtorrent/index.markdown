@@ -33,7 +33,7 @@ Here are some settings.
     session = /home/[user]/doc/torrent/session
 
     # Watch new torrent, and stop deleted ones
-    schedule = watch_directory,5,5,load_start=/home/ioltas/doc/torrent/watch/*.torrent
+    schedule = watch_directory,5,5,load_start=/home/user/doc/torrent/watch/*.torrent
     schedule = untied_directory,5,5,stop_untied=
     schedule = tied_directory,5,5,start_tied=
 

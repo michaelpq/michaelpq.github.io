@@ -108,8 +108,8 @@ schema at the beginning of the query):
                     List of relations
      Schema |    Name     |     Type      | Owner  
     --------+-------------+---------------+--------
-     public | remote_tab1 | foreign table | ioltas
-     public | remote_tab2 | foreign table | ioltas
+     public | remote_tab1 | foreign table | dbname
+     public | remote_tab2 | foreign table | dbname
     (2 rows)
 
 IMPORT FOREIGN SCHEMA offers some control to the list of tables imported with
