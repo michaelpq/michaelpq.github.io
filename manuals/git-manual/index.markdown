@@ -410,7 +410,13 @@ a branch. Here is a way to initialize everything easily:
 
 Watch the status of the submodules.
 
-### 14. Migration
+### 14. Archiving and releases
+
+Here is how to create quickly a tarball of a subfolder:
+
+    git archive -o ~/to/output/subfolder.tar.gz HEAD:subfolder
+
+### 15. Migration
 
 Transferring a CVS repository to a GIT one is pretty simple.
 
