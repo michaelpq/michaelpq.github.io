@@ -22,7 +22,18 @@ tags:
 - material
 - license
 - open source
+
 ---
+
+#### 2015: New features of PostgreSQL 9.5
+
+  * Subtitle: News from a hacker
+  * [pdf](/content/materials/20150207_postgres_95_features.pdf)
+  * Place: PGConf Russia 2015 in Moscow. Date: 2015/02/07
+  * Duration: 50 mins + questions.
+
+Presentation about the new features of PostgreSQL 9.5 with a coverage
+of new things about replication and other things.
 
 #### 2014: New features of PostgreSQL 9.4
 
