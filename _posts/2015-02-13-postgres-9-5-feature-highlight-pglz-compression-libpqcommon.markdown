@@ -61,9 +61,10 @@ it simple WAL archive or a WAL streaming flow. So, here is the commit:
 
     Michael Paquier, reviewed by me.
 
-Compared to previous versions of PGLZ, its dependency on the varlena header
-has been removed, and its compression and decompression routines have been
-reworked as follows:
+So, this makes PGLZ things available in the common library libpqcommon. Compared
+to previous versions of PGLZ, its dependency on the varlena header has been
+removed, and its compression and decompression routines have been reworked as
+follows:
 
     extern int32 pglz_compress(const char *source, int32 slen, char *dest,
                                const PGLZ_Strategy *strategy);
