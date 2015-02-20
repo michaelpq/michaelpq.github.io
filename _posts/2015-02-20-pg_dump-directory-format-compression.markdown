@@ -43,11 +43,11 @@ A dump keeps the same size whatever the compression level specified:
     $ for num in {0..4}; do pg_dump -Fd -t dump_tab -f \
         level_$num.dump -Z num ; done
     $ ls -l level_?.dump/????.dat.gz level_0.dump/????.dat
-    -rw-r--r--  1 ioltas  staff  419999247 Feb 20 22:13 level_0.dump/2308.dat
-    -rw-r--r--  1 ioltas  staff  195402899 Feb 20 22:13 level_1.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195402899 Feb 20 22:14 level_2.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195402899 Feb 20 22:15 level_3.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195402899 Feb 20 22:16 level_4.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  419999247 Feb 20 22:13 level_0.dump/2308.dat
+    -rw-r--r--  1 michael  staff  195402899 Feb 20 22:13 level_1.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195402899 Feb 20 22:14 level_2.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195402899 Feb 20 22:15 level_3.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195402899 Feb 20 22:16 level_4.dump/2308.dat.gz
 
 After a couple of emails exchanged, it was found out that a call to gzopen()
 missed the compression level: for example to do a compression of level 7, the
@@ -79,15 +79,15 @@ for this test case that has low repetitiveness):
     $ for num in {0..9}; do pg_dump -Fd -t dump_tab -f \
         level_$num.dump -Z num ; done
     $ ls -l level_?.dump/????.dat.gz level_0.dump/????.dat
-    -rw-r--r--  1 ioltas  staff  419999247 Feb 20 22:24 level_0.dump/2308.dat
-    -rw-r--r--  1 ioltas  staff  207503600 Feb 20 22:25 level_1.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  207065206 Feb 20 22:25 level_2.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  198538467 Feb 20 22:26 level_3.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  199498961 Feb 20 22:26 level_4.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195780331 Feb 20 22:27 level_5.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195402899 Feb 20 22:28 level_6.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  195046961 Feb 20 22:29 level_7.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  194413125 Feb 20 22:30 level_8.dump/2308.dat.gz
-    -rw-r--r--  1 ioltas  staff  194413125 Feb 20 22:32 level_9.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  419999247 Feb 20 22:24 level_0.dump/2308.dat
+    -rw-r--r--  1 michael  staff  207503600 Feb 20 22:25 level_1.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  207065206 Feb 20 22:25 level_2.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  198538467 Feb 20 22:26 level_3.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  199498961 Feb 20 22:26 level_4.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195780331 Feb 20 22:27 level_5.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195402899 Feb 20 22:28 level_6.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  195046961 Feb 20 22:29 level_7.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  194413125 Feb 20 22:30 level_8.dump/2308.dat.gz
+    -rw-r--r--  1 michael  staff  194413125 Feb 20 22:32 level_9.dump/2308.dat.gz
 
 Nice community work to sort such things out very quickly.
