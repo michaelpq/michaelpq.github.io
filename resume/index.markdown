@@ -53,9 +53,7 @@ Professional experience
 ### January 2009-Now
 
   * **PostgreSQL Global Development Group**, World, Earth
-  * PostgreSQL hacker, blogger and community member
-  * PostgreSQL module developer
-  * Postgres-XC committer
+  * PostgreSQL hacker, blogger and module developer.
 
 ### October 2010-Now
 
