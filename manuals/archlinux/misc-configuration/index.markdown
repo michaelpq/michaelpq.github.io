@@ -21,6 +21,7 @@ The following sub-sections are available from here:
   * [nginx](/manuals/archlinux/misc-configuration/nginx/)
   * [rtorrent](/manuals/archlinux/misc-configuration/rtorrent/)
   * [Intel NUC](/manuals/archlinux/misc-configuration/intel-nuc/)
+  * [Raspberry PI](/manuals/archlinux/misc-configuration/raspberry-pi/)
   * [Kernel Settings](/manuals/archlinux/misc-configuration/kernel-settings/)
   * [Postgres docs and sgml catalogs]
 (/manuals/archlinux/misc-configuration/postgres-docs-and-sgml-catalogs/)
