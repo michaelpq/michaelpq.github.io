@@ -282,6 +282,10 @@ For example, by being on $CURRENT_BRANCH:
 Takes the 2nd and 5th latest commits applied on master and creates 2 new
 commits on $CURRENT_BRANCH.
 
+Amending an existing commit with an update date.
+
+    git commit --amend --date="$(date -R)"
+
 ### 8. Patch management
 
 Generate a patch based on diffs between two branches.
