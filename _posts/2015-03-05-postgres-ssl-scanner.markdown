@@ -52,19 +52,19 @@ Now let's take the case of for example EXPORT ciphers which are not
 included by default in the list of ciphers available on server. The
 scanner is able to detect their presence:
 
-    $ python sslyze.py --regular --starttls=postgres 192.168.172.128:5432 | grep EXP
+    $ python sslyze.py --regular --starttls=postgres $SERVER_IP:5432 | grep EXP
     EXP-EDH-RSA-DES-CBC-SHA       DH-512 bits    40 bits
     EXP-EDH-RSA-DES-CBC-SHA       DH-512 bits    40 bits
     EXP-EDH-RSA-DES-CBC-SHA       DH-512 bits    40 bits
     $ psql -c 'show ssl_ciphers'
              ssl_ciphers
     ------------------------------
-     HIGH:MEDIUM:+3DES:EXP:!aNULL
+     HIGH:MEDIUM:EXP:+3DES:!aNULL
     (1 row)
 
 And once disabled the contrary happens:
 
-    $ python sslyze.py --regular --starttls=postgres 192.168.172.128:5432 | grep EXP
+    $ python sslyze.py --regular --starttls=postgres $SERVER_IP:5432 | grep EXP
     $ psql -c 'show ssl_ciphers'
               ssl_ciphers
     -------------------------------
