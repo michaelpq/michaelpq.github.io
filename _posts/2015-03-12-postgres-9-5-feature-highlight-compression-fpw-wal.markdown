@@ -164,8 +164,8 @@ the data largely incompressible!
 
 Note as well that PGLZ is a CPU-eater, so one of the areas of improvements
 would be to plug in another compression algorithm of the type lz4, or add
-a hook in backend code to be able to compression full-page writes with
-something that has a license not necessarily compatible with PostgreSQL
-preventing its integration into core code. Another area would be to make
-this parameter settable at relation-level, as it depends on how a schema is
-compressible. In any case, that's great stuff.
+a hook in backend code to be able to compress full-page writes with something
+that has a license not necessarily compatible with PostgreSQL preventing its
+integration into core code. Another area would be to make this parameter
+settable at relation-level, as it depends on how a schema is compressible.
+In any case, that's great stuff.
