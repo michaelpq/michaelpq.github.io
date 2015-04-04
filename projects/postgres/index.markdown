@@ -26,6 +26,8 @@ systems worldwide so feel free to have a look at [its documentation]
 (http://www.postgresql.org/docs/devel/static/) and get a grasp of what it
 can do and with its active community it can actually do a lot.
 
+### Activities
+
 As a community member, on top of maintaining this blog, here are the things
 I try to keep up with:
 
@@ -43,3 +45,24 @@ vanilla with only master branch and a set of patches in development
 recovery manager
    * [pg\_plugins](https://github.com/michaelpq/pg_plugins), some background
 workers that can be used as a base for more complex implementations
+
+### TODO items
+
+  * Check pg_usleep calls in checkpointer.
+  * FIXME in prepare.c regarding the fact that parse analysis modifies the
+  raw query tree, and it shouldn't.
+  * Refactor relation options now in CREATE TABLE into a separate section
+  in documentation, presumably "Relation Options" in "Server Configuration"
+  with a sub-section for tables, and another for indexes.
+  * Support for TAP tests on [Windows]
+  (http://www.postgresql.org/message-id/CAB7nPqTQwphkDfZP07w7yBnbFNDhW_JBAMyCFAkarE2VWg8irQ@mail.gmail.com)
+  * [Support for replication, archiving, PITR test suite, using TAP tests]
+  (http://www.postgresql.org/message-id/CAB7nPqTf7V6rswrFa=q_rrWeETUWagP=h8LX8XAov2Jcxw0DRg@mail.gmail.com)
+  * [Incorrect and missing SetStatusService calls for pg_ctl stop]
+  (http://www.postgresql.org/message-id/20141028070241.2593.58180@wrigleys.postgresql.org)
+  * [Compiler warnings for MinGW]
+  (http://www.postgresql.org/message-id/CAMkU=1zCdP7YxX9HFeGihpqfnvJuzkQxZCnUSUL-wcberkmCcA@mail.gmail.com)
+  * [ECPG crash bug]
+  (http://www.postgresql.org/message-id/20150330111334.2492.38927@wrigleys.postgresql.org)
+  * [PQExec hangs on OOM]
+  (http://www.postgresql.org/message-id/547480DE.4040408@vmware.com)
