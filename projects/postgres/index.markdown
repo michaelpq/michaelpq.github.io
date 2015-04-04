@@ -33,18 +33,18 @@ I try to keep up with:
 
   * Patch submission and review
   * Involvement in hackers discussion, with sometimes participation in
-some other mailing lists
+  some other mailing lists
   * Participation in conferences, involvement in Japanese community
   * Sometimes on IRC...
   * Test machine maintenance in [Postgres buildfarm]
-(http://buildfarm.postgresql.org/)
+  (http://buildfarm.postgresql.org/)
   * Some development activities
    * [Dev postgres](https://github.com/michaelpq/postgres), a mirror of
-vanilla with only master branch and a set of patches in development
+   vanilla with only master branch and a set of patches in development
    * [pg\_arman](https://github.com/michaelpq/pg_arman), backup and
-recovery manager
+   recovery manager
    * [pg\_plugins](https://github.com/michaelpq/pg_plugins), some background
-workers that can be used as a base for more complex implementations
+   workers that can be used as a base for more complex implementations
 
 ### TODO items
 
@@ -70,3 +70,7 @@ workers that can be used as a base for more complex implementations
   (http://www.postgresql.org/message-id/20150330111334.2492.38927@wrigleys.postgresql.org)
   * [PQExec hangs on OOM]
   (http://www.postgresql.org/message-id/547480DE.4040408@vmware.com)
+  * [Ctrl-C causing server to stop automatically on Windows]
+  (http://www.postgresql.org/message-id/lagpal$86e$1@ger.gmane.org)
+  * [pg\_ctl does not correctly honor "DETACHED_PROCESS"]
+  (http://www.postgresql.org/message-id/53759381.4000205@cubiclesoft.com)
