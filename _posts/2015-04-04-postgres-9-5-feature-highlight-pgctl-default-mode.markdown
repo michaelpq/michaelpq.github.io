@@ -26,8 +26,8 @@ tags:
 ---
 
 This week, I wanted to share something that may impact many users of
-Postgres, with this commit changing a behavior that had for a long time
-the same default:
+Postgres, with this commit changing a behavior in a binary utility
+that had for a long time been the same default:
 
     commit: 0badb069bc9f590dbc1306ccbd51e99ed81f228c
     author: Bruce Momjian <bruce@momjian.us>
