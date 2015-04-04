@@ -58,6 +58,10 @@ workers that can be used as a base for more complex implementations
   (http://www.postgresql.org/message-id/CAB7nPqTQwphkDfZP07w7yBnbFNDhW_JBAMyCFAkarE2VWg8irQ@mail.gmail.com)
   * [Support for replication, archiving, PITR test suite, using TAP tests]
   (http://www.postgresql.org/message-id/CAB7nPqTf7V6rswrFa=q_rrWeETUWagP=h8LX8XAov2Jcxw0DRg@mail.gmail.com)
+   * Add tests for recovery_target_action
+   * Add test for reply delay with a 2PC transaction
+   * Add test for replication slot with change receiver using replication
+   interface (now only the SQL one is tested).
   * [Incorrect and missing SetStatusService calls for pg_ctl stop]
   (http://www.postgresql.org/message-id/20141028070241.2593.58180@wrigleys.postgresql.org)
   * [Compiler warnings for MinGW]
