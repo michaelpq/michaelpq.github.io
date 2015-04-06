@@ -23,6 +23,26 @@ to attach breakpoints to the process tested.
 
     PGOPTIONS="-W n"
 
+### Compiling test programs
+
+Here is a single commands to compile code file into an executable:
+
+    gcc hello_world.c -o hello_world_exec
+
+To generate a .so file:
+
+    gcc -c -fPIC hello_world.c -o hello_world.o
+    gcc hello_world.o -shared -o libhello.so
+
+Or in one step:
+
+    gcc -g -Wall -shared -o libhello.so -fPIC hello.c
+
+When generating a library for a test, LD_PRELOAD can be useful to load
+this test library before any other:
+
+    LD_PRELOAD=/path/to/library/libhello.so my_command $ARGS
+
 ### valgrind
 
 valgrind is useful to find memory problems in Postgres, try to use with
