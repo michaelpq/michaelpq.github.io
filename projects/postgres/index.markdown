@@ -66,8 +66,6 @@ I try to keep up with:
   (http://www.postgresql.org/message-id/20141028070241.2593.58180@wrigleys.postgresql.org)
   * [Compiler warnings for MinGW]
   (http://www.postgresql.org/message-id/CAMkU=1zCdP7YxX9HFeGihpqfnvJuzkQxZCnUSUL-wcberkmCcA@mail.gmail.com)
-  * [ECPG crash bug]
-  (http://www.postgresql.org/message-id/20150330111334.2492.38927@wrigleys.postgresql.org)
   * [PQExec hangs on OOM]
   (http://www.postgresql.org/message-id/547480DE.4040408@vmware.com)
   * [Ctrl-C causing server to stop automatically on Windows]
