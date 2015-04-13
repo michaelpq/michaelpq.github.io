@@ -107,7 +107,7 @@ Then here is dbrestrict\_utility, which performs the block on DROP DATABASE.
 
         /*
          * Fallback to normal process, be it the previous hook loaded
-         * or the in-core code path if it is previous hook does not exist.
+         * or the in-core code path if the previous hook does not exist.
          */
         if (prev_utility_hook)
             prev_utility_hook(parsetree, queryString,
