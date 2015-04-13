@@ -104,9 +104,19 @@ Then here is dbrestrict\_utility, which performs the block on DROP DATABASE.
                 break;
         }
     
-        /* Fallback to normal process */
-        standard_ProcessUtility(parsetree, queryString, params, dest,
-             completionTag, context);
+
+        /*
+         * Fallback to normal process, be it the previous hook loaded
+         * or the in-core code path if it is previous hook does not exist.
+         */
+        if (prev_utility_hook)
+            prev_utility_hook(parsetree, queryString,
+                              context, params,
+                              dest, completionTag);
+        else
+            standard_ProcessUtility(parsetree, queryString,
+                              context, params,
+                              dest, completionTag);
     }
 
 An important thing you should do as much as possible: always provide a safe exit by calling the function hook replaces at the end or the beginning of the new function to avoid weird behaviors. In the case of my example not calling standard\_ProcessUtility would have resulted in blocking all the utilities...  Note that this is of course not mandatory, just be sure about what you do as a hook not correctly coded can break easily a server.
