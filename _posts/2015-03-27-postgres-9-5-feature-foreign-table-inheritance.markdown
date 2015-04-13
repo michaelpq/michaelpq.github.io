@@ -104,7 +104,10 @@ some preparatory work to define the foreign servers.
     =# CREATE USER MAPPING FOR PUBLIC SERVER server_5434 OPTIONS (password '');
     CREATE USER MAPPING
 
-And now here are the local tables:
+And now here are the local tables (note that it is possible as well to create
+CHECK constraints on the foreign child tables to give the planner hints on how
+queriea would behave remotely as no constraint check is done locally on foreign
+tables):
 
     =# CREATE TABLE log_entries(log_time timestamp, entry text);
     CREATE TABLE
