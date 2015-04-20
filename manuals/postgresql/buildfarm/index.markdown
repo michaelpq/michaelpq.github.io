@@ -25,8 +25,9 @@ to be sure that no perl modules are missing.
 
 Here are the packages to install on top of that:
 
-    perl lwp module
-    perl sha1 module
+    perl-lwp-module
+    perl-sha1-module
+	perl-ipc-run
     ccache
     bison
     cronie
