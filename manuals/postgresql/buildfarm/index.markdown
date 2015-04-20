@@ -25,8 +25,8 @@ to be sure that no perl modules are missing.
 
 Here are the packages to install on top of that:
 
-    perl-lwp-module
-    perl-sha1-module
+    perl-lwp-protocol-https
+    perl-digest-sha1
 	perl-ipc-run
     ccache
     bison
