@@ -27,10 +27,11 @@ tags:
 ---
 
 Similarly to the post of a couple of weeks back relating about the
-[new memory allocation routine] able to give a backup root in case of OOM
-(/postgresql-2/postgres-9-5-feature-highlight-allocation-routine-no-oom/),
-here is a follow-up commit adding more infrastructure in the same area but
-this time for some widely-used memory allocation routines:
+[new memory allocation routine]
+(/postgresql-2/postgres-9-5-feature-highlight-allocation-routine-no-oom/)
+able to give a plan B route in case of OOM, here is a follow-up commit
+adding more infrastructure in the same area but this time for some
+widely-used memory allocation routines:
 
     commit: 8c8a886268dfa616193dadc98e44e0715f884614
     author: Fujii Masao <fujii@postgresql.org>
