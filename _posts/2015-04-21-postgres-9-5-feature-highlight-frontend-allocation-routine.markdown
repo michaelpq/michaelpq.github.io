@@ -48,7 +48,7 @@ widely-used memory allocation routines:
 
 palloc\_extended() is an equivalent of palloc() that operates on
 CurrentMemoryContext (understand by that the current memory context a
-process is using) with a set of flags, naming the same way for frontend
+process is using) with a set of flags, named the same way for frontend
 and backend:
 
   * MCXT\_ALLOC\_HUGE for allocations larger than 1GB. This flag has an
