@@ -110,9 +110,9 @@ Then here is dbrestrict\_utility, which performs the block on DROP DATABASE.
          * or the in-core code path if the previous hook does not exist.
          */
         if (prev_utility_hook)
-            prev_utility_hook(parsetree, queryString,
-                              context, params,
-                              dest, completionTag);
+            (*prev_utility_hook) (parsetree, queryString,
+                                  context, params,
+                                  dest, completionTag);
         else
             standard_ProcessUtility(parsetree, queryString,
                               context, params,
