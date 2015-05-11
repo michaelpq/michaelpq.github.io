@@ -61,16 +61,16 @@ support has landed in the Postgres world and will be released with the upcoming
     Dean Rasheed, Stephen Frost and many others.
 
 For years, application developers have been using row triggers with a set
-of dedicated functions to handle manually the case of UPSERT, aka how to
-deal with a constraint violation when a tuple is inserted in a given
-relation. On top of being slow, because triggers add on the call stack the
+of dedicated functions to handle manually the case of UPSERT, as known as
+how to deal on-the-fly with constraint violation when a tuple is inserted in
+a relation. On top of being slow, because triggers add on the call stack the
 overhead of a function call, many developers have for sure pested for a
 feature that has been supported for years by the many RDBMS available, be
 they proprietary or open source. Have a look for example at the function
 merge\_db() defined [here]
 (http://www.postgresql.org/docs/9.4/static/plpgsql-control-structures.html)
-present in the documentation giving some insight of how to do it before.
-Then let's see how this works with a simple table like this one:
+present in the documentation giving some insight of how to do it before
+9.5 Upsert. Then let's see how this works with a simple table like this one:
 
     =# CREATE TABLE upsert_table (
       id int PRIMARY KEY,
