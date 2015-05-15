@@ -47,8 +47,9 @@ Professional experience
 
 ### January 2013-Now
 
-  * **VMware**, Tokyo, Japan
+  * **VMware**, Senior Member of Technical Staff - PostgreSQL, Tokyo, Japan
   * Working on PostgreSQL related things and virtualization
+  * Member of Technical Staff: January 2013 - May 2015
 
 ### January 2009-Now
 
