@@ -49,11 +49,11 @@ by a new column called pending\_restart in the system view [pg\_settings]
 a boolean value set to "true" if a given GUC parameter is indeed waiting for
 a server restart.
 
-In order to make visible the fact that a restart is pending, the server
-can have its parameters be reloaded with either pg\_reload\_conf(), "pg_ctl
-reload" or a SIGHUP signal. Of course, modifications made in postgresql.conf,
-as well as any configuration files included, or ALTER SYSTEM are taken into
-account. For example:
+In order to make visible the fact that parameter waits for a restart, the
+server can have its parameters be reloaded with either pg\_reload\_conf(),
+"pg_ctl reload" or a SIGHUP signal. Of course, modifications made in
+postgresql.conf, as well as any configuration files included, or ALTER SYSTEM
+are taken into account. See for example:
 
     =# \! echo "port = 6666" > $PGDATA/postgresql.conf
     =# ALTER SYSTEM SET shared_buffers TO '1GB';
