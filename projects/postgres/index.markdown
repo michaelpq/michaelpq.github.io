@@ -62,13 +62,7 @@ I try to keep up with:
    * Add test for reply delay with a 2PC transaction
    * Add test for replication slot with change receiver using replication
    interface (now only the SQL one is tested).
-  * [Incorrect and missing SetStatusService calls for pg_ctl stop]
-  (http://www.postgresql.org/message-id/20141028070241.2593.58180@wrigleys.postgresql.org)
   * [Compiler warnings for MinGW]
   (http://www.postgresql.org/message-id/CAMkU=1zCdP7YxX9HFeGihpqfnvJuzkQxZCnUSUL-wcberkmCcA@mail.gmail.com)
   * [PQExec hangs on OOM]
   (http://www.postgresql.org/message-id/547480DE.4040408@vmware.com)
-  * [Ctrl-C causing server to stop automatically on Windows]
-  (http://www.postgresql.org/message-id/lagpal$86e$1@ger.gmane.org)
-  * [pg\_ctl does not correctly honor "DETACHED_PROCESS"]
-  (http://www.postgresql.org/message-id/53759381.4000205@cubiclesoft.com)
