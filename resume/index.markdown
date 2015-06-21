@@ -56,17 +56,6 @@ Professional experience
   * **PostgreSQL Global Development Group**, World, Earth
   * PostgreSQL hacker, blogger and module developer.
 
-### October 2010-Now
-
-  * **Otacoo.com**
-  * Website administrator during spare time
-  * Main projects:
-   * Creator of [Dwarfare](http://dwarfare.otacoo.com), text based mmorpg
-in php
-   * Game wiki (Monster Hunter Portable 3rd)
-   * Personal blog and some other DB/appli utilities
-   * 30,000 pages views/month
-
 ### January 2009-December 2012
 
   * **NTT Data Intellilink**, Tokyo, Japan
@@ -164,13 +153,14 @@ IT skills
   * **Mac OSX**: Follower since 10.7~.
   * **Software development**: GIT, emacs, vi, CVS, Eclipse, etc.
 
-### Programming skills
+### Programming
 
-  * Programming Languages: C, C++, Fortran, Java, Perl, Python and Ruby
-  * Environment scripting: bash, shell. Emacs user! (minimum amount of vi
-to keep being clean)
-  * Web applications: HTML, php, some javascript
-  * Database stuff: SQL, MySQL, PostgreSQL and related tools
+  * Programming Languages: C (main), C++, Fortran, Java, Perl, Python,
+  Ruby, etc.
+  * Environment scripting: bash, shell. emacs user here!
+  * Web applications: HTML, php, some javascript.
+  * Database stuff: PostgreSQL, SQL in general, some MySQL, and related
+  tools
 
 Extra-curricular activities
 ---------------------------
