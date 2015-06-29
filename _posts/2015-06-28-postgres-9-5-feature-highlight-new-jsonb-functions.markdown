@@ -63,7 +63,7 @@ compatible even with 9.4 installations (see
 
 So, 4 new operators have been added in the existing jsonb set in 9.5:
 
-1. jsonb || jsonb for concatenation on two jsonb fields, where two things
+jsonb || jsonb for concatenation on two jsonb fields, where two things
 can be noted. First, key name ordering is done depending on their names (this
 is not surprising as on-disk-format is a parsed tree). Then, the last value
 of a given key will be used as jsonb enforces key uniqueness, even of course
@@ -81,7 +81,7 @@ if values are of json type.
      {"a1": "v1", "a2": "v2"}
     (1 row)
 
-2. jsonb - text, which can be used to remove in a jsonb field a given key
+jsonb - text, which can be used to remove in a jsonb field a given key
 at the top-level of the field (no nested operations possible here).
 
     =# SELECT '{"a1":"v1","a2":"v2"}'::jsonb - 'a1' AS field;
@@ -90,7 +90,7 @@ at the top-level of the field (no nested operations possible here).
      {"a2": "v2"}
     (1 row)
 
-3. jsonb - int, to remove in a jsonb array field the value matching the given
+jsonb - int, to remove in a jsonb array field the value matching the given
 position, negative values counting from the end of the array, and 0 as the first
 element. If the position matches no existing value, the array remains the same.
 
@@ -103,7 +103,7 @@ element. If the position matches no existing value, the array remains the same.
      ["b"] | ["a"] | ["a", "b"] | ["a"]
     (1 row)
 
-4. jsonb #- text[] (operator has been renamed for clarity after more
+jsonb #- text[] (operator has been renamed for clarity after more
 discussion) to remove a key in the given nested path. An integer can as
 well be used to remove an element in an array at the wanted position.
 Here is for example how this works with a mix of nested arrays and json
@@ -132,7 +132,7 @@ values:
 
 Then there are three new functions.
 
-1. jsonb\_pretty(), to format a jsonb value with a nice json indentation. This
+jsonb\_pretty(), to format a jsonb value with a nice json indentation. This
 will be useful for many applications aiming at having nice-looking data output.
 
     =# SELECT jsonb_pretty('{"a1":{"b1":"y1","b2":["c1", {"c2":"z1","c3":"z3"}]},"a2":"v2"}'::jsonb);
@@ -153,7 +153,7 @@ will be useful for many applications aiming at having nice-looking data output.
      }
     (1 row)
 
-2. jsonb\_set() to update a value for a given key. This function has support
+jsonb\_set() to update a value for a given key. This function has support
 for nested keys as well as a path to redirect to a nested key can be specified,
 even within an array. The second argument of the function defines the path
 where the key is located, and the third argument assigns the new value. A
@@ -179,11 +179,11 @@ true.
     =# SELECT jsonb_set('{"a1":{"b1":"y1","b2":"y2"},"a2":"v2"}'::jsonb,
                         '{a1,b3}', '"z3"', false);
                       jsonb_set
-	----------------------------------------------
+    ----------------------------------------------
      {"a1": {"b1": "y1", "b2": "y2"}, "a2": "v2"}
     (1 row)
 
-3. Finally there is jsonb\_strip\_nulls() (available as well for json data
+Finally there is jsonb\_strip\_nulls() (available as well for json data
 type with json\_strip\_nulls) to remove key/value pairs with NULL values. This
 function does through all the parsed tree levels, and does not affect NULL
 values in arrays.
