@@ -143,6 +143,10 @@ For instance, for a PostgreSQL initialization process.
 
     set args -D coord -h hostname
 
+Or directly in one command as follows:
+
+    gdb --args $PROGRAM_NAME $ARG1 ... $ARGN
+
 To run the application.
 
     run
