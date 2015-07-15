@@ -5,7 +5,7 @@ date: 2015-07-15 07:47:33+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pg-file-settings
-title: 'Postgres 9.5 feature highlight: pg_file_settings to track configuration origin'
+title: 'Postgres 9.5 feature highlight: pg_file_settings to finely track system configuration'
 categories:
 - PostgreSQL-2
 tags:
