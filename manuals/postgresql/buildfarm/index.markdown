@@ -32,6 +32,7 @@ Here are the packages to install on top of that:
     bison
     cronie
     flex
+    gdb
     gcc
     git-core
     make
