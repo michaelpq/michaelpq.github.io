@@ -66,6 +66,10 @@ A user $USERNAME has to be added to some specific groups.
     useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner \
         -s /bin/bash $USERNAME
 
+Add later on a user to a given group:
+
+    gpasswd -a $USERNAME $GROUPNAME
+
 Then modify its password with this command.
 
     passwd $USERNAME
