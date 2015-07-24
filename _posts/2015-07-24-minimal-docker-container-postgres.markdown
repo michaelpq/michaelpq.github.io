@@ -45,7 +45,7 @@ the fact that some of those images are very popular, so perhaps the author
 of this blog should not do experimentations on such small-scale machines
 to begin with).
 
-Not all the image containers are that large though, there is for example
+Not all the container images are that large though, there is for example
 one container based on the minimalistic distribution [Alpine Linux]
 (http://alpinelinux.org/), with a size of less than 5MB. Many packages
 are available as well for it so it makes it a nice base image for more
@@ -101,7 +101,7 @@ building the new container image, let's look at its size:
     alpine-armv7l       latest              448a4f53f4df        2 hours ago         4.937 MB
 
 Without bash this gets down to 22.55 MB, and without shadow + bash its
-size is 20.86 MB. This container image contains only the necessary binaries
+size is 20.86 MB. This container image includes only the necessary binaries
 and libraries to be able to run a PostgreSQL server, and does nothing to
 initialize it or configure it. Let's use it then and create a server:
 
