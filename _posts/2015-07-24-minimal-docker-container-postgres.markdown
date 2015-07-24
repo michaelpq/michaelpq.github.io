@@ -1,7 +1,7 @@
 ---
 author: Michael Paquier
-OBlastmod: 2015-07-15
-date: 2015-07-15 05:24:38+00:00
+OBlastmod: 2015-07-24
+date: 2015-07-24 05:24:38+00:00
 layout: post
 type: post
 slug: minimal-docker-container-postgres
