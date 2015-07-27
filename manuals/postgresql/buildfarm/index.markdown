@@ -27,13 +27,14 @@ Here are the packages to install on top of that:
 
     perl-lwp-protocol-https
     perl-digest-sha1
-	perl-ipc-run
+    perl-ipc-run
     ccache
     bison
     cronie
     flex
     gdb
     gcc
+    clang
     git-core
     make
     tcl
