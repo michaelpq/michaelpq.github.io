@@ -44,9 +44,9 @@ is currently in active development, let's talk about the following commit:
 
 When taking a base backup with pg\_basebackup, one has surely already
 experienced the problem that WAL files may be missing on the node from
-where the backup has been taken after when connecting for example a fresh
-standby using this base backup. In such a case the standby node would
-complain about the following error.
+where the backup has been taken when connecting for example a fresh standby
+using this base backup after a certain delay. In such a case the standby node
+would complain about the following error.
 
     FATAL:  could not receive data from WAL stream:
     ERROR:  requested WAL segment 000000010000000000000003 has already been removed
@@ -58,10 +58,10 @@ corresponding to the amount of data generated between the moment the
 base backup has been started and the moment a standby node performing
 streaming and using this base backup connects to its parent node. In the
 former case, some users may not have a WAL archive set up (well they
-normally should to be able to recover from only base backups) for a
-reason or another. In the later case, setting up wal\_keep\_segments
-is not an exact science, and if the server faces a peak of activity
-you may still finish with a missing WAL segment on the original node.
+normally should to be able to recover from only base backups). In the
+later case, setting up wal\_keep\_segments is not an exact science, and
+if the server faces a peak of activity you may still finish with a
+missing WAL segments on the original node.
 
 Well, this is where [physical replication slots]
 (http://www.postgresql.org/docs/devel/static/warm-standby.html#STREAMING-REPLICATION-SLOTS)
