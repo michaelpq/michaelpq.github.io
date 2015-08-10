@@ -41,7 +41,7 @@ development of plugins with this facility:
   introduced in 9.4.
 
 While WAL, being a binary journal aimed at preserving PostgreSQL consistency
-in the event of a crash, is hard to apprehend by alone, this set of routines
+in the event of a crash, is hard to apprehend alone, this set of routines
 available in xlogreader.c (header xlogreader.h) makes it far easier to understand
 and to work on it. Here are the basic things you should know about this facility:
 
@@ -148,4 +148,5 @@ Hence, after creating a simple table on a fresh cluster...
     Block touched: dboid = 16384, relid = 16385, block = 0
     Block touched: dboid = 16384, relid = 16385, block = 0
 
-Yes, there are 10 lines here. Hopefully you find this useful.
+Yes, there are 10 lines here. Hopefully you find this facility and what it
+is possible to do with useful.
