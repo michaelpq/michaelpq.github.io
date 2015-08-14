@@ -98,7 +98,7 @@ available like that:
     =# SELECT * FROM pg_create_logical_replication_slot('logical_slot', 'test_decoding');
       slot_name   | xlog_position
     --------------+---------------
-     reserve_slot | 0/1738A90
+     logical_slot | 0/1738A90
     (1 row)
     =# SELECT slot_name, restart_lsn, confirmed_flush_lsn FROM pg_replication_slots;
       slot_name   | restart_lsn | confirmed_flush_lsn
