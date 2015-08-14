@@ -26,7 +26,7 @@ tags:
 
 Today here are highlights about new features regarding replication slots
 that have been lately committed and will be present as part of PostgreSQL
-9.5:
+9.6:
 
     commit: 6fcd88511f8e69e38defb1272e0042ef4bab2feb
     author: Andres Freund <andres@anarazel.de>
