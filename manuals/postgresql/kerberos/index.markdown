@@ -145,6 +145,9 @@ up as follows, more or less:
 
 ## Setup the database for GSSAPI connection
 
+Note that the code needs to be compiled with the configure option
+--with-gssapi.
+
 First create the user on the database side that will be used for the
 operations:
 
