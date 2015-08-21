@@ -21,6 +21,7 @@ The following sections are available from here:
   * [Buildfarm](/manuals/postgresql/buildfarm/)
   * [Debugging](/manuals/postgresql/debugging/)
   * [Hardware](/manuals/postgresql/hardware/)
+  * [Kerberos](/manuals/postgresql/kerberos/)
   * [Maintenance](/manuals/postgresql/maintenance/)
   * [Parse configuration files](/manuals/postgresql/parse-config-files/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
