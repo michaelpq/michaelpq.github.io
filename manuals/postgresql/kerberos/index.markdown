@@ -151,7 +151,7 @@ Note that the code needs to be compiled with the configure option
 First create the user on the database side that will be used for the
 operations:
 
-    psql -c 'CREATE ROLE "postgres/myrealm.example@MYREALM.EXAMPLE.COM" SUPERUSER LOGIN'
+    psql -c 'CREATE ROLE "postgres/myrealm.example@MYREALM.EXAMPLE" SUPERUSER LOGIN'
 
 Update postgresql.conf to point to the keytab file previously created:
 
