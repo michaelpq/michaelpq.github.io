@@ -56,9 +56,9 @@ enforced with txid\_current():
     LOG:  LWLockAcquire(main 3): immediately acquired lock
     LOG:  79507: LWLockRelease(main 3): excl 0 shared 0 haswaiters 0 waiters 0 rOK 1
 
-This information is still useful, still user needs to have a look at
-the lock table, located in lwlock.h, to understand that in this case
-the light-weight lock referenced is XidGenLock.
+This information is useful, still user needs to have a look at the lock
+table, located in lwlock.h, to understand that in this case the light-weight
+lock referenced is XidGenLock.
 
 Thanks to the commit above, things get more verbose for the user though,
 the logs getting generated as follows for the same code path in the Postgres
