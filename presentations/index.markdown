@@ -25,6 +25,13 @@ tags:
 
 ---
 
+#### 2016: WAL, Standbys and Postgres 9.5
+
+  * Subtitle: How to take advantage of 9.5 for them
+  * [pdf](/content/materials/20150917_pgopen2015_standbys.pdf)
+  * Place: Postgres Open 2015 in Dallas. Date: 2015/09/17
+  * Duration: 45 mins + questions.
+
 #### 2015: New features of PostgreSQL 9.5
 
   * Subtitle: News from a hacker
