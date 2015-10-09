@@ -60,7 +60,8 @@ While the commit log is already very descriptive on the matter, the idea
 is that if postmaster.pid has been replaced by something else or has simply
 been removed, the postmaster will decide by itself to perform hara-kiri
 and stop as if an immediate shutdown has been initiated. At next restart
-this instance will then perform recovery actions, like that for example:
+this instance will then perform recovery actions. This can be faced under
+this circumstance for example:
 
     $ rm $PGDATA/postmaster.pid
     [wait a bit]
