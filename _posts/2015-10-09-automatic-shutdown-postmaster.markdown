@@ -73,7 +73,7 @@ As the number of slow machines has rather increased in the [buildfarm]
 (http://buildfarm.postgresql.org/cgi-bin/show_status.pl), this is aimed
 at improving the robustness of the whole facility, the thread where this
 patch came from mentioned as well that this can protect instances in some
-special cases. See (here)[http://www.postgresql.org/message-id/560AFA4D.1080305@joeconway.com]
+special cases. See [here](http://www.postgresql.org/message-id/560AFA4D.1080305@joeconway.com)
 for more details. If you face a similar situation once, you would surely
 thank this commit aimed at preventing disasters of this kind. Note that
 this is not included in this [week's release set]
