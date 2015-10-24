@@ -4,7 +4,7 @@ date: 2015-08-20 14:14:18+00:00
 layout: page
 type: page
 slug: perf
-title: PostgreSQL - Kerkeros and GSSAPI
+title: PostgreSQL - Kerberos and GSSAPI
 tags:
 - postgres
 - postgresql
@@ -159,7 +159,7 @@ Update postgresql.conf to point to the keytab file previously created:
 
 And add this entry in pg_hba.conf:
 
-    host all all 0.0.0.0/0 gss include_realm=0 krb_realm=MYREALM.EXAMPLE
+    host all all 0.0.0.0/0 gss include_realm=1 krb_realm=MYREALM.EXAMPLE
 
 Don't forget to reload parameters on the servers, and now you should
 be able to connect using GSSAPI:
