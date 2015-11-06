@@ -57,11 +57,11 @@ postgresql.conf, then to start the server:
 
     shared_preload_libraries = 'pg_panic'
 
-Then, the luck factor can be defined for a given backend or a server
-level using the parameter called pg\_panic.luck\_factor whose range
-of possible values is 0 to 1, 0 disabling completely the chance to
-trigger a server-level crash, and 1, making it happening with 100%
-of chances. See for example by yourself:
+Then, the luck factor can be defined for a given backend or a server level
+using the parameter called pg\_panic.luck\_factor whose range of possible
+values is from 0 to 1, 0 disabling completely the chance to trigger a
+server-level crash, and 1, making it happening with 100% of chances. See
+for example by yourself:
 
     =# SET pg_panic.luck_factor TO 1;
     SET
