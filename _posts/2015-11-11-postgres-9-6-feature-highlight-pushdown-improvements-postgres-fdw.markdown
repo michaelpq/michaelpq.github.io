@@ -50,6 +50,8 @@ of Postgres 9.6:
     get it right.  But this seems like something that people can usually get
     right in practice.
 
+    Paul Ramsey, hacked up a bit more by me
+
 Up to 9.5, postgres\_fdw evaluates the shippability, or the possibility to
 execute safely a given operator or function on a remote server instead of a
 local using roughly three factors:
