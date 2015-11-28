@@ -25,6 +25,19 @@ tags:
 
 ---
 
+#### 2016: About PostgreSQL 9.5
+
+  * Subtitle: Features, standbys and WAL
+  * [pdf](/content/materials/20151127_pgconjp_pg95.pdf)
+  * Place: Tokyo, keynote of PgCon Japan 2016. Date: 2015/11/27
+  * Duration: 50 minutes + questions
+
+#### 2016: Lightning talk, pg_trunc2del
+
+  * Plase: Tokyo, PgGon Japan 2016. Date: 2015/11/27
+  * [pdf](/content/materials/20151127_pg_trunc2del.pdf)
+  * Duration: 5 mins
+
 #### 2016: WAL, Standbys and Postgres 9.5
 
   * Subtitle: How to take advantage of 9.5 for them
