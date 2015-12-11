@@ -110,4 +110,4 @@ Here is the complete list of fields reported:
      slot_name              | text                     |
 
 Hopefully you will find that useful, note by the way that this is a
-superuser function.
+superuser function that is used to fetch the data of this view.
