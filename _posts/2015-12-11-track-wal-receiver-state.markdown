@@ -90,4 +90,24 @@ And that's exactly what ps reports as well regarding this process:
     $ ps x | grep "wal receiver"
     58030   ??  Ss     0:00.89 postgres: wal receiver process   streaming 0/3060AD8
 
-Hopefully you will find that useful.
+Here is the complete list of fields reported:
+
+    =# \d pg_wal_receiver_state
+                  View "public.pg_wal_receiver_state"
+             Column         |           Type           | Modifiers
+    ------------------------+--------------------------+-----------
+     pid                    | integer                  |
+     status                 | text                     |
+     receive_start_lsn      | pg_lsn                   |
+     receive_start_tli      | integer                  |
+     received_up_to_lsn     | pg_lsn                   |
+     received_tli           | integer                  |
+     latest_chunk_start_lsn | pg_lsn                   |
+     last_msg_send_time     | timestamp with time zone |
+     last_msg_receipt_time  | timestamp with time zone |
+     latest_end_lsn         | pg_lsn                   |
+     latest_end_time        | timestamp with time zone |
+     slot_name              | text                     |
+
+Hopefully you will find that useful, note by the way that this is a
+superuser function.
