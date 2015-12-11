@@ -74,14 +74,14 @@ stuck on, in our case that would be SyncRepLock. Still, this does not offer
 a solution for the existing deployments of 9.1 and newer versions, so I
 hacked out an extension that has a look at the backend array and returns
 the on-memory information regarding their synchronous replication state.
-The utility, called [pg\_syncrep\_state](https://github.com/michaelpq/pg_plugins/tree/master/pg_synrep_state)
+The utility, called [pg\_syncrep\_state](https://github.com/michaelpq/pg_plugins/tree/master/pg_rep_state)
 is available in [pg\_plugins](https://github.com/michaelpq/pg_plugins)
 under the PostgreSQL license. Once compiled and installed, for example
 in the case of the backend stuck above, it is possible to get a precise
 report of its state regarding synchronous replication.
 
-    =# \dx+ pg_syncrep_state
-    Objects in extension "pg_syncrep_state"
+    =# \dx+ pg_rep_state
+    Objects in extension "pg_rep_state"
           Object Description
     -----------------------------
      function pg_syncrep_state()
