@@ -63,6 +63,17 @@ really important to not truncate the relation file once a block is changed:
         seek=$BLOCK_ID of=base/$DBOID/$RELFILENODE
         conv=notrunc
 
+### Encoding
+
+Here is a small trick to write directly in UTF-8 using raw data. For example
+for sequence c2 a2 (cent sign):
+
+    =# SELECT E'\xc2\xa2' AS "char";
+     char
+    ------
+     c
+    (1 row)
+
 ### Data structures
 
 pahole, which is part of the dwarf utilities, is useful to see the size
