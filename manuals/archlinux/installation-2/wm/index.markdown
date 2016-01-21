@@ -92,6 +92,20 @@ Adjust screen size with something like this command.
 --output can be determined by looking at the output of xrandr and --mode
 will be something listed there.
 
+To make such settings persistent, it is necessary to create a configuration
+file in /etc/X11/xorg.conf.d/, like 10-monitor.conf:
+
+    Section "Screen"
+      Identifier "Screen0"
+      Monitor "Virtual1"
+      SubSection "Display"
+        Modes "1360x768"
+      EndSubSection
+    EndSection
+
+This is suitable for a screen in a virtual machine (Identifier=Virtual1)
+for a screen size of 1360x768.
+
 ### 3. Graphical drivers
 
 This part differs if you use a VirtualBox or an environment with nvidia
