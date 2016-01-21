@@ -85,6 +85,13 @@ as desktop background.
 
     pacman -S xorg-xsetroot
 
+Adjust screen size with something like this command.
+
+    xrandr --output Virtual1 --mode 1360x768
+
+--output can be determined by looking at the output of xrandr and --mode
+will be something listed there.
+
 ### 3. Graphical drivers
 
 This part differs if you use a VirtualBox or an environment with nvidia
