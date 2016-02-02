@@ -366,6 +366,14 @@ with the following command:
 
     git gc --prune=now
 
+### Sanity checks
+
+In order to fix whitespaces and perform basic sanity checks on the code
+format:
+
+    git show --check
+    git diff origin/master --check
+
 ### 11. History
 
 reflog helps to track the history of the actions that occurred on
