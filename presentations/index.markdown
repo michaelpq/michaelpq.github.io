@@ -25,6 +25,13 @@ tags:
 
 ---
 
+#### 2016: PostgreSQL and backups
+
+  * Subtitle: With a differential touch
+  * [pdf](/content/materials/20160205_backups_russia.pdf)
+  * Place: Moscow, PGConf Russia 2015. Date: 2016/02/04
+  * Duration: 50 minutes + questions
+
 #### 2015: About PostgreSQL 9.5
 
   * Subtitle: Features, standbys and WAL
