@@ -3,7 +3,7 @@ description: Blog about PostgreSQL and other things
 url: http://michael.otacoo.com
 kramdown:
 gems: [jekyll-paginate]
-highlighter: pygments
+highlighter: rouge
 permalink: /:categories/:title/
 paginate: 10
 paginate_path: page:num
