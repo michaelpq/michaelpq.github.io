@@ -1,9 +1,8 @@
 name: Michael Paquier - Open source developer based in Japan
 description: Blog about PostgreSQL and other things
 url: http://michael.otacoo.com
-kramdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+kramdown:
+gems: [jekyll-paginate]
 highlighter: pygments
 permalink: /:categories/:title/
 paginate: 10
