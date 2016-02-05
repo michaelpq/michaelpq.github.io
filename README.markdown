@@ -19,7 +19,7 @@ The installation of this blog can be done with the following steps.
 
   3) Run server on http://0.0.0.0:4000
 
-    jekyll serve
+    jekyll server
 
 ## Licenses
 
