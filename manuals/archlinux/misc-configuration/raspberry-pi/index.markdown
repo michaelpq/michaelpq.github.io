@@ -23,7 +23,7 @@ Here are some settings specific for the Raspberry PI.
 
 The sound is propagrated through the HDMI. Install the following packages:
 
-    pacman -S # pacman -S alsa-utils alsa-firmware alsa-lib alsa-plugins
+    pacman -S alsa-utils alsa-firmware alsa-lib alsa-plugins
 
 To enforce an output source, use the following command:
 
