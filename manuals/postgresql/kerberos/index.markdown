@@ -155,7 +155,7 @@ operations:
 
 Update postgresql.conf to point to the keytab file previously created:
 
-    krb_server_keyfile = '/home/postgres/myrealm.example.keytab
+    krb_server_keyfile = '/home/postgres/myrealm.example.keytab'
 
 And add this entry in pg_hba.conf:
 
