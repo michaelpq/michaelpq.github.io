@@ -32,17 +32,22 @@ Here are some commands for the layout of the graph:
 
     set xlabel "TPS (tx/s)"
     set ylabel "Time (s)"
-	set title "pgbench blah"
+    set title "pgbench blah"
 
 Plotting some data (specifying multiple outputs is fine):
 
     # lt = line type, 1 is full
     # lc = line color
-	# pt = point typle, 0 is none
-	# with linespoint, join points in a single line
+    # pt = point typle, 0 is none
+    # with linespoint, join points in a single line
     plot "/to/data/path/data.txt" title "Some data" lt 1 pt 0 with linespoint
 
 To reset a picture, simply remove the output location and recreate it:
 
     !rm "/to/path/output_pix.png"
     set output "/to/path/output_pix.png"
+
+Control range of X/Y axis:
+
+    set xrange [0:100]
+    set yrange [0:2200]
