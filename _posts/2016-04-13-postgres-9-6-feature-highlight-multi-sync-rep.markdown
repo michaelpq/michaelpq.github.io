@@ -56,8 +56,7 @@ committed on a master node will never be lost on its synchronous standby node,
 assuming that synchronous\_commit is set to 'on' (default), which ensures that
 when the transaction is committed on the master node the commit WAL record
 has been flushed to disk on the standby. Note that synchronous\_commit can be
-set to some other values, feel free to have a look in the [documentation]
-(http://www.postgresql.org/docs/devel/static/runtime-config-wal.html#GUC-SYNCHRONOUS-COMMIT)
+set to some other values, feel free to have a look in the [documentation](http://www.postgresql.org/docs/devel/static/runtime-config-wal.html#GUC-SYNCHRONOUS-COMMIT)
 and some explanation in [last post](/postgresql-2/postgres-9-6-feature-highlight-remote-apply/)
 regarding another new feature of 9.6 for more details.
 
@@ -75,8 +74,7 @@ combined give the possibility to have a true read balancing among N nodes
 in a PostgreSQL cluster, and not only one. Some applications may want to
 give priority to this read balancing instead of cluster availability.
 
-In order to use this feature, the grammar of [synchronous\_standby\_names]
-(http://www.postgresql.org/docs/devel/static/runtime-config-replication.html#GUC-SYNCHRONOUS-STANDBY-NAMES)
+In order to use this feature, the grammar of [synchronous\_standby\_names](http://www.postgresql.org/docs/devel/static/runtime-config-replication.html#GUC-SYNCHRONOUS-STANDBY-NAMES)
 has been extended a bit with parenthesis separators, for example:
 
     'N (standby1, standby2, ... standbyM)'
