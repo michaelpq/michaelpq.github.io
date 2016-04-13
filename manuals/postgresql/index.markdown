@@ -29,5 +29,3 @@ The following sections are available from here:
   * [Settings](/manuals/postgresql/settings/)
   * [Useful queries](/manuals/postgresql/useful-queries/)
   * [Windows](/manuals/postgresql/windows/)
-
-This is a test to see if content is updated.
