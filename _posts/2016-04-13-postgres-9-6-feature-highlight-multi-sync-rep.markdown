@@ -1,7 +1,7 @@
 ---
 author: Michael Paquier
-OBlastmod: 2016-04-12
-date: 2016-04-12 13:42:54+00:00
+OBlastmod: 2016-04-13
+date: 2016-04-13 00:15:34+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-multi-sync-rep
