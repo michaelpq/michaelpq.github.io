@@ -1,7 +1,7 @@
 ---
 author: Michael Paquier
-OBlastmod: 2016-05-10
-date: 2016-05-10 06:55:34+00:00
+OBlastmod: 2016-05-11
+date: 2016-05-11 06:55:34+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-generic-wal-interface
