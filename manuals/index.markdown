@@ -25,5 +25,3 @@ The following sub-sections are available from here:
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Windows](/manuals/windows/)
-
-Allow pages to be updated...
