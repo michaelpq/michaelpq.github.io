@@ -125,7 +125,7 @@ to complete the backup.:
                |                                                               |
     (1 row)
 
-The contents of "labelfile" needs to be written as backup_label in the backup
+The contents of "labelfile" need to be written as backup_label in the backup
 taken while the contents of "spcmapfile" need to be written to tablespace_map.
 Once the contents of those files is written, don't forget as well to flush
 them to disk to prevent any potential loss caused by power failures for
