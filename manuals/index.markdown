@@ -14,7 +14,9 @@ tags:
 - menu
 - choice
 - stuff
+
 ---
+
 The following sub-sections are available from here:
 
   * [Archlinux](/manuals/archlinux/)
@@ -25,5 +27,3 @@ The following sub-sections are available from here:
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Windows](/manuals/windows/)
-
-Force pages to update again...
