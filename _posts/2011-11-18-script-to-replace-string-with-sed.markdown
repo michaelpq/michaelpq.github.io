@@ -33,7 +33,7 @@ Here is a short script to replace strings with sed easily written in bash.
     if [ $# -ne $EXPECTED_ARGS ]
     then
         echo "Usage: `basename $0` [extension] [old_str] [new_str]"
-        echo "Exemple: `basename $0` php old_text new_text"
+        echo "Example: `basename $0` php old_text new_text"
         exit 1
     fi
 

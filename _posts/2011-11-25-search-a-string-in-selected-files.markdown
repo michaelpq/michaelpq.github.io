@@ -29,7 +29,7 @@ Here is the spec of this script.
 
     $ strfind ?
     Usage: strfind [-i] [filename] [string]
-    Exemple: strfind "[hc]" text
+    Example: strfind "[hc]" text
 
 You can then find strings with commands like:
 
@@ -57,7 +57,7 @@ So here is the script.
             EXPECTED_ARGS=$(($EXPECTED_ARGS + 1))
             ;;
         ?)  echo "Usage: `basename $0` [-i] [filename] [string]"
-            echo "Exemple: `basename $0` \"[hc]\" text"
+            echo "Example: `basename $0` \"[hc]\" text"
             exit 0
             ;;
     esac
@@ -66,7 +66,7 @@ So here is the script.
     if [ $# -ne $EXPECTED_ARGS ]
     then
         echo "Usage: `basename $0` [-i] [filename] [string]"
-        echo "Exemple: `basename $0` \"[hc]\" text"
+        echo "Example: `basename $0` \"[hc]\" text"
         exit 1
     fi
 
