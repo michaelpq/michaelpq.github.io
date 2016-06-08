@@ -1,6 +1,6 @@
 ---
 author: Michael Paquier
-OBlastmod: 2015-10-24
+lastmod: 2015-10-24
 date: 2015-10-24 11:44:23+00:00
 layout: post
 type: post
