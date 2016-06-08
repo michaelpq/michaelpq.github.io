@@ -21,12 +21,10 @@ tags:
 - statistics
 - wait
 - event
-- pg_stat_activity
 - lock
 - buffer
 - pin
 - catalog
-- light-weight
 - heavy
 
 ---
