@@ -1,4 +1,4 @@
---
+---
 author: Michael Paquier
 lastmod: 2013-01-22
 date: 2013-01-22 08:36:36+00:00
@@ -22,6 +22,7 @@ tags:
 - postgresql
 - release
 - vacuum
+
 ---
 
 Continuing with the new features planned for PostgreSQL 9.3, here are some explanations about a new COPY mode called FREEZE. This feature has been introduced by this commit.
