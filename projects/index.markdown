@@ -23,6 +23,5 @@ tags:
 The following items are available from here:
 
   * [Home - Environment management with Git](/projects/home/)
-  * [lem - light-weight emacs-like editor](/projects/lem/)
   * [pg_plugins - set of plugin templates for PostgreSQL](https://github.com/michaelpq/pg_plugins)
   * [PostgreSQL](/projects/postgres/)
