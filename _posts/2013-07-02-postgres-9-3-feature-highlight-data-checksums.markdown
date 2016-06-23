@@ -5,7 +5,7 @@ date: 2013-07-02 07:54:18+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-data-checksums
-title: 'Postgres 9.3 feature highlight: Data Checksums'
+title: 'Postgres 9.3 feature highlight - Data Checksums'
 categories:
 - PostgreSQL-2
 tags:

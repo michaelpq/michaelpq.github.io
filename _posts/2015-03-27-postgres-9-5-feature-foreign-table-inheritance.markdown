@@ -5,7 +5,7 @@ date: 2015-03-27 13:53:45+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-foreign-table-inheritance
-title: 'Postgres 9.5 feature highlight: Scale-out with Foreign Tables now part of Inheritance Trees'
+title: 'Postgres 9.5 feature highlight - Scale-out with Foreign Tables now part of Inheritance Trees'
 categories:
 - PostgreSQL-2
 tags:

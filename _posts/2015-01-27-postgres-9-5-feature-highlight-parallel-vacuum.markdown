@@ -5,7 +5,7 @@ date: 2015-01-27 02:05:34+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-parallel-vacuum
-title: 'Postgres 9.5 feature highlight: Parallel VACUUM with vacuumdb'
+title: 'Postgres 9.5 feature highlight - Parallel VACUUM with vacuumdb'
 categories:
 - PostgreSQL-2
 tags:

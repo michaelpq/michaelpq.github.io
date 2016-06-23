@@ -6,7 +6,7 @@ date: 2012-12-25 14:44:32+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-timeline-switch-of-slave-node-without-archives
-title: 'Postgres 9.3 feature highlight: timeline switch of slave node without archives'
+title: 'Postgres 9.3 feature highlight - timeline switch of slave node without archives'
 categories:
 - PostgreSQL-2
 tags:

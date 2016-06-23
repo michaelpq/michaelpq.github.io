@@ -5,7 +5,7 @@ date: 2015-06-19 7:28:11+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-archive-mode-always
-title: 'Postgres 9.5 feature highlight: archive_mode = always'
+title: 'Postgres 9.5 feature highlight - archive_mode = always'
 categories:
 - PostgreSQL-2
 tags:

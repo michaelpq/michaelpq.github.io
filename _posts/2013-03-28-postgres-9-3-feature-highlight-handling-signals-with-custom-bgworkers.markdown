@@ -5,7 +5,7 @@ date: 2013-03-28 03:13:01+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-handling-signals-with-custom-bgworkers
-title: 'Postgres 9.3 feature highlight: handling signals with custom bgworkers'
+title: 'Postgres 9.3 feature highlight - handling signals with custom bgworkers'
 categories:
 - PostgreSQL-2
 tags:

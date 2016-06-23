@@ -5,7 +5,7 @@ date: 2013-09-13 06:01:01+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-event-triggers
-title: 'Postgres 9.3 feature highlight: event triggers'
+title: 'Postgres 9.3 feature highlight - event triggers'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-11-12 08:35:47+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-brin-indexes
-title: 'Postgres 9.5 feature highlight: BRIN indexes'
+title: 'Postgres 9.5 feature highlight - BRIN indexes'
 categories:
 - PostgreSQL-2
 tags:

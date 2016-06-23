@@ -5,7 +5,7 @@ date: 2014-07-19 12:52:43+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-display-failed-queries-psql
-title: 'Postgres 9.5 feature highlight: Display failed queries in psql'
+title: 'Postgres 9.5 feature highlight - Display failed queries in psql'
 categories:
 - PostgreSQL-2
 tags:

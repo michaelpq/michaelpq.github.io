@@ -5,7 +5,7 @@ date: 2012-08-30 05:47:10+00:00
 layout: post
 type: post
 slug: postgres-pgbadger-sneaking-in-log-files-for-you
-title: 'Postgres: pgbadger sneaking in log files for you'
+title: 'Postgres - pgbadger sneaking in log files for you'
 categories:
 - PostgreSQL-2
 tags:

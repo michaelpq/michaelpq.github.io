@@ -5,7 +5,7 @@ date: 2015-05-28 08:06:45+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-partial-segment-timeline
-title: 'Postgres 9.5 feature highlight: Archiving of last segment on timeline after promotion'
+title: 'Postgres 9.5 feature highlight - Archiving of last segment on timeline after promotion'
 categories:
 - PostgreSQL-2
 tags:

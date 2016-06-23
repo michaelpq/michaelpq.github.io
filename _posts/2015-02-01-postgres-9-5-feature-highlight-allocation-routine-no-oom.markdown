@@ -5,7 +5,7 @@ date: 2015-02-01 12:20:22+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-allocation-routine-no-oom
-title: 'Postgres 9.5 feature highlight: Allocation routine suppressing OOM error'
+title: 'Postgres 9.5 feature highlight - Allocation routine suppressing OOM error'
 categories:
 - PostgreSQL-2
 tags:

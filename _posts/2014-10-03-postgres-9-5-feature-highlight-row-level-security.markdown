@@ -5,7 +5,7 @@ date: 2014-10-03 14:20:36+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-row-level-security
-title: 'Postgres 9.5 feature highlight: Row-Level Security and Policies'
+title: 'Postgres 9.5 feature highlight - Row-Level Security and Policies'
 categories:
 - PostgreSQL-2
 tags:

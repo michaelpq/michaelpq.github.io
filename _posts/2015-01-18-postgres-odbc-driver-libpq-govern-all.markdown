@@ -5,7 +5,7 @@ date: 2015-01-18 13:54:23+00:00
 layout: post
 type: post
 slug: 2015-01-18-postgres-odbc-driver-libpq-govern-all
-title: 'Postgres ODBC driver: libpq to govern them all'
+title: 'Postgres ODBC driver - libpq to govern them all'
 categories:
 - PostgreSQL-2
 tags:

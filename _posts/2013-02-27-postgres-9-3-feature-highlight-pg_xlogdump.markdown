@@ -5,7 +5,7 @@ date: 2013-02-27 01:15:23+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-pg_xlogdump
-title: 'Postgres 9.3 feature highlight: pg_xlogdump'
+title: 'Postgres 9.3 feature highlight - pg_xlogdump'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-08-20 06:30:23+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-versioning-improvement-windows
-title: 'Postgres 9.5 feature highlight: Versioning Improvements on Windows'
+title: 'Postgres 9.5 feature highlight - Versioning Improvements on Windows'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2015-07-31 13:55:22+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-base-backup-slot
-title: 'Postgres 9.6 feature highlight: pg_basebackup and replication slots'
+title: 'Postgres 9.6 feature highlight - pg_basebackup and replication slots'
 categories:
 - PostgreSQL-2
 tags:

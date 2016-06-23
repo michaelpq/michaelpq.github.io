@@ -5,7 +5,7 @@ date: 2013-06-26 00:33:20+00:00
 layout: post
 type: post
 slug: postgres-devel-some-psql-tricks
-title: 'Postgres devel: some psql tricks'
+title: 'Postgres devel - some psql tricks'
 categories:
 - PostgreSQL-2
 tags:

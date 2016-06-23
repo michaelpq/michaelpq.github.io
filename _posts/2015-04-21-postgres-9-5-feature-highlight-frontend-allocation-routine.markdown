@@ -5,7 +5,7 @@ date: 2015-04-21 13:37:33+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-frontend-allocation-routine
-title: 'Postgres 9.5 feature highlight: palloc_extended for NULL result on OOM'
+title: 'Postgres 9.5 feature highlight - palloc_extended for NULL result on OOM'
 categories:
 - PostgreSQL-2
 tags:

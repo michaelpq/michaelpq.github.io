@@ -5,7 +5,7 @@ date: 2013-12-17 07:11:18+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-extra-string-version-in-configure-2
-title: 'Postgres 9.4 feature highlight: extra string version in configure'
+title: 'Postgres 9.4 feature highlight - extra string version in configure'
 categories:
 - PostgreSQL-2
 tags:

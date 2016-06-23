@@ -5,7 +5,7 @@ date: 2014-02-12 21:21:12+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-with-ordinality
-title: 'Postgres 9.4 feature highlight: WITH ORDINALITY'
+title: 'Postgres 9.4 feature highlight - WITH ORDINALITY'
 categories:
 - PostgreSQL-2
 tags:

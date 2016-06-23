@@ -5,7 +5,7 @@ date: 2014-10-10 07:10:44+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-skip-locked-row-level
-title: 'Postgres 9.5 feature highlight: SKIP LOCKED for row-level locking'
+title: 'Postgres 9.5 feature highlight - SKIP LOCKED for row-level locking'
 categories:
 - PostgreSQL-2
 tags:

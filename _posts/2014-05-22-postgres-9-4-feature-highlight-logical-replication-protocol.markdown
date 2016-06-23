@@ -5,7 +5,7 @@ date: 2014-05-22 5:28:17+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-logical-replication-protocol
-title: 'Postgres 9.4 feature highlight: Logical replication protocol'
+title: 'Postgres 9.4 feature highlight - Logical replication protocol'
 categories:
 - PostgreSQL-2
 tags:

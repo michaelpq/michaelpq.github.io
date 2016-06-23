@@ -5,7 +5,7 @@ date: 2014-01-15 06:49:58+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-lossyexact-pages-for-bitmap-heap-scan
-title: 'Postgres 9.4 feature highlight: lossy/exact pages for bitmap heap scan'
+title: 'Postgres 9.4 feature highlight - lossy/exact pages for bitmap heap scan'
 categories:
 - PostgreSQL-2
 tags:

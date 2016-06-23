@@ -5,7 +5,7 @@ date: 2015-06-07 11:52:22+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-system-view-ssl-info
-title: 'Postgres 9.5 feature highlight: pg_stat_ssl, information about SSL connections'
+title: 'Postgres 9.5 feature highlight - pg_stat_ssl, information about SSL connections'
 categories:
 - PostgreSQL-2
 tags:

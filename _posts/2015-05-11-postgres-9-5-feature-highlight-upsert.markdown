@@ -5,7 +5,7 @@ date: 2015-05-11 08:05:27+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-upsert
-title: 'Postgres 9.5 feature highlight: Upsert'
+title: 'Postgres 9.5 feature highlight - Upsert'
 categories:
 - PostgreSQL-2
 tags:

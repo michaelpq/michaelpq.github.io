@@ -5,7 +5,7 @@ date: 2014-09-14 14:24:56+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-logging-replication-commands
-title: 'Postgres 9.5 feature highlight: Logging of replication commands'
+title: 'Postgres 9.5 feature highlight - Logging of replication commands'
 categories:
 - PostgreSQL-2
 tags:

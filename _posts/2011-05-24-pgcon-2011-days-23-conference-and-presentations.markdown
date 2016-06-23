@@ -5,7 +5,7 @@ date: 2011-05-24 06:38:43+00:00
 layout: post
 type: post
 slug: pgcon-2011-days-23-conference-and-presentations
-title: 'PGCon 2011 days 2&3: conference and presentations'
+title: 'PGCon 2011 days 2&3 - conference and presentations'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2015-02-26 07:11:15+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-control-wal-retrieval
-title: 'Postgres 9.5 feature highlight: Control WAL retrieval with wal_retrieve_retry_interval'
+title: 'Postgres 9.5 feature highlight - Control WAL retrieval with wal_retrieve_retry_interval'
 categories:
 - PostgreSQL-2
 tags:

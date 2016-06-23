@@ -5,7 +5,7 @@ date: 2015-04-04 13:01:22+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pgctl-default-mode
-title: 'Postgres 9.5 feature highlight: Default shutdown mode of pg_ctl to fast'
+title: 'Postgres 9.5 feature highlight - Default shutdown mode of pg_ctl to fast'
 categories:
 - PostgreSQL-2
 tags:

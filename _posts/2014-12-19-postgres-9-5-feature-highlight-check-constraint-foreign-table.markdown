@@ -5,7 +5,7 @@ date: 2014-12-19 02:01:54+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-check-constraint-foreign-table
-title: 'Postgres 9.5 feature highlight: CHECK constraints for foreign tables'
+title: 'Postgres 9.5 feature highlight - CHECK constraints for foreign tables'
 categories:
 - PostgreSQL-2
 tags:

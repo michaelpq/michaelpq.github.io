@@ -5,7 +5,7 @@ date: 2014-10-16 06:20:37+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-physical-slot-pg-receivexlog
-title: 'Postgres 9.5 feature highlight: Replication slot control with pg_receivexlog'
+title: 'Postgres 9.5 feature highlight - Replication slot control with pg_receivexlog'
 categories:
 - PostgreSQL-2
 tags:

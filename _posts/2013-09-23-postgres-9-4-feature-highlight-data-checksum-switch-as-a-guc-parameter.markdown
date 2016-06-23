@@ -5,7 +5,7 @@ date: 2013-09-23 09:45:12+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-data-checksum-switch-as-a-guc-parameter
-title: 'Postgres 9.4 feature highlight: data checksum switch as a GUC parameter'
+title: 'Postgres 9.4 feature highlight - data checksum switch as a GUC parameter'
 categories:
 - PostgreSQL-2
 tags:

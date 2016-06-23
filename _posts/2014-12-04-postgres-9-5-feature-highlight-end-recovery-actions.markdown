@@ -5,7 +5,7 @@ date: 2014-12-04 13:37:22+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-end-recovery-actions
-title: 'Postgres 9.5 feature highlight: standby actions at the end of recovery'
+title: 'Postgres 9.5 feature highlight - standby actions at the end of recovery'
 categories:
 - PostgreSQL-2
 tags:

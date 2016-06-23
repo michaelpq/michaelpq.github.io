@@ -5,7 +5,7 @@ date: 2014-04-17 7:18:27+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-basics-logical-decoding
-title: 'Postgres 9.4 feature highlight: Basics about logical decoding'
+title: 'Postgres 9.4 feature highlight - Basics about logical decoding'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2015-05-20 03:05:12+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-track-parameter-server-restart
-title: 'Postgres 9.5 feature highlight: Tracking parameters waiting for server restart'
+title: 'Postgres 9.5 feature highlight - Tracking parameters waiting for server restart'
 categories:
 - PostgreSQL-2
 tags:

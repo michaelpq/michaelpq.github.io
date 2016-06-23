@@ -5,7 +5,7 @@ date: 2014-02-20 07:21:12+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-lsn-datatype
-title: 'Postgres 9.4 feature highlight: LSN datatype'
+title: 'Postgres 9.4 feature highlight - LSN datatype'
 categories:
 - PostgreSQL-2
 tags:

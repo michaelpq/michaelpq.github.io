@@ -5,7 +5,7 @@ date: 2014-04-24 13:53:43+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-replica-identity-logical-replication
-title: 'Postgres 9.4 feature highlight: REPLICA IDENTITY and logical replication'
+title: 'Postgres 9.4 feature highlight - REPLICA IDENTITY and logical replication'
 categories:
 - PostgreSQL-2
 tags:

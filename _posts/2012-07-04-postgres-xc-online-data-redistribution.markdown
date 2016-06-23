@@ -5,7 +5,7 @@ date: 2012-07-04 05:56:51+00:00
 layout: post
 type: post
 slug: postgres-xc-online-data-redistribution
-title: 'Postgres-XC: online data redistribution'
+title: 'Postgres-XC - online data redistribution'
 categories:
 - PostgreSQL-2
 tags:

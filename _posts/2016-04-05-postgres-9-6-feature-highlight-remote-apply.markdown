@@ -5,7 +5,7 @@ date: 2016-04-05 13:01:17+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-remote-apply
-title: 'Postgres 9.6 feature highlight: read balancing with remote_apply'
+title: 'Postgres 9.6 feature highlight - read balancing with remote_apply'
 categories:
 - PostgreSQL-2
 tags:

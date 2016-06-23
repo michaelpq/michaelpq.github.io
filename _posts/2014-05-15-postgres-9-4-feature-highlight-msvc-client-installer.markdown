@@ -5,7 +5,7 @@ date: 2014-05-14 12:41:17+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-msvc-client-installer
-title: 'Postgres 9.4 feature highlight: MSVC installer for client binaries and libraries'
+title: 'Postgres 9.4 feature highlight - MSVC installer for client binaries and libraries'
 categories:
 - PostgreSQL-2
 tags:

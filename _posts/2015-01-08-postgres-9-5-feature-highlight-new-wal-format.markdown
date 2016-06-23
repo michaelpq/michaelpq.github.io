@@ -5,7 +5,7 @@ date: 2015-01-08 06:35:54+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-new-wal-format
-title: 'Postgres 9.5 feature highlight: New WAL format'
+title: 'Postgres 9.5 feature highlight - New WAL format'
 categories:
 - PostgreSQL-2
 tags:

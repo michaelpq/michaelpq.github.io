@@ -5,7 +5,7 @@ date: 2015-08-24 14:06:56+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-lower-locks-alter-table-set
-title: 'Postgres 9.6 feature highlight: Lock reductions for ALTER TABLE SET'
+title: 'Postgres 9.6 feature highlight - Lock reductions for ALTER TABLE SET'
 categories:
 - PostgreSQL-2
 tags:

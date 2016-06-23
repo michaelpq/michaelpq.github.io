@@ -5,7 +5,7 @@ date: 2012-11-01 08:19:10+00:00
 layout: post
 type: post
 slug: postgres-9-2-highlight-range-types
-title: 'Postgres 9.2 highlight: range types'
+title: 'Postgres 9.2 highlight - range types'
 categories:
 - PostgreSQL-2
 tags:

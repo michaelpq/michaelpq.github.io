@@ -5,7 +5,7 @@ date: 2015-07-05 12:44:33+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-issing-ok-file-access
-title: 'Postgres 9.5 feature highlight: New missing_ok option for file access functions'
+title: 'Postgres 9.5 feature highlight - New missing_ok option for file access functions'
 categories:
 - PostgreSQL-2
 tags:

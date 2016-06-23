@@ -5,7 +5,7 @@ date: 2014-11-20 14:12:26+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pg-dump-snapshots
-title: 'Postgres 9.5 feature highlight: pg_dump and external snapshots'
+title: 'Postgres 9.5 feature highlight - pg_dump and external snapshots'
 categories:
 - PostgreSQL-2
 tags:

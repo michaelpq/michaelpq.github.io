@@ -5,7 +5,7 @@ date: 2013-02-03 06:23:00+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-server-monitoring-with-pg_isready
-title: 'Postgres 9.3 feature highlight: server monitoring with pg_isready'
+title: 'Postgres 9.3 feature highlight - server monitoring with pg_isready'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-12-09 3:02:22+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-reindex-schema
-title: 'Postgres 9.5 feature highlight: REINDEX SCHEMA'
+title: 'Postgres 9.5 feature highlight - REINDEX SCHEMA'
 categories:
 - PostgreSQL-2
 tags:

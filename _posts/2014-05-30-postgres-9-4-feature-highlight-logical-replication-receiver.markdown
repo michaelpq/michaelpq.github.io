@@ -5,7 +5,7 @@ date: 2014-05-30 13:35:29+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-logical-replication-receiver
-title: 'Postgres 9.4 feature highlight: Logical replication receiver'
+title: 'Postgres 9.4 feature highlight - Logical replication receiver'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2012-11-28 03:54:09+00:00
 layout: post
 type: post
 slug: postgres-fdw-highlight-redis_fdw
-title: 'Postgres FDW highlight: redis_fdw'
+title: 'Postgres FDW highlight - redis_fdw'
 categories:
 - PostgreSQL-2
 tags:

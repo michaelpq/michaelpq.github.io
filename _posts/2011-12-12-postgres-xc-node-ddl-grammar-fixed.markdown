@@ -5,7 +5,7 @@ date: 2011-12-12 05:53:56+00:00
 layout: post
 type: post
 slug: postgres-xc-node-ddl-grammar-fixed
-title: 'Postgres-XC: Node DDL grammar fixed'
+title: 'Postgres-XC - Node DDL grammar fixed'
 categories:
 - PostgreSQL-2
 tags:

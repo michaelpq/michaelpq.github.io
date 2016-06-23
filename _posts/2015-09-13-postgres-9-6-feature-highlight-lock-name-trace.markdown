@@ -5,7 +5,7 @@ date: 2015-09-13 12:07:11+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-lock-name-trace
-title: 'Postgres 9.6 feature highlight: Lock names with trace_lwlocks'
+title: 'Postgres 9.6 feature highlight - Lock names with trace_lwlocks'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-06-30 13:51:29+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-process-tracking-cluster-name
-title: 'Postgres 9.5 feature highlight: Tracking processes with cluster_name'
+title: 'Postgres 9.5 feature highlight - Tracking processes with cluster_name'
 categories:
 - PostgreSQL-2
 tags:

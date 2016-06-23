@@ -5,7 +5,7 @@ date: 2014-03-05 14:37:27+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-copy-force-null
-title: 'Postgres 9.4 feature highlight: COPY FORCE NULL'
+title: 'Postgres 9.4 feature highlight - COPY FORCE NULL'
 categories:
 - PostgreSQL-2
 tags:

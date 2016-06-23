@@ -5,7 +5,7 @@ date: 2016-01-09 13:10:22+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-wal-receiver-status
-title: 'Postgres 9.6 feature highlight: WAL receiver status via SQL'
+title: 'Postgres 9.6 feature highlight - WAL receiver status via SQL'
 categories:
 - PostgreSQL-2
 tags:

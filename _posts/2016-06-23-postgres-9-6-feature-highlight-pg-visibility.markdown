@@ -5,7 +5,7 @@ date: 2016-06-23 05:25:46+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-pg-visibility
-title: 'Postgres 9.6 feature highlight, pg_visibility'
+title: 'Postgres 9.6 feature highlight - pg_visibility'
 categories:
 - PostgreSQL-2
 tags:

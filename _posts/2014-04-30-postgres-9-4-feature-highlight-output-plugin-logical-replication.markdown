@@ -5,7 +5,7 @@ date: 2014-04-30 13:15:43+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-output-plugin-logical-replication
-title: 'Postgres 9.4 feature highlight: Creating an output plugin for logical replication'
+title: 'Postgres 9.4 feature highlight - Creating an output plugin for logical replication'
 categories:
 - PostgreSQL-2
 tags:

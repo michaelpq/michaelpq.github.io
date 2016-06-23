@@ -5,7 +5,7 @@ date: 2015-02-13 06:27:13+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pglz-compression-libpqcommon
-title: 'Postgres 9.5 feature highlight: Compression with PGLZ in libpqcommon'
+title: 'Postgres 9.5 feature highlight - Compression with PGLZ in libpqcommon'
 categories:
 - PostgreSQL-2
 tags:

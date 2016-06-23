@@ -5,7 +5,7 @@ date: 2014-09-28 14:24:56+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-improved-logs-pg-dump
-title: 'Postgres 9.5 feature highlight: Improved verbose logs in pg_dump'
+title: 'Postgres 9.5 feature highlight - Improved verbose logs in pg_dump'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-08-25 06:17:56+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-alter-table-unlogged
-title: 'Postgres 9.5 feature highlight: ALTER TABLE .. SET LOGGED / UNLOGGED'
+title: 'Postgres 9.5 feature highlight - ALTER TABLE .. SET LOGGED / UNLOGGED'
 categories:
 - PostgreSQL-2
 tags:

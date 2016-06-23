@@ -5,7 +5,7 @@ date: 2016-04-25 12:45:32+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-pg-rewind-timeline
-title: 'Postgres 9.6 feature highlight: pg_rewind and timeline switches'
+title: 'Postgres 9.6 feature highlight - pg_rewind and timeline switches'
 categories:
 - PostgreSQL-2
 tags:

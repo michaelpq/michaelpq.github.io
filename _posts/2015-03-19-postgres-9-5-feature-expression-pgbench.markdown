@@ -5,7 +5,7 @@ date: 2015-03-19 12:52:52+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-expression-pgbench
-title: 'Postgres 9.5 feature highlight: More flexible expressions in pgbench'
+title: 'Postgres 9.5 feature highlight - More flexible expressions in pgbench'
 categories:
 - PostgreSQL-2
 tags:

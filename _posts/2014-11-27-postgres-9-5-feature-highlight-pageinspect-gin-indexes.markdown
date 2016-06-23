@@ -5,7 +5,7 @@ date: 2014-11-27 14:27:54+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pageinspect-gin-indexes
-title: 'Postgres 9.5 feature highlight: pageinspect extended for GIN indexes'
+title: 'Postgres 9.5 feature highlight - pageinspect extended for GIN indexes'
 categories:
 - PostgreSQL-2
 tags:

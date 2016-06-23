@@ -5,7 +5,7 @@ date: 2013-01-29 02:59:59+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-for-key-share-and-for-no-key-update
-title: 'Postgres 9.3 feature highlight: FOR KEY SHARE and FOR NO KEY UPDATE'
+title: 'Postgres 9.3 feature highlight - FOR KEY SHARE and FOR NO KEY UPDATE'
 categories:
 - PostgreSQL-2
 tags:

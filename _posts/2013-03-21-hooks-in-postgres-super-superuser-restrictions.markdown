@@ -5,7 +5,7 @@ date: 2013-03-21 03:05:27+00:00
 layout: post
 type: post
 slug: hooks-in-postgres-super-superuser-restrictions
-title: 'Hooks in Postgres: super-superuser restrictions'
+title: 'Hooks in Postgres - super-superuser restrictions'
 categories:
 - PostgreSQL-2
 tags:

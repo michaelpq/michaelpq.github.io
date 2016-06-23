@@ -5,7 +5,7 @@ date: 2015-06-28 13:53:44+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-new-jsonb-functions
-title: 'Postgres 9.5 feature highlight: New JSONB functions and operators'
+title: 'Postgres 9.5 feature highlight - New JSONB functions and operators'
 categories:
 - PostgreSQL-2
 tags:

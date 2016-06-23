@@ -5,7 +5,7 @@ date: 2014-07-04 13:47:29+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-process-tracking-cluster-name
-title: 'Postgres 9.5 feature highlight: WHERE clause pushdown in subqueries with window functions'
+title: 'Postgres 9.5 feature highlight - WHERE clause pushdown in subqueries with window functions'
 categories:
 - PostgreSQL-2
 tags:

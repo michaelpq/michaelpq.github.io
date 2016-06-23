@@ -5,7 +5,7 @@ date: 2014-03-12 15:35:08+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-replication-phydical-slots
-title: 'Postgres 9.4 feature highlight: Physical slots for replication'
+title: 'Postgres 9.4 feature highlight - Physical slots for replication'
 categories:
 - PostgreSQL-2
 tags:

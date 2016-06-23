@@ -5,7 +5,7 @@ date: 2016-04-13 00:15:34+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-multi-sync-rep
-title: 'Postgres 9.6 feature highlight: Multiple synchronous standbys'
+title: 'Postgres 9.6 feature highlight - Multiple synchronous standbys'
 categories:
 - PostgreSQL-2
 tags:

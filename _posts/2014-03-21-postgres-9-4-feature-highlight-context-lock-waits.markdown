@@ -5,7 +5,7 @@ date: 2014-03-21 4:22:08+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-context-lock-waits
-title: 'Postgres 9.4 feature highlight: Getting contexts of lock waits'
+title: 'Postgres 9.4 feature highlight - Getting contexts of lock waits'
 categories:
 - PostgreSQL-2
 tags:

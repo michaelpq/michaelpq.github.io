@@ -5,7 +5,7 @@ date: 2016-05-11 06:55:34+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-generic-wal-interface
-title: 'Postgres 9.6 feature highlight: Generic WAL interface'
+title: 'Postgres 9.6 feature highlight - Generic WAL interface'
 categories:
 - PostgreSQL-2
 tags:

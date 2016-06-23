@@ -5,7 +5,7 @@ date: 2014-03-28 7:21:08+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-trigger-foreign-tables
-title: 'Postgres 9.4 feature highlight: Triggers on foreign tables'
+title: 'Postgres 9.4 feature highlight - Triggers on foreign tables'
 categories:
 - PostgreSQL-2
 tags:

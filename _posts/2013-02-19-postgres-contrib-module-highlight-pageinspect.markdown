@@ -5,7 +5,7 @@ date: 2013-02-19 00:25:55+00:00
 layout: post
 type: post
 slug: postgres-contrib-module-highlight-pageinspect
-title: 'Postgres contrib module highlight: pageinspect'
+title: 'Postgres contrib module highlight - pageinspect'
 categories:
 - PostgreSQL-2
 tags:

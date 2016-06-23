@@ -5,7 +5,7 @@ date: 2016-05-31 01:55:34+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-non-exclusive-backup
-title: 'Postgres 9.6 feature highlight: Non-exclusive base backups'
+title: 'Postgres 9.6 feature highlight - Non-exclusive base backups'
 categories:
 - PostgreSQL-2
 tags:

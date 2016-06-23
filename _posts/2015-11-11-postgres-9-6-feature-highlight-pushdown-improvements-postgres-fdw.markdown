@@ -5,7 +5,7 @@ date: 2015-11-11 03:18:22+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-pushdown-improvements-postgres-fdw
-title: 'Postgres 9.6 feature highlight: operator and function pushdown with postgres_fdw'
+title: 'Postgres 9.6 feature highlight - operator and function pushdown with postgres_fdw'
 categories:
 - PostgreSQL-2
 tags:

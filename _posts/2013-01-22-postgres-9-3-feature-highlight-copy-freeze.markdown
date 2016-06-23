@@ -5,7 +5,7 @@ date: 2013-01-22 08:36:36+00:00
 layout: post
 type: post
 slug: postgres-9-3-feature-highlight-copy-freeze
-title: 'Postgres 9.3 feature highlight: COPY FREEZE'
+title: 'Postgres 9.3 feature highlight - COPY FREEZE'
 categories:
 - PostgreSQL-2
 tags:

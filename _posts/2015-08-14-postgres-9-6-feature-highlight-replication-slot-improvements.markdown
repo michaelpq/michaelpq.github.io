@@ -5,7 +5,7 @@ date: 2015-08-14 07:15:11+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-replication-slot-improvements
-title: 'Postgres 9.6 feature highlight: Replication slot improvements'
+title: 'Postgres 9.6 feature highlight - Replication slot improvements'
 categories:
 - PostgreSQL-2
 tags:

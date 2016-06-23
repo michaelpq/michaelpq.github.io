@@ -5,7 +5,7 @@ date: 2014-02-27 12:01:34+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-within-group
-title: 'Postgres 9.4 feature highlight: WITHIN GROUP and ordered-set aggregates'
+title: 'Postgres 9.4 feature highlight - WITHIN GROUP and ordered-set aggregates'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2015-04-14 13:18:46+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-log-autovacuum-min-duration-relation
-title: 'Postgres 9.5 feature highlight: log_autovacuum_min_duration at relation level'
+title: 'Postgres 9.5 feature highlight - log_autovacuum_min_duration at relation level'
 categories:
 - PostgreSQL-2
 tags:

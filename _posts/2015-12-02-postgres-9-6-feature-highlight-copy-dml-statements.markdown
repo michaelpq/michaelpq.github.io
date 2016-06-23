@@ -5,7 +5,7 @@ date: 2015-12-02 12:25:45+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-copy-dml-statements
-title: 'Postgres 9.6 feature highlight: COPY and DML statements'
+title: 'Postgres 9.6 feature highlight - COPY and DML statements'
 categories:
 - PostgreSQL-2
 tags:

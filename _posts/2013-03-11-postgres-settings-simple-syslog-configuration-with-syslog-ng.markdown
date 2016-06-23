@@ -5,7 +5,7 @@ date: 2013-03-11 06:19:48+00:00
 layout: post
 type: post
 slug: postgres-settings-simple-syslog-configuration-with-syslog-ng
-title: 'Postgres settings: simple syslog configuration with syslog-ng'
+title: 'Postgres settings - simple syslog configuration with syslog-ng'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2014-08-11 08:27:27+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-pg-receivexlog-fsync
-title: 'Postgres 9.5 feature highlight: pg_receivexlog improvements with fsync'
+title: 'Postgres 9.5 feature highlight - pg_receivexlog improvements with fsync'
 categories:
 - PostgreSQL-2
 tags:

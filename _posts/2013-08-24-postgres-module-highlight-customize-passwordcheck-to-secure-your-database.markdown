@@ -5,7 +5,7 @@ date: 2013-08-24 06:26:37+00:00
 layout: post
 type: post
 slug: postgres-module-highlight-customize-passwordcheck-to-secure-your-database
-title: 'Postgres module highlight: customize passwordcheck to secure your database'
+title: 'Postgres module highlight - customize passwordcheck to secure your database'
 categories:
 - PostgreSQL-2
 tags:

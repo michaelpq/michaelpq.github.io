@@ -5,7 +5,7 @@ date: 2015-03-12 12:54:46+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-compression-fpw-wal
-title: 'Postgres 9.5 feature highlight: Compression of full-page writes in WAL'
+title: 'Postgres 9.5 feature highlight - Compression of full-page writes in WAL'
 categories:
 - PostgreSQL-2
 tags:

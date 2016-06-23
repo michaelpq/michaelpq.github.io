@@ -5,7 +5,7 @@ date: 2014-04-06 15:36:08+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-indexing-jsonb
-title: 'Postgres 9.4 feature highlight: Indexing JSON data with jsonb data type'
+title: 'Postgres 9.4 feature highlight - Indexing JSON data with jsonb data type'
 categories:
 - PostgreSQL-2
 tags:

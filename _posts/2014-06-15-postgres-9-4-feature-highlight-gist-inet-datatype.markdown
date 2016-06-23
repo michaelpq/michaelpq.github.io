@@ -5,7 +5,7 @@ date: 2014-06-15 13:07:29+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-gist-inet-datatype
-title: 'Postgres 9.4 feature highlight: GiST operator class for inet and cidr datatypes'
+title: 'Postgres 9.4 feature highlight - GiST operator class for inet and cidr datatypes'
 categories:
 - PostgreSQL-2
 tags:

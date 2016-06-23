@@ -5,7 +5,7 @@ date: 2016-06-08 07:30:55+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-wait-events
-title: 'Postgres 9.6 feature highlight: Tracking of wait events'
+title: 'Postgres 9.6 feature highlight - Tracking of wait events'
 categories:
 - PostgreSQL-2
 tags:

@@ -5,7 +5,7 @@ date: 2013-08-05 06:24:32+00:00
 layout: post
 type: post
 slug: postgres-9-4-feature-highlight-session_preload_libraries-for-library-loading
-title: 'Postgres 9.4 feature highlight: session_preload_libraries for library loading'
+title: 'Postgres 9.4 feature highlight - session_preload_libraries for library loading'
 categories:
 - PostgreSQL-2
 tags:

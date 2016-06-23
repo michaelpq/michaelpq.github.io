@@ -5,7 +5,7 @@ date: 2014-07-11 13:47:43+00:00
 layout: post
 type: post
 slug: postgres-9-5-feature-highlight-import-foreign-schema
-title: 'Postgres 9.5 feature highlight: IMPORT FOREIGN SCHEMA'
+title: 'Postgres 9.5 feature highlight - IMPORT FOREIGN SCHEMA'
 categories:
 - PostgreSQL-2
 tags:
