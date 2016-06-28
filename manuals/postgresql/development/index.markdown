@@ -17,12 +17,14 @@ tags:
 
 ### Documentation
 
-On Archlinux, compiling the documentation requires the following packages:
+On most common Linux distributions, compiling the documentation requires the
+following packages:
 
     docbook
     docbook2x
     docbook-dsssl
     docbook-xsl
+    docbook-sgml
     openjade
 
 With that, everything should be set up and ready to go, SGML catalogs are

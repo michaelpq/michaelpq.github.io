@@ -14,7 +14,9 @@ tags:
 - deploy
 - time
 - install
+
 ---
+
 The following sub-sections are available from here:
 
   * [irssi](/manuals/archlinux/misc-configuration/irssi/)
@@ -23,7 +25,6 @@ The following sub-sections are available from here:
   * [Intel NUC](/manuals/archlinux/misc-configuration/intel-nuc/)
   * [Raspberry PI](/manuals/archlinux/misc-configuration/raspberry-pi/)
   * [Kernel Settings](/manuals/archlinux/misc-configuration/kernel-settings/)
-  * [Postgres docs and sgml catalogs](/manuals/archlinux/misc-configuration/postgres-docs-and-sgml-catalogs/)
   * [ssl](/manuals/archlinux/misc-configuration/ssl/)
   * [iptables](/manuals/archlinux/misc-configuration/iptables/)
   * [Mounting drives](/manuals/archlinux/misc-configuration/mount-drives/)
