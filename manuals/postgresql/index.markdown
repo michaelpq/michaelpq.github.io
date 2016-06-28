@@ -20,6 +20,7 @@ The following sections are available from here:
 
   * [Buildfarm](/manuals/postgresql/buildfarm/)
   * [Debugging](/manuals/postgresql/debugging/)
+  * [Development](/manuals/postgresql/development/)
   * [Hardware](/manuals/postgresql/hardware/)
   * [Kerberos](/manuals/postgresql/kerberos/)
   * [Maintenance](/manuals/postgresql/maintenance/)
