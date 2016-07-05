@@ -96,7 +96,7 @@ Drop an account.
 Using screen can be a good deal to when keeping a server online. Create
 a new screen.
 
-    screen
+    screen -S $NAME
     irssi
 
 Reattach to a detach screen.
@@ -106,7 +106,3 @@ Reattach to a detach screen.
 List screens currently active.
 
     screen -list
-
-Kill a given screen.
-
-    screen -S $NAME -X quit

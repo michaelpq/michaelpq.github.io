@@ -60,7 +60,7 @@ to perform that.
 ### Create the disk partitions
 
 You need to create all your partitions from scratch. This can be done
-nativaly with fdisk. The following architecture is recommended.
+natively with fdisk. The following architecture is recommended.
 
   * sda1, /, 20G. Used for root. This is the root of all the folders for
 your system. All packages are installed here	
@@ -75,7 +75,6 @@ commands.
   * w to write a partition and exit	
   * n to create a new partition
   * t to define the type of a partition
-  * a to set up a boot flag on a partition
 
 When using 't', you will need to use the partition number. To define a
 swap, you need to use 82 as type. For a Windows NTFS, use 7. You can see
