@@ -1,7 +1,7 @@
 ---
 author: Michael Paquier
-lastmod: 2016-07-10
-date: 2016-07-10 06:40:13+00:00
+lastmod: 2016-07-11
+date: 2016-07-11 06:40:13+00:00
 layout: post
 type: post
 slug: postgres-9-6-feature-highlight-pg-blocking-pids
