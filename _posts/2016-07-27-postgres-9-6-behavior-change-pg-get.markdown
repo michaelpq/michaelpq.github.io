@@ -80,7 +80,7 @@ And the other functions returned some inconsistent output:
     (1 row)
 
 When used on catalog indexes things can get funny as mentioned
-[here](https://www.postgresql.org/message-id/87vbcyx36q.fsf%40credativ.de):
+[here](https://www.postgresql.org/message-id/CAB7nPqThJsGnH2JNyHPZmXFk8a26RhqRhR7in0zCpT%2BOttfzEw%40mail.gmail.com):
 
     =# SELECT indexdef FROM pg_catalog.pg_indexes WHERE indexdef IS NOT NULL;
     ERROR:  XX000: cache lookup failed for index 2619
