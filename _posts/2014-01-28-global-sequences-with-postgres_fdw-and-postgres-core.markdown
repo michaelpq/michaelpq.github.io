@@ -53,7 +53,7 @@ Now, let's create the foreign table on server A that queries seq\_view (Don't fo
     =# CREATE USER MAPPING FOR PUBLIC SERVER postgres_server OPTIONS (password '');
     CREATE USER MAPPING
     =# CREATE FOREIGN TABLE foreign_seq_table (a bigint)
-    -# SERVER postgres_server OPTIONS (table_name 'seq_table');
+    -# SERVER postgres_server OPTIONS (table_name 'seq_view');
     CREATE FOREIGN TABLE
 
 So what we have now is the possibility to query the same sequence across two servers:
