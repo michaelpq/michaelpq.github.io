@@ -32,7 +32,7 @@ Personal information
 
   * Location: Tokyo, Japan
   * Nationality: French
-  * Contact: michael at otacoo dot com
+  * Contact: michael at paquier dot xyz
 
 Work area
 ---------

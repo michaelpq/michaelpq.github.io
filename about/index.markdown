@@ -33,7 +33,7 @@ and patch reviews.
 
 If you have any comments about this blog or its content, or in case of
 inquiries related to PostgreSQL or anything, please feel free to
-contact <b>michael at otacoo dot com</b>.
+contact <b>michael at paquier dot xyz</b>.
 
 The code of this blog is maintained on [github](https://github.com/michaelpq/michaelpq.github.io)
 so if you have any comments or if you want to provide any corrections that

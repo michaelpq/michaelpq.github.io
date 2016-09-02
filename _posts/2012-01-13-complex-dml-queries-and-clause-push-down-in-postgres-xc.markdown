@@ -29,7 +29,7 @@ tags:
 This week, I spent a long time working on this commit. Just by looking at the date, commit happened before leaving for week-end :)
 
     commit 8ef0c48acadec3c9888d302888a7d279d82323e5
-    Author: Michael P <michael@otacoo.com>
+    Author: Michael P
     Date:   Fri Jan 13 16:05:00 2012 +0900
 
     Improve target list selection for remote DML queries

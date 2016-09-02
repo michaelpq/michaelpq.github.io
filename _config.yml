@@ -1,6 +1,6 @@
 name: Michael Paquier - Open source developer based in Japan
 description: Blog about PostgreSQL and other things
-url: http://michael.otacoo.com
+url: http://paquier.xyz
 kramdown:
 gems: [jekyll-paginate]
 highlighter: rouge
