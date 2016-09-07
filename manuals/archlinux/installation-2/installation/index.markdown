@@ -157,6 +157,11 @@ and to install MBR boot code (-m).
 
     syslinux-install_update -iam
 
+It may be worth checking if the boot flag is already set for the partition
+holding /boot/. If it is already set, the -a switch would just cause the
+previous command to fail without doing the important -m phase to install
+the MBR. In this case, just using -i and -m, without -a is fine.
+
 Note that in the case of a proxy environment, wget might be necessary to
 fetch the packages you need. You need to launch that before entering in
 arch-chroot mode.
