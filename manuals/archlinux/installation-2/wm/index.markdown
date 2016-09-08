@@ -61,10 +61,12 @@ This guide is divided into several parts.
 
 ### 1. Setting up user
 
-A user $USERNAME has to be added to some specific groups.
+A user $USERNAME has to be added to some specific groups, UID being important to
+maintain compatibility for user-level permissions in the case where files are
+transfered across machines.
 
     useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner \
-        -s /bin/bash $USERNAME
+        -u $UID -s /bin/bash $USERNAME
 
 Add later on a user to a given group:
 
