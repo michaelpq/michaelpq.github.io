@@ -51,3 +51,11 @@ The following package just needs to be installed, and this will work
 out of the box:
 
     pacman -S xf86-input-libinput
+
+## Fonts for browsers
+
+Some browers prefer to have some additional fonts installed to work
+properly:
+
+    pacman -S ttf-dejavu \ # Normal characters for code quote
+              ttf-sazanami # Japanese characters
