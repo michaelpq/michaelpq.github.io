@@ -78,9 +78,9 @@ Set up /etc/mkinitcpio.conf to your liking and create an initial RAM disk.
 
 ### Fonts
 
-Dina is a nice font for programming.
+bitstream-vera is a nice font for programming.
 
-    pacman -S dina-font
+    pacman -S ttf-bitstream-vera
 
 ### Synchronize clock with guest in VMware VM
 
