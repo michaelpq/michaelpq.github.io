@@ -23,6 +23,7 @@ The following sub-sections are available from here:
   * [nginx](/manuals/archlinux/misc-configuration/nginx/)
   * [rtorrent](/manuals/archlinux/misc-configuration/rtorrent/)
   * [Intel NUC](/manuals/archlinux/misc-configuration/intel-nuc/)
+  * [Thinkpad](/manuals/archlinux/misc-configuration/thinkpad/)
   * [Raspberry PI](/manuals/archlinux/misc-configuration/raspberry-pi/)
   * [Kernel Settings](/manuals/archlinux/misc-configuration/kernel-settings/)
   * [ssl](/manuals/archlinux/misc-configuration/ssl/)
