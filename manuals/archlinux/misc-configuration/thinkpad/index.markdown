@@ -23,7 +23,7 @@ Here are some settings specific for any Thinkpads.
 ### Kernel module
 
 The Linux kernel comes up with a specific module that greatly eases things.
-Just to the following to enable it:
+Just do the following to enable it:
 
     $ cat /etc/modules-load.d/x260.conf
     # Load events for Thinkpad x260
