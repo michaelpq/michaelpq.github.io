@@ -105,11 +105,11 @@ entry (and then recovery pauses):
 
 And by logging into this node, there are indeed only 100 tuples:
 
-   =# SELECT count(*) FROM data_to_recover;
-    count
-   -------
-      100
-   (1 row)
+    =# SELECT count(*) FROM data_to_recover;
+     count
+    -------
+       100
+    (1 row)
 
 Hopefully this will find its set of users, personally that is a powerful
 tool.
