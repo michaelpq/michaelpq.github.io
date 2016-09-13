@@ -14,7 +14,7 @@ tags:
 - open source
 - database
 - development
-- 9.6
+- 10
 - feature
 - highlight
 - shared
