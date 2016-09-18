@@ -16,12 +16,15 @@ tags:
 - xinit
 - initialization
 - uim
+- ibus
 - anthy
----
-Everything necessary to set up an environment with Japanese character
-manipulation. Install uim and anthy, managing input of characters.
 
-    pacman -S uim anthy
+---
+
+Everything necessary to set up an environment with Japanese character
+manipulation. Install ibus and ibus-anthy, managing input of characters.
+
+    pacman -S ibus ibus-anthy
 
 Add a Japanese font.
 
@@ -30,56 +33,20 @@ Add a Japanese font.
 Initialize UIM, for example in ~/.xinitrc.
 
     # Settings for Japanese input
-    export GTK_IM_MODULE='uim'
-    export QT_IM_MODULE='uim'
-    uim-xim &
-    export XMODIFIERS=@im='uim'
+    export GTK_IM_MODULE='ibus'
+    export QT_IM_MODULE='ibus'
+    export XMODIFIERS=@im='ibus'
 
     #Toolbar for anthy
-    uim-toolbar-gtk &
+    ibus-daemon -drx
 
-Then, in Settings->Input Methods (for XFCE), use those input methods
-(some are perhaps not really necessary):
+Then, launch ibus-setup (for i3), and add those input methods (some are
+perhaps not really necessary) after looking for Japanese:
 
     Anthy
-    Anthy (UTF-8)
-    Latin characters
-    m17n-ja-anthy
-    m17n-ja-tcode`
+    Japanese
 
-In order for the characters to be recognized, you might need to change
-/etc/locale.conf to set up the locale for the whole environment.
-
-    LANG="ja_JP.UTF-8"
-    LOCALE="en_US.UTF-8"
-
-Then uncomment the following lines in /etc/locale.gen.
-
-    en_US.UTF-8 UTF-8
-    ja_JP.UTF-8 UTF-8
-
-Finally generate the local parameters with locale-gen.
-
-    $ locale-gen
-    Generating locales...
-      en_US.UTF-8... done
-      ja_JP.UTF-8... done
-    Generation complete.
-
-You can display the locale settings with command locale.
-
-    $ locale
-    LANG=ja_JP.UTF-8
-    LC_CTYPE="ja_JP.UTF-8"
-    LC_NUMERIC="ja_JP.UTF-8"
-    LC_TIME="ja_JP.UTF-8"
-    LC_COLLATE="ja_JP.UTF-8"
-    LC_MONETARY="ja_JP.UTF-8"
-    LC_MESSAGES="ja_JP.UTF-8"
-    LC_PAPER="ja_JP.UTF-8"
-    LC_NAME="ja_JP.UTF-8"
-    LC_ADDRESS="ja_JP.UTF-8"
-    LC_TELEPHONE="ja_JP.UTF-8"
-    LC_MEASUREMENT="ja_JP.UTF-8"
-    LC_IDENTIFICATION="ja_JP.UTF-8"
-    LC_ALL
+Using ibus-setup it is possible to make the current input method icon
+to show up on the status bar. Be sure to set up that properly first.
+Method switch is done with Super+space by default (super is likely the
+Windows key).
