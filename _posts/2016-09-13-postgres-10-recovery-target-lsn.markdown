@@ -33,7 +33,7 @@ estimating the stop point:
   * Timestamp, with recovery\_target\_time.
   * Name, with recovery\_target\_name, which is a recovery target defined
   by a user with pg\_create\_restore\_point().
-  * XID, with recovery_target_xid, a transaction ID that will make recovery
+  * XID, with recovery\_target\_xid, a transaction ID that will make recovery
   go up to the point where the transaction where this ID was assigned has
   been committed.
   * 'immediate', which is a special case using recovery\_target = 'immediate'.
