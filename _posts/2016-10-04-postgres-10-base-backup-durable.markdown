@@ -37,8 +37,10 @@ to take data dumps, base backups, or anything related to Postgres like
 WAL segments. In short, the goal is for users to be sure that any data
 taken from Postgres using the in-core tools is still present and consistent
 on disk even if a power failure occurs once the binary writing and flushing
-the data is done. A couple of days ago the following commit has landed in
-the code tree to improve the situation for pg\_basebackup and pg\_receivexlog:
+the data is done. A couple of days ago the following
+[commit](http://git.postgresql.org/pg/commitdiff/bc34223bc1e2c51dff2007b3d3bd492a09b5a491)
+has landed in the code tree to improve the situation for pg\_basebackup and
+pg\_receivexlog:
 
     commit: bc34223bc1e2c51dff2007b3d3bd492a09b5a491
     author: Peter Eisentraut <peter_e@gmx.net>
