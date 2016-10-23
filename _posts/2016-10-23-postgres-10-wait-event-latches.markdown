@@ -39,7 +39,7 @@ wait\_event\_type and wait\_event. 9.6 infrastructure shows up information
 for backend processes holding lightweight locks, heavyweight locks, and
 buffer pins. While getting a look at this infrastructure, I got surprised
 by the fact that nothing was reported for latches, more or less code paths
-calling WaitLatch to wait for a timeout, a postmaster death, a socket event
+calling WaitLatch() to wait for a timeout, a postmaster death, a socket event
 or just for the latch to be set. As 9.6 was close to shipping when I bumped
 into the limitation, nothing much could be done for it. So this got delayed
 to Postgres 10, and has been committed recently with the following change:
@@ -165,8 +165,10 @@ Once the run is done, here is a simple way to analyze this collected data:
      159 | ClientRead    | Client
     (5 rows)
 
-In which case the conclusion is plain: a lot of backends have just keep
+In which case the conclusion is plain: a lot of backends have just kept
 waiting for pgbench to get something to do so they ran in an idle state
 most of the time. Take this example lightly, this is not a workload that
 one would see in the real world, still this new tooling opens a lot of
-new exciting prospectives when benchmarking.
+new exciting prospectives when benchmarking Postgres, be it for new
+feature benchmark or just a product. And this is cross-platform, so
+Windows is no issue.
