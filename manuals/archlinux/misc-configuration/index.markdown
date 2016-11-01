@@ -27,6 +27,7 @@ The following sub-sections are available from here:
   * [Raspberry PI](/manuals/archlinux/misc-configuration/raspberry-pi/)
   * [Kernel Settings](/manuals/archlinux/misc-configuration/kernel-settings/)
   * [ssl](/manuals/archlinux/misc-configuration/ssl/)
+  * [power](/manuals/archlinux/misc-configuration/power/)
   * [iptables](/manuals/archlinux/misc-configuration/iptables/)
   * [Mounting drives](/manuals/archlinux/misc-configuration/mount-drives/)
   * [Proxy settings](/manuals/archlinux/misc-configuration/proxy-settings/)
