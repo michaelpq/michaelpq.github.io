@@ -21,9 +21,14 @@ clamav.
 
     pacman -S clamav
 
-Activate the daemon with systemctl.
+Activate the scanner daemon with systemctl.
 
     systemctl enable clamd.service
+
+In order to keep the definitions up-to-date, defining the service freshclamd
+is useful to update the database at boot.
+
+    systemctl enable freshclamd
 
 Here is a script to launch an script to scan all the folders of your
 system except /sys, /proc, /dev and the log files.
