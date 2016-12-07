@@ -18,6 +18,19 @@ tags:
 
 ---
 
+### Data type lengths
+
+On 32-bit and 64-bit machines, the length of the following standard
+variables vary, here is a list of them with their associated length.
+
+    Environment type  32 bit    64 bit
+    short int         16 bit    16 bit
+    int               32 bit    32 bit
+    long int          32 bit    64 bit
+    long long int     64 bit    64 bit
+    size_t            32 bit    64 bit
+    void*             32 bit    64 bit
+
 ### Detect openssl version
 
 openssl version can be found by using SSLeay_version in libcrypto.so, and
@@ -68,7 +81,7 @@ do so.
 Compile this code for example like that and then it is simple to use:
 
     $ gcc -g -o openssl_version openssl_version.c -ldl
-	$ openssl_version /path/to/libcrypto.[so|dylib]
+    $ openssl_version /path/to/libcrypto.[so|dylib]
     SSL version OpenSSL 1.0.1h-fips 5 Jun 2014
 
 Actually this trick with dlsym can be used on any functions for any library,
