@@ -24,6 +24,7 @@ The following sub-sections are available from here:
   * [Debuggers](/manuals/debug-manual/)
   * [ESX and vSphere](/manuals/esx-and-vsphere/)
   * [Git](/manuals/git-manual/)
+  * [GPG](/manuals/gpg/)
   * [Jenkins](/manuals/jenkins/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Windows](/manuals/windows/)
