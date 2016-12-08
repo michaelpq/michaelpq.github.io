@@ -33,6 +33,14 @@ The following command can be used:
 Default settings may be enough for your environments, or not. Hence be
 careful in what you are using here.
 
+### Add email to key
+
+Here is how to add a new email address to a given key:
+
+    gpg --edit-key
+    > adduid
+    # Fill in the fields
+
 ### Deletion
 
 Here is how to delete a public key associated to an account name, note
