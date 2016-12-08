@@ -92,3 +92,24 @@ Here is how to encrypt some data:
 And how to decrypt it:
 
     gpg -d file.txt.gpg
+
+### Receive and send
+
+Look at the list of keys available in your environment to list an ID:
+
+    gpg --list-secret-keys
+
+Then send it:
+
+    gpg --keyserver keyserver.example.com --send-keys id_of_key
+
+Here is how to receive it:
+
+    gpg --keyserver keyserver.example.com --recv-keys id_of_key
+
+### Search
+
+Here is how to look up for existing keys.
+
+    gpg --keyserver keyserver.example.com \ # Ex: (keys.gnupg.net)
+        --search-keys "Search String, user name or email"
