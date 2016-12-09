@@ -116,4 +116,4 @@ default to read-write for certain sessions.
 
 Also, as mentioned in the commit message that has been shortened a bit for
 this post, this method is inspired by the Postgres JDBC driver, so many
-application rely on a similar logic already.
+applications rely on a similar logic already.
