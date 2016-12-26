@@ -115,7 +115,7 @@ can be used for more checks and do more fancy decision-making.
 
 With this facility in place, records related to archive\_timeout, understand
 here WAL segment switch, and standby snapshots (WAL-logging of exclusive locks
-and running transactions for hor standby nodes) are considered as
+and running transactions for hot standby nodes) are considered as
 unimportant WAL activity to decide if a checkpoint should be executed or not.
 Once those records are marked as such, deciding if a checkpoint should be
 skipped or not is just a matter of comparing the WAL position of the last
