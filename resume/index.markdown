@@ -39,8 +39,8 @@ Work area
 
   * Open source Developer
   * Relational Database Developer - PostgreSQL
-  * Goal: Develop state-of-the-art Database and Open Source softwares,
-protect 80 characters per line of code.
+  * Goal: Develop state-of-the-art Database and Open Source software
+  technologies, protect 80 characters per line of code.
 
 Professional experience
 -----------------------
@@ -48,7 +48,7 @@ Professional experience
 ### January 2013-Now
 
   * **VMware**, Senior Member of Technical Staff - PostgreSQL, Tokyo, Japan
-  * Working on PostgreSQL related things and virtualization
+  * Working on PostgreSQL integration, packaging and virtualization
   * Member of Technical Staff: January 2013 - May 2015
 
 ### January 2009-Now
@@ -79,7 +79,7 @@ request actions.
 with new
   * Conception of heat materials.
   * Creation of cooling designs for electronic package cooled by low-speed
-airflow (patented). Work in Japanese
+airflow (patented). Work in Japanese.
 
 ### June 2006-August 2006
 
@@ -87,7 +87,7 @@ airflow (patented). Work in Japanese
   * Statistical forecast of pipe failures in a water network.
   * Comparison of the efficiency of 2 statistical processes: Yule and Weibull.
   * Creation of a comparison method to evaluate the age of water network of
-Saint-Etienne
+Saint-Etienne.
 
 Education
 ---------
@@ -132,7 +132,7 @@ Electronics, Computer Science, Hydraulics and Telecommunications
   * Preparatory classes for entrance exams into national engineering
 schools (Grandes ecoles).
   * Deep Mathematics and physics theorical studies: MPSI and MP* (Math
-Otaku times!)
+Otaku times!).
 
 Languages
 ---------
@@ -160,7 +160,7 @@ IT skills
   * Environment scripting: bash, shell. emacs user here!
   * Web applications: HTML, php, some javascript.
   * Database stuff: PostgreSQL, SQL in general, some MySQL, and related
-  tools
+  tools.
 
 Extra-curricular activities
 ---------------------------
@@ -172,13 +172,13 @@ Extra-curricular activities
 
 ### Sports and activities
 
-  * Swimming, joggling
-  * Japanese drum: performance in public with Japanese-only team
+  * Swimming, joggling.
+  * Japanese drum: performance in public with Japanese-only team.
 
 ### Awards
 
   * June 1999 : 3rd of the Maths Olympics of Rhone-Alpes area, France
-(approximately 1,000 participants)
+(approximately 1,000 participants).
   * September 2006 : Award from Vulcanus in Japan program, chosen with
 40 other participants among 1,000 applications. Sponsorised by the EU-Japan
 Center for Industrial Cooperation based in Brussels.
