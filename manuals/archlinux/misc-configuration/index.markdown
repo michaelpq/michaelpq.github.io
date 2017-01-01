@@ -29,6 +29,7 @@ The following sub-sections are available from here:
   * [ssl](/manuals/archlinux/misc-configuration/ssl/)
   * [power](/manuals/archlinux/misc-configuration/power/)
   * [iptables](/manuals/archlinux/misc-configuration/iptables/)
+  * [screen](/manuals/archlinux/misc-configuration/screen/)
   * [Mounting drives](/manuals/archlinux/misc-configuration/mount-drives/)
   * [Proxy settings](/manuals/archlinux/misc-configuration/proxy-settings/)
   * [Useful packages](/manuals/archlinux/misc-configuration/useful-packages/)
