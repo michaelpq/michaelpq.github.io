@@ -93,3 +93,26 @@ Check status of connection.
 This command is in package net-tools.
 
     pacman -S net-tools
+
+### rfkill
+
+It may be possible that the wifi card is blocked by the kernel. To list
+all the systems that may be impacted it is possible to list them with
+this command:
+
+    $ rfkill list all
+    0: phy0: Wireless LAN
+    Soft blocked: yes
+    Hard blocked: no
+    1: acer-wireless: Wireless LAN
+    Soft blocked: yes
+    Hard blocked: no
+
+If the interface is soft blocked, it is possible to unblock it as follows
+
+    rfkill unblock wifi
+    rfkill unblock bluetooth
+
+With ArchLinux on a Thinkpad it could be possible that things are blocked,
+causing for example the interface to load appropriately at boot phase and
+making the network not to work from time to time.
