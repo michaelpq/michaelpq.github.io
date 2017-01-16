@@ -444,3 +444,13 @@ Then, simply run the following command in a given folder $FOLDER.
     cd $FOLDER
     git cvsimport -v -d :pserver:anonymous@example.com:/sources/classpath \
         $MODULE_NAME
+
+### Creating repository from root parent
+
+Here is how to extract as a sub-project a repository that is part of a larger
+one, keeping its whole history intact:
+
+    git filter-branch --subdirectory-filter foodir -- --all
+
+--all rewrites all commits and tags, -- separating filter-branch is as well
+necessary.
