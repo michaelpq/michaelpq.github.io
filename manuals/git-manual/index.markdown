@@ -27,7 +27,7 @@ tags:
 Git is a code tree management largely present in many development teams.
 Have a look also [here](http://git-scm.com/).
 
-### 1. How to get a GIT code repository
+### Cloning repository
 
 Make everything automatically with git clone.
 
@@ -48,7 +48,7 @@ repository. Feel free to choose something appealing to you.
   * REMOTE_BRANCH_NAME is the name of the remote branch in remote
 repository you want to target.
 
-### 2. How to set up your environment
+### Environment setup
 
 Before beginning your work, be sure that your environment is setup
 according to your tastes. Some people love vi more than emacs. Some
@@ -81,7 +81,7 @@ you commit and identify yourself as the committer.
     git config --global user.name "John Doe"
     git config --global user.email "john-doe@doe.com"
 
-### 3. Now that you have the code, and that you have set you environment,
+### Basic commands
 
 You want to interact with it, no? Here is how to play with branches and
 code in your local repository. Try to modify some files, and save them.
@@ -104,7 +104,7 @@ this command).
 
     git status
 
-### 4. Branches
+### Branches
 
 Print out a list of all the existing branches (* marks the current branch
 being developed).
@@ -172,7 +172,7 @@ again the description saved previously with this command:
 
     git config branch.$BRANCH_NAME.description
 
-### 5. Play with branches in remote repository
+### Play with branches in remote repository
 
 This will push your local branch BRANCH_NAME to your remote project
 whose URL is PROJECT_NAME.
@@ -198,7 +198,7 @@ pushed will lose tracking of the branch that is now in remote.
 This forces local branch to track the new remote one. It cannot be
 done on current branch.
 
-### 6. Interacting with tags:
+### Interacting with tags
 
 Git commit system is very powerful, you can find all the necessary
 information about a project state easily. But sometimes a programmer
@@ -235,7 +235,7 @@ Display local and remote tags.
 
     git tag -l
 
-### 7. About rebase
+### About rebase
 
 Here is a basic process to rebase on a branch called $BRANCH_CURRENT a
 set of n last commits pointed by $CURRENT_HEAD_OF_PATCHES (being a tag,
@@ -286,7 +286,7 @@ Amending an existing commit with an update date.
 
     git commit --amend --date="$(date -R)"
 
-### 8. Patch management
+### Patch management
 
 Generate a patch based on diffs between two branches.
 
@@ -308,7 +308,7 @@ Generate a patch with context diff (needs package patch-utils).
 
     git diff $DIFF1 $DIFF2 | filterdiff --format=context
 
-### 9. Clean up a repository with not-wanted data
+### Clean up a repository with not-wanted data
 
 Change all the author names and emails of a branch, and rewrite this branch.
 
@@ -324,7 +324,7 @@ Remove all the untracked files.
 by -f to really remove the untracked elements. -d includes repositories,
 -x for files ignored by git.
 
-### 9. bisect
+### Bisect
 
 A bisect processing uses dychotomy to find culprit commits in a git
 repository. This first begins with this command:
@@ -353,7 +353,7 @@ When bisect analysis is finished, use that to finish the process:
 
     git bisect reset
 
-### 10. Maintenance
+### Maintenance
 
 It is recommended to use fsck to check the validity of the database.
 
@@ -374,7 +374,7 @@ format:
     git show --check
     git diff origin/master --check
 
-### 11. History
+### History
 
 reflog helps to track the history of the actions that occurred on
 a local repository in the order they have occurred when applied. So
@@ -386,7 +386,7 @@ Deleting entried in the reflog is possible with this command:
 
     git reflog delete $REFERENCE
 
-### 12. Hooks
+### Hooks
 
 Here are some hooks facilitating the life of developers. Note that
 hooks need to be made executable.
@@ -411,7 +411,7 @@ You can as well test if code compiles correctly after a patch by
 creating a pre-push hook running the compile commands. Save it as
 .git/hooks/pre-push.
 
-### 13. submodules
+### Submodules
 
 A submodule consists of a soft link in a Git repo to another repository,
 defined on parent by a path and a commit ID. Since git 1.8.3, a branch can
@@ -422,13 +422,13 @@ a branch. Here is a way to initialize everything easily:
 
 Watch the status of the submodules.
 
-### 14. Archiving and releases
+### Archiving and releases
 
 Here is how to create quickly a tarball of a subfolder:
 
     git archive -o ~/to/output/subfolder.tar.gz HEAD:subfolder
 
-### 15. Migration
+### Migration
 
 Transferring a CVS repository to a GIT one is pretty simple.
 
