@@ -28,6 +28,11 @@ recompile system properly.
 
     pacman -Syyu
 
+Perform a full upgrade, downgrading packages if necessary depending on the
+source package sets (for example removal of testing or multilib-lin32):
+
+    pacman -Syuu
+
 Install a new package.
 
     pacman -S $PACKAGE
