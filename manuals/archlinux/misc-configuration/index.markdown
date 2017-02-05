@@ -19,6 +19,7 @@ tags:
 
 The following sub-sections are available from here:
 
+  * [bash](/manuals/archlinux/misc-configuration/bash/)
   * [irssi](/manuals/archlinux/misc-configuration/irssi/)
   * [nginx](/manuals/archlinux/misc-configuration/nginx/)
   * [rtorrent](/manuals/archlinux/misc-configuration/rtorrent/)
