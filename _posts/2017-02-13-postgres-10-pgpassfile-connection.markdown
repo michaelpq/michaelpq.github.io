@@ -4,7 +4,7 @@ lastmod: 2017-02-13
 date: 2017-02-13 06:50:43+00:00
 layout: post
 type: post
-slug: postgres-10-pghba-view
+slug: postgres-10-pgpassfile-connection
 title: 'Postgres 10 highlight - Password file paths as libpq connection parameter'
 categories:
 - PostgreSQL-2
