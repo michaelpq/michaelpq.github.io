@@ -122,8 +122,8 @@ Still it is perfectly possible to have a first rule using "md5" with a sub-list
 of users, and a second rule below for all the other users to use "scram" or
 even the reverse:
 
-host    all             @md5users       .myhost.com            md5
-host    all             all             .myhost.com            scram
+    host    all             @md5users       .myhost.com            md5
+    host    all             all             .myhost.com            scram
 
 Note as well that a SCRAM-hashed password cannot be used when "password" or
 "md5" are used. However, users with a plain password stored can be identified
