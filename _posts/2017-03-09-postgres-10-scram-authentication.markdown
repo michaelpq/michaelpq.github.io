@@ -33,7 +33,7 @@ tags:
 
 Password are hashed by default in PostgreSQL using MD5, more and more voices
 show up to mention that this is bad, particularly because it is possible
-to log into a server by just knowing the contents of pg_authid or find out
+to log into a server by just knowing the contents of pg\_authid or find out
 about those hashes in past backups still lying around. Normally this data
 cannot be reached except by superusers, but things leaking sometimes, using
 MD5 can prove to be insecure in some cases (even if MD5 is strong against
@@ -145,7 +145,7 @@ There are still a couple of items we are working on for this release:
   used for a password. Now using password\_encryption is the only way to
   do things. And that's actually basically enough if enforced at
   postgresql.conf level.
-  * Perhaps make pg_hba.conf more modular, as sasl is a large family of
+  * Perhaps make pg\_hba.conf more modular, as SASL is a large family of
   protocols.
 
 The SCRAM protocol can be extended as well, particularly with channel
