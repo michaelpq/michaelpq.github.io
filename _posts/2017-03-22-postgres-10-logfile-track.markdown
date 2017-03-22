@@ -5,7 +5,7 @@ date: 2017-03-22 06:30:45+00:00
 layout: post
 type: post
 slug: postgres-10-logfile-track
-title: 'Postgres 10 highlight - Tracking of current logging files'
+title: 'Postgres 10 highlight - Tracking of current logfiles'
 categories:
 - PostgreSQL-2
 tags:
@@ -54,7 +54,7 @@ having a dependency between an upper application layer and a setting
 value in PostgreSQL.
 
 The above patch, as mentioned in the commit message, shows up what are
-the current files where logs are being written depending on the logging
+the current files where logs are being written depending on the log
 destination defined. Once run, it shows the file currently in use:
 
     =# SELECT pg_current_logfile();
@@ -65,14 +65,14 @@ destination defined. Once run, it shows the file currently in use:
 
 This function actually parses a file in $PGDATA/current\_logfiles that
 gets updated each time a log file is rotated, or when parameters are reloaded
-and that there is a modification of the logging destinations, the first
+and that there is a modification of the log destinations, the first
 entry showing up if no argument is given. Note as well that the entry for
 "stderr" is generated first, and then goes the one of "csvlog". So the
 order of things writtent in current\_logfiles is pre-defined and does not
 depend on the order of destinations defined in log\_destination.
 
 An extra argument can be used as well, "csvlog" or "stderr" to get what is
-the file in use for those logging destinations:
+the file in use for those log destinations:
 
     =# SELECT pg_current_logfile('stderr');
                pg_current_logfile
