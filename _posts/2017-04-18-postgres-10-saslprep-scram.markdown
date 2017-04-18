@@ -68,24 +68,24 @@ As referenced in [RFC 4103](https://tools.ietf.org/html/rfc4013), SASLprep is
 a successive set of operations working on shaping up a given string for
 equivalence comparison:
 
-  * Replace any character in the string by its equivalent mapping. Here there
-  could be characters mapping for example to nothing.
-  * Perform normalization with form KC, which is for example described
-  [here](http://www.unicode.org/reports/tr15/). This step is itself done
-  in a couple of sub-steps:
-  ** Decompose each character using decomposition table, and apply that
-  by cascading through each result. This data is part of UnicodeData.txt.
-  For Hangul characters mathematical decomposition can be applied, for the
-  rest a table is needed.
-  ** Apply the canonical ordering. An exchange between two adjacent characters
-  is done if the combining class of the first character is higher than the
-  second, and that the second is not a starter (combining class of 0).
-  ** Recomposition of the string. Each pair of character is compared and
-  reassembled.
-  * Prohibit the use of some characters in the output, anything found
-  returns an error. For example no-space break, U+00A0 is part of that.
-  * Check bidi, checking for left-to-right characters, making sure that
-  the whole string respects bi-directional strings.
+1. Replace any character in the string by its equivalent mapping. Here there
+could be characters mapping for example to nothing.
+2. Perform normalization with form KC, which is for example described
+[here](http://www.unicode.org/reports/tr15/). This step is itself done
+in a couple of sub-steps:
+  * Decompose each character using decomposition table, and apply that
+    by cascading through each result. This data is part of UnicodeData.txt.
+    For Hangul characters mathematical decomposition can be applied, for the
+    rest a table is needed.
+  * Apply the canonical ordering. An exchange between two adjacent characters
+    is done if the combining class of the first character is higher than the
+    second, and that the second is not a starter (combining class of 0).
+  * Recomposition of the string. Each pair of character is compared and
+    reassembled.
+3. Prohibit the use of some characters in the output, anything found
+returns an error. For example no-space break, U+00A0 is part of that.
+4. Check bidi, checking for left-to-right characters, making sure that
+the whole string respects bi-directional strings.
 
 There are some libraries around able to do such operations, like GNU's
 libidn, and there are as well implementations of SASLprep available in
