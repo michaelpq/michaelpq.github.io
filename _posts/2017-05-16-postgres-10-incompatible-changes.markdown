@@ -92,8 +92,9 @@ From the configuration side, there are three incompatible changes:
 On top of that, another bigger change has happened with the removal of
 the term "xlog" in system functions and binaries, replaced by "wal".
 
-  * Functions like pg\_current\_xlog\_lsn are renamed to pg\_current\_wal\_lsn.
-  So if you maintain a monitoring script be careful that it would break.
+  * Functions like pg\_current\_xlog\_location are renamed to
+  pg\_current\_wal\_lsn. So if you maintain a monitoring script be careful
+  that it would break.
   * pg\_receivexlog is renamed to pg\_receivewal.
   * pg\_basebackup's --xlog-method is renamed to --wal-method.
 
