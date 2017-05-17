@@ -4,7 +4,7 @@ lastmod: 2017-05-16
 date: 2017-05-16 05:45:45+00:00
 layout: post
 type: post
-slug: postgres-10-saslprep-scram
+slug: postgres-10-incompatible-changes
 title: 'Postgres 10 highlight - Incompatible changes'
 categories:
 - PostgreSQL-2
