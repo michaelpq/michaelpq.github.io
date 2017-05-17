@@ -56,8 +56,8 @@ changes. Some commands are removed.
   proven that users like being able to rely on self-contained, consistent
   backups. The option -x has been removed as well, being replaced by
   "-X fetch".
-  * pg\_ctl not waits for all its subcommands to wait for completion by
-  default. Note that if your application has relied on "start" mode leaving
+  * pg\_ctl now waits for all its subcommands to finish by default before
+  exiting. Note that if your application has relied on "start" mode leaving
   immediately when starting an instance to start recovery, pg\_ctl would
   wait also until the server has reached a consistent state. Better to be
   careful about that. "stop" has been always using the wait mode.
