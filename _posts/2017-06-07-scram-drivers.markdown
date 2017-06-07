@@ -45,7 +45,7 @@ of details on this matter are defined in the
   * Then follows a set of messages exchanged. In the case of SCRAM those
   messages is are roughly a challenge from the server and response to it by
   the client.
-  * One the exchange completes, the server sends back a finalization message
+  * Once the exchange completes, the server sends back a finalization message.
 
 As this facility is already implemented in libpq, all drivers that do not
 speak directly the PostgreSQL protocol do not need any work, like ODBC for
@@ -69,19 +69,19 @@ an extra driver that is not listed in it, feel free to add it.
 
 Note as well that some work is planned to add channel binding in Postgres 11,
 so any implementation done should be careful enough to handle multiple
-mechanism names received from the server. Note as well that the current plan
-is to implement two channel binding types as listed in
+mechanism names received from the server. The current plan is to implement
+two channel binding types as listed in
 [RFC 5929](https://tools.ietf.org/html/rfc5929):
 
   * tls-unique, which uses the TLS finish message.
   * tls-server-end-point, which uses a hash of the TLS server certificate
   for validation.
 
-Any implementation of channel binding must have tls-unique, and while for
+Any implementation of channel binding must have tls-unique, and for
 OpenSSL this data can be fetched thanks to two undocumented APIs,
-SSL\_get\_peer\_finished() and SSL\_get\_finished(), for some drivers
+SSL\_get\_peer\_finished() and SSL\_get\_finished(). For some drivers
 putting their hands on this data may require some extra, unwelcome
 dependencies, which is actually the case of the JDBC driver. So if you
-are a driver maintainer, feel free to drop any opinion on the thread dedicated
-to the channel binding development of SCRAM that is
+are a driver maintainer, feel free to drop any opinion on the thread
+dedicated to the channel binding development of SCRAM that is
 [here](https://www.postgresql.org/message-id/CAB7nPqTZxVG9Lk0Ojg7wUR4mhGGd_W=Qa4+7wuhy6k75kE9keg@mail.gmail.com).
