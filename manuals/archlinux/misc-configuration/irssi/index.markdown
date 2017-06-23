@@ -17,7 +17,9 @@ tags:
 - archlinux
 - configuration
 - install
+
 ---
+
 irssi is a light-weight IRC client. Set up user name (default being the
 account name).
 
@@ -87,7 +89,6 @@ Drop a nickname on an account:
     /msg NickServ UNGROUP $NICK_TO_REMOVE
 
 Drop an account.
-
 
     /msg NickServ DROP $USER $NAME
 
