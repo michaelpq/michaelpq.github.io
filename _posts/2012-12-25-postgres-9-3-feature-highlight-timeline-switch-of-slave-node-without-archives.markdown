@@ -31,7 +31,7 @@ Since PostgreSQL 9.1, it is possible to switch a standby server to follow anothe
 As the master is not accessible, Slave 2 is unable to keep pace in the cluster. So you need to update the following parameters of recovery.conf of Slave 2 as follows to reconnect it to the new master (which is now Slave 1):
 
     primary_conninfo = 'host=localhost port=5532 application_name=slave2
-    recovery_target_time = 'latest'
+    recovery_target_timeline = 'latest'
 
 Finally restart Slave 2 to continue recovery from the new master.
 
