@@ -33,7 +33,9 @@ of security problem addressed and many more bugs.
 
 One item of the
 [release notes](https://www.postgresql.org/docs/9.6/static/release-9-6-4.html)
-refers to pg\_rewind with the following issue:
+refers to
+[pg\_rewind](https://www.postgresql.org/docs/devel/static/app-pgrewind.html)
+with the following issue:
 
     Fix pg_rewind to correctly handle files exceeding 2GB (Kuntal Ghosh,
     Michael Paquier)
@@ -41,8 +43,7 @@ refers to pg\_rewind with the following issue:
     they could be present in some cases.
 
 First, all the discussion of how this bug has been addressed is present in
-the following thread:
-https://www.postgresql.org/message-id/CAGz5QC+8gbkz=Brp0TgoKNqHWTzonbPtPex80U0O6Uh_bevbaA@mail.gmail.com
+the thread [here](https://www.postgresql.org/message-id/CAGz5QC+8gbkz=Brp0TgoKNqHWTzonbPtPex80U0O6Uh_bevbaA@mail.gmail.com).
 
 And while the release notes just mention that pg\_rewind cannot handle
 properly large files, there are cases where this can lead to real data
@@ -91,7 +92,7 @@ set of relation blocks that have have been changed by those records,
 leading to a list of files names, with blocks to fetch from a given
 position with a length of BLCKSZ (by default 8kB). But if you try to
 fetch a relation block that has a begin position higher than actually
-4GB, then what pg_rewind would do is trying to get an incorrect block
+4GB, then what pg\_rewind would do is trying to get an incorrect block
 because of an overflow. So, there are two risks here:
 
   * Fetching a block that does not need to be fetched, which is basically
