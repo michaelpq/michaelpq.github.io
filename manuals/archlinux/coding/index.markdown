@@ -86,3 +86,24 @@ Compile this code for example like that and then it is simple to use:
 
 Actually this trick with dlsym can be used on any functions for any library,
 just be sure that library dependencies are covered when compiling the code.
+
+# Kernel configuration
+
+Here is a set of custom files used with Archlinux to customize many things
+in /etc/sysctl.d/
+
+    $ cat core_pattern.conf
+    # Core file pattern in case of a SIGSEV.
+    kernel.core_pattern = core.%e.%p
+    $ cat oom.conf
+	# Only swap +50% of memory that can be handled by applications. Useful
+	# to not freeze a laptop when debugging memory allocation problems on
+	# an application.
+    vm.overcommit_memory = 2
+    vm.overcommit_ratio = 50
+    $ cat perf_settings.conf
+    # Allow all perf events to be taken
+    kernel.perf_event_paranoid = -1
+    $ cat ptrace.conf
+	# Allow initialization of gdb to attach to a process.
+    kernel.yama.ptrace_scope = 0
