@@ -82,4 +82,5 @@ consequences:
 
 At the end, the change is proving to be beneficial for the end-user, because
 the understanding of WAL segment recycling becomes way easier to explain
-and also to people setting values like max\_wal\_size.
+and also to people setting values like max\_wal\_size, as well as for
+long-term maintenance, as the recovery code gets slightly simplified.
