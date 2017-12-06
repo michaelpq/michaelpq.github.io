@@ -25,6 +25,12 @@ tags:
 
 ---
 
+#### 2017: SCRAM authentication
+
+  * [pdf](/content/materials/20171206_scram.pdf)
+  * Place: Tokyo, PGConf Asia 2017. Date: 2017/12/06
+  * Duration: 35 minutes + questions
+
 #### 2016: PostgreSQL and backups
 
   * Subtitle: With a differential touch
