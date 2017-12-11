@@ -37,7 +37,7 @@ Personal information
 Work area
 ---------
 
-  * Open source Developer
+  * Open source development
   * Relational Database Developer - PostgreSQL
   * Goal: Develop state-of-the-art Database and Open Source software
   technologies, protect 80 characters per line of code.
