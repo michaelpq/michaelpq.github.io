@@ -22,6 +22,8 @@ tags:
 - english
 - japanese
 - french
+- donate
+- bitcoin
 
 ---
 
@@ -39,3 +41,7 @@ The code of this blog is maintained on [github](https://github.com/michaelpq/mic
 so if you have any comments or if you want to provide any corrections that
 could benefit other viewers, don't hesitate as well to send patches or
 report issues [there](https://github.com/michaelpq/michaelpq.github.io).
+
+If you found that my work or this blog helped you, feed free to donate
+in bitcoins using **19pPKPjEwgiTr4pcd2LvKrW7nHi5pAYxPC** as address to send
+them. No Paypal please.
