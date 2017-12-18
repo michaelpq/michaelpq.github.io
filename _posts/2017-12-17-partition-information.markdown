@@ -162,9 +162,9 @@ size of a partition using other catalog functions like pg\_relation\_size().
 Using for example a simple aggregate with the previous query for the most outer
 query, here is the result:
 
-  =# -- [Insert WITH RECURSIVE portion of previous long query here]
-     SELECT pg_size_pretty(sum(relsize)) AS total_size FROM partition_info;
-      total_size
+    =# -- [Insert WITH RECURSIVE portion of previous long query here]
+       SELECT pg_size_pretty(sum(relsize)) AS total_size FROM partition_info;
+     total_size
     ------------
      24 kB
     (1 row)
