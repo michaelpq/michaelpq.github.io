@@ -2,7 +2,11 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">
+  You liked this post or you have a comment? You can contact and help me
+  <a href="{{site.url}}/about/">here</a>.<br>
+  {{ page.date | date_to_string }}
+</p>
 
 <div class="post">
 {{ content }}
