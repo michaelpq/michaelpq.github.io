@@ -1,7 +1,7 @@
 ---
 author: Michael Paquier
-lastmod: 2017-12-17
-date: 2017-12-17 02:40:51+00:00
+lastmod: 2017-12-18
+date: 2017-12-18 02:40:51+00:00
 layout: post
 type: post
 slug: partition-information
