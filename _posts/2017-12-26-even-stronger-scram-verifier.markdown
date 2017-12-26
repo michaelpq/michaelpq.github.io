@@ -5,7 +5,7 @@ date: 2017-12-26 03:27:43+00:00
 layout: post
 type: post
 slug: even-stronger-scram-verifier
-title: 'Even stronger scram verifiers'
+title: 'Even stronger SCRAM verifiers'
 categories:
 - PostgreSQL-2
 tags:
