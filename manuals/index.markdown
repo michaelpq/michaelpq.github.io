@@ -26,6 +26,7 @@ The following sub-sections are available from here:
   * [Git](/manuals/git-manual/)
   * [GPG](/manuals/gpg/)
   * [Jenkins](/manuals/jenkins/)
+  * [OpenSSL](/manuals/openssl/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Windows](/manuals/windows/)
 
