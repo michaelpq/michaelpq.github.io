@@ -22,6 +22,7 @@ The following sub-sections are available from here:
   * [Archlinux](/manuals/archlinux/)
   * [Cryptocurrency](/manuals/cryptocurrency/)
   * [Debuggers](/manuals/debug-manual/)
+  * [Debian](/manuals/debian/)
   * [ESX and vSphere](/manuals/esx-and-vsphere/)
   * [Git](/manuals/git-manual/)
   * [GPG](/manuals/gpg/)
