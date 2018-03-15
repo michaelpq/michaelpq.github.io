@@ -9,7 +9,7 @@ title: Cascading replication in PostgreSQL
 categories:
 - PostgreSQL-2
 tags:
-- '9.2'
+- 9.2
 - asynchronous
 - cascade
 - cascading replication

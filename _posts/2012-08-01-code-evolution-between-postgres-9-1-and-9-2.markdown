@@ -9,7 +9,7 @@ title: Code evolution between Postgres 9.1 and 9.2
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
+- 9.1
 - 9.2 branch
 - cluster
 - code evolution

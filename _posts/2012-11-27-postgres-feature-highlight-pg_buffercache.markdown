@@ -9,8 +9,8 @@ title: 'Postgres feature highlight - pg_buffercache'
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
-- '9.2'
+- 9.1
+- 9.2
 - buffer
 - cache
 - contrib

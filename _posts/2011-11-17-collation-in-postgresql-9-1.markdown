@@ -9,7 +9,7 @@ title: Collation in PostgreSQL 9.1
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
+- 9.1
 - character
 - collation
 - database

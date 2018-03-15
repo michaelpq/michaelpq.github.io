@@ -12,7 +12,7 @@ tags:
 - convert
 - crop
 - image
-- ImageMagick
+- imagemagick
 - linux
 - manipulation
 - split

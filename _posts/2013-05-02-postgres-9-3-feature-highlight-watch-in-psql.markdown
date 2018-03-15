@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - \watch in psql'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - client
 - database
 - interval

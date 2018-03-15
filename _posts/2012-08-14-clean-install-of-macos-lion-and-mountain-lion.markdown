@@ -9,12 +9,12 @@ title: Clean install of MacOS Lion and Mountain Lion
 categories:
 - MacOS
 tags:
-- '10.7'
-- '10.8'
+- 10.7
+- 10.8
 - clean
 - install
 - lion
-- Lion DiskMaker2
+- lion diskmaker2
 - macos
 - mountain
 - operating system

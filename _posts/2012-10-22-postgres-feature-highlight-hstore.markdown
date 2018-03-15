@@ -9,8 +9,8 @@ title: 'Postgres feature highlight - hstore'
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
-- '9.2'
+- 9.1
+- 9.2
 - database
 - extension
 - hstore

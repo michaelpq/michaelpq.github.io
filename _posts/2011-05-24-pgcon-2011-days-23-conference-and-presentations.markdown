@@ -9,7 +9,7 @@ title: 'PGCon 2011 days 2&3 - conference and presentations'
 categories:
 - PostgreSQL-2
 tags:
-- '2011'
+- 2011
 - cluster
 - conference
 - connection

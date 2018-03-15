@@ -9,7 +9,7 @@ title: 'Postgres 9.4 feature highlight - REFRESH CONCURRENTLY a materialized vie
 categories:
 - PostgreSQL-2
 tags:
-- '9.4'
+- 9.4
 - awesome
 - concurrently
 - database

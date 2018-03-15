@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - writable foreign tables'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - clause
 - database
 - delete

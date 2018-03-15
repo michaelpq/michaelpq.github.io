@@ -9,9 +9,9 @@ title: Modifications of APIs for bgworkers in Postgres 9.3
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
-- '9.4'
-- API
+- 9.3
+- 9.4
+- api
 - architecture
 - background
 - control

@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - custom background workers'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - background
 - customize
 - database

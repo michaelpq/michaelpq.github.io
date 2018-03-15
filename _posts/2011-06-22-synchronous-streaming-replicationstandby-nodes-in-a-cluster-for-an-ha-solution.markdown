@@ -9,8 +9,8 @@ title: Synchronous streaming replication/Standby nodes in a cluster for an HA so
 categories:
 - PostgreSQL-2
 tags:
-- '9.0'
-- '9.1'
+- 9.0
+- 9.1
 - cluster
 - database
 - ha

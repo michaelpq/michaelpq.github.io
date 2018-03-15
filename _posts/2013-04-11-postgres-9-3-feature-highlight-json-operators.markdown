@@ -9,8 +9,8 @@ title: 'Postgres 9.3 feature highlight - JSON operators'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
-- API
+- 9.3
+- api
 - data
 - database
 - feature

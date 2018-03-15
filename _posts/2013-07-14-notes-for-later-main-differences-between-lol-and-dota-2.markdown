@@ -9,7 +9,6 @@ title: 'Notes for later - main differences between LOL and Dota 2'
 categories:
 - Games
 tags:
-- '2'
 - ancient
 - choice
 - defence

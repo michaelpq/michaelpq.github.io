@@ -9,7 +9,7 @@ title: Compile documentation in postgres
 categories:
 - PostgreSQL-2
 tags:
-- '10.04'
+- 10.04
 - docbook
 - documentation
 - html

@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - parallel pg_dump'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - compression
 - data
 - database

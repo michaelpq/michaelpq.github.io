@@ -10,7 +10,7 @@ title: 'Postgres 9.3 proposal - REINDEX and CLUSTER CONCURRENTLY, reorganize tab
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - cluster
 - concurrently
 - database

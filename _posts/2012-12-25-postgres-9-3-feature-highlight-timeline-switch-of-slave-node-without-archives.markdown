@@ -10,9 +10,9 @@ title: 'Postgres 9.3 feature highlight - timeline switch of slave node without a
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
-- '9.2'
-- '9.3'
+- 9.1
+- 9.2
+- 9.3
 - database
 - master
 - open source

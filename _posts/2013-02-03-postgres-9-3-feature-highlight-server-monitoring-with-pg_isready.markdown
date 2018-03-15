@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - server monitoring with pg_isready'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - availability
 - database
 - feature

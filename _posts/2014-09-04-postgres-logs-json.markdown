@@ -19,7 +19,7 @@ tags:
 - logging
 - server
 - information
-- JSON
+- json
 - object
 - hook
 

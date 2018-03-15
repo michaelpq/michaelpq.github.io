@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - new flavors of IF EXISTS and IF NOT EXI
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - alter
 - create
 - database

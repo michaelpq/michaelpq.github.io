@@ -9,7 +9,7 @@ title: 'Postgres 9.1 - Setup a synchronous stand-by server in 5 minutes'
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
+- 9.1
 - beta
 - easy
 - handy

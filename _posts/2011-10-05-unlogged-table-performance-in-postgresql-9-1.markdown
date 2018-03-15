@@ -9,8 +9,8 @@ title: Unlogged table performance in postgresql 9.1
 categories:
 - PostgreSQL-2
 tags:
-- '9.1'
-- '9.2'
+- 9.1
+- 9.2
 - asynchronous
 - commit
 - crash

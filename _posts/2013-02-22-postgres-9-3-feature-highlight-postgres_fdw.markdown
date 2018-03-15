@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - postgres_fdw'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - column
 - contrib
 - data

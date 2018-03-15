@@ -9,9 +9,9 @@ title: Take care of kernel memory limitation for postgresql shared buffers
 categories:
 - PostgreSQL-2
 tags:
-- '9.0'
-- '9.1'
-- '9.2'
+- 9.0
+- 9.1
+- 9.2
 - customize
 - database
 - kernel

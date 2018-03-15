@@ -9,7 +9,7 @@ title: 'Postgres 9.2 highlight - JSON data type'
 categories:
 - PostgreSQL-2
 tags:
-- '9.2'
+- 9.2
 - array
 - data
 - database

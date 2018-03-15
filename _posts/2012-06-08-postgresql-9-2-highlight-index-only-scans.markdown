@@ -9,7 +9,7 @@ title: 'PostgreSQL 9.2 highlight - Index-only scans'
 categories:
 - PostgreSQL-2
 tags:
-- '9.2'
+- 9.2
 - commit
 - feature
 - index

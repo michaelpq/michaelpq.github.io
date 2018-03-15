@@ -9,7 +9,7 @@ title: 'Postgres 9.3 feature highlight - FOR KEY SHARE and FOR NO KEY UPDATE'
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - contention
 - database
 - delete

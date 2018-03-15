@@ -10,7 +10,7 @@ title: 'Postgres module highlight - pg_rewind, to quickly recycle a Postgres mas
 categories:
 - PostgreSQL-2
 tags:
-- '9.3'
+- 9.3
 - analyze
 - block
 - cluster

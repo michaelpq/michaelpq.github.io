@@ -9,7 +9,7 @@ title: Postgres-XC 1.0beta1 released
 categories:
 - PostgreSQL-2
 tags:
-- '1.0'
+- 1.0
 - beta
 - cluster
 - database
