@@ -17,7 +17,7 @@ tags:
 - 9.4
 - new
 - feature
-- index
+- indexes
 - gist
 - inet
 - cidr

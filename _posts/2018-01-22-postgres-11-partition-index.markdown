@@ -14,7 +14,7 @@ tags:
 - open source
 - database
 - 11
-- index
+- indexes
 - partition
 - inheritance
 - list

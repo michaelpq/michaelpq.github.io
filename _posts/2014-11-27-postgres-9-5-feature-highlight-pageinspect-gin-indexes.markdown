@@ -18,7 +18,7 @@ tags:
 - 9.5
 - feature
 - gin
-- index
+- indexes
 - page
 - raw
 - compression

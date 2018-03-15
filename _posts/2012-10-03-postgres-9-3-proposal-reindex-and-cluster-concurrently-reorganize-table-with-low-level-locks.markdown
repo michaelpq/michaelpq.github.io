@@ -15,7 +15,7 @@ tags:
 - concurrently
 - database
 - free
-- index
+- indexes
 - open source
 - postgres
 - postgresql

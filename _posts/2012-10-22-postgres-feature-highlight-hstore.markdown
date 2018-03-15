@@ -14,7 +14,7 @@ tags:
 - database
 - extension
 - hstore
-- index
+- indexes
 - install
 - key
 - make

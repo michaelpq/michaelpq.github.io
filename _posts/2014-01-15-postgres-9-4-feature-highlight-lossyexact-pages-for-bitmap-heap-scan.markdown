@@ -19,7 +19,7 @@ tags:
 - exact
 - gin
 - gist
-- index
+- indexes
 - lossy
 - pages
 - postgres

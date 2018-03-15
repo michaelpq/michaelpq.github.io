@@ -19,7 +19,7 @@ tags:
 - replication
 - identity
 - replica
-- index
+- indexes
 - delete
 - update
 - table

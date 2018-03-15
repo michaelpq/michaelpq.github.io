@@ -18,7 +18,7 @@ tags:
 - database
 - feature
 - guc
-- index
+- indexes
 - new
 - open source
 - parameter

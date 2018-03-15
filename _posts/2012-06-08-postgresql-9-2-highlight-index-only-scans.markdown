@@ -12,8 +12,7 @@ tags:
 - 9.2
 - commit
 - feature
-- index
-- index only scan
+- indexes
 - only
 - performance
 - postgres

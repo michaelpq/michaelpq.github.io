@@ -26,7 +26,7 @@ tags:
 - field
 - key
 - value
-- indexing
+- indexes
 - operator
 - concatenate
 

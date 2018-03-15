@@ -24,7 +24,7 @@ tags:
 - mongodb
 - search
 - gist
-- index
+- indexes
 ---
 The [jsonb datatype]
 (http://www.postgresql.org/docs/devel/static/datatype-json.html) newly

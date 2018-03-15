@@ -18,7 +18,7 @@ tags:
 - 9.5
 - extension
 - brin
-- index
+- indexes
 - feature
 - highlight
 - scan

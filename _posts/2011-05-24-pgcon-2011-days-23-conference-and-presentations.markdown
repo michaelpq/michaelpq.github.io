@@ -16,7 +16,7 @@ tags:
 - database
 - duty
 - federated
-- index
+- indexes
 - isolation
 - patch
 - pgcon

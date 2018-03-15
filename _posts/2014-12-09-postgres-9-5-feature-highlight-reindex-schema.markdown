@@ -17,7 +17,7 @@ tags:
 - highlight
 - 9.5
 - reindex
-- index
+- indexes
 - catalog
 - pg_catalog
 - system

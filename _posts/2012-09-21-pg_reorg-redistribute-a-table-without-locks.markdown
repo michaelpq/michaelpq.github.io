@@ -12,7 +12,7 @@ tags:
 - contrib
 - database
 - flexible
-- index
+- indexes
 - log
 - module
 - ntt
