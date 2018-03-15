@@ -19,7 +19,6 @@ tags:
 - inheritance
 - list
 - child
-- index
 - automatic
 
 ---
