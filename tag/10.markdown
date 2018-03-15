@@ -1,0 +1,6 @@
+---
+layout: tag
+title: "Tag: 10"
+type: tag
+tag: 10
+---
