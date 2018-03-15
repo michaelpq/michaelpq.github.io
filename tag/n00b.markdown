@@ -1,0 +1,6 @@
+---
+layout: tag
+title: "Tag: n00b"
+type: tag
+tag: n00b
+---

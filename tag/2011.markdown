@@ -1,0 +1,6 @@
+---
+layout: tag
+title: "Tag: 2011"
+type: tag
+tag: 2011
+---

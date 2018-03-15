@@ -1,0 +1,6 @@
+---
+layout: tag
+title: "Tag: 100"
+type: tag
+tag: 100
+---
