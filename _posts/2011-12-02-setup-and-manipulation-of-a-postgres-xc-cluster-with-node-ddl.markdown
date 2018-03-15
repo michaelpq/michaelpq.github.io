@@ -14,7 +14,7 @@ tags:
 - cluster
 - connection
 - create
-- DDL
+- ddl
 - drop
 - global
 - linux

@@ -18,7 +18,7 @@ tags:
 - streaming
 - replication
 - tracking
-- WAL
+- wal
 - receiver
 - process
 - shared

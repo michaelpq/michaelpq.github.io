@@ -17,7 +17,7 @@ tags:
 - highlight
 - 9.5
 - recovery
-- WAL
+- wal
 - node
 - end
 - action

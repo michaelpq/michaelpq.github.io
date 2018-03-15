@@ -21,7 +21,7 @@ tags:
 - table
 - reverse
 - permanent
-- WAL
+- wal
 - crash
 - safe
 - switch

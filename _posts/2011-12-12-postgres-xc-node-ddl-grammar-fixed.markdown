@@ -13,7 +13,7 @@ tags:
 - coordinator
 - database
 - datanode
-- DDL
+- ddl
 - fix
 - grammar
 - node

@@ -21,7 +21,7 @@ tags:
 - timeline
 - cluster
 - promotion
-- WAL
+- wal
 - recycle
 - history
 

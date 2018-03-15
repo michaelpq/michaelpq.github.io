@@ -17,7 +17,7 @@ tags:
 - 9.6
 - feature
 - highlight
-- WAL
+- wal
 - record
 - generic
 - general

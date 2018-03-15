@@ -13,7 +13,7 @@ tags:
 - alter
 - create
 - database
-- DDL
+- ddl
 - drop
 - existence
 - function

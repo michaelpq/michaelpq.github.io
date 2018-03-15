@@ -19,7 +19,7 @@ tags:
 - restore_command
 - recovery
 - restore
-- WAL
+- wal
 - check
 - retrieve
 - interval

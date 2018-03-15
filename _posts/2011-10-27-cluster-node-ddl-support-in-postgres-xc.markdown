@@ -10,7 +10,7 @@ categories:
 - PostgreSQL-2
 tags:
 - cluster
-- DDL
+- ddl
 - information
 - node
 - port

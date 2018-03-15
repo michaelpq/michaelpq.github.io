@@ -18,7 +18,7 @@ tags:
 - feature
 - highlight
 - pg_receivexlog
-- WAL
+- wal
 - write-ahead
 - log
 - receive
