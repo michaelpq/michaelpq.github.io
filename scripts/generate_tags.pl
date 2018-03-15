@@ -40,7 +40,7 @@ sub generate_tag_file
 	my $tag = shift;
 	my $tagfile = "tag/$tag.markdown";
 
-	append_to_file($tagfile,
+	create_file($tagfile,
 	qq(---
 layout: tag
 title: "Tag: $tag"
@@ -76,7 +76,7 @@ while (my $file = readdir($dir))
 
 		# Cut the first two characters from the string "- ".
 		$line = substr($line, 2);
-		generate_tag_file($tag);
+		generate_tag_file($line);
 	}
 	close $info;
 }
