@@ -11,7 +11,6 @@ categories:
 tags:
 - 9.2
 - fdw
-- foreign data wrapper
 - postgres
 - postgresql
 

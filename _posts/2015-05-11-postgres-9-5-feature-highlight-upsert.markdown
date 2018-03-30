@@ -11,7 +11,6 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
 - 9.5
 - upsert
 

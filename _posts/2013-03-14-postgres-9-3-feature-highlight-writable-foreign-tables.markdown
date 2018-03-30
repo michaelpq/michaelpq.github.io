@@ -11,7 +11,6 @@ categories:
 tags:
 - 9.3
 - fdw
-- write
 - postgres
 - postgresql
 - dml

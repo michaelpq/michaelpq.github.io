@@ -10,7 +10,7 @@ categories:
 - PostgreSQL-2
 tags:
 - cluster
-- create table as
+- ddl
 - postgres
 - query
 - replication

@@ -27,7 +27,7 @@ use warnings;
 sub create_file
 {
 	my ($filename, $str) = @_;
-	open my $fh, ">", $filename
+	open my $fh, '>', $filename
 	    or die "could not write \"$filename\": $!";
 	print $fh $str;
 	close $fh;

@@ -9,7 +9,6 @@ title: Fast query shipping in a database cluster
 categories:
 - PostgreSQL-2
 tags:
-- pgxc
 - planner
 - postgres
 - postgres-xc

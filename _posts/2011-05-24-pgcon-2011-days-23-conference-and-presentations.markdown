@@ -14,7 +14,6 @@ tags:
 - pgcon
 - postgres
 - postgresql
-- presentation
 
 ---
 

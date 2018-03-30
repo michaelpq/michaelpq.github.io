@@ -1,6 +1,0 @@
----
-layout: tag
-title: "Tag: 1.0beta2"
-type: tag
-tag: 1.0beta2
----
