@@ -9,20 +9,12 @@ title: 'Postgres 9.2 highlight - range types'
 categories:
 - PostgreSQL-2
 tags:
-- 9.2 open source
-- bound
-- data
-- database
-- empty
-- feature
-- infinite
-- interval
-- lower
+- 9.2
 - postgres
 - postgresql
 - range
 - type
-- upper
+
 ---
 
 One of the new features introduced by PostgreSQL 9.2 is called [range types](http://www.postgresql.org/docs/9.2/static/rangetypes.html), which is, as you could easily guess based on this feature name, the possibility to use a range of values directly as a table column.

@@ -10,18 +10,13 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.1
-- 9.2
-- asynchronous
-- commit
-- crash
 - performance
-- pgbench
 - postgresql
 - recovery
 - table
 - unlogged
 - wal
-- write ahead log
+
 ---
 
 This study is made with PostgreSQL 9.1.1, released a couple of days before this post is written.

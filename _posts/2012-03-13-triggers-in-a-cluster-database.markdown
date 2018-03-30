@@ -9,16 +9,12 @@ title: Triggers in a cluster database
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- database
-- design
-- event
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
-- though
 - trigger
+- database
+
 ---
 
 Here are some thoughts about trigger events in a database cluster environment, those design thoughts are particularly related to Postgres-XC, scaling-out database cluster based on PostgreSQL.

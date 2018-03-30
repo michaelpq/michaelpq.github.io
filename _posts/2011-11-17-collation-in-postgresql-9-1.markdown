@@ -10,14 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.1
-- character
 - collation
-- database
-- language
-- order
 - postgres
 - postgresql
-- utf8
+- encoding
+
 ---
 
 Collation is a new functionality of PostgreSQL 9.1 that allows to specify the sort order by table column or for an operation.

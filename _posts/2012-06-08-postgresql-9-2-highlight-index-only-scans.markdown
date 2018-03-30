@@ -10,14 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.2
-- commit
-- feature
-- indexes
-- only
-- performance
 - postgres
 - postgresql
-- scan
+- index
+
 ---
 
 PostgreSQL 9.2 introduces a new performance feature called Index-Only scans, which was really something missing in core for performance of scan index.

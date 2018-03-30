@@ -11,14 +11,8 @@ categories:
 tags:
 - cluster
 - ddl
-- information
-- node
-- port
-- postgres
 - postgres-xc
-- postgresql
-- preferred
-- primary
+
 ---
 
 After long weeks of battle, this week this commit has happened in [Postgres-XC's GIT repository](https://github.com/postgres-xc/postgres-xc).

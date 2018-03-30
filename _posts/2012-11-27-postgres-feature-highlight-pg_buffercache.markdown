@@ -9,18 +9,11 @@ title: 'Postgres feature highlight - pg_buffercache'
 categories:
 - PostgreSQL-2
 tags:
-- 9.1
 - 9.2
-- buffer
-- cache
-- contrib
-- database
-- extension
-- install
-- open source
 - pg_buffercache
 - postgres
 - postgresql
+
 ---
 
 [pg\_buffercache](http://www.postgresql.org/docs/current/static/pgbuffercache.html) is a PostgreSQL contrib module allowing to get an instant relation-based view of the shared buffer usage by querying the wanted server.

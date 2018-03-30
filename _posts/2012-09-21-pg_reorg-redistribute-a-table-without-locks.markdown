@@ -9,20 +9,12 @@ title: pg_reorg, reorganize a table without locks
 categories:
 - PostgreSQL-2
 tags:
-- contrib
-- database
-- flexible
-- indexes
-- log
-- module
-- ntt
-- open source
 - pg_reorg
 - postgres
 - postgresql
 - reorganization
-- table
 - vacuum
+
 ---
 
 pg\_reorg is a postgresql module developed and maintained by NTT that allows to redistribute a table without taking locks on it.

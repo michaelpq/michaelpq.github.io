@@ -9,19 +9,11 @@ title: 'Group and user manipulation in Linux: Add, remove and modify'
 categories:
 - Linux-2
 tags:
-- add
-- foo
 - group
-- groupadd
-- groupdel
-- hierarchy
-- hoge
 - linux
-- modify
-- remode
-- useradd
-- userdel
-- usermod
+- user
+- administration
+
 ---
 
 Here are a couple of useful commands that may help you to manipulate users and group in a Linux environment.

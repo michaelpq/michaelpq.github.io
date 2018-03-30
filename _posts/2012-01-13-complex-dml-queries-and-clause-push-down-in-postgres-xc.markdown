@@ -9,21 +9,13 @@ title: 'Complex DML queries and clause push-down in Postgres-XC '
 categories:
 - PostgreSQL-2
 tags:
-- clause
-- cluster
-- database
-- delete
 - dml
-- evaluation
 - expression
-- function
-- pgxc
+- postgres
 - postgresql
 - pushdown
-- set
 - shippable
-- update
-- where
+
 ---
 
 This week, I spent a long time working on this commit. Just by looking at the date, commit happened before leaving for week-end :)

@@ -9,17 +9,12 @@ title: 'PGXC - data distribution in a subset of nodes'
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- data
-- database
-- node
-- pgxc
-- portion
 - postgres
 - postgres-xc
 - postgresql
-- software
 - subset
+- distribution
+
 ---
 
 Just yesterday I committed that.

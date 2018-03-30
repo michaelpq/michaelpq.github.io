@@ -10,17 +10,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.1
-- 9.2 branch
-- cluster
-- code evolution
-- maintenance
-- master
-- pgxc
+- 9.2
 - postgres
 - postgres-xc
 - postgresql
-- release
-- stable
+- maintenance
+
 ---
 
 For the last couple of days I have been working on merging the code of [Postgres-XC](http://sourceforge.net/projects/postgres-xc/) from 9.1 to 9.2. The release 1.0 of XC has been based on 9.1, but it is time to move forward and steal the latest PostgreSQL amazing features :). The plan was to plug in the code of XC up to the intersection of PostgreSQL master branch and 9.2 stable branch, pretty interesting for two things:

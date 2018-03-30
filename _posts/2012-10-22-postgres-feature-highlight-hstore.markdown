@@ -9,23 +9,11 @@ title: 'Postgres feature highlight - hstore'
 categories:
 - PostgreSQL-2
 tags:
-- 9.1
 - 9.2
-- database
-- extension
 - hstore
-- indexes
-- install
-- key
-- make
-- manipulation
-- open source
-- pair
-- pg
 - postgres
 - postgresql
-- storage
-- value
+
 ---
 
 [hstore](http://www.postgresql.org/docs/9.2/static/hstore.html) is a PostgreSQL contrib module in core code for a pretty long time. Its code is located in contrib/hstore in source folder. It is particularly useful to store sets of key/value in a single table column.

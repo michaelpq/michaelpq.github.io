@@ -9,20 +9,14 @@ title: Fast query shipping in a database cluster
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- database
-- expression
-- fast
 - pgxc
 - planner
+- postgres
 - postgres-xc
 - postgresql
 - pushdown
-- query
-- select
 - shipping
-- sql
-- volatile
+
 ---
 
 When using a database cluster where nodes are completely dependent on the network behavior like it is the case for shared-nothing based architecture, an essential step in integrating a new application is its design to maximize the performance and enhance the cluster strengths knowing its capabilities. The problem with shared-nothing architectures is that queries that may run very quickly in a single instance environment might take a bunch of time in your cluster, especially for queries having aggregates that need global results for all the nodes in the cluster or queries needing subsequent results from internal sub-queries. The nightmare of most of database developers trying to optimize an application is always to face queries of the type "SELECT *", fetching all the tuples of a table in a single shot. Such queries are already costly for single database instances, but just don't imagine how much you might load your application when fetching all the tuples of your table with additional node layers forcing your database to fetch results from multiple nodes.

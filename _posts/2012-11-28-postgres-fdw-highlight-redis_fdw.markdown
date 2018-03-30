@@ -9,25 +9,13 @@ title: 'Postgres FDW highlight - redis_fdw'
 categories:
 - PostgreSQL-2
 tags:
-- 9.1
 - 9.2
 - data
 - fdw
-- foreign
-- key
-- med
-- mysql
-- nosql
-- open source
-- oracle
 - postgres
 - postgresql
-- query
 - redis
-- server
-- sql
-- value
-- wrapper
+
 ---
 
 A foreign-data wrapper (FWD) in a Postgres server allows to fetch data from an foreign entity or a foreign server. In this case, the Postgres planner and executer have the notion of what is called a foreign scan, which can be called using customized routines and fetch data that is not directly stored inside the Postgres server itself.

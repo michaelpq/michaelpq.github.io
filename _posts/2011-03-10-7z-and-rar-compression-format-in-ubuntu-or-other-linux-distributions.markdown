@@ -11,19 +11,10 @@ categories:
 tags:
 - 7z
 - apt
-- archive
-- compression
-- debian
-- distribution
-- extract
-- file
-- linux
 - p7zip
-- package
 - rar
 - rpm
-- ubuntu
-- unrar-free
+
 ---
 
 Sometimes you have to face some formats that are not installed by default in Ubuntu environments.

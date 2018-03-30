@@ -9,19 +9,13 @@ title: 'PGCon 2011, Day 1 - Cluster summit'
 categories:
 - PostgreSQL-2
 tags:
-- breakout
-- cluster
-- mammoth
-- meeting
 - pgpool
-- pgpool-II
 - postgres
 - postgres-xc
 - postgresql
 - product
-- skype
-- slony
-- summit
+- conference
+
 ---
 
 Currently being in Ottawa for PostgreSQL conference, I had the chance to participate to meeting gathering all most of the programmers and maintainers of PostgreSQL-based cluster products.

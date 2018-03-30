@@ -10,16 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - conference
-- database
 - japan
-- jpug
-- migration
-- pgcon
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
-- tokyo
+
 ---
 
 A PostgreSQL conference has happened on the 24th of February in Tokyo, Shinagawa, event organized by [JPUG (Japanese PostgreSQL user's group)](http://www.postgresql.jp/). You can go to [this page](http://www.postgresql.jp/events/pgcon2012) where all the materials of presentations are available. Most of the presentations were in Japanese, but the following ones were in English (links provided to materials if possible):

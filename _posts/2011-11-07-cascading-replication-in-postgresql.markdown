@@ -10,19 +10,13 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.2
-- asynchronous
 - cascade
-- cascading replication
-- database
-- development
-- ha
+- replication
 - high-availability
-- master
 - postgres
 - postgresql
-- replication
-- slave
 - streaming
+
 ---
 
 It is planned in PostgreSQL 9.2 to have support for cascading replication, which is the ability to add slaves under other slaves. In 9.2, slave-slave connections are only asynchronous.

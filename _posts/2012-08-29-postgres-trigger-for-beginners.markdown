@@ -9,23 +9,10 @@ title: 'Postgres: TRIGGER for beginners'
 categories:
 - PostgreSQL-2
 tags:
-- base
-- beginner
-- database
-- delete
-- event
-- fire
-- insert
-- n00b
-- newbie
-- noob
-- open source
 - postgres
 - postgresql
-- stats
-- table
 - trigger
-- update
+
 ---
 
 This post has as goal to provide basics to help you understanding how work triggers in PostgreSQL.

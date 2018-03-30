@@ -9,18 +9,13 @@ title: Reduce cost of select count(*) queries with trigger-based method
 categories:
 - PostgreSQL-2
 tags:
-- consumption
-- cost
-- count
-- cpu
 - memory
 - postgres
 - postgresql
 - query
-- reduce
-- resource
-- table scan
 - trigger
+- cost
+
 ---
 
 Scanning a table in a database can cost a lot in terms of CPU or I/O when calculating statistics in an application. The bigger application tables get, the more resource is necessary to calculate simple statistics for an application.
@@ -32,8 +27,6 @@ This query is resource-consuming for two reasons:
 
   1. It does not use any WHERE clause which interact with a primary key of a table or on a column index that could accelerate query with b-tree search.
   2. It has to scan completely a table to determine a simple count result, in this case the total number of tuples in the table.
-
-
 
 Such simple queries that lazy programmers (like me) use all the time can be really a pain for a system if it has to be done on a table with billions of tuples. Scanning all the table can be however avoided by using an external trigger-based method in PostgreSQL. Just to recall, a trigger is a SQL functionality that allows to fire special actions on a table if a certain kind of action is perform on its tuples (INSERT, DELETE, UPDATE).
 

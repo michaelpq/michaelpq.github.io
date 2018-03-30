@@ -9,19 +9,12 @@ title: SERIAL types implemented in Postgres-XC
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- database
-- framework
-- implementation
-- incrementation
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
 - sequence
 - serial
-- table
-- type
+
 ---
 
 Just today this commit has happened in [Postgres-XC GIT repository](http://postgres-xc.git.sourceforge.net/git/gitweb-index.cgi).

@@ -9,22 +9,11 @@ title: 'Postgres - pgbadger sneaking in log files for you'
 categories:
 - PostgreSQL-2
 tags:
-- analyze
-- database
-- deparse
-- file
-- html
-- info
-- log
-- module
-- perl
 - pgbadger
-- pgfouine
-- php
 - postgres
 - postgresql
-- statement
-- statistics
+- log
+
 ---
 
 [pgbadger](http://github.com/dalibo/pgbadger) is a recent Postgres module presented during the lightning talks of PGCon 2012 by its original author Gilles Darold. It is thought as an alternative to [PgFouine](http://pgfouine.projects.postgresql.org/), able to replace it thanks to its flexibility, extensibility and performance.

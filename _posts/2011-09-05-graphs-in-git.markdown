@@ -9,14 +9,12 @@ title: Graphs in GIT
 categories:
 - Linux-2
 tags:
-- alias
-- command
-- commit
 - configuration
 - git
 - git-core
 - graph
 - log
+
 ---
 
 In library git-core, git has a command that makes all the commits appearing in graphs.

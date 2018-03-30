@@ -9,18 +9,12 @@ title: 'Postgres-XC - online data redistribution'
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- data
-- database
 - distribution
-- open source
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
-- redistribution
 - sharding
-- table
+
 ---
 
 Postgres-XC, as a sharding cluster (write-scalable, multi-master based on PostgreSQL) has currently a huge limitation related to the way tables are distributed.

@@ -10,13 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - array
-- data
-- database
-- element
-- manipulation
 - postgres
 - postgresql
 - unnest
+
 ---
 
 Arrays can be created easily in PostgreSQL using the additional syntax [] when defining a column of a table.

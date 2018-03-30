@@ -9,19 +9,12 @@ title: Rules in Postgres-XC
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- delete
-- dml
-- inheritance
-- insert
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
 - rules
-- sql
-- support
-- update
+- cluster
+
 ---
 
 One of the features that has been really improved the last couple of weeks is the stabilization of remote query planning for DML for Postgres-XC standard planner. And this has consequences on rules, because a rule is fired on Coordinators by design, and you need to provide a global way to plan queries correctly with remote nodes. Just to recall, a rule is the possibility to define an alternative action when doing an INSERT, UPDATE or DELETE on a table.

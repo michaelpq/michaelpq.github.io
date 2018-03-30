@@ -9,17 +9,12 @@ title: 'Postgres-XC tutorial at PGCon 2012 - What do YOU want to see?'
 categories:
 - PostgreSQL-2
 tags:
-- availability
-- cluster
-- database
-- feature
-- pgcon 2012
-- pgxc
+- pgcon
+- 2012
 - postgres
 - postgres-xc
-- scalable
-- sql
-- tutorial
+- conference
+
 ---
 
 This year, Postgres-XC has [a tutorial at PGCon](http://www.pgcon.org/2012/schedule/events/424.en.html). Yeah.

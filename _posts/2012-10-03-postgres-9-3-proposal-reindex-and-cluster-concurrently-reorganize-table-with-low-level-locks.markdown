@@ -11,18 +11,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- cluster
-- concurrently
-- database
-- free
-- indexes
-- open source
 - postgres
 - postgresql
-- proposal
 - reindex
 - reorganize
-- version
+
 ---
 Last week, I had an interesting [discussion in the Postgres hackers mailing list](http://archives.postgresql.org/pgsql-hackers/2012-09/msg00746.php) about integrating pg\_reorg features (possibility to reorganize a table without locks on it) directly into postgres core. Community strongly suggested that pg\_reorg cannot be integrated as-is in the contribution modules of postgres core, and instead postgres should provide native ways to reorganize a table without taking heavy locks. This means that a table could be reindexed or clustered, and at the same time read and writes operations could still happen in parallel. What is particularly useful when an index is broken in a production database, as you could keep your table free of access for the other sessions running while the table is reorganized.
 

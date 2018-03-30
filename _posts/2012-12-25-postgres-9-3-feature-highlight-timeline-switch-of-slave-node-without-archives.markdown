@@ -10,18 +10,12 @@ title: 'Postgres 9.3 feature highlight - timeline switch of slave node without a
 categories:
 - PostgreSQL-2
 tags:
-- 9.1
-- 9.2
 - 9.3
-- database
-- master
-- open source
 - postgres
 - postgresql
-- promote
-- standby
-- switch
+- replication
 - timeline
+
 ---
 
 Since PostgreSQL 9.1, it is possible to switch a standby server to follow another server that has been freshly promoted after the master node of a cluster is out due to a failure (disaster or another). In this example, a master and two slaves are running on the same machine. The master running with port 5432 fails, Slave 1 is promoted as the new master:

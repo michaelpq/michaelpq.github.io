@@ -10,24 +10,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 2011
-- cluster
 - conference
-- connection
-- database
-- duty
-- federated
-- indexes
-- isolation
-- patch
 - pgcon
 - postgres
 - postgresql
 - presentation
-- review
-- serializable
-- shard
-- snapshot
-- work
+
 ---
 
 19th and 20th of May have been days of the PostgreSQL conference.

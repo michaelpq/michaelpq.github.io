@@ -9,17 +9,12 @@ title: 'PostgreSQL: playing with foreign data wrappers (1)'
 categories:
 - PostgreSQL-2
 tags:
-- 8.4
-- 9.0
-- 9.1
 - 9.2
-- cvs
 - fdw
-- federated
 - foreign data wrapper
 - postgres
 - postgresql
-- server
+
 ---
 
 This post presents some basics when using foreign data wrappers with PostgreSQL for external files.

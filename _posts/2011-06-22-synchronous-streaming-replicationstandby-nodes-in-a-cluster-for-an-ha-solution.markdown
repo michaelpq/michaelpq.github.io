@@ -9,19 +9,15 @@ title: Synchronous streaming replication/Standby nodes in a cluster for an HA so
 categories:
 - PostgreSQL-2
 tags:
-- 9.0
 - 9.1
-- cluster
-- database
-- ha
 - high-availability
 - postgres
 - postgres-xc
 - postgresql
 - scalability
-- solution
-- standby node
-- streaming replication
+- streaming
+- replication
+
 ---
 
 The post presents a proposal to implement an HA solution based on PostgreSQL streaming replication and Standby node structure. This solution is still in construction, so the final implementation design that will be chosen for Postgres-XC may slightly change.

@@ -9,16 +9,11 @@ title: First steps with dblink on Postgres
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- connection
 - dblink
-- initiation
 - postgres
 - postgresql
 - remote
-- server
-- sql
-- step
+
 ---
 
 This short manual targets PostgreSQL users looking for a smooth introduction to dblink.

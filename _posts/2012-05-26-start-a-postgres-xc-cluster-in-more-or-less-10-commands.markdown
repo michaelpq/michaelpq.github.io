@@ -9,18 +9,11 @@ title: Start a Postgres-XC cluster in (more or less) 10 commands
 categories:
 - PostgreSQL-2
 tags:
-- cluster
-- command
-- configurable
-- database
-- easy
-- few
 - install
-- pgxc
 - postgres
 - postgres-xc
 - postgresql
-- short
+
 ---
 
 First you need to download the latest version of Postgres-XC from [here](https://sourceforge.net/projects/postgres-xc/files/latest/download).

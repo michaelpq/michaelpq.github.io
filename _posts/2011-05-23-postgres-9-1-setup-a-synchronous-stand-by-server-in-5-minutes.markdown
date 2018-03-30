@@ -10,19 +10,13 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.1
-- beta
-- easy
-- handy
-- hot standby
 - postgres
 - postgresql
-- scripts
-- server
-- setup
-- short
 - standby
-- streaming replication
+- streaming
+- replication
 - synchronous
+
 ---
 
 PostgreSQL 9.1 is out, you can download it source code from [here](http://www.postgresql.org/ftp/source/) or use latest GIT repository as I did like this:

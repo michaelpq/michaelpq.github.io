@@ -10,18 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.2
-- array
-- data
-- database
-- free
-- hstore
-- json
-- native
-- open source
 - postgres
 - postgresql
-- row
-- type
+- json
+
 ---
 
 PostgreSQL 9.2 has introduced a new feature related to JSON with a built-in data type. So you can now store inside your database directly JSON fields without the need of an external format checker as it is now directly inside Postgres core. The feature has been added by this commit.
