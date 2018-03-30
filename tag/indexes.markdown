@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Tag: index"
+title: "Tag: indexes"
 type: tag
-tag: index
+tag: indexes
 ---
