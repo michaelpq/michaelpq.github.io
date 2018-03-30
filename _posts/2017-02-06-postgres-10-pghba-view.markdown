@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- pg_hba.conf
-- rules
-- system
-- catalog
-- view
-- error
-- detection
-- sighup
+- connection
+- security
 
 ---
 

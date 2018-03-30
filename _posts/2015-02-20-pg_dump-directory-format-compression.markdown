@@ -11,16 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
 - pg_dump
-- dump
-- restore
-- check
-- quality
-- development
-- fix
-- quick
+- compression
 
 ---
 

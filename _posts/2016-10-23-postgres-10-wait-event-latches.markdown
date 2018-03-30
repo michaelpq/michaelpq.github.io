@@ -11,22 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - wait
 - event
-- latch
-- ipc
-- application
-- performance
-- event
-- bottleneck
-- analysis
-- benchmark
+- monitoring
 
 ---
 

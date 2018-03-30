@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- standby
+- pg_rewind
 - timeline
-- cluster
-- promotion
-- wal
-- recycle
-- history
 
 ---
 

@@ -11,20 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - pg_basebackup
-- data
-- backup
-- clean
-- tar
-- stream
-- cleanup
-- exclude
 
 ---
 

@@ -11,24 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
 - dml
 - copy
-- select
-- values
-- statement
-- copy
-- common
-- table
-- expression
-- spec
-- sql
-- cte
 
 ---
 

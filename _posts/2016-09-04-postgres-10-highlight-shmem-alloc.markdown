@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- shared
 - memory
-- allocation
-- failure
-- modification
 - error
-- none
-- warning
 
 ---
 

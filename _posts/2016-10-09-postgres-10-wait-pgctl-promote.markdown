@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- standby
-- promotion
-- read
-- write
-- recovery
-- finish
-- wal
+- pg_ctl
+- monitoring
 
 ---
 

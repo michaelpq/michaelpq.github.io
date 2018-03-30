@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
+- libpq
 - connection
-- string
-- read
-- write
-- failover
-- only
-- slave
-- primary
-- standby
 
 ---
 

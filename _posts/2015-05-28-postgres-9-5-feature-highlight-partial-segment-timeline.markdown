@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
-- archive
 - wal
-- partial
-- debug
-- current
 - timeline
-- segment
 
 ---
 

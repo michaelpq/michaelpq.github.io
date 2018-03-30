@@ -11,23 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- fsync
-- sync
-- data
-- durability
-- flush
-- power
-- loss
-- reliable
-- consistent
-- pg_basebackup
-- pg_receivexlog
+- backup
 
 ---
 

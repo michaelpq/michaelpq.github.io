@@ -11,19 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
 - pgbench
-- expression
-- extension
-- flexible
-- benchmark
-- set
-- random
-- design
 
 ---
 

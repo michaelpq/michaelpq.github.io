@@ -11,22 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
 - wal
-- record
-- generic
-- general
-- interface
-- record
-- slave
-- replay
-- page
-- delta
 
 ---
 

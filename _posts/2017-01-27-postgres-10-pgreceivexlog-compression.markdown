@@ -11,20 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
+- compression
 - pg_receivexlog
 - wal
-- write-ahead
-- log
-- receive
-- stream
-- replication
-- reliability
 
 ---
 

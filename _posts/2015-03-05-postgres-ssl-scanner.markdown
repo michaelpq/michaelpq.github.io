@@ -11,12 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
 - security
 - ssl
-- openssl
-- scanner
 
 ---
 

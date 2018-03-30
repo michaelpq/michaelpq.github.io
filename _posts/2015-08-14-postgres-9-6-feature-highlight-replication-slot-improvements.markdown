@@ -11,16 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - slot
 - replication
 - 9.6
 - wal
-- start
 
 ---
 

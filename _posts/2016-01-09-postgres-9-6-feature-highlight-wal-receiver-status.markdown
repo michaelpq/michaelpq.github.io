@@ -11,21 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- standby
 - wal
 - receiver
-- status
-- sql
-- function
-- lsn
-- streaming
-- replication
+- monitoring
 
 ---
 

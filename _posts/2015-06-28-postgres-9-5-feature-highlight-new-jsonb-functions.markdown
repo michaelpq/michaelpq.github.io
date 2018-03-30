@@ -11,24 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
 - json
 - jsonb
-- function
-- element
-- delete
-- pretty
-- field
-- key
-- value
-- indexes
 - operator
-- concatenate
 
 ---
 

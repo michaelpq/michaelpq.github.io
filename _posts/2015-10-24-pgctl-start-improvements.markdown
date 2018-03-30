@@ -11,17 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- postmaster
-- pid
 - pg_ctl
-- start
-- reliability
-- improvement
-- repeatable
-- seconds
 
 ---
 

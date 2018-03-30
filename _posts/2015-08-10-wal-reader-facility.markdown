@@ -11,16 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - wal
-- recovery
-- decode
-- facility
-- log
-- xlog
-- reader
+- pg_plugins
 
 ---
 

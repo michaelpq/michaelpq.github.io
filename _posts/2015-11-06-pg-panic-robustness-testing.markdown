@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- postmaster
-- robustness
 - pg_panic
-- panic
-- extension
-- luck
-- factor
+- pg_plugins
 - crash
-- application
-- backend
-- frontend
 
 ---
 

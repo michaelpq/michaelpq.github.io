@@ -11,22 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
-- file
-- access
 - function
-- option
-- missing
-- ok
-- pg_ls_dir
-- pg_stat_file
-- pg_read_binary_file
-- pg_read_file
 
 ---
 

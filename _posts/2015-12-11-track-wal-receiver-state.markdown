@@ -11,21 +11,12 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- commit
-- streaming
 - replication
-- tracking
 - wal
+- monitoring
 - receiver
-- process
-- shared
-- memory
-- SQL
-- function
 - view
+- function
 
 ---
 

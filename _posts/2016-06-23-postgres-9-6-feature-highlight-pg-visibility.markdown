@@ -11,18 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- module
-- contrib
-- visibility
-- map
-- relation
-- information
+- pg_visibility
 
 ---
 

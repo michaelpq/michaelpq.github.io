@@ -11,16 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- process
-- usage
-- rusage
-- cpu
-- processor
-- process
-- user
-- system
+- monitoring
 
 ---
 

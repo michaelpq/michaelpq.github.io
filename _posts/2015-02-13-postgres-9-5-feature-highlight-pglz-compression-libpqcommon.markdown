@@ -12,16 +12,8 @@ tags:
 - postgres
 - postgresql
 - open source
-- database
-- development
-- highlight
 - 9.5
 - compression
-- libpqcommon
-- plugin
-- extension
-- routine
-- simplify
 
 ---
 

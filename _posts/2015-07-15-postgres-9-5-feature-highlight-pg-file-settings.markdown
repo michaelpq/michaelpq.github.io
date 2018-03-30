@@ -11,25 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
 - view
 - function
-- file
-- settings
-- configuration
-- guc
-- applied
-- origin
-- value
-- state
-- error
-- operator
-- maintenance
+- monitoring
 
 ---
 

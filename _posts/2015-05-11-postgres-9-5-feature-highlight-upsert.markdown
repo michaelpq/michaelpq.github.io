@@ -12,19 +12,8 @@ tags:
 - postgres
 - postgresql
 - open source
-- database
-- development
-- highlight
-- feature
 - 9.5
 - upsert
-- insert
-- update
-- conflict
-- constraint
-- primary
-- key
-- nothing
 
 ---
 

@@ -11,18 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - connection
-- string
-- multiple
-- host
-- failure
-- attempts
+- libpq
 
 ---
 

@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- 9.5
 - wal
-- recovery
-- fpw
-- page
-- full-page
-- write
+- 9.5
 - compression
-- reduce
-- synchronous
 
 ---
 

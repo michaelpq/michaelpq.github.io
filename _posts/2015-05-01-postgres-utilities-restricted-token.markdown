@@ -11,17 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - windows
-- token
-- privilege
-- administrator
-- rights
-- give up
-- restricted
 
 ---
 

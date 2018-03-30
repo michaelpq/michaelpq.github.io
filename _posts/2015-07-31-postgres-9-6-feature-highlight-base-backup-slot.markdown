@@ -11,21 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
-- slot
 - replication
 - wal
-- retention
-- policy
-- backup
-- base
-- replay
-- standby
-- disappear
+- 9.6
+- slot
 
 ---
 

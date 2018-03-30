@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
-- system
 - view
-- pg_catalog
-- connection
-- information
 - ssl
-- ssh
 - security
 
 ---

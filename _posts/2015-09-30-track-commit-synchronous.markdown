@@ -11,16 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- commit
-- streaming
 - replication
 - synchronous
-- tracking
-- detection
-- pg_stat_activity
+- monitoring
 
 ---
 

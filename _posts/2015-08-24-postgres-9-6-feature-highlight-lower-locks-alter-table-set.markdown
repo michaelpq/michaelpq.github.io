@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.6
 - lock
-- reduction
-- alter
-- table
-- set
-- parameter
-- vacuum
-- autovacuum
-- autoanalyze
-- analyze
+- ddl
 
 ---
 

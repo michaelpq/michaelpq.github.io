@@ -11,20 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
-- container
-- virtual
-- machine
 - docker
-- development
-- xlc
-- alpine
-- arm
-- architecture
 
 ---
 

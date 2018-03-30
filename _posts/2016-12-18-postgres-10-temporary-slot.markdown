@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - replication
 - slot
-- logical
-- decoding
-- physical
-- temporary
-- session
-- error
-- recycle
 
 ---
 

@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- extension
-- filesystem
-- fs
-- flags
-- block
-- free
-- size
-- pg_xlog
-- tablespace
-- pgdata
-- data
+- pg_plugins
+- monitoring
+- wal
 
 ---
 

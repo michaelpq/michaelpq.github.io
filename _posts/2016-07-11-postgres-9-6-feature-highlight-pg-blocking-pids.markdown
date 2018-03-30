@@ -11,18 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- pid
-- session
-- block
-- locks
-- information
-- join
+- lock
+- monitoring
 
 ---
 

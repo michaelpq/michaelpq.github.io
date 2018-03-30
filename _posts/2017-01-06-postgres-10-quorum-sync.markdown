@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - replication
-- wal
 - synchronous
-- quorum
-- commit
-- availability
-- standby
-- any
-- first
 
 ---
 

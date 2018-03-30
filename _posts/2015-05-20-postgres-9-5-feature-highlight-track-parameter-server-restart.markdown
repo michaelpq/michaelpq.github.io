@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
-- parameter
-- guc
-- restart
-- sighup
-- change
-- update
-- shared_buffers
+- monitoring
+- log
 
 ---
 

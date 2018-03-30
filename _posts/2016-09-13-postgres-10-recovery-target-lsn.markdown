@@ -11,18 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- recovery
-- target
-- time
-- lsn
 - wal
-- position
+- recovery
+- lsn
 
 ---
 

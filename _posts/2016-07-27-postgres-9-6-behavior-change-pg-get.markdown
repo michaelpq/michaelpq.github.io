@@ -11,16 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- behavior
-- change
-- detail
-- object
-- trigger
+- function
+- error
 
 ---
 

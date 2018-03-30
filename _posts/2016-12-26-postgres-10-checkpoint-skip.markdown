@@ -11,22 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
-- replication
 - checkpoint
-- wal
-- important
-- activity
-- skip
-- idle
-- embedded
-- system
-- spike
+- monitoring
 
 ---
 

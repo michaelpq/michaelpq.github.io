@@ -11,20 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- feature
 - 9.5
 - archive
-- mode
-- always
-- master
-- standby
-- node
-- bandwidth
-- strategy
+- wal
+- replication
 
 ---
 

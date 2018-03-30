@@ -11,24 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- postgres_fdw
-- foreign
-- data
-- wrapper
-- shippable
-- pushdown
+- fdw
 - function
 - operator
-- remote
-- execution
-- performance
-- gain
 
 ---
 

@@ -11,21 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - connection
-- string
-- parameter
-- pgpass
-- file
-- password
-- environment
-- variable
-- alternative
+- security
+- libpq
 
 ---
 

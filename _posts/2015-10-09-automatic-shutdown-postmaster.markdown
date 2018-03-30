@@ -11,16 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- commit
-- postmaster
-- pid
-- file
-- detection
 - shutdown
-- immediate
 - recovery
 
 ---

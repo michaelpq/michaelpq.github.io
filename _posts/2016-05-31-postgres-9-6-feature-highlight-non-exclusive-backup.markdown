@@ -11,22 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.6
-- feature
-- highlight
-- availability
-- wal
-- base
 - backup
-- pg_start_backup
-- pg_stop_backup
-- exclusive
-- multiple
-- lock
-- parallel
+- replication
+- wal
 
 ---
 

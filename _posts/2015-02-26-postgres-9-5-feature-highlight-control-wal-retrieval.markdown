@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- restore_command
-- recovery
-- restore
 - wal
-- check
-- retrieve
-- interval
-- control
+- replication
 
 ---
 
