@@ -5,22 +5,19 @@ layout: default
 <p class="meta">
   You liked this post or you have a comment? You can contact and help me
   <a href="{{site.url}}/about/">here</a>.<br>
-  {{ page.date | date_to_string }}
+  {{ page.date | date_to_string }}<br>
+  <!-- List tags at the top of post, before content -->
+  Tags:
+  {% for tag in page.tags %}
+    <!-- Do not use a comma only for last tag -->
+    {% if forloop.last == false %}
+      <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>,
+    {% else %}
+      <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>
+    {% endif %}
+  {% endfor %}
 </p>
 
 <div class="post">
-{{ content }}
-
-<!-- List tags at the bottom of post -->
-<p class="meta">
-Tags:
-{% for tag in page.tags %}
-  <!-- Do not use a comma only for last tag -->
-  {% if forloop.last == false %}
-    <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>,
-  {% else %}
-    <a href="/{{site.tag_dir}}/{{tag}}">{{tag}}</a>
-  {% endif %}
-{% endfor %}
-</p>
+  {{ content }}
 </div>
