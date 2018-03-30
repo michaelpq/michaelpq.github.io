@@ -13,7 +13,7 @@ tags:
 - postgresql
 - 9.4
 - gist
-- index
+- indexes
 
 ---
 Postgres 9.4 is adding a new in-core GiST operator class for the [inet and cidr]

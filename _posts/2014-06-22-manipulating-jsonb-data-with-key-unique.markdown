@@ -13,7 +13,7 @@ tags:
 - postgresql
 - 9.4
 - json
-- index
+- indexes
 
 ---
 The [jsonb datatype]

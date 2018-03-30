@@ -12,7 +12,7 @@ tags:
 - 9.2
 - postgres
 - postgresql
-- index
+- indexes
 
 ---
 

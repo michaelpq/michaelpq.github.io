@@ -12,7 +12,7 @@ tags:
 - postgres
 - postgresql
 - 11
-- index
+- indexes
 - partition
 - inherit
 

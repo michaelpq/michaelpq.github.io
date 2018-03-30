@@ -12,7 +12,7 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- index
+- indexes
 - json
 
 ---

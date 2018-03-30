@@ -13,7 +13,7 @@ tags:
 - postgresql
 - 9.5
 - brin
-- index
+- indexes
 
 ---
 
