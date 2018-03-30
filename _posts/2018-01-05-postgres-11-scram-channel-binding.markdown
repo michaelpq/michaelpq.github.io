@@ -11,20 +11,11 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
+- 11
 - scram
 - authentication
-- channel
-- binding
-- libpq
-- connection
-- parameter
-- tls-unique
-- tls-server-end-point
-- mitm
-- attack
+- ssl
+- security
 
 ---
 

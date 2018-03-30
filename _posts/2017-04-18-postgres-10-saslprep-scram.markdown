@@ -11,17 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
+- authentication
 - scram
-- saslprep
-- unicode
-- equivalent
-- combining
 
 ---
 

@@ -11,18 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
+- 10
 - scram
 - authentication
-- verifier
-- password
-- iteration
-- salt
-- length
-- computation
-- cost
 
 ---
 

@@ -11,17 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - pg_receivewal
-- end
-- position
-- testing
-- backup
-- streaming
+- lsn
 - wal
-- recovery
+- 11
 
 ---
 

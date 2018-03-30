@@ -11,16 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- removal
-- checkpoint
-- second
-- recovery
+- 11
 - wal
-- consistency
-- reliable
+- checkpoint
 
 ---
 

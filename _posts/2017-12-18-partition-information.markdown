@@ -11,15 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
+- 11
 - partition
-- list
-- hash
-- items
-- split
-- elements
 
 ---
 

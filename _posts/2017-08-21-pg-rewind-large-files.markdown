@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- pg_rewind
-- large
-- gb
-- handling
-- file
-- corruption
-- data
-- copy
-- block
 - wal
+- pg_rewind
+- bug
 
 ---
 

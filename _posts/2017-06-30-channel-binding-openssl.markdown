@@ -11,17 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- channel
-- binding
-- openssl
-- tls-unique
-- tls-server-end-point
+- ssl
 - scram
-- plus
-- sha
+- security
 
 ---
 

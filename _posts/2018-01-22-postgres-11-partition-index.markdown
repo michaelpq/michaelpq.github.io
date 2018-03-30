@@ -11,15 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
 - 11
-- indexes
+- index
 - partition
-- inheritance
-- list
-- child
-- automatic
+- inherit
 
 ---
 

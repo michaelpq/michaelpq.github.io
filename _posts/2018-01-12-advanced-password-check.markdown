@@ -11,18 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- password
-- check
-- load
-- module
-- plugin
-- check
-- string
-- user
-- security
+- pg_plugins
+- passwordcheck
 
 ---
 

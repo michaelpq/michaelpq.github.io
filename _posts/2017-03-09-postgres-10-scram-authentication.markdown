@@ -11,23 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - authentication
-- password
-- protocol
-- method
 - scram
-- sha2
-- scram-sha-256
-- saslprep
-- security
-- attack
-- mitm
 
 ---
 

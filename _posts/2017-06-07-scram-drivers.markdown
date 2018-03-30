@@ -11,20 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
 - scram
+- connection
 - authentication
-- driver
-- go
-- perl
-- python
-- java
-- odbc
 
 ---
 

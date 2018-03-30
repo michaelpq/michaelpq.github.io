@@ -11,19 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 10
-- feature
-- highlight
+- monitoring
 - log
-- file
-- tracking
-- current
-- syslog
-- stderr
-- csvlog
 
 ---
 
