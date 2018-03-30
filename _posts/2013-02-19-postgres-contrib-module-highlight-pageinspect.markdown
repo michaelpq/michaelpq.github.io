@@ -9,24 +9,10 @@ title: 'Postgres contrib module highlight - pageinspect'
 categories:
 - PostgreSQL-2
 tags:
-- check
-- contrib
-- database
-- inspection
-- max
-- min
-- module
-- mvcc
-- open source
-- page
 - pageinspect
 - postgres
 - postgresql
-- relation
-- scan
-- transaction
-- tuple
-- visibility
+
 ---
 
 [pageinspect](http://www.postgresql.org/docs/9.2/static/pageinspect.html) is an extension module of PostgreSQL core allowing to have a look at the contents of relations (index or table) in the database at a low level. In the case of PostgreSQL, tuples of a table are stored in blocks of data whose size can be changed with --with-blocksize at configure step. This module is particularly useful for debugging when implementing a new functionality that changes visibility of data like what could do an autovacuum or map visibility feature, or simply to understand the internals of Postgres without having to read much codea .

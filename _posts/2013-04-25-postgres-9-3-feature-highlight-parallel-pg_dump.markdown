@@ -10,20 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- compression
-- data
-- database
-- dump
-- folder
-- job
-- object
-- open source
 - parallel
 - pg_dump
 - postgres
 - postgresql
-- restore
-- table
+
 ---
 
 Among one of the many new features implemented in 9.3, pg\_dump now offers the possibility to perform parallel dumps. This feature has been introduced by the commit below.

@@ -9,22 +9,12 @@ title: 'Measuring cascading replication lag in Postgres'
 categories:
 - PostgreSQL-2
 tags:
-- 9.2
-- cascading
-- database
-- fast
-- file
-- lag
-- master
-- measure
+- 9.4
 - postgres
 - postgresql
 - replication
-- root
-- server
-- slave
-- slow
-- time
+- monitoring
+
 ---
 Based on the scripts developed in a [previous post](/postgresql-2/cascading-replication-in-chain-with-10-100-200-nodes/) where a couple of hundred of Postgres servers were linked with replication cascading, let's now have a look at the lag that cascading nodes have when creating several database objects.
 

@@ -10,20 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- automatic
-- database
-- delete
-- dml
-- easy
-- insert
-- open source
-- option
 - postgres
 - postgresql
-- rules
-- trigger
-- updatable
 - view
+
 ---
 
 Prior to PostgreSQL 9.3, trying to execute a DML on a view results in an error. The view is not able to execute directly a query to its parent table.

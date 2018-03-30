@@ -10,21 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- analysis
-- checksum
-- control
-- corruption
-- data
-- database
-- feature
-- guc
-- indexes
-- new
-- open source
-- parameter
 - postgres
 - postgresql
-- server
+- checksum
+- guc
+
 ---
 Postgres 9.3 has introduced [data checksums](/postgresql-2/postgres-9-3-feature-highlight-data-checksums/) at the data page level, using a CRC-16 algorithm for the checksum calculation.
 

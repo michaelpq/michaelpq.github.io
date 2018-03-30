@@ -10,19 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- calculation
-- checksum
-- data
-- database
-- feature
-- highlight
-- loss
-- open source
-- performance
 - postgres
 - postgresql
-- protection
+- checksum
 - wal
+
 ---
 
 Data checksums is a new feature introduced in PostgreSQL 9.3, adding a new level of checksum to protect data from disk and I/O corruption, controlled directly by the database server. This has been introduced by the commit below.

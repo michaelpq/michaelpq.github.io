@@ -9,20 +9,11 @@ title: 'Hooks in Postgres - super-superuser restrictions'
 categories:
 - PostgreSQL-2
 tags:
-- awesome
-- background
-- database
-- executor
-- extension
-- hook
-- module
-- open source
 - postgres
 - postgresql
-- process
-- tool
-- utility
-- worker
+- hook
+- superuser
+
 ---
 
 PostgreSQL extensibility is awesome. With things like extensions or custom worker backgrounds, there are many ways for a PostgreSQL developer to create modules without having to touch a single line of the core code at all. Among those tools, PostgreSQL contains a set of hooks that can be used to plug customized code at certain points of the server processing. Hooks are not documented at all, so if you want to know more about them you need either to have a look directly at the PostgreSQL code or to read the slides of [the presentation about hooks given by Guillaume Lelarge at PGcon 2012](http://wiki.postgresql.org/images/e/e3/Hooks_in_postgresql.pdf). 

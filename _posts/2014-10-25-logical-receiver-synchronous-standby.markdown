@@ -11,23 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- decoder_raw
-- receiver_raw
-- plugin
 - logical
-- decoding
-- receiver
+- replication
 - synchronous
-- standby
-- feedback
-- synchronous_commit
-- behave
-- fake
-- superset
-- application_name
 
 ---
 

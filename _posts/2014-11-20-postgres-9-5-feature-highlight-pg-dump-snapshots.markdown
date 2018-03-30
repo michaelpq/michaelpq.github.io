@@ -11,21 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- feature
-- dump
-- data
 - pg_dump
-- external
-- consistent
-- snapshot
-- logical
-- replication
-- slot
 
 ---
 

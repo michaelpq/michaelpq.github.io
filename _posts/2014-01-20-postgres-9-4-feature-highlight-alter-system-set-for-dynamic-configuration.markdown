@@ -10,31 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- alter
-- async
-- autoconf
-- automatic
-- configuration
-- database
-- degradation
-- development
-- dynamic
-- elevation
-- feature
-- highlight
-- new
-- open source
 - postgres
 - postgresql
-- postmaster
-- reload
-- replication
-- sighup
-- sql
-- switch
-- sync
 - system
-- temporary
+
 ---
 PostgreSQL 9.4 has added a new SQL command called ALTER SYSTEM SET, introduced by this commit:
 

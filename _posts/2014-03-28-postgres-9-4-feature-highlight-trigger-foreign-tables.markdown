@@ -12,19 +12,9 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- foreign
-- data
-- wrapper
-- table
-- data
+- fdw
 - trigger
-- insert
-- instead
-- before
-- after
-- view
+
 ---
 PostgreSQL 9.4 is coming with more support for triggers, making them now
 firable on foreign tables. This feature has been introduced by the following

@@ -11,23 +11,11 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
-- new
-- feature
-- replication
 - logical
+- replication
 - receiver
-- feedback
-- lsn
-- wal
-- flush
-- inform
-- reader
-- apply
-- change
+
 ---
 These last couple of days I have been developing for studies a background
 worker able to fetch changes from a logical decoder already developed

@@ -10,18 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- api
-- change
-- node
-- open source
-- parallel
 - postgres
 - postgresql
-- process
-- query
-- run
-- slave
+- background
 - worker
+
 ---
 Following the [recent API modifications](/postgresql-2/modifications-of-apis-for-bgworkers-in-postgres-9-3/) done in Postgres 9.3 for background worker processes, here is more information about the latest features of background workers currently being developed for Postgres 9.4, and introduced by this commit:
 

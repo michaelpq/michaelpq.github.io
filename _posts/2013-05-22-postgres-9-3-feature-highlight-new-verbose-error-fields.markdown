@@ -10,22 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- additional
-- client
-- column
-- constraint
 - error
-- feature
-- field
-- highlight
-- improvement
-- new
-- number
 - postgres
 - postgresql
-- psql
-- table
-- type
+
 ---
 
 PostgreSQL is already pretty useful for application developers when returning to client error messages by providing a certain level of details with multiple distinct fields like the position of the code where the error occurred. However this was lacking with the database object names, forcing the client application to deparse the error string returned by server, generally with field 'M', to get more details about the objects that have been involved in the errors. This functionality has been added in PostgreSQL 9.3 thanks to this commit. 

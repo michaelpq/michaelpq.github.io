@@ -9,21 +9,12 @@ title: 'Postgres 9.4 feature highlight - lossy/exact pages for bitmap heap scan'
 categories:
 - PostgreSQL-2
 tags:
-- feature
-- highlight
 - 9.4
-- bitmap
-- scan
-- new
-- database
-- exact
-- gin
-- gist
-- indexes
-- lossy
-- pages
 - postgres
 - postgresql
+- page
+- scan
+
 ---
 When scanning a relation with a query with a bitmap heap scan and that the bitmap is not large enough to contain a reference to each tuple individually, bitmap heap scan switches to lossy mode where instead of the tuples relation pages are referenced in the bitmap. Then a Recheck condition on the heap is done to determine on each page which tuples to return, and to determine if a page is exact (tuples in the bitmap) or lossy (need to access to heap). The following commit adds an additional output in EXPLAIN ANALYZE to check the number of lossy and exact pages this bitmap heap scan used.
 

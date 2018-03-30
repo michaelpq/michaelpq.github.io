@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- recovery
+- replication
 - wal
-- node
-- end
-- action
-- pause
-- shutdown
-- promote
-- decision
-- flexible
 
 ---
 

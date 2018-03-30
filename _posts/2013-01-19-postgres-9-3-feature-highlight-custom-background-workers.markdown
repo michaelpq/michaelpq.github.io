@@ -11,19 +11,10 @@ categories:
 tags:
 - 9.3
 - background
-- customize
-- database
-- feature
-- highliht
-- new
-- open source
-- pg
 - postgres
 - postgresql
-- relational
-- release
-- spi
 - worker
+
 ---
 
 A new feature ideal for module makers is appearing in Postgres 9.3. Called "background worker processes", this feature, which is a set of useful APIs, offers the possibility to create and customize worker processes called bgworkers able to run user-specified code directly plugged in the server. This worker is loaded and managed entirely by the server. So such processes can be considered as envelopped in a wrapper on top of the core code as a plug-in.

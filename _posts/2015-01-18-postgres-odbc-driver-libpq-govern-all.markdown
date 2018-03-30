@@ -11,18 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - odbc
-- driver
-- libpq
-- dependency
-- reduce
-- sspi
-- openssl
-- ssl
 
 ---
 

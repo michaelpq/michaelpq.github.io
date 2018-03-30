@@ -10,20 +10,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- data
-- database
-- debug
-- developer
-- dump
-- educational
-- open source
 - pg_xlogdump
 - postgres
 - postgresql
 - recovery
 - wal
-- write ahead log
-- xlog
+
 ---
 
 pg_xlogdump is a new contrib module introduced in PostgreSQL 9.3 by this commit.

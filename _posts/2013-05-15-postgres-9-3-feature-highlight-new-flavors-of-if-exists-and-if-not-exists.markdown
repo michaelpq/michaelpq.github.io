@@ -10,25 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- alter
-- create
-- database
-- ddl
-- drop
-- existence
-- function
-- if exists
-- if not exists
-- language
-- object
-- open source
-- operator
+- exists
 - postgres
 - postgresql
-- role
-- table
-- trigger
-- user
+- ddl
+
 ---
 
 IF EXISTS and IF NOT EXISTS are clauses allowing to return a notice message instead of an error if a DDL query running on a given object already exists or not depending on the DDL action done. If a given query tries to create an object when IF NOT EXISTS is specified, a notice message is returned to client if the object has already been created and nothing is done on server side. If the object is altered or dropped when IF EXISTS is used, a notice message is returned back to client if the object does not exist and nothing is done. 

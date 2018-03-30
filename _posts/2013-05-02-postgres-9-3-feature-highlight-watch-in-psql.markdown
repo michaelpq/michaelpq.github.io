@@ -10,18 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- client
-- database
-- interval
-- open source
 - postgres
 - postgresql
 - psql
-- query
-- relational
-- repeat
-- time
 - watch
+
 ---
 
 psql is the native client of PostgreSQL widely used by application developers and database administrators on a daily-basis for common operations when interacting with a PostgreSQL server. With a full set of integrated functionalities, it is among the most popular (if not the number one) client applications in the Postgres community. If you are a Postgres nerd (highly possible if you are reading this page), you know that the feeling of discovering a new functionality in psql is close to the excitement you can have when opening a christmas present as you know that such a feature went though the strict community review process. The upcoming release 9.3 of Postgres is not an exception and brings a new useful command called [\watch](http://www.postgresql.org/docs/devel/static/app-psql.html). This feature has been introduced by this commit:

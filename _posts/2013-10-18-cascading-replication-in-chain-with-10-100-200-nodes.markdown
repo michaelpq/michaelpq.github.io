@@ -9,23 +9,12 @@ title: 'Cascading replication in chain with 10, 100, 200 nodes?'
 categories:
 - PostgreSQL-2
 tags:
-- 100
-- 200
-- 9.2
 - 9.3
-- api
 - cascading
-- chain
-- database
-- function
-- hundred
-- long
-- node
-- open source
 - postgres
-- release
+- postgresql
 - replication
-- shell
+
 ---
 [Cascading replication](/postgresql-2/cascading-replication-in-postgresql/) has been introduced in 9.2, but have you ever tried long chains of cascading nodes in Postgres?
 

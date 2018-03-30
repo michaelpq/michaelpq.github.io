@@ -9,26 +9,13 @@ title: 'And what about pg_cron with background workers?'
 categories:
 - PostgreSQL-2
 tags:
-- 9.3
 - 9.4
 - cron
-- crontab
-- database
-- file
-- frequency
-- job
-- launcher
-- maintenance
-- master
-- open source
-- periodic
-- pg_cron
 - postgres
-- query
-- slave
-- sql
-- start
+- postgresql
+- background
 - worker
+
 ---
 With the introduction of background workers in Postgres 9.3 and even the introduction of dynamic background workers, allowing to start workers while server is running, there is quite a bit of infrastructure in place to play with.
 

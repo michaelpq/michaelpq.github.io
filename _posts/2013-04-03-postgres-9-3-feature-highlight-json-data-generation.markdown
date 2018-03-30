@@ -10,27 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- data
-- database
-- enhancement
-- feature
-- function
-- improvement
-- json
-- leverage
-- light
-- open source
-- operation
-- operator
 - postgres
 - postgresql
-- server
-- site
-- store
-- type
-- value
-- web
-- website
+- json
+- generation
+
 ---
 
 Postgres 9.2 has introduced [JSON as a server data type](/postgresql-2/postgres-9-2-highlight-json-data-type/). At this point, the data was simply stored on server side with integrated wrappers checking that data had a correct JSON format. It was a good first step in order to store directly JSON data on server side but core features in 9.2 have its limitations in terms of JSON data manipulation and transformation.

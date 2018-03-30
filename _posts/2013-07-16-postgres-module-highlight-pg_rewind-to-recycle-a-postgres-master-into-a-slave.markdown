@@ -11,21 +11,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- analyze
-- block
-- cluster
-- database
-- master
-- module
-- open source
 - pg_rewind
 - postgres
-- quick
-- recycle
-- repurpose
+- postgresql
 - rewind
-- slave
-- speed
+- replication
+
 ---
 
 Managing wisely server resources has always been a critical matter for all kinds of systems. A lack of resource would mean a loss of performance and scalability for applications running on those infrastructures, blocking the potential growth of a service, while using too much resource could create a cost that the application provider might not be able to afford, resulting indirectly on a loss of income in long-term.

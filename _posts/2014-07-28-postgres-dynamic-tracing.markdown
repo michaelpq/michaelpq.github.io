@@ -11,16 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
+- monitoring
 - trace
-- track
-- process
-- probe
-- systemtap
-- linux
-- dtrace
+
 ---
 Postgres has in-core support for [Dynamic tracing]
 (http://www.postgresql.org/docs/devel/static/dynamic-trace.html), which

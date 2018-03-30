@@ -12,21 +12,9 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- development
-- query
-- transaction
 - lock
 - wait
-- statement
-- lock
-- share
-- exclusive
-- context
-- update
-- information
-- timeout
+
 ---
 A new feature is showing up in PostgreSQL 9.4 allowing to get more information
 about transaction lock waits and their circumstances. It has been introduced

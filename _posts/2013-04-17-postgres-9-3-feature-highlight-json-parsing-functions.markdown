@@ -10,23 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- api
-- array
-- cut
-- database
-- deparsing
-- function
-- json
-- key
-- open source
-- parsing
 - postgres
 - postgresql
-- record
-- server
-- set
-- side
-- value
+- json
+- parsing
+
 ---
 
 Continuing on the coverage of new JSON features added in Postgres 9.3, and after writing about [JSON data generation](/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/) and [JSON operators](/postgresql-2/postgres-9-3-feature-highlight-json-operators/), let's now focus on some new functions that can be used for the parsing of JSON data.

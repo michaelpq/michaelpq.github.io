@@ -11,17 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
 - pg_dump
 - log
-- verbose
-- relation
-- schema
 
 ---
 

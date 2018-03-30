@@ -11,27 +11,11 @@ categories:
 tags:
 - 9.3
 - background
-- bgworker
-- control
-- custom
-- database
-- example
-- github
-- handling
-- latch
-- latency
-- log
-- open source
+- worker
 - pg_plugins
 - postgres
 - postgresql
-- postmaster
-- project
-- shared memory
-- sighup
-- signal
-- sigterm
-- worker
+
 ---
 
 Similarly to a normal PostgreSQL child process, a custom background worker should be running using a loop that can be interrupted with signals to update a given status or simply exit the process. Two types of signals are handled by custom background workers in the PostgreSQL architecture: SIGHUP and SIGTERM.

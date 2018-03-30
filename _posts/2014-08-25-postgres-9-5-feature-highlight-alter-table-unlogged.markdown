@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- unlogged
-- table
-- reverse
-- permanent
 - wal
-- crash
-- safe
-- switch
+- unlogged
 
 ---
 

@@ -10,20 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- api
-- data
-- database
-- feature
-- function
 - json
-- manipulation
-- open source
 - operator
 - postgres
 - postgresql
-- process
-- read
-- write
+
 ---
 
 Postgres 9.3 is going to be a great release for JSON data type. After having a look at the [new functions for data generation](/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/), let's look at the new JSON features that the commit below brings.

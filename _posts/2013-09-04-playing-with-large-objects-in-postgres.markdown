@@ -9,29 +9,11 @@ title: 'Playing with large objects in Postgres'
 categories:
 - PostgreSQL-2
 tags:
-- 2gb
-- 32
-- 4tb
-- 64
-- 9.3
-- big
-- binary
 - blob
-- bytea
-- close
-- database
-- huge
-- large object
-- lo
-- object
-- open
-- open source
 - postgres
 - postgresql
-- seek
-- storage
-- toast
-- truncate
+- object
+
 ---
 PostgreSQL has for ages a feature called [large objects](http://www.postgresql.org/docs/9.2/static/largeobjects.html) allowing to store in the database objects with a... Well... Large size. All those objects are stored in dedicated catalog tables called [pg\_largeobject\_metadata](http://www.postgresql.org/docs/devel/static/catalog-pg-largeobject-metadata.html) for general information like ownership and [pg\_largobject](http://www.postgresql.org/docs/devel/static/catalog-pg-largeobject.html) for the data itself, data divided into pages of 2kB (default size, defined as BLCKSZ/4). This feature got its major upgrade in 9.0 with the introduction of ownership of a large object and 9.3 with the maximum size of an object increased to 4TB. This maximum size was 2GB in versions prior to 9.2. One of the main advantages of a large object is its maximum size, which is particularly convenient compared for example to [TOAST](http://www.postgresql.org/docs/devel/static/storage-toast.html) whose maximum size is 1GB (an internal storage system that stores objects larger than a single page, usually 8kB).
 

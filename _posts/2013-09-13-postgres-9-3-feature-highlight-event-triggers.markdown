@@ -10,20 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- alter
-- create
-- database
-- ddl
-- drop
-- event
-- feature
-- object
-- open source
 - postgres
-- release
-- replication
-- table
+- postgresql
+- event
 - trigger
+
 ---
 Event triggers is a new kind of statement-based trigger added in PostgreSQL 9.3. Compared to normal triggers fired when DML queries run on a given table, event triggers are fired for DDL queries and are global to a database. The use cases of event triggers are various.
 

@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- extension
 - brin
-- indexes
-- feature
-- highlight
-- scan
-- order
-- sequential
-- scale
+- index
 
 ---
 

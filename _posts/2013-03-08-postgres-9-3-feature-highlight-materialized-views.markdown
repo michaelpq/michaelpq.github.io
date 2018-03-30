@@ -10,20 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- automatic
-- data
-- feature
-- highlight
 - materialized
-- new
-- open source
+- view
 - postgres
 - postgresql
-- refresh
-- relation
-- table
-- unlogged
-- view
+
 ---
 
 PostgreSQL 9.3 comes with a pretty cool feature called [materialized views](http://www.postgresql.org/docs/devel/static/rules-materializedviews.html). It has been created by Kevin Grittner and committed by the same person not so long ago.

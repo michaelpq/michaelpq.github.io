@@ -10,28 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- 9.4
-- api
-- architecture
 - background
-- control
-- daemon
-- extension
-- fdw
-- framework
-- interface
-- maintenance
-- modification
-- module
-- new
+- worker
 - postgres
 - postgresql
-- postmaster
-- process
-- server
-- structure
-- update
-- worker
+
 ---
 
 Just to make a short recall, [Background worker](http://www.postgresql.org/docs/9.3/static/bgworker.html) is a new plug-in facility similar to hook, extension or FDW, but this time allowing to run customized code in a daemon process managed by the postmaster. This allows, without modifying the core code of the Postgres server, to run automatic maintenance tasks, to collect statistics or to do more fancy stuff like running for example a licence checker for a Postgres server running in a cloud (do what you want with this idea...). However, all the people that have begun development of a background worker module based on PostgreSQL 9.3 beta1 or beta2 need to be aware that there have been modifications in the APIs used by this facility. Those modifications have been made for a couple of reasons.

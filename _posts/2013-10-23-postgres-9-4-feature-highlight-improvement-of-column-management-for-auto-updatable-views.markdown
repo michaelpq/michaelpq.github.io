@@ -10,22 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- automatic
-- column
-- data
-- database
-- development
-- granularity
-- level
-- object
-- open source
 - postgres
 - postgresql
-- relation
-- table
-- tuple
-- updatable
 - view
+
 ---
 Auto-updatable views have a new feature in Postgres 9.4 thanks to a patch allowing only a portion of columns to be updatable. Here is the commit introducing the feature:
 

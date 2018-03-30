@@ -10,28 +10,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- clause
-- database
-- delete
-- feature
-- foreign
-- group by
-- having
-- insert
-- limit
-- local
-- offset
-- open source
-- order by
+- fdw
+- write
 - postgres
 - postgresql
-- read
-- remote
-- select
-- shippable
-- update
-- wrapper
-- write
+- dml
+
 ---
 
 A new set of APIs for foreign data wrappers has been added to allow writable operations on foreign sources. This feature has been committed by Tom Lane a couple of days ago.

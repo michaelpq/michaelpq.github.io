@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- feature
-- gin
-- indexes
-- page
-- raw
-- compression
-- content
-- view
 - pageinspect
+- gin
 
 ---
 

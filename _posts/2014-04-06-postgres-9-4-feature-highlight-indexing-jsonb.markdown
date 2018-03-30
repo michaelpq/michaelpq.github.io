@@ -12,20 +12,9 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
+- index
 - json
-- jsonb
-- gin
-- gist
-- operator
-- function
-- procedure
-- data
-- type
-- storage
-- document
-- mongodb
+
 ---
 PostgreSQL 9.4 is shipping with a new feature called [jsonb]
 (http://www.postgresql.org/docs/devel/static/datatype-json.html), which is a

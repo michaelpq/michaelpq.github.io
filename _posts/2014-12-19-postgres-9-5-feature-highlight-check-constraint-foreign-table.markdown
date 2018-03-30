@@ -11,21 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
-- foreign
-- data
-- wrapper
 - check
-- constraint
-- declarative
-- planner
-- performance
-- remote
-- save
+- fdw
 
 ---
 

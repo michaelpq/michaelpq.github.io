@@ -12,22 +12,10 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
 - logical
-- decoding
 - replication
-- output
-- format
-- insert
-- dml
-- transaction
 - plugin
-- development
-- flexible
-- changes
-- callback
-- functions
+
 ---
 Continuing on the series of posts about logical replication and after
 looking at [some basics]

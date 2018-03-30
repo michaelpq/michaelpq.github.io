@@ -11,17 +11,11 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
+- logical
+- replication
 - chain
-- reaction
-- change
-- application
-- query
-- dml
-- insert
+
 ---
 Working with logical replication and a cluster of nodes heavily linked
 among each other can result in particularly disturbing results. If a

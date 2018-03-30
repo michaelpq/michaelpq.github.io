@@ -12,19 +12,9 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- feature
-- highlight
-- with
-- ordinality
-- sql
-- set
-- returning
-- function
-- row
-- tuple
-- ordering
-- unnest
 - array
+- ordinality
+
 ---
 PostgreSQL 9.4 is going to be shipped with a feature of the SQL standard called [WITH ORDINALITY](http://www.postgresql.org/docs/devel/static/functions-srf.html). It has been introduced by this commit:
 

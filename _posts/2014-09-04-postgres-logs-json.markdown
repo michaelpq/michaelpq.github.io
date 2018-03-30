@@ -11,17 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- extension
-- load
-- logging
-- server
-- information
+- log
 - json
-- object
-- hook
 
 ---
 

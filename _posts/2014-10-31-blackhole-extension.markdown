@@ -11,16 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- template
-- extension
 - blackhole
-- default
-- structure
-- makefile
-- module
+- pg_plugins
 
 ---
 

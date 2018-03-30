@@ -11,20 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
-- new
-- feature
 - json
-- jsonb
-- document
-- powerful
-- mongodb
-- search
-- gist
-- indexes
+- index
+
 ---
 The [jsonb datatype]
 (http://www.postgresql.org/docs/devel/static/datatype-json.html) newly

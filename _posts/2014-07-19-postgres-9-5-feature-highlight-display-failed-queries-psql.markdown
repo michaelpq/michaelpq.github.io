@@ -11,19 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
+- error
 - psql
-- mode
-- client
-- failed
-- query
-- echo
-- option
+
 ---
 Postgres 9.5 is coming up with a new ECHO mode for [psql]
 (http://www.postgresql.org/docs/devel/static/app-psql.html) that has been

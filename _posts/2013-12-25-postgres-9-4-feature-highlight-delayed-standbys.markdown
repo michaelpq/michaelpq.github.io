@@ -10,24 +10,12 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- data
-- delay
-- deletion
-- feature
-- fix
-- highlight
-- late
-- master
-- mistake
-- new
 - postgres
 - postgresql
-- recovery
-- replay
-- slave
-- standby
-- time
+- replication
 - wal
+- delay
+
 ---
 Postgres 9.4 has added a new feature allowing to delay WAL replay on standbys
 or even to delay recovery by a given amount of time. It has been introduced by

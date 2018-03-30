@@ -11,17 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
-- 9.5
 - vacuum
-- vacuumdb
-- utility
-- job
 - parallel
-- cleanup
 
 ---
 

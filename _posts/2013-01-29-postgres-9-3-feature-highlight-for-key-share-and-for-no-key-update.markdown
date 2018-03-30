@@ -10,23 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- contention
-- database
-- delete
-- dml
-- feature
-- for key
-- for share
-- for update
-- highlight
-- key
 - lock
-- open source
-- performance
 - postgres
 - postgresql
-- trigger
-- update
+
 ---
 Prior to PostgreSQL 9.3, there are two levels of locks allowing to control DML
 operations on a given set of rows for a transaction by using SELECT FOR SHARE

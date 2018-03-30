@@ -11,17 +11,11 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
-- new
-- feature
-- replication
 - logical
+- replication
 - protocol
-- start
-- slot
+
 ---
 When developing a logical change receiver with the new [logical decoding]
 (http://www.postgresql.org/docs/devel/static/logicaldecoding.html) facility

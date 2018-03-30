@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- receive
-- synchronous
-- xlog
 - wal
-- fsync
-- flush
-- improvements
-- interval
+- pg_receivexlog
 
 ---
 

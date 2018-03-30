@@ -10,20 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- checksum
-- database
-- diff
-- differential
-- feature
-- highlight
-- hint bits
-- information
-- open source
 - pg_rewind
 - postgres
 - postgresql
-- transaction
 - wal
+
 ---
 In PostgreSQL terminology, hint bints are a page-level mechanism implemented to be able to guess the visibility status of a tuple directly at the page level (actually whether the tuple xmin or xmax is committed or aborted), without going though checks in pg\_clog and pg\_subtrans which are expensive. This is part of the field t\_infomask in HeapTupleHeaderData of htup\_details.h, a set of bits telling about more or less the tuple status on a page.
 

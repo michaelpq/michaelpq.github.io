@@ -10,21 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- availability
-- database
-- feature
-- highlight
-- module
-- monitoring
-- open source
-- pg
 - pg_isready
-- ping
 - postgres
 - postgresql
-- query
-- select 1
-- server
+- monitoring
+
 ---
 
 PostgreSQL 9.3 adds a new feature related to monitoring with the commit below.

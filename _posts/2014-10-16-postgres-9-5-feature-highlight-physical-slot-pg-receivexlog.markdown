@@ -11,18 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- slot
 - replication
-- control
+- slot
 - pg_receivexlog
-- physical
-- stream
 
 ---
 

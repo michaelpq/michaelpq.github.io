@@ -11,21 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
 - reindex
-- indexes
-- catalog
-- pg_catalog
-- system
-- schema
-- table
-- reshape
-- corrupt
-- fix
 
 ---
 

@@ -10,18 +10,9 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- commit
-- copy
-- data
-- database
-- feature
-- freeze
-- open source
-- performance
 - postgres
 - postgresql
-- release
-- vacuum
+- copy
 
 ---
 

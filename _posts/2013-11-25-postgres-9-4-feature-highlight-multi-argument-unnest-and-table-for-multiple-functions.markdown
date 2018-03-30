@@ -10,24 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- argument
-- array
-- data
-- development
-- from
-- function
-- group by
-- join
-- multiple
-- open source
-- ordinality
 - postgres
 - postgresql
-- select
-- set
-- table
 - unnest
-- whole
+- array
+
 ---
 A new feature making possible to specify multiple functions with TABLE inside a FROM clause has made its way in Postgres. The same commit adds support for [unnest](http://www.postgresql.org/docs/devel/static/functions-array.html) with multiple arguments as well.
 

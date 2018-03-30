@@ -12,26 +12,11 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- development
 - wal
-- write ahead log
 - lsn
-- feature
-- highlight
-- datatype
-- xlog
-- log
-- sequence
-- number
-- recovery
-- bytes
-- comparison
-- operator
-- content
-- validation
+
 ---
+
 In PostgreSQL terminology, an LSN (Log Sequence Number) is a 64-bit integer
 used to determine a position in
 [WAL](http://www.postgresql.org/docs/devel/static/wal-intro.html) (Write

@@ -9,19 +9,11 @@ title: 'Postgres devel - some psql tricks'
 categories:
 - PostgreSQL-2
 tags:
-- addition
-- application
-- catalog
-- client
-- development
-- feature
 - postgres
 - postgresql
 - psql
-- psqlrc
-- query
-- setting
 - trick
+
 ---
 
 psql, the command client delivered with postgres core, has many options and is in this way highly customizable. For example, you can use a ~/.psqlrc file to upload automatically some customized settings when launching psql. Here are some general tips to be aware off as a common user.

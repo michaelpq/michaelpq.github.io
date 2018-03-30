@@ -10,21 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- abort
-- behavior
-- block
-- commit
-- constraint
-- database
-- local
-- new
-- open source
-- outside
 - postgres
 - postgresql
-- rollback
-- set
 - transaction
+- rollback
+
 ---
 Here is something to be aware of if you have a couple of scripts relying on this behavior: ROLLBACK, ABORT and SET behavior have been changed in PostgreSQL 9.4. The modification has been introduced by this commit:
 

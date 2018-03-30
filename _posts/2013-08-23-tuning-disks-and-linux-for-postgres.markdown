@@ -9,32 +9,11 @@ title: 'Tuning disks and Linux for Postgres'
 categories:
 - PostgreSQL-2
 tags:
-- access
-- ahead
-- blockdev
-- cache
-- data
-- database
-- disk
-- ext3
-- ext4
-- file system
-- getra
-- linux
-- measurement
-- open source
 - postgres
 - postgresql
-- raid
-- read
-- readahead
-- scan
-- sequential
-- setra
-- table
-- test
+- linux
 - tuning
-- zfs
+
 ---
 
 Tuning the OS on which is running a database server is important to get good performance for an application. There are many tricks to know when tuning a system, being generally dependent on the application used and the hardware on which the system is running. Here are some general guidelines that you could get inspiration from when tuning your own environment.

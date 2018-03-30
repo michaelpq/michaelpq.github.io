@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- highlight
 - 9.5
 - memory
-- allocation
-- extension
-- developer
-- oom
-- out
-- suppress
-- bypass
-- backup
+- error
 
 ---
 

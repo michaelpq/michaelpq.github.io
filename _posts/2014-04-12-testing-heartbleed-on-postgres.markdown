@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
 - security
-- vulnerability
 - ssl
-- openssl
-- secret
-- secure
-- heartbleed
-- blood
-- heart
-- password
-- hack
-- script
+
 ---
 Except if you have been cut from the Internet the last week, you have already
 heard of [Heartbleed](http://heartbleed.com/). This good candidate for the "Bug

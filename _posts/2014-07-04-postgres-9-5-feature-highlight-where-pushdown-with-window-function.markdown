@@ -11,22 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- clause
-- window
-- subquery
-- query
-- function
 - pushdown
-- performance
-- data
-- population
-- fast
+
 ---
 Postgres 9.5 is going to improve the performance of subqueries using window
 functions by allowing the pushdown of WHERE clauses within them. Here is a

@@ -12,18 +12,9 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
 - logical
-- decoding
 - replication
-- upgrade
-- rolling
-- multimaster
-- core
-- module
-- plugin
-- decoder
+
 ---
 The second huge feature coming in PostgreSQL 9.4 with [jsonb]
 (postgresql-2/postgres-9-4-feature-highlight-indexing-jsonb/) is called

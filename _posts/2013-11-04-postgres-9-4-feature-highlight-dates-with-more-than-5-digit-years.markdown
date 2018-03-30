@@ -10,18 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- base
-- cast
-- database
-- date
-- development
-- digit
-- open source
 - postgres
-- timestamp
-- timezone
-- transfer
-- year
+- postgresql
+- date
+
 ---
 When managing an MMORPG server of a science-fiction game, you may have noticed that all the dates that Postgres could store were limited to 4 digits for a YMD (Year/Month/Date), HMS (Hour/Minute/Second) or a year. This behavior has been improved with the following commit:
 

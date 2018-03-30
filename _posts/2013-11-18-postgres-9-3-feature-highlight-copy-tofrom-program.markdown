@@ -10,25 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- compression
-- copy
-- curl
-- data
-- database
-- feature
-- from
-- gzip
-- input
-- json
-- open source
-- output
-- plpgsql
 - postgres
 - postgresql
+- copy
 - program
-- separator
-- to
-- treat
+
 ---
 Postgres 9.3 brings a new option for [COPY](http://www.postgresql.org/docs/devel/static/sql-copy.html) allowing to pipe data with an external program, both in input and output. This feature has been added in the following commit:
 

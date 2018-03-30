@@ -11,16 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
-- new
-- feature
-- indexes
 - gist
-- inet
-- cidr
+- index
+
 ---
 Postgres 9.4 is adding a new in-core GiST operator class for the [inet and cidr]
 (http://www.postgresql.org/docs/9.4/static/datatype-net-types.html#DATATYPE-INET)

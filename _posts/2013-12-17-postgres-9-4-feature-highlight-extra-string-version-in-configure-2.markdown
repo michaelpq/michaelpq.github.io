@@ -10,19 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- application
-- build
-- cloud
-- configure
-- custom
-- database
-- development
-- pg_version
-- pg_version_num
 - postgres
 - postgresql
-- string
-- version
+- configure
+
 ---
 Today's post presents a small utility that has been added during the latest commit fest of Postgres: the possibility to add some custom information in version stream during a server build. It has been introduced by this commit.
 

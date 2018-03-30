@@ -11,16 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- process
-- ps
-- tracking
-- output
+- monitoring
+
 ---
 Here is a small feature that has showed up during the [first commit fest]
 (https://commitfest.postgresql.org/action/commitfest_view?id=22) of

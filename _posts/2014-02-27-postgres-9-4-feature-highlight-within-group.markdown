@@ -12,20 +12,11 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- development
-- aggregate
-- within
-- group
-- order
-- set
-- generic
-- specification
-- sql
-- rank
 - percentile
+- group
+
 ---
+
 PostgreSQL 9.4 is going to be shipped with a feature called ordered-set
 aggregates. This can be used with a new clause called WITHIN GROUP. All
 those things have been introduced by the following commit.

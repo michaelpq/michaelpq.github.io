@@ -11,21 +11,10 @@ categories:
 tags:
 - 9.3
 - background
-- bgworker
-- control
-- custom
-- database
-- free
-- hello world
-- latch
-- latency
-- log
-- open source
+- worker
 - postgres
 - postgresql
-- postmaster
-- shared memory
-- worker
+
 ---
 
 Based on my [previous experience using custom background workers](/postgresql-2/postgres-9-3-feature-highlight-custom-background-workers/) (new feature of PostgreSQL 9.3), here is more detailed example of bgworker doing a simple "Hello World" in the server logs.

@@ -9,21 +9,11 @@ title: 'First steps with pgbouncer, how to set and run it '
 categories:
 - PostgreSQL-2
 tags:
-- compile
-- connection
-- database
-- idle
-- maximum
-- open source
-- pgbouncer
 - pooling
 - postgres
 - postgresql
-- query
-- run
-- session
-- settings
-- transaction
+- pgbouncer
+
 ---
 
 pgbouncer is a connection pooling utility that can be plugged on top of a PostgreSQL server. It can be used to limit the maximum number of connections on server side by managing a pool of idle connections that can be used by any applications. Something particularly good about pgbouncer is that it offers the same level of transparency as a normal PostgreSQL server when an application connects to it. Also, the project is mature for years, its code is stable and is used in many production environments.

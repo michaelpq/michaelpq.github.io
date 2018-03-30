@@ -9,23 +9,10 @@ title: 'Postgres module highlight - customize passwordcheck to secure your datab
 categories:
 - PostgreSQL-2
 tags:
-- break
-- case
-- character
-- database
-- hacker
-- length
-- lower
-- number
-- password
-- policy
 - postgres
 - postgresql
-- protection
-- punctuation
-- security
-- special
-- upper
+- passwordcheck
+
 ---
 [passwordcheck](http://www.postgresql.org/docs/current/static/passwordcheck.html) is a contrib module present in PostgreSQL core using a [hook](/postgresql-2/hooks-in-postgres-super-superuser-restrictions/) present in server code when creating or modifying a role with CREATE/ALTER ROLE/USER able to check a password. This hook is present in src/backend/commands/user.c and called check\_password\_hook if you want to have a look. This module basically checks the password format and returns an error to the user if the password does not satisfy the conditions defined in the module.
 

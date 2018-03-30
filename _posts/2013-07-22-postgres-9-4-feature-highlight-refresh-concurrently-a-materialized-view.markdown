@@ -10,16 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.4
-- awesome
-- concurrently
-- database
-- development
-- incremental
-- materialized view
-- open source
+- materialized
+- view
 - postgres
 - postgresql
-- refresh
+
 ---
 
 Postgres 9.3 has introduced the first features related to [materialized views](/postgresql-2/postgres-9-3-feature-highlight-materialized-views/). The upcoming version of Postgres is adding many basic things like the possibility to create, manage and refresh a materialized views. However, materialized views in Postgres 9.3 have a severe limitation consisting in using an exclusive lock when refreshing it. This basically blocks any attempts to read a materialized view while it is being refreshed with new data from its parent relations, which is particularly a handicap for large materialized views on production servers.

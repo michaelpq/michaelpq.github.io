@@ -12,20 +12,12 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- development
 - copy
-- string
-- not
-- null
 - force
-- quote
-- convention
-- file_fdw
-- force_null
-- force_not_null
+- null
+
 ---
+
 When using [COPY](http://www.postgresql.org/docs/devel/static/sql-copy.html),
 there is an option called FORCE_NOT_NULL allowing to enforce a string to be
 not null even if it is not quoted. Here is an example of how it works:

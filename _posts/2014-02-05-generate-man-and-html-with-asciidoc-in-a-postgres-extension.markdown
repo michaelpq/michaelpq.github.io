@@ -9,24 +9,11 @@ title: 'Generate man and html with asciidoc in a Postgres extension'
 categories:
 - PostgreSQL-2
 tags:
-- asciidoc
-- documentation
-- extension
-- generate
-- git
-- html
-- ignore
-- man
-- manage
-- module
-- pages
-- pgbouncer
-- pg_arman
-- pg_rman
-- plug-in
 - postgres
 - postgresql
-- recovery
+- pg_plugins
+- documentation
+
 ---
 When writing an [extension](http://www.postgresql.org/docs/devel/static/extend.html) or module for PostgreSQL, having proper regressions tests and documentation are important things (with actually useful features!) to facilitate its acceptance.
 

@@ -11,20 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
 - windows
-- os
-- version
-- file
-- description
-- improvement
-- upgrade
-- track
 
 ---
 

@@ -11,16 +11,7 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- session
-- preload
-- library
-- load
 - 9.4
-- highlight
-- feature
 - session_preload_libraries
 
 ---

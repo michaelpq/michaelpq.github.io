@@ -11,19 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- foreign
-- table
-- import
-- spec
-- wrapper
 - fdw
 - schema
+
 ---
 [IMPORT FOREIGN SCHEMA]
 (http://www.postgresql.org/docs/devel/static/sql-importforeignschema.html)

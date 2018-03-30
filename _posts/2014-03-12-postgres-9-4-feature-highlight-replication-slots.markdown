@@ -12,22 +12,10 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
-- development
+- wal
 - replication
 - slot
-- wal
-- pg_xlog
-- wal
-- file
-- replay
-- track
-- keep
-- conserve
-- monitor
-- physical
-- replication
+
 ---
 Replication slots is a new feature of PostgreSQL 9.4 that has been introduced
 by this commit:

@@ -11,20 +11,9 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.4
-- new
-- feature
-- installation
 - windows
-- microsoft
-- msvc
-- binary
-- library
-- client
-- limited
+
 ---
 Today here is a highlight of a new Postgres 9.4 feature interesting for
 developers and companies doing packaging of Postgres on Windows as it

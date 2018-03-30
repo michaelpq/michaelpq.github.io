@@ -10,22 +10,11 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- column
-- contrib
-- data
-- database
-- explain
 - fdw
 - foreign
-- module
-- open source
-- password
 - postgres
 - postgresql
-- query
-- scan
-- table
-- wrapper
+
 ---
 
 Up to Postgres 9.2, the only foreign data wrapper present in core was file\_fdw, allowing you to query files as remote tables. This has been corrected with the addition of a second foreign data wrapper called postgres\_fdw. This one simply allows to query foreign Postgres servers and fetch results directly on your local server. It has been introduced by this commit.

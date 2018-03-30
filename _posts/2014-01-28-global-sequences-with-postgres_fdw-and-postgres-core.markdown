@@ -10,22 +10,10 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- connection
-- feature
-- foreign data
-- global
-- open source
 - postgres
 - postgresql
-- postgres_fdw
-- primary key
-- relation
-- remote
 - sequence
-- server
-- table
-- view
-- wrapper
+
 ---
 The new foreign data wrapper available with PostgreSQL core called
 [postgres\_fdw](http://www.postgresql.org/docs/devel/static/postgres-fdw.html)

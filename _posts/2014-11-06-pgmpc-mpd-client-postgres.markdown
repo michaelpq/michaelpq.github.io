@@ -11,17 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
-- extension
-- mpd
 - music
-- control
-- playlist
-- daemon
-- player
-- song
+- pg_plugins
 
 ---
 

@@ -9,24 +9,11 @@ title: 'About regression tests with Postgres plug-in modules'
 categories:
 - PostgreSQL-2
 tags:
-- bash
-- check
-- data
-- database
-- extension
-- fdw
-- hook
-- installcheck
-- module
-- open source
-- plug-in
 - postgres
 - postgresql
-- production
+- pg_plugins
 - regression
-- script
-- storage
-- test
+
 ---
 PostgreSQL is made to be pluggable. With many types of plug-in structures available directly in core that make the development of external tools or even modules that can be directly be uploaded in a server with an untouched core code, there are many ways for a developer to develop a solution with things like [hooks](http://wiki.postgresql.org/images/e/e3/Hooks_in_postgresql.pdf), [foreign data wrappers](http://wiki.postgresql.org/wiki/Foreign_data_wrappers), [background workers](http://www.postgresql.org/docs/9.3/static/bgworker.html), custom data types, (index) operators, functions, aggregates that can be loaded through [extensions](http://www.postgresql.org/docs/9.1/static/sql-createextension.html) or defined as they are.
 

@@ -12,20 +12,10 @@ tags:
 - postgres
 - postgresql
 - 9.4
-- open source
-- database
 - logical
-- decoding
 - replication
 - identity
-- replica
-- indexes
-- delete
-- update
-- table
-- relation
-- copy
-- transfer
+
 ---
 Among the many things to say about logical replication features added in
 PostgreSQL 9.4, [REPLICA IDENTITY](http://www.postgresql.org/docs/devel/static/sql-altertable.html)

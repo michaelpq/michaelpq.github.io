@@ -11,17 +11,10 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
+- monitoring
 - replication
-- command
-- audit
-- view
-- logging
+- log
 
 ---
 

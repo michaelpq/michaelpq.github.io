@@ -11,19 +11,8 @@ categories:
 tags:
 - postgres
 - postgresql
-- open source
-- database
-- development
 - 9.5
-- new
-- feature
-- row
-- level
-- tuple
-- security
-- check
-- user
-- policy
+- lock
 
 ---
 
