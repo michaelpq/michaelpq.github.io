@@ -9,7 +9,7 @@ title: Graphs in GIT
 categories:
 - Linux-2
 tags:
-- configuration
+- configure
 - git
 - git-core
 - graph

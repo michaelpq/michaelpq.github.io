@@ -44,7 +44,6 @@ tags:
   * [collation](/tag/collation/)
   * [compression](/tag/compression/)
   * [conference](/tag/conference/)
-  * [configuration](/tag/configuration/)
   * [configure](/tag/configure/)
   * [connection](/tag/connection/)
   * [copy](/tag/copy/)
