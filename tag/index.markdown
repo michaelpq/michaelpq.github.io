@@ -162,7 +162,6 @@ tags:
   * [sequence](/tag/sequence/)
   * [serial](/tag/serial/)
   * [sharding](/tag/sharding/)
-  * [shippable](/tag/shippable/)
   * [shipping](/tag/shipping/)
   * [shutdown](/tag/shutdown/)
   * [slot](/tag/slot/)

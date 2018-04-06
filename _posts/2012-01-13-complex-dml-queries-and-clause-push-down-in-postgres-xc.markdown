@@ -14,7 +14,7 @@ tags:
 - postgres
 - postgresql
 - pushdown
-- shippable
+- shipping
 
 ---
 
