@@ -11,7 +11,6 @@ categories:
 tags:
 - configure
 - git
-- git-core
 - graph
 - log
 

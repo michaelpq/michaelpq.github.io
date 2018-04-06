@@ -72,7 +72,6 @@ tags:
   * [generation](/tag/generation/)
   * [gin](/tag/gin/)
   * [gist](/tag/gist/)
-  * [git-core](/tag/git-core/)
   * [git](/tag/git/)
   * [graph](/tag/graph/)
   * [group](/tag/group/)
