@@ -10,7 +10,7 @@ categories:
 - PostgreSQL-2
 tags:
 - 9.3
-- cascading
+- cascade
 - postgres
 - postgresql
 - replication
