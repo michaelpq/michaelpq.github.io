@@ -12,7 +12,7 @@ tags:
 - pg_reorg
 - postgres
 - postgresql
-- reorganization
+- reorganize
 - vacuum
 
 ---

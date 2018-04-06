@@ -149,7 +149,6 @@ tags:
   * [regression](/tag/regression/)
   * [reindex](/tag/reindex/)
   * [remote](/tag/remote/)
-  * [reorganization](/tag/reorganization/)
   * [reorganize](/tag/reorganize/)
   * [replication](/tag/replication/)
   * [rewind](/tag/rewind/)
