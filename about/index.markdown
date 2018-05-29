@@ -28,7 +28,7 @@ tags:
 ---
 
 This [blog](/) is maintained by Michael Paquier, currently living in Japan,
-acting as a contributor of the [PostgreSQL](http://postgresql.org/) and
+acting as a contributor of the [PostgreSQL](https://postgresql.org/) and
 involved in its community for a couple of years now. Main areas of focus
 are multiple, with authorship in many in-core features as well as bug fixes
 and patch reviews.
