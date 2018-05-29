@@ -28,14 +28,14 @@ for the upcoming 9.5 release:
     with input from David G. Johnston, Robert Haas, Michael Paquier
 
 Particularly useful for system doing a lot of [server parameter]
-(http://www.postgresql.org/docs/devel/static/runtime-config.html) updates,
+(https://www.postgresql.org/docs/devel/static/runtime-config.html) updates,
 this allows tracking parameters in need of a server restart when their
 value is updated to have the new value take effect on the system.
 Note that this applies to all the parameters marked as PGC_POSTMASTER
 in guc.c, shared\_buffers being one, as well as the custom parameters a
 system may have after their load by a plugin. This information is tracked
 by a new column called pending\_restart in the system view [pg\_settings]
-(http://www.postgresql.org/docs/devel/static/view-pg-settings.html) with
+(https://www.postgresql.org/docs/devel/static/view-pg-settings.html) with
 a boolean value set to "true" if a given GUC parameter is indeed waiting for
 a server restart.
 

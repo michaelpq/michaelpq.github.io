@@ -27,7 +27,7 @@ Today's post presents a small utility that has been added during the latest comm
  
     From: Oskari Saarenmaa
 
-This new option needs to be specified when running [configure](http://www.postgresql.org/docs/devel/static/install-procedure.html) with a new option called --with-extra-version. This is particularly interesting when creating custom builds of PostgreSQL without modifying the core code. I can imagine easily that there are many custom scripts in the wild using many sed commands to do exactly the same work, so this will help in simplifying a bit such mechanisms (personal note: some of my scripts do that actually).
+This new option needs to be specified when running [configure](https://www.postgresql.org/docs/devel/static/install-procedure.html) with a new option called --with-extra-version. This is particularly interesting when creating custom builds of PostgreSQL without modifying the core code. I can imagine easily that there are many custom scripts in the wild using many sed commands to do exactly the same work, so this will help in simplifying a bit such mechanisms (personal note: some of my scripts do that actually).
 
 Once used, this will generate new versions strings for the variables PG\_VERSION and PG\_VERSION\_STR that are completed with the custom string, using it as a suffix to the existing version identifier. Here is how the version string is generated with a simple example:
 

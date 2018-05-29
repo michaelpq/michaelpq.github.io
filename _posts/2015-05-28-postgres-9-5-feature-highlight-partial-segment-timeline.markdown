@@ -18,7 +18,7 @@ tags:
 ---
 
 Postgres 9.5 is bringing a change in the way WAL is archived with the following
-[commit](http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=de768844):
+[commit](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=de768844):
 
     commit: de7688442f5aaa03da60416a6aa3474738718803
     author: Heikki Linnakangas <heikki.linnakangas@iki.fi>

@@ -17,7 +17,7 @@ tags:
 
 ---
 
-The [following feature]( http://git.postgresql.org/pg/commitdiff/19dc233c32f2900e57b8da4f41c0f662ab42e080)
+The [following feature]( https://git.postgresql.org/pg/commitdiff/19dc233c32f2900e57b8da4f41c0f662ab42e080)
 has landed in Postgres 10 to help system administrators:
 
     commit: 19dc233c32f2900e57b8da4f41c0f662ab42e080

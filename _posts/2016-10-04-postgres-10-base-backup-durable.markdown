@@ -23,7 +23,7 @@ WAL segments. In short, the goal is for users to be sure that any data
 taken from Postgres using the in-core tools is still present and consistent
 on disk even if a power failure occurs once the binary writing and flushing
 the data is done. A couple of days ago the following
-[commit](http://git.postgresql.org/pg/commitdiff/bc34223bc1e2c51dff2007b3d3bd492a09b5a491)
+[commit](https://git.postgresql.org/pg/commitdiff/bc34223bc1e2c51dff2007b3d3bd492a09b5a491)
 has landed in the code tree to improve the situation for pg\_basebackup and
 pg\_receivexlog:
 
@@ -59,7 +59,7 @@ Note that by default pg\_basebackup will flush the data when it thinks
 it is necessary to do so, for both the tar and normal format. For people
 caring more about about performance that data consistency, a new --nosync
 option has been added to pg\_basebackup with this
-[commit](http://git.postgresql.org/pg/commitdiff/6ed2d8584cc680a2d6898480de74a57cd96176b5).
+[commit](https://git.postgresql.org/pg/commitdiff/6ed2d8584cc680a2d6898480de74a57cd96176b5).
 to emulate the pre-10 behavior. Though it is very encouraged to not use
 it except for test environments if you care about your data. This is not
 present for pg\_receivexlog because in its case reliability is the priority,

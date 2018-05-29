@@ -18,7 +18,7 @@ tags:
 
 This short manual targets PostgreSQL users looking for a smooth introduction to dblink.
 
-[dblink](http://www.postgresql.org/docs/9.1/static/dblink.html) is a PostgreSQL contrib module that can be found in the folder contrib/dblink. It is treated as an extension, meaning that the installation of this module is in two phases, explained in this post a bit later.
+[dblink](https://www.postgresql.org/docs/9.1/static/dblink.html) is a PostgreSQL contrib module that can be found in the folder contrib/dblink. It is treated as an extension, meaning that the installation of this module is in two phases, explained in this post a bit later.
 The goal of this module is to provide simple functionalities to connect and interact with remote database servers from a given PostgreSQL server to which your client application or driver is connected.
 
 The first thing that you need to do is to install the sources of dblink. You can do it easily by installing all the modules of PostgreSQL at once from source code.

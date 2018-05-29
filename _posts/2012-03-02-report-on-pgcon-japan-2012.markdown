@@ -17,11 +17,11 @@ tags:
 
 ---
 
-A PostgreSQL conference has happened on the 24th of February in Tokyo, Shinagawa, event organized by [JPUG (Japanese PostgreSQL user's group)](http://www.postgresql.jp/). You can go to [this page](http://www.postgresql.jp/events/pgcon2012) where all the materials of presentations are available. Most of the presentations were in Japanese, but the following ones were in English (links provided to materials if possible):
+A PostgreSQL conference has happened on the 24th of February in Tokyo, Shinagawa, event organized by [JPUG (Japanese PostgreSQL user's group)](https://www.postgresql.jp/). You can go to [this page](https://www.postgresql.jp/events/pgcon2012) where all the materials of presentations are available. Most of the presentations were in Japanese, but the following ones were in English (links provided to materials if possible):
 
   * How a large organisation moved its critical application toward PostgreSQL, By Philippe Beaudoin, special quest of the event.
-  * [An overview of PostgreSQL 9.2](http://www.postgresql.jp/events/pgcon2012/docs/k2.pdf), by Robert Haas
-  * [Postgres-XC, toward 1.0](http://www.postgresql.jp/events/pgcon2012/docs/a2.pdf), well if you are on this blog you might already know who did it and the content of this material
+  * [An overview of PostgreSQL 9.2](https://www.postgresql.jp/events/pgcon2012/docs/k2.pdf), by Robert Haas
+  * [Postgres-XC, toward 1.0](https://www.postgresql.jp/events/pgcon2012/docs/a2.pdf), well if you are on this blog you might already know who did it and the content of this material
 
 As a main summary of the events, I was really surprised by the number of participants, 250 people came from Tokyo and even farer. This resulted in the bad impression that the organizers did not really manage clearly this event because for each presentation, the rooms were completely crowded and there were always people standing up. It is good to see that PostgreSQL has so much success in Japan.
 

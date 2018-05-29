@@ -17,7 +17,7 @@ tags:
 ---
 
 As a preparation of an upcoming patch for full-page write compression in
-[WAL](http://www.postgresql.org/docs/devel/static/wal.html), a patch has
+[WAL](https://www.postgresql.org/docs/devel/static/wal.html), a patch has
 been pushed this week to make PGLZ, the in-core compression algorithm
 of PostgreSQL used for TOAST tables, more pluggable for plugins and frontend
 applications, particularly pg\_xlogdump that needs to be able to decode a WAL
@@ -70,7 +70,7 @@ error). Note: PGLZ is more CPU consuming than other compression algorithms.
 Using those APIs, I implemented a simple extension able to do compression
 and decompression of bytea, combined with a rough copy of the function
 get\_raw\_page already present in the in-core contrib module [pageinspect]
-(http://www.postgresql.org/docs/devel/static/pageinspect.html), with a new
+(https://www.postgresql.org/docs/devel/static/pageinspect.html), with a new
 option able to suppress the hole of a page, replacing with zeros the hole
 of a page if it is wanted as this is more performant for compression. But, in
 any case, any type of bytea data can be passed to the compression and

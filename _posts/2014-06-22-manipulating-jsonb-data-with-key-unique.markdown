@@ -17,7 +17,7 @@ tags:
 
 ---
 The [jsonb datatype]
-(http://www.postgresql.org/docs/devel/static/datatype-json.html) newly
+(https://www.postgresql.org/docs/devel/static/datatype-json.html) newly
 introduced in Postgres 9.4 has a property that makes its manipulation
 rather facilitate when doing operations on it with embedded functions:
 it does not allow duplicated object keys. On the contrary, json allows

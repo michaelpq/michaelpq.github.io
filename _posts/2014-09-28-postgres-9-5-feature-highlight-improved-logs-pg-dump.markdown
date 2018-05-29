@@ -18,7 +18,7 @@ tags:
 ---
 
 The following simple commit has improved the verbose logs of [pg\_dump]
-(http://www.postgresql.org/docs/devel/static/app-pgdump.html) (the
+(https://www.postgresql.org/docs/devel/static/app-pgdump.html) (the
 ones that can be invocated with option -v and that are useful to keep a
 log trace when using cron jobs kicking pg\_dump), by making the schema
 names of the relations dumped show up as well:

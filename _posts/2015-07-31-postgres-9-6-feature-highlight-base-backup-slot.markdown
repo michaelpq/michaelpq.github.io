@@ -53,7 +53,7 @@ if the server faces a peak of activity you may still finish with a
 missing WAL segments on the original node.
 
 Well, this is where [physical replication slots]
-(http://www.postgresql.org/docs/devel/static/warm-standby.html#STREAMING-REPLICATION-SLOTS)
+(https://www.postgresql.org/docs/devel/static/warm-standby.html#STREAMING-REPLICATION-SLOTS)
 are actually useful, because once created and enabled for a given client,
 they are able to retain WAL segments as long at the slot's restart\_lsn
 is not consumed by this client. Now, combined with pg\_basebackup, what

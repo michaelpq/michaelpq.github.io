@@ -17,7 +17,7 @@ tags:
 ---
 
 A nice feature extending the usage of [pgbench]
-(http://www.postgresql.org/docs/devel/static/pgbench.html), in-core
+(https://www.postgresql.org/docs/devel/static/pgbench.html), in-core
 tool of Postgres aimed at doing benchmarks, has landed in 9.5 with this
 commit:
 

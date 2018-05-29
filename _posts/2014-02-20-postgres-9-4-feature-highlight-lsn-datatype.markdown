@@ -19,7 +19,7 @@ tags:
 
 In PostgreSQL terminology, an LSN (Log Sequence Number) is a 64-bit integer
 used to determine a position in
-[WAL](http://www.postgresql.org/docs/devel/static/wal-intro.html) (Write
+[WAL](https://www.postgresql.org/docs/devel/static/wal-intro.html) (Write
 ahead log), used to preserve data integrity. Internally in code, it is
 managed as XLogRecPtr, a simple 64-bit integer. An LSN is represented with
 two hexadecimal numbers of 8 digits each separated with "/". For example,
@@ -41,7 +41,7 @@ the functions using LSN have been using as a substitute "text" to represent
 an LSN number, so all the functions using LSN numbers had to transform
 manual the output into a text before sending back the result to client.
 9.4 improves the situation by using a [datatype dedicated to LSN]
-(http://www.postgresql.org/docs/devel/static/datatype-pg-lsn.html),
+(https://www.postgresql.org/docs/devel/static/datatype-pg-lsn.html),
 introduced by this commit and called pg_lsn:
 
     commit 7d03a83f4d0736ba869fa6f93973f7623a27038a

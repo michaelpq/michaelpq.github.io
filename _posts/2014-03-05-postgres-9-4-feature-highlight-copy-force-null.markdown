@@ -18,7 +18,7 @@ tags:
 
 ---
 
-When using [COPY](http://www.postgresql.org/docs/devel/static/sql-copy.html),
+When using [COPY](https://www.postgresql.org/docs/devel/static/sql-copy.html),
 there is an option called FORCE_NOT_NULL allowing to enforce a string to be
 not null even if it is not quoted. Here is an example of how it works:
 
@@ -42,7 +42,7 @@ not null even if it is not quoted. Here is an example of how it works:
 In this case, even if the values are empty, FORCE_NOT_NULL forces them to
 be inserted as empty strings and not NULL values. Now, let's look at the
 new option FORCE_NULL that is introduced in Postgres 9.4 by this commit,
-feature actually written by [Ian](http://sql-info.de), hacker living in
+feature actually written by [Ian](https://sql-info.de), hacker living in
 Japan as well as the author of this blog.
 
     commit 3b5e03dca2afea7a2c12dbc8605175d0568b5555
@@ -79,7 +79,7 @@ be inserted as NULL even if it is quoted.
      null
     (2 rows)
 
-[file\_fdw](http://www.postgresql.org/docs/devel/static/file-fdw.html) comes
+[file\_fdw](https://www.postgresql.org/docs/devel/static/file-fdw.html) comes
 up as well with a similar new option, and it can be used on columns.
 
     =# CREATE EXTENSION file_fdw;

@@ -16,8 +16,8 @@ tags:
 
 ---
 
-One feature added in Postgres 9.6 is the [WAL generic interface](http://www.postgresql.org/docs/devel/static/generic-wal.html),
-which is a base for more fancy things like [custom access methods](http://www.postgresql.org/docs/devel/static/sql-create-access-method.html).
+One feature added in Postgres 9.6 is the [WAL generic interface](https://www.postgresql.org/docs/devel/static/generic-wal.html),
+which is a base for more fancy things like [custom access methods](https://www.postgresql.org/docs/devel/static/sql-create-access-method.html).
 Note that custom access methods are quite powerful in themselves as they allow
 the development of for example custom index methods as external modules. The
 generic WAL records have been added primarily as the infrastructure to provide
@@ -163,7 +163,7 @@ for the needs of this post):
 Other than this useless extension that would put your database in
 an inconsistent state, Postgres itself has an extension making use of
 the generic WAL interface in a far more advanced way with a contrib
-module called [bloom](http://www.postgresql.org/docs/devel/static/bloom.html),
+module called [bloom](https://www.postgresql.org/docs/devel/static/bloom.html),
 which is a module implementing a custom index method.
 
 Hopefully this is going to give to the reader of this post new ideas,

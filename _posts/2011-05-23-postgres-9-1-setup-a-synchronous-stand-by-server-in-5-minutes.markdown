@@ -19,15 +19,15 @@ tags:
 
 ---
 
-PostgreSQL 9.1 is out, you can download it source code from [here](http://www.postgresql.org/ftp/source/) or use latest GIT repository as I did like this:
+PostgreSQL 9.1 is out, you can download it source code from [here](https://www.postgresql.org/ftp/source/) or use latest GIT repository as I did like this:
 
     mkdir postgres
-    git remote add postgres http://git.postgresql.org/git/postgresql.git
+    git remote add postgres https://git.postgresql.org/git/postgresql.git
     git fetch postgres
     git branch --track master postgres/master
     git checkout master
 
-Asynchronous streaming replication is here since 9.0, but as I keep being always busy with development stuff of [Postgres-XC](http://postgres-xc.sourceforge.net/), I have not taken time to play around with streaming replication and HOT Standby.
+Asynchronous streaming replication is here since 9.0, but as I keep being always busy with development stuff of [Postgres-XC](https://postgres-xc.sourceforge.net/), I have not taken time to play around with streaming replication and HOT Standby.
 As now synchronous streaming replication is going to be released soon (beta 1 at the moment of this post), and that Postgres-XC will soon be merged with PostgreSQL 9.1, I tried to set up a synchronous streaming replication server. This functionality could be used to extend XC so as to make it a full HA solution based on Postgres.
 
 So, let's give it a try.

@@ -16,7 +16,7 @@ tags:
 
 ---
 
-Have you ever heard about [mpd](http://www.musicpd.org/)? It is an open
+Have you ever heard about [mpd](https://www.musicpd.org/)? It is an open
 source music player that works as a server-side application playing
 music, as well as in charge of managing the database of songs, playlists.
 It is as well able to do far more fancy stuff... Either way, mpd has a set
@@ -34,10 +34,10 @@ Postgres.
 
 In order to compile it, be sure to have libmpdclient installed on your
 system. Note as well that pgmpc is shaped as an [extension]
-(http://www.postgresql.org/docs/devel/static/extend-extensions.html), so
+(https://www.postgresql.org/docs/devel/static/extend-extensions.html), so
 once its source is installed it needs to be enabled on a Postgres server
 using [CREATE EXTENSION]
-(http://www.postgresql.org/docs/devel/static/sql-createextension.html).
+(https://www.postgresql.org/docs/devel/static/sql-createextension.html).
 
 Once installed, this list of functions, whose names are inspired from
 the existing interface of mpc, are available.

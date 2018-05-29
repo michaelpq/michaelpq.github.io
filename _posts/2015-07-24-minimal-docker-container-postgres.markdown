@@ -34,7 +34,7 @@ to begin with).
 
 Not all the container images are that large though, there is for example
 one container based on the minimalistic distribution [Alpine Linux]
-(http://alpinelinux.org/), with a size of less than 5MB. Many packages
+(https://alpinelinux.org/), with a size of less than 5MB. Many packages
 are available as well for it so it makes it a nice base image for more
 extended operations. Now, the fact is that even if Alpine Linux does publish
 deliverables for ARM, there are no Docker container around that make
@@ -70,7 +70,7 @@ then (file needs to be named as Dockerfile):
 
     $ cat Dockerfile_postgres
     FROM alpine-armv7l:edge
-    RUN echo http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+    RUN echo https://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
     apk --update && \
     apk add shadow postgresql bash
 
@@ -107,7 +107,7 @@ the following Dockerfile spec for this purpose with some packages needed to
 compile and work on the code:
 
     FROM alpine-armv7l:edge
-    RUN echo http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+    RUN echo https://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
     apk update && \
     apk add shadow bash gcc bison flex git make autoconf
 

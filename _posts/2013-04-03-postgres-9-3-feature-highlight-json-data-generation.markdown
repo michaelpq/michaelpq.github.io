@@ -95,4 +95,4 @@ hstore\_to\_json\_loose can enforce the conversion of boolean and numerical valu
 And now boolean and integer values inserted previously have a better look, no?
 
 Having such tools natively in Postgres core server is really a nice addition for data manipulation and transformation of values into legal JSON.
-However, you need to know that this set of tools is only the top of the iceberg for the JSON features added in 9.3... There are also [new operators and APIs](http://www.postgresql.org/docs/devel/static/functions-json.html), which will be covered in more details with examples in one of my next posts. So... TBC.
+However, you need to know that this set of tools is only the top of the iceberg for the JSON features added in 9.3... There are also [new operators and APIs](https://www.postgresql.org/docs/devel/static/functions-json.html), which will be covered in more details with examples in one of my next posts. So... TBC.

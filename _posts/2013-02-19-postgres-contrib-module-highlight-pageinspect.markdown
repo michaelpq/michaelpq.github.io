@@ -15,9 +15,9 @@ tags:
 
 ---
 
-[pageinspect](http://www.postgresql.org/docs/9.2/static/pageinspect.html) is an extension module of PostgreSQL core allowing to have a look at the contents of relations (index or table) in the database at a low level. In the case of PostgreSQL, tuples of a table are stored in blocks of data whose size can be changed with --with-blocksize at configure step. This module is particularly useful for debugging when implementing a new functionality that changes visibility of data like what could do an autovacuum or map visibility feature, or simply to understand the internals of Postgres without having to read much codea .
+[pageinspect](https://www.postgresql.org/docs/9.2/static/pageinspect.html) is an extension module of PostgreSQL core allowing to have a look at the contents of relations (index or table) in the database at a low level. In the case of PostgreSQL, tuples of a table are stored in blocks of data whose size can be changed with --with-blocksize at configure step. This module is particularly useful for debugging when implementing a new functionality that changes visibility of data like what could do an autovacuum or map visibility feature, or simply to understand the internals of Postgres without having to read much codea .
 
-Without entering in details in the page and page item structures, be sure to have a look at the documentation about [database page layout](http://www.postgresql.org/docs/9.2/static/storage-page-layout.html).
+Without entering in details in the page and page item structures, be sure to have a look at the documentation about [database page layout](https://www.postgresql.org/docs/9.2/static/storage-page-layout.html).
 
 In order to install this module for the source tree, simply do the following.
 

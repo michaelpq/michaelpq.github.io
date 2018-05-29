@@ -18,7 +18,7 @@ tags:
 ---
 
 In Postgres, [full-page writes]
-(http://www.postgresql.org/docs/devel/static/runtime-config-wal.html#RUNTIME-CONFIG-WAL-SETTINGS).
+(https://www.postgresql.org/docs/devel/static/runtime-config-wal.html#RUNTIME-CONFIG-WAL-SETTINGS).
 which are in short complete images of a page added in WAL after the first
 modification of this page after a checkpoint, can be an origin of WAL
 bloat for applications manipulating many relation pages. Note that
@@ -29,7 +29,7 @@ new and old data.
 In Postgres 9.5, the following patch has landed to leverage this quantity of
 "recovery journal" data, by adding the possibility to compress full-page writes
 in WAL (full commit message is shortened for this post and can be found [here]
-(http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=57aa5b2bb11a4dbfdfc0f92370e0742ae5aa367b)):
+(https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=57aa5b2bb11a4dbfdfc0f92370e0742ae5aa367b)):
 
     commit: 57aa5b2bb11a4dbfdfc0f92370e0742ae5aa367b
     author: Fujii Masao <fujii@postgresql.org>
@@ -52,10 +52,10 @@ in WAL (full commit message is shortened for this post and can be found [here]
 As described in this message, a new GUC parameter, called wal\_compression
 by default disabled to not impact existing users, can be used for this
 purpose. The compression of full-write pages is done using PGLZ, that has been
-moved to [libpgcommon](http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=40bede5477bb5bce98ce9548841cb414634c26f7)
+moved to [libpgcommon](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=40bede5477bb5bce98ce9548841cb414634c26f7)
 a couple of weeks back as the idea is to make it available particularly for
 frontend utilities of the type [pg_xlogdump]
-(http://www.postgresql.org/docs/devel/static/pgxlogdump.html) that decode
+(https://www.postgresql.org/docs/devel/static/pgxlogdump.html) that decode
 WAL. Be careful though that compression has a CPU cost, in exchange of
 reducing the I/O caused by WAL written to disks, so this feature is really
 for I/O bounded environment or for people who want to reduce their amount of
@@ -81,7 +81,7 @@ Now let's have a look at what this feature can do with for example the two
 following tables having close to 480MB of data, on a server with 1GB of
 shared\_buffers, the first table contains very repetitive data, and the second
 uses uuid data (see [pgcrypto]
-(http://www.postgresql.org/docs/devel/static/pgcrypto.html) for more details):
+(https://www.postgresql.org/docs/devel/static/pgcrypto.html) for more details):
 
     =# CREATE TABLE int_tab (id int);
     CREATE TABLE

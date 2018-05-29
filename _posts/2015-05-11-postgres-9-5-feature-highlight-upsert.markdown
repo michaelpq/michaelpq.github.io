@@ -17,7 +17,7 @@ tags:
 ---
 
 Marked as the number #1 wanted feature in Postgres that has been missing for
-years by many people, [upsert](http://www.postgresql.org/docs/devel/static/sql-insert.html)
+years by many people, [upsert](https://www.postgresql.org/docs/devel/static/sql-insert.html)
 support has landed in the Postgres world and will be released with the upcoming
 9.5:
 
@@ -56,7 +56,7 @@ overhead of a function call, many developers have for sure pested for a
 feature that has been supported for years by the many RDBMS available, be
 they proprietary or open source. Have a look for example at the function
 merge\_db() defined [here]
-(http://www.postgresql.org/docs/9.4/static/plpgsql-control-structures.html)
+(https://www.postgresql.org/docs/9.4/static/plpgsql-control-structures.html)
 present in the documentation giving some insight of how to do it before
 9.5 Upsert. Then let's see how this works with a simple table like this one:
 

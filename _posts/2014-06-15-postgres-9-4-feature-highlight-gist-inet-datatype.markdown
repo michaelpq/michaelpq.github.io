@@ -17,7 +17,7 @@ tags:
 
 ---
 Postgres 9.4 is adding a new in-core GiST operator class for the [inet and cidr]
-(http://www.postgresql.org/docs/9.4/static/datatype-net-types.html#DATATYPE-INET)
+(https://www.postgresql.org/docs/9.4/static/datatype-net-types.html#DATATYPE-INET)
 datatypes. It has been introduced by this commit:
 
     commit f23a5630ebc797219b62797f566dec9f65090e03
@@ -60,7 +60,7 @@ as follows using inet_ops:
          "inet_gist" gist (data inet_ops)
 
 By looking at [the documentation listing all the operators available for
-those datatypes](http://www.postgresql.org/docs/9.4/static/functions-net.html)
+those datatypes](https://www.postgresql.org/docs/9.4/static/functions-net.html)
 (as well as at the commit log on top of this post), the major addition that
 this feature brings is a new operator && to test if an inet address contains
 of is contained by a second one. Here is what happened in 9.3 and older

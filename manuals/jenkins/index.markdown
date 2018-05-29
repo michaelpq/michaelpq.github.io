@@ -108,8 +108,8 @@ git are installed in /var/lib/jenkins/jobs/$BUILD_NAME.
 It is important to install the development distribution to save a lot
 of time. Addition of Epel repository:
 
-    wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
-    wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+    wget https://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+    wget https://rpms.famillecollet.com/enterprise/remi-release-6.rpm
     sudo rpm -Uvh remi-release-6*.rpm epel-release-6*.rpm
 
 Open port 8080 in firewall (iptables). Need to edit /etc/sysconfig/iptables
@@ -119,6 +119,6 @@ with this line:
 
 Install Jenkins:
 
-    wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-    rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+    wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins-ci.org/redhat/jenkins.repo
+    rpm --import https://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
     yum install jenkins

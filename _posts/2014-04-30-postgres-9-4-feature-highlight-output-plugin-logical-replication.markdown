@@ -31,11 +31,11 @@ Do you remember? Logical decoding is made of roughly two major parts:
 WAL files into a format given by a custom plugin that can be defined when
 a logical replication slot is created. An example of that in core is the
 contribution module called [test_decoding]
-(http://www.postgresql.org/docs/devel/static/test-decoding.html). This is
+(https://www.postgresql.org/docs/devel/static/test-decoding.html). This is
 linked with a replication slot.
   * A receiver, that can consume the changes decoder has created.
 [pg_recvlogical]
-(http://www.postgresql.org/docs/devel/static/app-pgrecvlogical.html)
+(https://www.postgresql.org/docs/devel/static/app-pgrecvlogical.html)
 as well as the SQL functions pg\_logical\_slot\_[get|peek]\_changes
 as good examples of that.
 

@@ -18,7 +18,7 @@ tags:
 
 ---
 When developing a logical change receiver with the new [logical decoding]
-(http://www.postgresql.org/docs/devel/static/logicaldecoding.html) facility
+(https://www.postgresql.org/docs/devel/static/logicaldecoding.html) facility
 of Postgres 9.4, there are a couple of new commands and a certain libpq
 protocol to be aware of before beginning any development for a logical
 replication receiver (on top of knowing some [basics]
@@ -89,7 +89,7 @@ Here is an example with decoder_raw:
 
 This command will send back a response of type PGRES_COPY_BOTH, containing
 data that can be retrieved with [PQgetCopyData]
-(http://www.postgresql.org/docs/devel/static/libpq-copy.html#LIBPQ-COPY-RECEIVE),
+(https://www.postgresql.org/docs/devel/static/libpq-copy.html#LIBPQ-COPY-RECEIVE),
 so it is not something that for example psql directly support or you may
 finish with an error of this type:
 

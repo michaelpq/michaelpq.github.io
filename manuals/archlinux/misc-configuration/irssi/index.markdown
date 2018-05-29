@@ -76,7 +76,7 @@ Some other things:
   * Ctl-P/Ctl-N to switch windows
 
 Some notes for Freenode: here are [some steps]
-(http://www.wikihow.com/Register-a-User-Name-on-Freenode) about how to
+(https://www.wikihow.com/Register-a-User-Name-on-Freenode) about how to
 register a nickname in freenode.
 
 Register a new account (need to choose previously an account name with

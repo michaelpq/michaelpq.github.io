@@ -22,7 +22,7 @@ instance. For this purpose, there is a nice tool called
 [sslyze](https://github.com/nabla-c0d3/sslyze) that can help scanning SSL
 usage on a given server and it happens that it has support for the
 SSLrequest handshake that PostgreSQL embeds in its protocol (see [here]
-(http://www.postgresql.org/docs/devel/static/protocol-flow.html) regarding
+(https://www.postgresql.org/docs/devel/static/protocol-flow.html) regarding
 the message SSLrequest for more details).
 
 The invocation of Postgres pre-handshake, support added recently with this

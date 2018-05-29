@@ -17,10 +17,10 @@ tags:
 ---
 
 Finding its origin as a fix for [pg\_rewind]
-(http://www.postgresql.org/docs/devel/static/app-pgrewind.html) where rewind
+(https://www.postgresql.org/docs/devel/static/app-pgrewind.html) where rewind
 process could fail if a file marked as listed in the source server was removed
 before fetching its data (see more details
-[here](http://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=b36805f),
+[here](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=b36805f),
 this could impact temporary files or relation file for example), here is a small
 feature of PostgreSQL 9.5 that may be useful for application developers:
 
@@ -44,7 +44,7 @@ feature of PostgreSQL 9.5 that may be useful for application developers:
 
 Postgres has a set of superuser functions allowing to have a look at the files
 of PGDATA from the [SQL interface]
-(http://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-ADMIN-GENFILE-TABLE):
+(https://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-ADMIN-GENFILE-TABLE):
 
   * pg\_ls\_dir, to list the files of a given path.
   * pg\_read\_file, to read a given file and return its data as text.

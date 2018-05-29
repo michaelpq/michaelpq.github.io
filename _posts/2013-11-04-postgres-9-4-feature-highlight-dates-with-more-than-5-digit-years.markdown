@@ -43,7 +43,7 @@ For example here is what happens for a 9.3 server or older version.
      2 | 100000-01-01 00:00:00+09
     (2 rows)
 
-Note that only the direct insert is not working, it is of course possible to insert years with more than 4 digits with to\_timestamp as specified by [the documentation](http://www.postgresql.org/docs/devel/static/functions-formatting.html) where 'YYYY' means 4 digits or more, or via an indirect operation with interval.
+Note that only the direct insert is not working, it is of course possible to insert years with more than 4 digits with to\_timestamp as specified by [the documentation](https://www.postgresql.org/docs/devel/static/functions-formatting.html) where 'YYYY' means 4 digits or more, or via an indirect operation with interval.
 
 And here is what is happening for a 9.4 server after the commit.
 

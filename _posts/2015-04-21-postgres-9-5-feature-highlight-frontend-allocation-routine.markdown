@@ -52,8 +52,8 @@ and backend:
 
 The advantage of this routine is that it is made available for both frontends
 and backends, so when sharing code between both things, like xlogreader.c
-used by [pg\_xlogdump](http://www.postgresql.org/docs/devel/static/pgxlogdump.html)
-and [pg\_rewind](http://www.postgresql.org/docs/devel/static/app-pgrewind.html)
+used by [pg\_xlogdump](https://www.postgresql.org/docs/devel/static/pgxlogdump.html)
+and [pg\_rewind](https://www.postgresql.org/docs/devel/static/app-pgrewind.html)
 on frontend-side and by Postgres backend, consistent code can be used for
 everything, making maintenance far easier.
 

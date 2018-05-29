@@ -15,7 +15,7 @@ tags:
 - object
 
 ---
-PostgreSQL has for ages a feature called [large objects](http://www.postgresql.org/docs/9.2/static/largeobjects.html) allowing to store in the database objects with a... Well... Large size. All those objects are stored in dedicated catalog tables called [pg\_largeobject\_metadata](http://www.postgresql.org/docs/devel/static/catalog-pg-largeobject-metadata.html) for general information like ownership and [pg\_largobject](http://www.postgresql.org/docs/devel/static/catalog-pg-largeobject.html) for the data itself, data divided into pages of 2kB (default size, defined as BLCKSZ/4). This feature got its major upgrade in 9.0 with the introduction of ownership of a large object and 9.3 with the maximum size of an object increased to 4TB. This maximum size was 2GB in versions prior to 9.2. One of the main advantages of a large object is its maximum size, which is particularly convenient compared for example to [TOAST](http://www.postgresql.org/docs/devel/static/storage-toast.html) whose maximum size is 1GB (an internal storage system that stores objects larger than a single page, usually 8kB).
+PostgreSQL has for ages a feature called [large objects](https://www.postgresql.org/docs/9.2/static/largeobjects.html) allowing to store in the database objects with a... Well... Large size. All those objects are stored in dedicated catalog tables called [pg\_largeobject\_metadata](https://www.postgresql.org/docs/devel/static/catalog-pg-largeobject-metadata.html) for general information like ownership and [pg\_largobject](https://www.postgresql.org/docs/devel/static/catalog-pg-largeobject.html) for the data itself, data divided into pages of 2kB (default size, defined as BLCKSZ/4). This feature got its major upgrade in 9.0 with the introduction of ownership of a large object and 9.3 with the maximum size of an object increased to 4TB. This maximum size was 2GB in versions prior to 9.2. One of the main advantages of a large object is its maximum size, which is particularly convenient compared for example to [TOAST](https://www.postgresql.org/docs/devel/static/storage-toast.html) whose maximum size is 1GB (an internal storage system that stores objects larger than a single page, usually 8kB).
 
 Postgres has many functions and even APIs to manage large objects in servers. Here is an exhaustive list accessible though psql:
 
@@ -43,9 +43,9 @@ Postgres has many functions and even APIs to manage large objects in servers. He
      pg_catalog | lo_unlink     | integer          | oid                       | normal
     (18 rows)
 
-There is as well an [ALTER LARGE OBJECT](http://www.postgresql.org/docs/devel/static/sql-alterlargeobject.html) to change the permission access of a given large object to a new owner. Note also that there are two addition APIs not available directly in an SQL client called lo\_read and lo\_write to respectively read from and write to a large object.
+There is as well an [ALTER LARGE OBJECT](https://www.postgresql.org/docs/devel/static/sql-alterlargeobject.html) to change the permission access of a given large object to a new owner. Note also that there are two addition APIs not available directly in an SQL client called lo\_read and lo\_write to respectively read from and write to a large object.
 
-Now, let's see how to manipulate a large object with a simple example: a short [lorem ipsum](http://en.wikipedia.org/wiki/Lorem_ipsum). OK this is not large in size but it is enough to demonstrate how to use large object functions... Here is the text:
+Now, let's see how to manipulate a large object with a simple example: a short [lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum). OK this is not large in size but it is enough to demonstrate how to use large object functions... Here is the text:
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

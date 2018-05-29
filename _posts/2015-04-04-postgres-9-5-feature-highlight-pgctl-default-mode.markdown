@@ -27,7 +27,7 @@ that had for a long time been the same default:
 
     Retain the order of the options in the documentation.
 
-[pg\_ctl](http://www.postgresql.org/docs/devel/static/app-pg-ctl.html)
+[pg\_ctl](https://www.postgresql.org/docs/devel/static/app-pg-ctl.html)
 has three shutdown modes:
 
   * smart, the polite one, waits patiently for all the active clients

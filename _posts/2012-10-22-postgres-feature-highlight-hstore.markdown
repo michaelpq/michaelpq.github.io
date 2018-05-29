@@ -16,7 +16,7 @@ tags:
 
 ---
 
-[hstore](http://www.postgresql.org/docs/9.2/static/hstore.html) is a PostgreSQL contrib module in core code for a pretty long time. Its code is located in contrib/hstore in source folder. It is particularly useful to store sets of key/value in a single table column.
+[hstore](https://www.postgresql.org/docs/9.2/static/hstore.html) is a PostgreSQL contrib module in core code for a pretty long time. Its code is located in contrib/hstore in source folder. It is particularly useful to store sets of key/value in a single table column.
 
 Since Postgres 9.1, its installation needs to be done in two phases.
 First install the hstore library, here done from the source code. Please note that your postgres package normally already contains it.

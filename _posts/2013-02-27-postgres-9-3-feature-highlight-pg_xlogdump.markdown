@@ -95,4 +95,4 @@ You can then for example dump all the WAL records for this transaction by runnin
 
     pg_xlogdump --start 0/02000000 -x 688
 
-Only a short introduction of what you can do this module is provided in this post, so for fore details feel free to have a look at [the documentation](http://www.postgresql.org/docs/devel/static/pgxlogdump.html) about the available options and what you can do (and cannot do) with pg\_xlogdump. Honestly I think it is a good tool to understand the internals of Postgres for newcomers.
+Only a short introduction of what you can do this module is provided in this post, so for fore details feel free to have a look at [the documentation](https://www.postgresql.org/docs/devel/static/pgxlogdump.html) about the available options and what you can do (and cannot do) with pg\_xlogdump. Honestly I think it is a good tool to understand the internals of Postgres for newcomers.

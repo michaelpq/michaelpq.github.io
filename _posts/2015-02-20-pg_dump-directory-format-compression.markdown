@@ -17,9 +17,9 @@ tags:
 ---
 
 Not later than this week a bug regarding [pg\_dump]
-(http://www.postgresql.org/docs/devel/static/app-pgdump.html) and compression
+(https://www.postgresql.org/docs/devel/static/app-pgdump.html) and compression
 with zlib when dumping data has been reported [here]
-(http://www.postgresql.org/message-id/20150217153446.2590.24945@wrigleys.postgresql.org).
+(https://www.postgresql.org/message-id/20150217153446.2590.24945@wrigleys.postgresql.org).
 
 The issue was that when calling -Fd, the compression level specified by -Z
 was ignored, making the compressed dump having the same size for Z > 0. For

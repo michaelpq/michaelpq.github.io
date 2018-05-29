@@ -18,7 +18,7 @@ tags:
 ---
 
 The set of [file access functions]
-(http://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-ADMIN-GENFILE)
+(https://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-ADMIN-GENFILE)
 already present in PostgreSQL offer no direct possibility to retrieve file
 system information, giving for example no coverage of how a file system is
 behaving while running a given PostgreSQL instance. Modern platforms offer

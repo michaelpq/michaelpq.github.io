@@ -16,7 +16,7 @@ tags:
 
 ---
 
-[pgbadger](http://github.com/dalibo/pgbadger) is a recent Postgres module presented during the lightning talks of PGCon 2012 by its original author Gilles Darold. It is thought as an alternative to [PgFouine](http://pgfouine.projects.postgresql.org/), able to replace it thanks to its flexibility, extensibility and performance.
+[pgbadger](https://github.com/dalibo/pgbadger) is a recent Postgres module presented during the lightning talks of PGCon 2012 by its original author Gilles Darold. It is thought as an alternative to [PgFouine](https://pgfouine.projects.postgresql.org/), able to replace it thanks to its flexibility, extensibility and performance.
 
 So, like PGFouine, pgbadger is a Postgres log file analyzer, meaning that it is able to deparse, analyze the data of your log files and then provide statistics about your database: from overall data (query list, number of transactions), error counts (most frequent events) to more performance details like the queries that took the longest run time.
 This means that basically you use in input log files from PostgreSQL, and you get in output an html or txt page that gives you all the statistics you want. So you do not need to sneak anymore in your log files to analyze what is happening anymore. Simply launch pgbadger, wait for parsing (which is pretty fast btw), and see.

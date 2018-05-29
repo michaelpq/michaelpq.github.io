@@ -40,7 +40,7 @@ PostgreSQL is already pretty useful for application developers when returning to
     Pavel Stehule, reviewed and extensively revised by Peter Geoghegan, with
     additional hacking by Tom Lane.
 
-Thanks to this feature, it is possible to obtain more detailed information about the objects involved in an error by providing additional fields. This has as advantage to avoid having to deparse an error message string that could change, even slightly, between major releases, and to provide a centralized way to report errors. There are five new additional [error fields](http://www.postgresql.org/docs/devel/static/protocol-error-fields.html) introduced with this commit:
+Thanks to this feature, it is possible to obtain more detailed information about the objects involved in an error by providing additional fields. This has as advantage to avoid having to deparse an error message string that could change, even slightly, between major releases, and to provide a centralized way to report errors. There are five new additional [error fields](https://www.postgresql.org/docs/devel/static/protocol-error-fields.html) introduced with this commit:
 
   * 's', schema name
   * 't', table name
@@ -48,7 +48,7 @@ Thanks to this feature, it is possible to obtain more detailed information about
   * 'd', datatype name
   * 'n', constraint name
 
-Note that those fields are used only for certain error codes involving those specific objects. You can have a look to the [error code appendix](http://www.postgresql.org/docs/devel/static/errcodes-appendix.html) for more details.
+Note that those fields are used only for certain error codes involving those specific objects. You can have a look to the [error code appendix](https://www.postgresql.org/docs/devel/static/errcodes-appendix.html) for more details.
 
 In order to be able to view the new fields, be sure to set up the error report verbosity to 'verbose'. With a psql client, you simply need to use this command:
 

@@ -21,7 +21,7 @@ libpq is getting some improvements in its
 [connection strings](https://www.postgresql.org/docs/devel/static/libpq-connect.html#libpq-connstring)
 to define some properties that are expected from the backend server
 thanks to the
-[following commit](http://git.postgresql.org/pg/commitdiff/274bb2b38),
+[following commit](https://git.postgresql.org/pg/commitdiff/274bb2b38),
 that will be part of Postgres 10:
 
     commit: 721f7bd3cbccaf8c07cad2707826b83f84694832

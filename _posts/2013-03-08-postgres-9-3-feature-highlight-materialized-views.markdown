@@ -17,7 +17,7 @@ tags:
 
 ---
 
-PostgreSQL 9.3 comes with a pretty cool feature called [materialized views](http://www.postgresql.org/docs/devel/static/rules-materializedviews.html). It has been created by Kevin Grittner and committed by the same person not so long ago.
+PostgreSQL 9.3 comes with a pretty cool feature called [materialized views](https://www.postgresql.org/docs/devel/static/rules-materializedviews.html). It has been created by Kevin Grittner and committed by the same person not so long ago.
 
     commit 3bf3ab8c563699138be02f9dc305b7b77a724307
     Author: Kevin Grittner <kgrittn@postgresql.org>
@@ -50,10 +50,10 @@ Between that, a materialized view is a projection of table data and has its own 
 
 This feature introduces four new SQL commands:
 
-  * [CREATE MATERIALIZED VIEW](http://www.postgresql.org/docs/devel/static/sql-creatematerializedview.html)
-  * [ALTER MATERIALIZED VIEW](http://www.postgresql.org/docs/devel/static/sql-altermaterializedview.html)
-  * [DROP MATERIALIZED VIEW](http://www.postgresql.org/docs/devel/static/sql-dropmaterializedview.html)
-  * [REFRESH MATERIALIZED VIEW](http://www.postgresql.org/docs/devel/static/sql-refreshmaterializedview.html)
+  * [CREATE MATERIALIZED VIEW](https://www.postgresql.org/docs/devel/static/sql-creatematerializedview.html)
+  * [ALTER MATERIALIZED VIEW](https://www.postgresql.org/docs/devel/static/sql-altermaterializedview.html)
+  * [DROP MATERIALIZED VIEW](https://www.postgresql.org/docs/devel/static/sql-dropmaterializedview.html)
+  * [REFRESH MATERIALIZED VIEW](https://www.postgresql.org/docs/devel/static/sql-refreshmaterializedview.html)
 
 CREATE, ALTER and DROP are common DDL commands here to manipulate the definition of materialized views. What is important here is the new command REFRESH (its name has been a long debate inside the community). This command can be used to update the materialized view with fresh data by running once again the scanning query. Note that REFRESH can also be used to *truncate* (not really though) the data of the relation by running it with the clause WITH NO DATA.
 

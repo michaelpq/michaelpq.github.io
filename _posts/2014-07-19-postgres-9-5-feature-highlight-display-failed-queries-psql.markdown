@@ -17,7 +17,7 @@ tags:
 
 ---
 Postgres 9.5 is coming up with a new ECHO mode for [psql]
-(http://www.postgresql.org/docs/devel/static/app-psql.html) that has been
+(https://www.postgresql.org/docs/devel/static/app-psql.html) that has been
 introduced by this commit:
 
     commit: 5b214c5dd1de37764797b3fb9164af3c885a7b86

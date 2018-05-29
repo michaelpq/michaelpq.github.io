@@ -22,7 +22,7 @@ Client applications dependent on libpq can use
 to connect to a Postgres server, which is something present for ages.
 Postgres 10 is introducing a new flavor in that by allowing applications
 to define multiple connection points, for a feature introduced by the
-[following commit](http://git.postgresql.org/pg/commitdiff/274bb2b38):
+[following commit](https://git.postgresql.org/pg/commitdiff/274bb2b38):
 
     commit: 274bb2b3857cc987cfa21d14775cae9b0dababa5
     author: Robert Haas <rhaas@postgresql.org>

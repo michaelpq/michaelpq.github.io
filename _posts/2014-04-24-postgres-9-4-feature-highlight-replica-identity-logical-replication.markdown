@@ -18,7 +18,7 @@ tags:
 
 ---
 Among the many things to say about logical replication features added in
-PostgreSQL 9.4, [REPLICA IDENTITY](http://www.postgresql.org/docs/devel/static/sql-altertable.html)
+PostgreSQL 9.4, [REPLICA IDENTITY](https://www.postgresql.org/docs/devel/static/sql-altertable.html)
 is a new table-level parameter that can be used to control the information
 written to WAL to identify tuple data that is being deleted or updated
 (an update being a succession of an insert and a delete in MVCC).
@@ -34,7 +34,7 @@ First let's set up an environment using some of the instructions
 in a previous post dealing with some [basics of logical decoding]
 (/postgresql-2/postgres-9-4-feature-highlight-basics-logical-decoding)
 to set up a server using [test_decoding]
-(http://www.postgresql.org/docs/devel/static/test-decoding.html) in a
+(https://www.postgresql.org/docs/devel/static/test-decoding.html) in a
 replication slot.
 
     =# SELECT * FROM pg_create_logical_replication_slot('my_slot', 'test_decoding');

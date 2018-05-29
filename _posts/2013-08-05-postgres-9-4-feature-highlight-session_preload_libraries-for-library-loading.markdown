@@ -36,7 +36,7 @@ introduction of the GUC parameter called session\_preload\_libraries.
 This preloading is session-based and orientated to temporary tasks like
 for example analysis of queries having an incorrect plan with auto\_explain
 (as mentioned by the [documentation]
-(http://www.postgresql.org/docs/devel/static/runtime-config-client.html#RUNTIME-CONFIG-CLIENT-PRELOAD)
+(https://www.postgresql.org/docs/devel/static/runtime-config-client.html#RUNTIME-CONFIG-CLIENT-PRELOAD)
 directly), or measurement analysis by using a library with some hooks.
 Like local\_preload\_libraries, libraries are loaded at connection start,
 but it is possible to control what are the user sessions where libraries

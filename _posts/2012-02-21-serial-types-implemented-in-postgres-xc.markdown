@@ -17,7 +17,7 @@ tags:
 
 ---
 
-Just today this commit has happened in [Postgres-XC GIT repository](http://postgres-xc.git.sourceforge.net/git/gitweb-index.cgi).
+Just today this commit has happened in [Postgres-XC GIT repository](https://postgres-xc.git.sourceforge.net/git/gitweb-index.cgi).
 
     commit d09a42f2aac08a909ad9c23b534f11c6e7f16cee
     Author: Michael P

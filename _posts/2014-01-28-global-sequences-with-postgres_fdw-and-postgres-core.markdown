@@ -16,7 +16,7 @@ tags:
 
 ---
 The new foreign data wrapper available with PostgreSQL core called
-[postgres\_fdw](http://www.postgresql.org/docs/devel/static/postgres-fdw.html)
+[postgres\_fdw](https://www.postgresql.org/docs/devel/static/postgres-fdw.html)
 (to basically query foreign Postgres servers and fetch back data locally)
 makes possible a couple of interesting things with a little bit of
 imagination. First, you need to be aware that postgres\_fdw can query all

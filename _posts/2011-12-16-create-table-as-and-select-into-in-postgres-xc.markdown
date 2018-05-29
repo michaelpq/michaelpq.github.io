@@ -18,7 +18,7 @@ tags:
 
 ---
 
-This week, a great feature has been added by commit [8a05756](http://postgres-xc.git.sourceforge.net/git/gitweb.cgi?p=postgres-xc/postgres-xc;a=commit;h=8a05756a702051d55a35ec3f4953f381f977b53a), completed by commit [caf1554](http://postgres-xc.git.sourceforge.net/git/gitweb.cgi?p=postgres-xc/postgres-xc;a=commit;h=caf15543cdadff39db3cae8e076b85d89ed6c8e6) in [Postgres-XC](http://postgres-xc.git.sourceforge.net/git/gitweb-index.cgi) GIT repository.
+This week, a great feature has been added by commit [8a05756](https://postgres-xc.git.sourceforge.net/git/gitweb.cgi?p=postgres-xc/postgres-xc;a=commit;h=8a05756a702051d55a35ec3f4953f381f977b53a), completed by commit [caf1554](https://postgres-xc.git.sourceforge.net/git/gitweb.cgi?p=postgres-xc/postgres-xc;a=commit;h=caf15543cdadff39db3cae8e076b85d89ed6c8e6) in [Postgres-XC](https://postgres-xc.git.sourceforge.net/git/gitweb-index.cgi) GIT repository.
 
     commit 8a05756a702051d55a35ec3f4953f381f977b53a
     Author: Pavan Deolasee <pavan.deolasee@gmail.com>

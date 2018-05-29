@@ -17,7 +17,7 @@ tags:
 
 ---
 [IMPORT FOREIGN SCHEMA]
-(http://www.postgresql.org/docs/devel/static/sql-importforeignschema.html)
+(https://www.postgresql.org/docs/devel/static/sql-importforeignschema.html)
 is a SQL query defined in the SQL specification allowing to import from
 a foreign source a schema made of foreign tables. Its support has been
 added in Postgres 9.5 with the following commit:
@@ -69,7 +69,7 @@ Then this API needs to return a list of raw queries that will be applied
 as-is by the server after parsing them. The local schema is overridden by
 server to avoid any abuse. Documentation should be used as a reference for
 [more details]
-(http://www.postgresql.org/docs/devel/static/fdw-callbacks.html#FDW-CALLBACKS-IMPORT)
+(https://www.postgresql.org/docs/devel/static/fdw-callbacks.html#FDW-CALLBACKS-IMPORT)
 as well.
 
 The second part of the feature is the support of IMPORT FOREIGN SCHEMA for
@@ -79,7 +79,7 @@ node listens to port 5432 and uses postgres\_fdw to connect to a second node
 listening to port 5433 (for more details on how to set of that refer to
 [that](/postgresql-2/postgres-9-3-feature-highlight-postgres_fdw/) or
 directly have look at the [official documentation]
-(http://www.postgresql.org/docs/devel/static/postgres-fdw.html)).
+(https://www.postgresql.org/docs/devel/static/postgres-fdw.html)).
 
 On the remote node (listening to 5433) the two following tables are created
 on a default schema, aka "public":

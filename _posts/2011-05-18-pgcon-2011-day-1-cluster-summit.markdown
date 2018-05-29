@@ -32,7 +32,7 @@ Without entering in details, here are the main points that caught my attention:
   * Postgres-XC had good return from the audience. It has been referenced more than other cluster for its multi-master capacities and external XID/snapshot feed features.
   * All the projects presented base their data distribution on replication, except Skytools, Stado and Postgres-XC
 
-Afternoon session was focused on talks about [Cluster features](http://wiki.postgresql.org/wiki/ClusterFeatures). This list of features has been decided during the first cluster summit that was held in Tokyo on November 2009.
+Afternoon session was focused on talks about [Cluster features](https://wiki.postgresql.org/wiki/ClusterFeatures). This list of features has been decided during the first cluster summit that was held in Tokyo on November 2009.
 The main goal of the afternoon session was to first update the status of each feature depending on the projects that have made progress on it.
 Then, about how to keep the effort on this feature, to decide which cluster team could do what, and when they could do it, if it is not done yet.
 Finally, to hold breakout session on some topics that may need deeper conversations.
@@ -45,7 +45,7 @@ Here are the main progresses I think are valuable (at least as a Postgres-XC dev
 
   * Everybody is showing interest in snapshot exporting for parallel query. It definitely should be proposed to PostgreSQL community and included in core. Postgres-XC team looks to be the best candidate for a proposal.	
   * Global conflict resolution and detection. This is a common problem that is found in clusters. At the current state cluster based their lock and wait-for graph analysis on local and no real global mechanism has been defined. This really needs investigation and priority should be set as higher than currently.
-  * Some people have shown some interest in the idea to provide a database lock system. Now clusters have no way to check if a database creation/drop has been safely executed in the cluster.  Let's think about that as a 2PC-like mechanism, but as database drop/creation is not transactional, I call that a locking system. The idea of this mechanism is to block the use of a database by dropping stopping new sessions, new connections, and wait for current connections to be cut in soft mode. In force mode, connections could be forced to be dropped. A definition is available [here](http://wiki.postgresql.org/wiki/Lock_database).
+  * Some people have shown some interest in the idea to provide a database lock system. Now clusters have no way to check if a database creation/drop has been safely executed in the cluster.  Let's think about that as a 2PC-like mechanism, but as database drop/creation is not transactional, I call that a locking system. The idea of this mechanism is to block the use of a database by dropping stopping new sessions, new connections, and wait for current connections to be cut in soft mode. In force mode, connections could be forced to be dropped. A definition is available [here](https://wiki.postgresql.org/wiki/Lock_database).
 
 Then came the breakout sessions, two have been necessary for DDL triggers and parser API.
 I personally participated in parser API session with pgpool teams.
@@ -54,5 +54,5 @@ The point was to try to define external APIs of Postgres to allow external appli
 However, the parser/planner/analyzer tree of Postgres is a structure which changes at each major release and such APIs may represent a high cost in maintenance for applications depending on it. Is it really worth doing it?
 
 In conclusion, progress on cluster cooperation is following a good shape. It has been a productive day and let's hope that people will gather more than every 2 years to talk about the progress being done on each project.
-In case you are looking for details, minutes are available [here](http://wiki.postgresql.org/wiki/PgCon2011CanadaClusterSummit).
+In case you are looking for details, minutes are available [here](https://wiki.postgresql.org/wiki/PgCon2011CanadaClusterSummit).
 

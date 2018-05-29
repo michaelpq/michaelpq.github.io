@@ -17,8 +17,8 @@ tags:
 
 ---
 
-This year, Postgres-XC has [a tutorial at PGCon](http://www.pgcon.org/2012/schedule/events/424.en.html). Yeah.
-Based on [the schedule of PGCon 2012](http://www.pgcon.org/2012/schedule/day_2012-05-16.en.html), XC team has 3 hours to make you masters of this cluster based on PostgreSQL.
+This year, Postgres-XC has [a tutorial at PGCon](https://www.pgcon.org/2012/schedule/events/424.en.html). Yeah.
+Based on [the schedule of PGCon 2012](https://www.pgcon.org/2012/schedule/day_2012-05-16.en.html), XC team has 3 hours to make you masters of this cluster based on PostgreSQL.
 
 We are working hard at shaping up the presentation flow following those guidelines.
 

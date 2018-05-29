@@ -19,10 +19,10 @@ tags:
 
 An important step in the SCRAM authentication is called SASLprep, a mandatory
 feature to be sure about the equivalence of two strings encoded with UTF-8.
-[A first commit]( http://git.postgresql.org/pg/commitdiff/818fd4a67d610991757b610755e3065fb99d80a5)
+[A first commit]( https://git.postgresql.org/pg/commitdiff/818fd4a67d610991757b610755e3065fb99d80a5)
 has added support for SCRAM-SHA-256 protocol with the full SASL exchange
 plugged on top of it, and this has been implemented by
-[the following commit](http://git.postgresql.org/pg/commitdiff/60f11b87a2349985230c08616fa8a34ffde934c8):
+[the following commit](https://git.postgresql.org/pg/commitdiff/60f11b87a2349985230c08616fa8a34ffde934c8):
 
     commit: 60f11b87a2349985230c08616fa8a34ffde934c8
     author: Heikki Linnakangas <heikki.linnakangas@iki.fi>
@@ -63,7 +63,7 @@ equivalence comparison:
 1. Replace any character in the string by its equivalent mapping. Here there
 could be characters mapping for example to nothing.
 2. Perform normalization with form KC, which is for example described
-[here](http://www.unicode.org/reports/tr15/). This step is itself done
+[here](https://www.unicode.org/reports/tr15/). This step is itself done
 in a couple of sub-steps:
   * Decompose each character using decomposition table, and apply that
     by cascading through each result. This data is part of UnicodeData.txt.

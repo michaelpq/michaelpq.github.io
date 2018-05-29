@@ -16,7 +16,7 @@ tags:
 ---
 
 This post has as goal to provide basics to help you understanding how work triggers in PostgreSQL.
-A [trigger](http://www.postgresql.org/docs/9.1/static/sql-createtrigger.html) is the possibility to associate an automatic operation to a table in case a write event happens on this given table.
+A [trigger](https://www.postgresql.org/docs/9.1/static/sql-createtrigger.html) is the possibility to associate an automatic operation to a table in case a write event happens on this given table.
 
 Here is the synopsis of this query.
 
@@ -32,7 +32,7 @@ The parts that are essential to get the basics are written in strong characters.
 
   * **event**, this is the database operation that will cause the trigger to fire. In Postgres 9.2 and prior versions, this can occur for INSERT, UPDATE, DELETE and TRUNCATE	
   * **table**, this is the database table where the event has to occur
-  * **EXECUTE PROCEDURE function\_name ( arguments )**, this is the operation that is launched by trigger after being fired. The procedure can be customized with data related to the table or other things depending on the circumstances trigger is fired. Have a look [here](http://www.postgresql.org/docs/9.1/static/plpgsql-trigger.html) for more details about trigger procedures.
+  * **EXECUTE PROCEDURE function\_name ( arguments )**, this is the operation that is launched by trigger after being fired. The procedure can be customized with data related to the table or other things depending on the circumstances trigger is fired. Have a look [here](https://www.postgresql.org/docs/9.1/static/plpgsql-trigger.html) for more details about trigger procedures.
 
 Triggers have many usages. Defined on the given table of your database, you can set up a trigger to launch automatic operations on a table each time an event is done on it. Once fired, this trigger will execute an automatic procedure that will perform a list of operations predefined by user. So this limits the amount of code you need to write on the application side, limiting the possibility of bugs in your own code while using Postgres server robustness.
 

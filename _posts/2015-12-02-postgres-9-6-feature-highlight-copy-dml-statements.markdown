@@ -18,7 +18,7 @@ tags:
 ---
 
 A new set of queries that can be handled in [COPY]
-(http://www.postgresql.org/docs/devel/static/sql-copy.html) statement (as
+(https://www.postgresql.org/docs/devel/static/sql-copy.html) statement (as
 well as psql's \copy) has been added in PostgreSQL 9.6 by the following
 commit:
 

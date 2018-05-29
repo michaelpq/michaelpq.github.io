@@ -33,7 +33,7 @@ with the server (psql, pg_dump, pgbench) and the interface libraries
 (libpq, ecpg).
 
 Documentation precisely describes [how to set up]
-(http://www.postgresql.org/docs/devel/static/install-windows-full.html)
+(https://www.postgresql.org/docs/devel/static/install-windows-full.html)
 an environment to compile PostgreSQL on Windows, so in short here is
 the new command that you can use from src/tools/msvc in for example a
 Windows SDK command prompt:

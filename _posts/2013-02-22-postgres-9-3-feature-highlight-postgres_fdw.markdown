@@ -31,7 +31,7 @@ Up to Postgres 9.2, the only foreign data wrapper present in core was file\_fdw,
     
     Shigeru Hanada, reviewed by KaiGai Kohei and Tom Lane
 
-Documentation can be found [here](http://www.postgresql.org/docs/devel/static/postgres-fdw.html) for the time being.
+Documentation can be found [here](https://www.postgresql.org/docs/devel/static/postgres-fdw.html) for the time being.
 
 In order to install it from source, do the following commands from the Postgres root folder.
 

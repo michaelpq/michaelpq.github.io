@@ -49,7 +49,7 @@ reduced by a bit more than 10% in total, which is huge!
 
 Now, let's consider the advantages that this new feature has.
 
-First of all, [libpq](http://www.postgresql.org/docs/devel/static/libpq.html)
+First of all, [libpq](https://www.postgresql.org/docs/devel/static/libpq.html)
 is an in-core library of PostgreSQL managing communication with the backend
 server that is well-maintained by the core developers of Postgres. Before doing
 the all-libpq move in Postgres ODBC it was a soft dependency: the driver being
@@ -72,8 +72,8 @@ What would be a next step then now that the driver side is more simple? Well,
 more work on Postgres itself can be done. And this effort has begun with some
 legwork done in the upcoming 9.5 to allow support of other SSL implementations
 by making the infrastructure more pluggable with commit [680513a]
-(http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=680513a),
+(https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=680513a),
 opening the door for things like [SChannel on Windows] 
-(http://www.postgresql.org/message-id/53959E44.1070001@vmware.com), new
+(https://www.postgresql.org/message-id/53959E44.1070001@vmware.com), new
 implementations being interesting because this gives more freedom in the choice
 of dependencies a custom build has.

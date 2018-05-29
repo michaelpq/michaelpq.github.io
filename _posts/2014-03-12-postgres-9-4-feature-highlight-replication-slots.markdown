@@ -41,11 +41,11 @@ by this commit:
     Andres Freund and Robert Haas
 
 This feature has been designed to be part of a set for the support of [logical
-replication](http://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=5a991ef8692ed0d170b44958a81a6bd70e90585c),
+replication](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=5a991ef8692ed0d170b44958a81a6bd70e90585c),
 but it can be used independently to force a master server to keep WAL files
 that are still needed by a standby node (note that for more theorical details,
 you can refer as well to [this blog post]
-(http://blog.2ndquadrant.com/postgresql-9-4-slots/) by Craig Ringer, here the
+(https://blog.2ndquadrant.com/postgresql-9-4-slots/) by Craig Ringer, here the
 focus is made more on how to use it). There are two types of replication slots:
 logical and physical. Logical slots have the property to be able to connect to
 a particular database, while physical slots are more general. I'll come back
@@ -97,7 +97,7 @@ happens:
     LOCATION:  CheckSlotRequirements, slot.c:760
 
 And then set primary\_slot\_name in [recovery.conf]
-(http://www.postgresql.org/docs/devel/static/standby-settings.html).
+(https://www.postgresql.org/docs/devel/static/standby-settings.html).
 This setting has no effect if primary\_conninfo is not set. recovery.conf
 will look like that:
 

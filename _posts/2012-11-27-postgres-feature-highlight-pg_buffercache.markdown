@@ -16,7 +16,7 @@ tags:
 
 ---
 
-[pg\_buffercache](http://www.postgresql.org/docs/current/static/pgbuffercache.html) is a PostgreSQL contrib module allowing to get an instant relation-based view of the shared buffer usage by querying the wanted server.
+[pg\_buffercache](https://www.postgresql.org/docs/current/static/pgbuffercache.html) is a PostgreSQL contrib module allowing to get an instant relation-based view of the shared buffer usage by querying the wanted server.
 
 This can be pretty useful for performance analysis of queries on a given relation as it allows to have a look at how much a relation is cached. In the case of data cached for a given relation, you do not need to access data directly on disk to retrieve the data and can directly rely on the cache, so the data fetching is simply faster, by a factor of the order of 1000 (Shared memory/disk speed difference). Take care however that a shared lock is taken when analyzing the shared buffer content, so it can impact concurrent queries.
 

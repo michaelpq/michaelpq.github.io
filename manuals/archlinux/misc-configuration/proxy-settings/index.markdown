@@ -29,7 +29,7 @@ This allows pacman to use wget through a proxy.
 In /etc/wgetrc, set up the proxy you need to go through by modifying
 http\_proxy.
 
-    http_proxy = http://proxy.example.com:8080/
+    http_proxy = https://proxy.example.com:8080/
 
 With those settings pacman should be able to get package data through a
 proxy.
@@ -43,12 +43,12 @@ your environment.
 
 Here are the settings for HTTP/FTP/HTTPS proxy.
 
-    export http_proxy=http://proxy.example.com:8080
-    export HTTP_PROXY=http://proxy.example.com:8080
-    export ftp_proxy=http://proxy.example.com:8080
-    export FTP_PROXY=http://proxy.example.com:8080
-    export all_proxy=http://proxy.example.com:8080
-    export ALL_PROXY=http://proxy.example.com:8080
+    export http_proxy=https://proxy.example.com:8080
+    export HTTP_PROXY=https://proxy.example.com:8080
+    export ftp_proxy=https://proxy.example.com:8080
+    export FTP_PROXY=https://proxy.example.com:8080
+    export all_proxy=https://proxy.example.com:8080
+    export ALL_PROXY=https://proxy.example.com:8080
     export https_proxy=https://proxy.example.com:8080
     export HTTPS_PROXY=https://proxy.example.com:8080
 

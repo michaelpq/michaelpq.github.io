@@ -24,9 +24,9 @@ The core code of Postgres includes one FDW which is fdw\_file, postgres\_fdw is 
 
 The installation of a FDW can be done since PostgreSQL 9.1 with the use of CREATE EXTENSION. There are many existing FDW modules that are developed and maintained by the community. Among some of them are:
 	
-  * [oracle\_fdw](http://oracle-fdw.projects.pgfoundry.org/), to fetch data from an Oracle server	
+  * [oracle\_fdw](https://oracle-fdw.projects.pgfoundry.org/), to fetch data from an Oracle server	
   * [mysql\_fdw](https://github.com/dpage/mysql_fdw), to fetch data from a MySQL server
-  * [pgsql\_fdw](http://interdbconnect.sourceforge.net/pgsql_fdw/pgsql_fdw-ja.html) (or sometimes postgres\_fdw), to fetch data from another Postgres server
+  * [pgsql\_fdw](https://interdbconnect.sourceforge.net/pgsql_fdw/pgsql_fdw-ja.html) (or sometimes postgres\_fdw), to fetch data from another Postgres server
   * [twitter\_fdw](https://github.com/umitanuki/twitter_fdw), to fetch data from a Twitter server
 
 Note: Once I thought about a git FDW as git is itself a NoSQL database managing concurrency of commits and branches its own way... But got no time to design or code it.

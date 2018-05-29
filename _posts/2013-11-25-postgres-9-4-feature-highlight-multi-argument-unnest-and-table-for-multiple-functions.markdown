@@ -16,7 +16,7 @@ tags:
 - array
 
 ---
-A new feature making possible to specify multiple functions with TABLE inside a FROM clause has made its way in Postgres. The same commit adds support for [unnest](http://www.postgresql.org/docs/devel/static/functions-array.html) with multiple arguments as well.
+A new feature making possible to specify multiple functions with TABLE inside a FROM clause has made its way in Postgres. The same commit adds support for [unnest](https://www.postgresql.org/docs/devel/static/functions-array.html) with multiple arguments as well.
 
     commit 784e762e886e6f72f548da86a27cd2ead87dbd1c
     Author: Tom Lane

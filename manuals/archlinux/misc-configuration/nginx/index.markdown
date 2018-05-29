@@ -66,7 +66,7 @@ Here is a sample of configuration file for nginx.conf.
     server {
         listen   80;
         server_name  www.example.com;
-        rewrite ^/(.*) http://example.com permanent;
+        rewrite ^/(.*) https://example.com permanent;
     }
     
     server {
@@ -94,7 +94,7 @@ Here is a sample of configuration file for nginx.conf.
             }
     
             if (!-f $request_filename) {
-                proxy_pass http://toto;
+                proxy_pass https://toto;
                 break;
             }
         }

@@ -19,13 +19,13 @@ tags:
 ---
 
 Introduced in PostgreSQL 9.4, [pg\_recvlogical]
-(http://www.postgresql.org/docs/devel/static/app-pgrecvlogical.html) has the
+(https://www.postgresql.org/docs/devel/static/app-pgrecvlogical.html) has the
 ability to control the creation of logical replication slots from which
 logical changes can be streamed. Note that in the case this is a mandatory
 condition when using [logical decoding]
-(http://www.postgresql.org/docs/devel/static/logicaldecoding.html).
+(https://www.postgresql.org/docs/devel/static/logicaldecoding.html).
 [pg\_receivexlog]
-(http://www.postgresql.org/docs/devel/static/app-pgreceivexlog.html)
+(https://www.postgresql.org/docs/devel/static/app-pgreceivexlog.html)
 does not have in 9.4 any control on the physical replication slots it may
 stream from (to ensure that the WAL segment files this utility is looking
 for are still retained on the server side). This feature has been added
@@ -78,7 +78,7 @@ immediately, and slot is of course not more:
 Deletion and creation of the replication slot is made uses the same replication
 connection as the one for stream and uses the commands CREATE\_REPLICATION\_SLOT
 and DROP\_REPLICATION\_SLOT from the [replication protocol]
-(http://www.postgresql.org/docs/devel/static/protocol-replication.html),
+(https://www.postgresql.org/docs/devel/static/protocol-replication.html),
 resulting in a light-weight implementation. So do not hesitate to refer to this
 code when implementing your own client applications,
 src/bin/pg_basebackup/streamutil.c being particularly helpful.

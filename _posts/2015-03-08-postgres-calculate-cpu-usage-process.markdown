@@ -17,7 +17,7 @@ tags:
 
 When working on testing WAL compression, I developed a simple hack able to
 calculate the amount of CPU used by a single Postgres backend process during
-its lifetime using [getrusage](http://linux.die.net/man/2/getrusage) invoked
+its lifetime using [getrusage](https://linux.die.net/man/2/getrusage) invoked
 at process startup and shutdown. This thing is not aimed for an integration
 into core, still it may be useful for people who need to measure the amount
 of CPU used for a given set of SQL queries when working on a patch. Here is

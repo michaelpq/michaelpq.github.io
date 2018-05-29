@@ -36,7 +36,7 @@ A trigger event can be fired with the following events.
     DELETE
     TRUNCATE
 
-OK, up to now nothing is new and it is plainly what you can find in [PostgreSQL documentation](http://www.postgresql.org/docs/9.1/static/sql-createtrigger.html).
+OK, up to now nothing is new and it is plainly what you can find in [PostgreSQL documentation](https://www.postgresql.org/docs/9.1/static/sql-createtrigger.html).
 
 However, let's do a short explanation of what are triggers in a database (really basic). A trigger is the possibility to perform automatic action after a special event in a database. Triggers are usually used to make some checks on constraints in database, to do some additional operations on tables like statistics for an application independent on PostgreSQL system. In a Web environment, a direct application of trigger is the possibility to fire for example an email after a certain event occurred on the database. There are a lot of applications around that. So roughly, a trigger is fired after a certain event, which is data modification on database.
 

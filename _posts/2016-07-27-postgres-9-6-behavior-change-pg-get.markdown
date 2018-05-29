@@ -99,7 +99,7 @@ work on catalog tables becomes far easier thanks to that.
 Also, on top of the functions already mentioned, the following ones will
 have followed the same path by now returning NULL on invalid objects, and
 they have been changed by commit
-[3153b1a](http://git.postgresql.org/pg/commitdiff/3153b1a52f8f2d1efe67306257aec15aaaf9e94c):
+[3153b1a](https://git.postgresql.org/pg/commitdiff/3153b1a52f8f2d1efe67306257aec15aaaf9e94c):
 
   * pg\_get\_function\_arguments
   * pg\_get\_function\_identity\_arguments

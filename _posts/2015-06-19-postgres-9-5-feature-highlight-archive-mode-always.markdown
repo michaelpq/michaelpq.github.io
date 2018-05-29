@@ -19,7 +19,7 @@ tags:
 ---
 
 After seeing an email on [pgsql-general]
-(http://www.postgresql.org/message-id/CANkGpBs7qgAkgQ-OPZY0EsaM6+WUE5MgpyeHCGo_eOQ7tJVyyg@mail.gmail.com)
+(https://www.postgresql.org/message-id/CANkGpBs7qgAkgQ-OPZY0EsaM6+WUE5MgpyeHCGo_eOQ7tJVyyg@mail.gmail.com)
 about a user willing to be able to archive WAL from a standby to store
 them locally and to save bandwidth by only receiving the WAL segments
 through a WAL stream, let's talk about a new feature of Postgres 9.5

@@ -17,7 +17,7 @@ tags:
 - reorganize
 
 ---
-Last week, I had an interesting [discussion in the Postgres hackers mailing list](http://archives.postgresql.org/pgsql-hackers/2012-09/msg00746.php) about integrating pg\_reorg features (possibility to reorganize a table without locks on it) directly into postgres core. Community strongly suggested that pg\_reorg cannot be integrated as-is in the contribution modules of postgres core, and instead postgres should provide native ways to reorganize a table without taking heavy locks. This means that a table could be reindexed or clustered, and at the same time read and writes operations could still happen in parallel. What is particularly useful when an index is broken in a production database, as you could keep your table free of access for the other sessions running while the table is reorganized.
+Last week, I had an interesting [discussion in the Postgres hackers mailing list](https://archives.postgresql.org/pgsql-hackers/2012-09/msg00746.php) about integrating pg\_reorg features (possibility to reorganize a table without locks on it) directly into postgres core. Community strongly suggested that pg\_reorg cannot be integrated as-is in the contribution modules of postgres core, and instead postgres should provide native ways to reorganize a table without taking heavy locks. This means that a table could be reindexed or clustered, and at the same time read and writes operations could still happen in parallel. What is particularly useful when an index is broken in a production database, as you could keep your table free of access for the other sessions running while the table is reorganized.
 
 So, the following suggestions have been made:
 	
@@ -76,7 +76,7 @@ Some technical details...
   * Documentation, as well as regression tests have been added in the first version of the patch.
   * Concurrent operations are longer, require additional CPU, IO and memory but they are lock free. The parent relation and indexes cannot be dropped during process.
   * If an error occurs during process, the table will finish with invalid indexes (marked with suffix \_cct in their names). It is the responsability of the user to drop them.
-  * If you are looking for the patch, have a look [here](http://archives.postgresql.org/pgsql-hackers/2012-10/msg00128.php).
+  * If you are looking for the patch, have a look [here](https://archives.postgresql.org/pgsql-hackers/2012-10/msg00128.php).
 
 Please note that those specification notes are based on the first version of the patch proposed, and are subject to change depending on the community and reviewers' feedback.
 
@@ -87,4 +87,4 @@ Please note that those specification notes are based on the first version of the
   * Correction of bugs
   * Support for exclusion constraints, looks to work as far as tested
 
-The patch has been submitted to pgsql-hackers in [this email](http://archives.postgresql.org/pgsql-hackers/2012-10/msg00726.php).
+The patch has been submitted to pgsql-hackers in [this email](https://archives.postgresql.org/pgsql-hackers/2012-10/msg00726.php).

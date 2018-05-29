@@ -34,7 +34,7 @@ VMs at disposition. Default and example profiles are available in
 in .examples (irssi, mpd, gitconfig, etc.).
 
 The GIT repository is available in github as
-[michaelpq/home](http://github.com/michaelpq/home).
+[michaelpq/home](https://github.com/michaelpq/home).
 
 You can fetch it directly with one of those commands;
 

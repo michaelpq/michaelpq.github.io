@@ -89,7 +89,7 @@ And then for CHECK:
 
 This feature finds its power in planner optimizations as mentioned above,
 then let's have a look at how it works. Using [constraint\_exclusion]
-(http://www.postgresql.org/docs/devel/static/runtime-config-query.html#RUNTIME-CONFIG-QUERY-OTHER)
+(https://www.postgresql.org/docs/devel/static/runtime-config-query.html#RUNTIME-CONFIG-QUERY-OTHER)
 is particularly useful to enforce the constraint check on all the tables
 as its default value, "partition", can only be used on inheritance child
 tables and UNION ALL subqueries.

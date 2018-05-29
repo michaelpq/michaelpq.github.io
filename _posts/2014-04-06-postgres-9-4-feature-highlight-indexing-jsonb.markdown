@@ -17,7 +17,7 @@ tags:
 
 ---
 PostgreSQL 9.4 is shipping with a new feature called [jsonb]
-(http://www.postgresql.org/docs/devel/static/datatype-json.html), which is a
+(https://www.postgresql.org/docs/devel/static/datatype-json.html), which is a
 new data type able to store JSON data supporting GIN indexing (!). In short,
 this feature, one of the most important of the upcoming release, if not the
 most important, puts Postgres directly in good position in the field of
@@ -45,10 +45,10 @@ my previous posts on the matter to get some insight on them or directly at
 the documentation of Postgres.
 
 Now let's see how jsonb works and let's compare it with json with as data 
-sample a dump of [geobase](http://www.geonames.org/export/), worth 8.6 million
+sample a dump of [geobase](https://www.geonames.org/export/), worth 8.6 million
 tuples and 1.1GB, with many fields like the city name, country code (you can
 refer to a complete list of the fields [here]
-(http://download.geonames.org/export/dump/readme.txt)). After storing the
+(https://download.geonames.org/export/dump/readme.txt)). After storing the
 data into a new table with a raw COPY, let's transform it into json/jsonb
 in a set of tables with a fillfactor at 100 to see how much space they use:
 

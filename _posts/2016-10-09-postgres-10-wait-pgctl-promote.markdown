@@ -55,7 +55,7 @@ a check happening every second until a timeout ends (can be defined by
 the user). However, the control file is updated closer to the point
 where the backends are told that they are authorized to generate WAL,
 as improved by
-[this commit](http://git.postgresql.org/pg/commitdiff/ebdf5bf7d1c97a926e2b0cb6523344c2643623c7).
+[this commit](https://git.postgresql.org/pg/commitdiff/ebdf5bf7d1c97a926e2b0cb6523344c2643623c7).
 
 Even if pg\_ctl is not used, and some custom utility is in charge of
 telling a Postgres instance to perform an upgrade, looking directly at

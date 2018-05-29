@@ -17,7 +17,7 @@ tags:
 
 ---
 
-[ALTER TABLE](http://www.postgresql.org/docs/devel/static/sql-altertable.html)
+[ALTER TABLE](https://www.postgresql.org/docs/devel/static/sql-altertable.html)
 has been known for many years in the Postgres ecosystem as being a command
 taking systematically an ACCESS EXCLUSIVE lock on the relation being modified,
 preventing all operations on the relation in parallel. Those locks are getting

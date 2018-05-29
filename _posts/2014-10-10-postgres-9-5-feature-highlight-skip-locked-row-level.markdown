@@ -17,7 +17,7 @@ tags:
 ---
 
 SKIP LOCKED is a new feature associated with [row-level locking]
-(http://www.postgresql.org/docs/devel/static/explicit-locking.html#LOCKING-ROWS)
+(https://www.postgresql.org/docs/devel/static/explicit-locking.html#LOCKING-ROWS)
 that has been newly-introduced in PostgreSQL 9.5 by this commit:
 
     commit: df630b0dd5ea2de52972d456f5978a012436115e

@@ -49,7 +49,7 @@ refering to DISABLE\_MAX\_PRIVILEGE).
 
 Most of the frontend utilities of Postgres make use of a restricted token,
 but actually this was not the case of two of them, as [reported]
-(http://www.postgresql.org/message-id/CAEB4t-NpXGiP5Bqvv3P+d+x=V4BqE+Awg+G7ennBn8icPXep_g@mail.gmail.com)
+(https://www.postgresql.org/message-id/CAEB4t-NpXGiP5Bqvv3P+d+x=V4BqE+Awg+G7ennBn8icPXep_g@mail.gmail.com)
 a couple of months back. The discussion regarding the bug report has resulted
 in the following commit:
 
@@ -75,6 +75,6 @@ by adding in libpqcommon a new API that frontend utilities can directly use
 to fetch a restricted token on Windows, with a one-liner patch adding a call
 to get\_restricted\_token(progname). An example of its use is for example
 pg\_rewind that has begun to use it [here]
-(http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=8a06c36),
+(https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=8a06c36),
 and this should be included in any Postgres utility that manipulates data
 files for safety, particularly if this utility is aimed at running on Windows.

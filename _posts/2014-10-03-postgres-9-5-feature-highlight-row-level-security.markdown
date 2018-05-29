@@ -16,7 +16,7 @@ tags:
 
 ---
 
-[Row-level security](http://www.postgresql.org/docs/devel/static/ddl-rowsecurity.html) is
+[Row-level security](https://www.postgresql.org/docs/devel/static/ddl-rowsecurity.html) is
 a new feature of PostgreSQL 9.5 that has been introduced by this commit:
 
     commit: 491c029dbc4206779cf659aa0ff986af7831d2ff
@@ -33,18 +33,18 @@ a new feature of PostgreSQL 9.5 that has been introduced by this commit:
     with-check options of the query.
 
 Behind this jargon is a feature that could be defined in short words as
-a complementary permission manager of [GRANT](http://www.postgresql.org/docs/devel/static/sql-grant.html) and
-[REVOKE](http://www.postgresql.org/docs/devel/static/sql-revoke.html)
+a complementary permission manager of [GRANT](https://www.postgresql.org/docs/devel/static/sql-grant.html) and
+[REVOKE](https://www.postgresql.org/docs/devel/static/sql-revoke.html)
 that allows controlling at row level which tuples can be retrieved
 for a read query or manipulated using INSERT, UPDATE or DELETE.
 This row control mechanism is controlled using a new query called
-[CREATE POLICY](http://www.postgresql.org/docs/devel/static/sql-createpolicy.html)
-(of course its flavor [ALTER POLICY](http://www.postgresql.org/docs/devel/static/sql-alterpolicy.html)
-to update an existing policy and [DROP POLICY](http://www.postgresql.org/docs/devel/static/sql-droppolicy.html)
+[CREATE POLICY](https://www.postgresql.org/docs/devel/static/sql-createpolicy.html)
+(of course its flavor [ALTER POLICY](https://www.postgresql.org/docs/devel/static/sql-alterpolicy.html)
+to update an existing policy and [DROP POLICY](https://www.postgresql.org/docs/devel/static/sql-droppolicy.html)
 to remove a policy exist as well). By default, tables have no
 restrictions in terms of how rows can be added and manipulated.
 However they can be made able to accept level restriction policies
-using [ALTER TABLE](http://www.postgresql.org/docs/devel/static/sql-altertable.html)
+using [ALTER TABLE](https://www.postgresql.org/docs/devel/static/sql-altertable.html)
 and ENABLE ROW LEVEL SECURITY. Now, let's imagine the following table
 where a list of employees and their respective salaries can be read
 (salary is an integer as this is entirely fictive situation and refers

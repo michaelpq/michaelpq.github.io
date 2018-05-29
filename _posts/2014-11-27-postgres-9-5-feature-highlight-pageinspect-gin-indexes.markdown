@@ -18,7 +18,7 @@ tags:
 ---
 
 The extension module [pageinspect]
-(http://www.postgresql.org/docs/devel/static/pageinspect.html)
+(https://www.postgresql.org/docs/devel/static/pageinspect.html)
 has been already dumped to version 1.3 in PostgreSQL 9.5 with the addition of
 functions for [BRIN indexes]
 (/postgresql-2/postgres-9-5-feature-highlight-brin-indexes/). A couple of
@@ -43,7 +43,7 @@ a relation page (fetched using get\_raw\_page):
   leaf page.
 
 First let's create an index using the GIN operators of [pg\_trgm]
-(http://www.postgresql.org/docs/devel/static/pgtrgm.html) on the book
+(https://www.postgresql.org/docs/devel/static/pgtrgm.html) on the book
 "Les Miserables", English translation.
 
     =# CREATE EXTENSION pg_trgm;

@@ -16,7 +16,7 @@ tags:
 - program
 
 ---
-Postgres 9.3 brings a new option for [COPY](http://www.postgresql.org/docs/devel/static/sql-copy.html) allowing to pipe data with an external program, both in input and output. This feature has been added in the following commit:
+Postgres 9.3 brings a new option for [COPY](https://www.postgresql.org/docs/devel/static/sql-copy.html) allowing to pipe data with an external program, both in input and output. This feature has been added in the following commit:
 
     commit 3d009e45bde2a2681826ef549637ada76508b597
     Author: Heikki Linnakangas
@@ -79,11 +79,11 @@ Note that process will fail if the program command exists with a non-zero error 
 
 Now let's have a look at something that has far more potential for Postgres in my opinion: COPY FROM PROGRAM. The interest of this new feature is that it can do pre-processing as well as automatize the way data is pulled to your database (particularly useful in a stored procedure when you want to grab a bunch of data files that are identified with an ID or something similar). I find this particularly interesting with for example JSON data that you can find on the net easily, and even more with [JSON operators](/postgresql-2/postgres-9-3-feature-highlight-json-operators/), [JSON parsing functions](/postgresql-2/postgres-9-3-feature-highlight-json-parsing-functions/) and [JSON data generation functions](/postgresql-2/postgres-9-3-feature-highlight-json-data-generation/) introduced in 9.3 as all those features combined allow you to do all the data analysis cycle directly on the Postgres server.
 
-To finish this post, here is a short example of COPY FROM PROGRAM using some JSON data of [Open Weather Map](http://openweathermap.org/). First here is how to copy the latest weather data of Tokyo using curl directly into a Postgres table.
+To finish this post, here is a short example of COPY FROM PROGRAM using some JSON data of [Open Weather Map](https://openweathermap.org/). First here is how to copy the latest weather data of Tokyo using curl directly into a Postgres table.
 
     =# CREATE TABLE weather_json (cities json);
     CREATE TABLE
-    =# COPY weather_json FROM PROGRAM 'curl http://api.openweathermap.org/data/2.5/weather?q=Tokyo';
+    =# COPY weather_json FROM PROGRAM 'curl https://api.openweathermap.org/data/2.5/weather?q=Tokyo';
     COPY 1
     =# SELECT cities->'name' FROM weather_json;
      ?column?
@@ -91,4 +91,4 @@ To finish this post, here is a short example of COPY FROM PROGRAM using some JSO
       "Tokyo"
     (1 row)
 
-Then... It is let as an exercise to the reader to play with this data using the new JSON features of 9.3. The description of this JSON data is available [here](http://bugs.openweathermap.org/projects/api/wiki/Weather_Data). So why not trying to automatize the fetch of the weather data from many cities using some stored procedure or get some daily statistics after treating the data? Have fun!
+Then... It is let as an exercise to the reader to play with this data using the new JSON features of 9.3. The description of this JSON data is available [here](https://bugs.openweathermap.org/projects/api/wiki/Weather_Data). So why not trying to automatize the fetch of the weather data from many cities using some stored procedure or get some daily statistics after treating the data? Have fun!

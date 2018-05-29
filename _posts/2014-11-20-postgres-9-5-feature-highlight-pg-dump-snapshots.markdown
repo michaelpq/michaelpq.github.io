@@ -17,7 +17,7 @@ tags:
 ---
 
 A couple of days ago the following feature related to [pg\_dump]
-(http://www.postgresql.org/docs/devel/static/app-pgdump.html) has been
+(https://www.postgresql.org/docs/devel/static/app-pgdump.html) has been
 committed and will be in Postgres 9.5:
 
     commit: be1cc8f46f57a04e69d9e4dd268d34da885fe6eb
@@ -34,7 +34,7 @@ committed and will be in Postgres 9.5:
     Simon Riggs and Michael Paquier
 
 First, let's talk briefly about [exported snapshots]
-(http://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION),
+(https://www.postgresql.org/docs/devel/static/functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION),
 a feature that has been introduced in PostgreSQL 9.2. With it, it is possible
 to export a snapshot from a first session with pg\_export\_snapshot, and
 by reusing this snapshot in transactions of other sessions all the
@@ -77,7 +77,7 @@ database consistent with the previous session transaction. Well, doing only
 that is not that useful in itself. The fun begins actually by knowing that
 there is a different situation where a caller can get back a snapshot name,
 and this situation exists since 9.4 because it is the moment a [logical slot]
-(http://www.postgresql.org/docs/devel/static/logicaldecoding-explanation.html#AEN66595).
+(https://www.postgresql.org/docs/devel/static/logicaldecoding-explanation.html#AEN66595).
 is created through a replication connection.
 
     $ psql "replication=database dbname=dbname"

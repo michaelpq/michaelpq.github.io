@@ -24,12 +24,12 @@ to work on WAL. The code of PostgreSQL uses it already in a couple of
 places, hence many examples are already available in core to help the
 development of plugins with this facility:
 
-  * [pg\_xlogdump](http://www.postgresql.org/docs/devel/static/pgxlogdump.html),
+  * [pg\_xlogdump](https://www.postgresql.org/docs/devel/static/pgxlogdump.html),
   available since 9.3, is a simple debugging utility aimed at decoding and
   displaying information about WAL.
-  * [pg\_rewind](http://www.postgresql.org/docs/devel/static/app-pgrewind.html),
+  * [pg\_rewind](https://www.postgresql.org/docs/devel/static/app-pgrewind.html),
   recently added in PostgreSQL 9.5.
-  * [Logical decoding](http://www.postgresql.org/docs/devel/static/logicaldecoding.html),
+  * [Logical decoding](https://www.postgresql.org/docs/devel/static/logicaldecoding.html),
   introduced in 9.4.
 
 While WAL, being a binary journal aimed at preserving PostgreSQL consistency

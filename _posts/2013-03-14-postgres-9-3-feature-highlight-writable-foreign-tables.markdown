@@ -34,7 +34,7 @@ A new set of APIs for foreign data wrappers has been added to allow writable ope
     KaiGai Kohei, reviewed by Alexander Korotkov and Laurenz Albe, and rather
     heavily revised by Tom Lane.
 
-Based on the [documentation](http://www.postgresql.org/docs/devel/static/fdw-callbacks.html#FDW-CALLBACKS-UPDATE), the implementation is still very basic as nothing is done with clause shippability. Just to give some notions about that: roughly a clause in a SELECT query (LIMIT, OFFSET, GROUP BY, HAVING, ORDER BY, etc.) is shippable if this clause can be entirely evaluated on remote server, making less processing happening on local server, and reducing the tuple selectivity. A direct consequence of clause shippability limitation is that UPDATE and DELETE queries can take quite a long time if they are run on many rows because query is run in two steps:
+Based on the [documentation](https://www.postgresql.org/docs/devel/static/fdw-callbacks.html#FDW-CALLBACKS-UPDATE), the implementation is still very basic as nothing is done with clause shippability. Just to give some notions about that: roughly a clause in a SELECT query (LIMIT, OFFSET, GROUP BY, HAVING, ORDER BY, etc.) is shippable if this clause can be entirely evaluated on remote server, making less processing happening on local server, and reducing the tuple selectivity. A direct consequence of clause shippability limitation is that UPDATE and DELETE queries can take quite a long time if they are run on many rows because query is run in two steps:
 
   * Scan remote table and fetch back to local server the tuples to be manipulated
   * Process UPDATE or DELETE based on the tuples fetched

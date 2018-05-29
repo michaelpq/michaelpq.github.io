@@ -16,7 +16,7 @@ tags:
 - ordinality
 
 ---
-PostgreSQL 9.4 is going to be shipped with a feature of the SQL standard called [WITH ORDINALITY](http://www.postgresql.org/docs/devel/static/functions-srf.html). It has been introduced by this commit:
+PostgreSQL 9.4 is going to be shipped with a feature of the SQL standard called [WITH ORDINALITY](https://www.postgresql.org/docs/devel/static/functions-srf.html). It has been introduced by this commit:
 
     commit c62736cc37f6812d1ebb41ea5a86ffe60564a1f0
     Author: Greg Stark <stark@mit.edu>
@@ -27,7 +27,7 @@ PostgreSQL 9.4 is going to be shipped with a feature of the SQL standard called 
     Author: Andrew Gierth, David Fetter
     Reviewers: Dean Rasheed, Jeevan Chalke, Stephen Frost
 
-When those keywords are appended after a function returning a set of rows in a FROM clause, an additional bigint column is added in the result, containing a counter beginning at 1 and incremented for each row returned by the function. [The original commit implementing unnest()](http://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=c889ebce0aa5f848d680547e3af0aad8b9e577a7) actually missed this feature, so that's a great addition.
+When those keywords are appended after a function returning a set of rows in a FROM clause, an additional bigint column is added in the result, containing a counter beginning at 1 and incremented for each row returned by the function. [The original commit implementing unnest()](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=c889ebce0aa5f848d680547e3af0aad8b9e577a7) actually missed this feature, so that's a great addition.
 
 Here is how it works with a simple function returning rows.
 

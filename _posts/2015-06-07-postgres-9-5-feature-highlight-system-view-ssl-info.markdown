@@ -34,7 +34,7 @@ that has been introduced by this commit:
     Paquier
 
 
-[pg\_stat\_ssl](http://www.postgresql.org/docs/devel/static/monitoring-stats.html#PG-STAT-SSL-VIEW)
+[pg\_stat\_ssl](https://www.postgresql.org/docs/devel/static/monitoring-stats.html#PG-STAT-SSL-VIEW)
 is a system view showing statistics about the SSL usage of a given
 connection, with one row per connection. The view is shaped as follows,
 with information about if SSL is enabled, what is the version used, the

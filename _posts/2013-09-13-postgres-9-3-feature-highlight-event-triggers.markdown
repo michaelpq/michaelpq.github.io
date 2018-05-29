@@ -32,9 +32,9 @@ For the moment, there are three types of events that can be fired by a DDL trigg
 
 Also, there are three new SQL commands that can be used to control event triggers in 9.3.
 
-  * [CREATE EVENT TRIGGER](http://www.postgresql.org/docs/9.3/static/sql-createeventtrigger.html), where it is possible to define the name of the event trigger, the event it works with and of course the procedure it fires. Interestingly, it is also possible to apply some filters on the event trigger, by using the command tag of query.
-  * [ALTER EVENT TRIGGER](http://www.postgresql.org/docs/9.3/static/sql-altereventtrigger.html), to enable, to disable, to rename the trigger or to change its owner. Like normal triggers, an event trigger execution can be controlled with session\_replication\_role, particularly replica sessions.
-  * [DROP EVENT TRIGGER](http://www.postgresql.org/docs/9.3/static/sql-dropeventtrigger.html), as its name lets guess, to simply drop an event trigger.
+  * [CREATE EVENT TRIGGER](https://www.postgresql.org/docs/9.3/static/sql-createeventtrigger.html), where it is possible to define the name of the event trigger, the event it works with and of course the procedure it fires. Interestingly, it is also possible to apply some filters on the event trigger, by using the command tag of query.
+  * [ALTER EVENT TRIGGER](https://www.postgresql.org/docs/9.3/static/sql-altereventtrigger.html), to enable, to disable, to rename the trigger or to change its owner. Like normal triggers, an event trigger execution can be controlled with session\_replication\_role, particularly replica sessions.
+  * [DROP EVENT TRIGGER](https://www.postgresql.org/docs/9.3/static/sql-dropeventtrigger.html), as its name lets guess, to simply drop an event trigger.
 
 All the event triggers of server are also listed in a dedicated catalog table called pg\_event\_trigger, whose information can be retrieved using '?dy' in a psql client.
 

@@ -23,16 +23,16 @@ or strdup() simply missed to check for NULL values, causing a crash. Note that
 crashes are highly unlikely to happen, still the result of this investigation
 to make the code of Postgres cleaner, with problems detected as well by Heikki
 Linnakangas and Aleksander Alekseev, has resulted on a set of commits, like
-[that](http://git.postgresql.org/pg/commitdiff/d062245b5bd591edf6f78bab8d6b8bb3ff69c7a6),
-[that](http://git.postgresql.org/pg/commitdiff/6f7c0ea32f808a7dad3ec07db7e5fdf6514d2af0)
+[that](https://git.postgresql.org/pg/commitdiff/d062245b5bd591edf6f78bab8d6b8bb3ff69c7a6),
+[that](https://git.postgresql.org/pg/commitdiff/6f7c0ea32f808a7dad3ec07db7e5fdf6514d2af0)
 and finally
-[that](http://git.postgresql.org/pg/commitdiff/052cc223d5ce1b727f62afff75797c88d82f880b).
+[that](https://git.postgresql.org/pg/commitdiff/052cc223d5ce1b727f62afff75797c88d82f880b).
 
 One extra thing, discovered by Aleksander, was related to the incorrect use of
 ShmemAlloc(), which is a routine aimed at allocating shared memory for the
 whole system. And the topic of this post is about specifically that, that
 resulted in the
-[following commit](http://git.postgresql.org/pg/commitdiff/6c03d981a6b64ed8caaed4e94b54ef926202c9f3):
+[following commit](https://git.postgresql.org/pg/commitdiff/6c03d981a6b64ed8caaed4e94b54ef926202c9f3):
 
     commit: 6c03d981a6b64ed8caaed4e94b54ef926202c9f3
     author: Tom Lane <tgl@sss.pgh.pa.us>

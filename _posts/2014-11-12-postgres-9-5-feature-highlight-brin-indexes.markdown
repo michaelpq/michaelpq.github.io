@@ -124,7 +124,7 @@ doable. Now remember that BRIN indexes are lossy, meaning that not all the
 blocks fetched back after scanning the range entry may contain a target tuple.
 
 A last thing to notice is that [pageinspect]
-(http://www.postgresql.org/docs/devel/static/pageinspect.html) has been
+(https://www.postgresql.org/docs/devel/static/pageinspect.html) has been
 updated with a set of functions to scan pages of a BRIN index:
 
     =# SELECT itemoffset, value
@@ -141,7 +141,7 @@ updated with a set of functions to scan pages of a BRIN index:
 With its first shot, BRIN indexes come with a set of operator classes able
 to perform min/max calculation for each set of pages for most of the common
 datatypes. The list is available [here]
-(http://www.postgresql.org/docs/devel/static/brin-builtin-opclasses.html).
+(https://www.postgresql.org/docs/devel/static/brin-builtin-opclasses.html).
 Note that the design of BRIN indexes make possible the implementation of
 new operator classes with operations more complex than simple min/max, one
 of the next operators that may show up would be for point and bounding box

@@ -17,7 +17,7 @@ tags:
 ---
 
 Behind this eye-catching title is an [extension]
-(http://www.postgresql.org/docs/devel/static/extend-extensions.html) called
+(https://www.postgresql.org/docs/devel/static/extend-extensions.html) called
 blackhole that I implemented yesterday, tired of needing to always structure
 a fresh extension when needing one (well copying one from Postgres contrib/
 would be fine as well). Similarly to [blackhole_fdw]

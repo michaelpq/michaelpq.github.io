@@ -28,7 +28,7 @@ runs as a background worker that connects to a node running decoder_raw
 using a replication connection and then fetches decoded logical changes
 from it, which are in this case ready-to-be-applied raw queries. Those
 changes are then applied on the database one by one using the [SPI]
-(http://www.postgresql.org/docs/devel/static/spi.html) through  a loop
+(https://www.postgresql.org/docs/devel/static/spi.html) through  a loop
 process that sleeps during a customizable amount of nap time. Note that
 receiver\_raw is actually designed to be performant as it applies one single
 batch of changes using only one transaction in a single loop process.
@@ -40,7 +40,7 @@ your own logical change receiver.
 #### Connection string
 
 The [connection string]
-(http://www.postgresql.org/docs/devel/static/libpq-connect.html#LIBPQ-CONNSTRING)
+(https://www.postgresql.org/docs/devel/static/libpq-connect.html#LIBPQ-CONNSTRING)
 that is being used to connect to the remote node should have the following
 shape at minimum to set up a replication connection:
 
@@ -183,5 +183,5 @@ series as well:
 (/postgresql-2/postgres-9-4-feature-highlight-logical-replication-protocol/)
 
 The documentation of Postgres itself about [logical decoding]
-(http://www.postgresql.org/docs/devel/static/logicaldecoding.html) is of
+(https://www.postgresql.org/docs/devel/static/logicaldecoding.html) is of
 course highly recommended.

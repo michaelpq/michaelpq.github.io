@@ -17,7 +17,7 @@ tags:
 
 ---
 
-One of the new features introduced by PostgreSQL 9.2 is called [range types](http://www.postgresql.org/docs/9.2/static/rangetypes.html), which is, as you could easily guess based on this feature name, the possibility to use a range of values directly as a table column.
+One of the new features introduced by PostgreSQL 9.2 is called [range types](https://www.postgresql.org/docs/9.2/static/rangetypes.html), which is, as you could easily guess based on this feature name, the possibility to use a range of values directly as a table column.
 
 This simple feature allows your applications to avoid having a table using multiple columns to define start and end values of a range interval, one of the most intuitive examples being something like this:
 
@@ -41,7 +41,7 @@ Postgres 9.2 allows your application to rely directly on the database server to 
   * range of timestamp with timezone, tstzrange
   * range of date, daterange
 
-You can also create your own range types. The Postgres documentation gives an example with [float](http://www.postgresql.org/docs/9.2/static/rangetypes.html#RANGETYPES-DEFINING):
+You can also create your own range types. The Postgres documentation gives an example with [float](https://www.postgresql.org/docs/9.2/static/rangetypes.html#RANGETYPES-DEFINING):
 
     postgres# CREATE TYPE floatrange AS RANGE (
     postgres#    subtype = float8,

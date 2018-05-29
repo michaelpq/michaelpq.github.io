@@ -18,7 +18,7 @@ tags:
 ---
 
 [log\_autovacuum\_min\_duration]
-(http://www.postgresql.org/docs/devel/static/runtime-config-autovacuum.html#GUC-LOG-AUTOVACUUM-MIN-DURATION)
+(https://www.postgresql.org/docs/devel/static/runtime-config-autovacuum.html#GUC-LOG-AUTOVACUUM-MIN-DURATION)
 is a system-wide parameter controlling a threshold from which autovacuum
 activity is logged in the system logs. Every person who has already worked
 on looking at a system where a given set of table is bloated has for sure
@@ -43,8 +43,8 @@ logging threshold at relation level, feature introduced by this commit:
     Taiki Kondo, Huong Dangminh), Fujii Masao.
 
 This parameter can be set via [CREATE TABLE]
-(http://www.postgresql.org/docs/devel/static/sql-createtable.html) or
-[ALTER TABLE](http://www.postgresql.org/docs/9.4/static/sql-altertable.html),
+(https://www.postgresql.org/docs/devel/static/sql-createtable.html) or
+[ALTER TABLE](https://www.postgresql.org/docs/9.4/static/sql-altertable.html),
 with default value being the one defined by the equivalent parameter at
 server-level, like that for example:
 

@@ -39,7 +39,7 @@ memory areas by multiple backends at the same time.
 
 Monitoring those locks is possible if the code has been compiled with
 the compilation flag LOCK\_DEBUG, and if the configuration parameter
-[trace_lwlocks](http://www.postgresql.org/docs/devel/static/runtime-config-developer.html)
+[trace_lwlocks](https://www.postgresql.org/docs/devel/static/runtime-config-developer.html)
 is set to on in postgresql.conf. Up to 9.5, logging information about those
 locks resulted in an output similar to that, here the example being a lock
 acquired during the generation of a transaction XID whose creation has been

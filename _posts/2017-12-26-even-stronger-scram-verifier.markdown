@@ -17,8 +17,8 @@ tags:
 
 ---
 
-As designed by [RFC 7677](http://www.ietf.org/rfc/rfc7677.txt) and
-[RFC 5802](http://www.ietf.org/rfc/rfc5802.txt), SCRAM verifiers (please
+As designed by [RFC 7677](https://www.ietf.org/rfc/rfc7677.txt) and
+[RFC 5802](https://www.ietf.org/rfc/rfc5802.txt), SCRAM verifiers (please
 take this term as a password if you want, which means a proof of
 authentication) are defined with default parameters which make the
 computation of a proof costly, making it more expensive to do dictionary

@@ -18,10 +18,10 @@ tags:
 ---
 
 Introduced in PostgreSQL 9.1, an [unlogged table]
-(http://www.postgresql.org/docs/devel/static/sql-createtable.html) offers
+(https://www.postgresql.org/docs/devel/static/sql-createtable.html) offers
 the possibility to create a table whose definition is permanent on server,
 but its content is not [WAL-logged
-](http://www.postgresql.org/docs/9.1/static/wal.html)
+](https://www.postgresql.org/docs/9.1/static/wal.html)
 making it not crash-safe, with data that cannot be accessed on a read-only
 stannby continuously replaying WAL at recovery. Postgres 9.5 offers an
 improvement in this area with the possibility to switch the persistency of
@@ -73,7 +73,7 @@ like that:
     LOCATION:  get_relation_info, plancat.c:104
 
 Now running the command [ALTER TABLE .. SET LOGGED]
-(http://www.postgresql.org/docs/devel/static/sql-altertable.html) results
+(https://www.postgresql.org/docs/devel/static/sql-altertable.html) results
 in the relation to become persistent:
 
     =# ALTER TABLE tab_test SET LOGGED;

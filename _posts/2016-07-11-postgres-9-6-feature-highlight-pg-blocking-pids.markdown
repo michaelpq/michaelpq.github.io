@@ -38,7 +38,7 @@ commit:
     [...]
 
 You can refer to the
-[commit text](http://git.postgresql.org/pg/commitdiff/52f5d578d6c29bf254e93c69043b817d4047ca67)
+[commit text](https://git.postgresql.org/pg/commitdiff/52f5d578d6c29bf254e93c69043b817d4047ca67)
 in full to get more details regarding why this function is better than a
 join on the system catalogs pg\_locks (self join with one portion being the
 waiter, and the other the holder, doing field-by-field comparisons), from which

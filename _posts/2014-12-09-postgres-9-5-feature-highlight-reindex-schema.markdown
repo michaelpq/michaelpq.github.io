@@ -17,7 +17,7 @@ tags:
 ---
 
 PostgreSQL 9.5 has added a new mode for [REINDEX]
-(http://www.postgresql.org/docs/devel/static/sql-reindex.html) with this
+(https://www.postgresql.org/docs/devel/static/sql-reindex.html) with this
 commit:
 
     commit: fe263d115a7dd16095b8b8f1e943aff2bb4574d2

@@ -19,7 +19,7 @@ tags:
 
 PostgreSQL offers many ways to define how a node reaches the end of recovery
 with many parameters related to [recovery target]
-(http://www.postgresql.org/docs/devel/static/recovery-target-settings.html),
+(https://www.postgresql.org/docs/devel/static/recovery-target-settings.html),
 like a timestamp, a transaction ID, a target name and recovery timeline,
 using recovery\_target\_timeline. A parameter called pause\_at\_recovery\_target
 that exists since 9.1 allows as well to put a standby in pause when the
@@ -44,7 +44,7 @@ being in recovery, it is possible to perform the set of actions defined
 above using recovery\_target\_action in recovery.conf. Note that the
 former parameter name was action\_at\_recovery\_target, it has been
 renamed to recovery\_target\_action afterwards in commit [b8e33a8]
-(http://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=b8e33a):
+(https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=b8e33a):
 
   * pause, acting the same as when pause\_at\_recovery\_target is enabled
   to have the standby pause any replay actions so as it is possible to

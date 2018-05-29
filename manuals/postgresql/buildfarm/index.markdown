@@ -19,7 +19,7 @@ tags:
 - platform
 - settings
 ---
-Main resource is [here](http://wiki.postgresql.org/wiki/PostgreSQL_Buildfarm_Howto).
+Main resource is [here](https://wiki.postgresql.org/wiki/PostgreSQL_Buildfarm_Howto).
 The important point is to check that all the scripts work with perl -cw
 to be sure that no perl modules are missing.
 

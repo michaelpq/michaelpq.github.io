@@ -17,7 +17,7 @@ tags:
 
 ---
 
-[pg_receivexlog](http://www.postgresql.org/docs/devel/static/app-pgreceivexlog.html)
+[pg_receivexlog](https://www.postgresql.org/docs/devel/static/app-pgreceivexlog.html)
 is an in-core utility of Postgres able to recover WAL files through a stream
 using the replication protocol. It is particularly useful when for example
 using it to transfer some WAL files to a proxy node when standby node cannot

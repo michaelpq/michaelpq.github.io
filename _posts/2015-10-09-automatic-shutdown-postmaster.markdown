@@ -61,14 +61,14 @@ this circumstance for example:
     LOG:  received immediate shutdown request
 
 As the number of slow machines has rather increased in the [buildfarm]
-(http://buildfarm.postgresql.org/cgi-bin/show_status.pl), this is aimed
+(https://buildfarm.postgresql.org/cgi-bin/show_status.pl), this is aimed
 at improving the robustness of the whole facility, the thread where this
 patch came from mentioned as well that this can protect instances in some
-special cases. See [here](http://www.postgresql.org/message-id/560AFA4D.1080305@joeconway.com)
+special cases. See [here](https://www.postgresql.org/message-id/560AFA4D.1080305@joeconway.com)
 for more details. If you face a similar situation once, you would surely
 thank this commit aimed at preventing disasters of this kind. Note that
 this is not included in this [week's release set]
-(http://www.postgresql.org/message-id/CA+OCxoygxAhR16Sh4X1YSi5pSkLkYrPLWTknxTT84JM=P_Ma5A@mail.gmail.com),
+(https://www.postgresql.org/message-id/CA+OCxoygxAhR16Sh4X1YSi5pSkLkYrPLWTknxTT84JM=P_Ma5A@mail.gmail.com),
 and it will be in the next set.
 
 Note as well that this was the last minor release for PostgreSQL 9.0

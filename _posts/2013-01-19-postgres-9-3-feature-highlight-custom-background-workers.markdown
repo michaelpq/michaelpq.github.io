@@ -149,4 +149,4 @@ Then, for count\_relations, you can also have a look at the logs of the server a
 
 When writing a new worker, try not to write it from scratch but use as a base the code of worker\_spi. This code already implements some methods that can be used generically like signal handling, latch management and database connection. So use it and abuse of it!
 
-As a last word, it is important to understand that the example of bgworker made for this post is really basic, and touches only a tiny portion of what is available in the feature APIs, so be sure to have a look at the [documentation](http://www.postgresql.org/docs/devel/static/bgworker.html) for further details.
+As a last word, it is important to understand that the example of bgworker made for this post is really basic, and touches only a tiny portion of what is available in the feature APIs, so be sure to have a look at the [documentation](https://www.postgresql.org/docs/devel/static/bgworker.html) for further details.

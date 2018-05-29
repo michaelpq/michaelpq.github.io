@@ -35,7 +35,7 @@ a new feature that will be released in 9.5:
     Horiguchi, some additional hacking by me
 
 As mentioned in the commit message, [foreign tables]
-(http://www.postgresql.org/docs/devel/static/sql-createforeigntable.html)
+(https://www.postgresql.org/docs/devel/static/sql-createforeigntable.html)
 can now be part of an inheritance tree, be it as a parent or as a child.
 
 Well, seeing this commit, one word comes immediately in mind: in-core sharding.
@@ -43,12 +43,12 @@ And this feature opens such possibilities with for example a parent table managi
 locally a partition of foreign child tables located on a set of foreign servers.
 
 PostgreSQL offers some way to already do [partitioning]
-(http://www.postgresql.org/docs/devel/static/ddl-partitioning.html) by using
+(https://www.postgresql.org/docs/devel/static/ddl-partitioning.html) by using
 CHECK constraints (non-intuitive system but there may be improvements in a
-[close future](http://www.postgresql.org/message-id/54EC32B6.9070605@lab.ntt.co.jp)
+[close future](https://www.postgresql.org/message-id/54EC32B6.9070605@lab.ntt.co.jp)
 in this area). Now combined with the feature committed, here is a small
 example of how to do sharding without the need of any external plugin or
-tools, only [postgres_fdw](http://www.postgresql.org/docs/devel/static/postgres-fdw.html)
+tools, only [postgres_fdw](https://www.postgresql.org/docs/devel/static/postgres-fdw.html)
 being needed to define foreign tables.
 
 Now let's take the example of 3 Postgres servers, running on the same machine

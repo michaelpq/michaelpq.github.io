@@ -82,7 +82,7 @@ Note however that there are a couple of things to be aware of:
   GUC parameter that defines command allowing processes to get the passphrase
   instead of asking it in a tty. Patches are welcome if there is a use case
   for it. This behavior is described in the following
-  [commit](http://git.postgresql.org/pg/commitdiff/6667d9a6d77b9a6eac89638ac363b6d03da253c1).
+  [commit](https://git.postgresql.org/pg/commitdiff/6667d9a6d77b9a6eac89638ac363b6d03da253c1).
   As passphrase support has been rather limited for a long time, being able
   to reload SSL contexts even without it has a great value.
 

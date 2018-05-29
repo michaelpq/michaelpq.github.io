@@ -44,7 +44,7 @@ files by introducing a new system view called pg\_file\_settings:
     Reviewers: David Steele
 
 In short, [pg\_file\_settings]
-(http://www.postgresql.org/docs/devel/static/view-pg-file-settings.html)
+(https://www.postgresql.org/docs/devel/static/view-pg-file-settings.html)
 can prove to be quite useful when using a set of configuration files to
 set the server when including them using for example include or
 include\_if\_not\_exists. Hence, for example let's imagine a server with

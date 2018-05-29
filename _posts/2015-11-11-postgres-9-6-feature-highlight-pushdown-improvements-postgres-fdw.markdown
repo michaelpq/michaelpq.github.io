@@ -56,7 +56,7 @@ the function or operator will be executed locally after fetching all tuples
 from the remote source.
 
 The commit above, that will be present in Postgres 9.6 in the extension
-[postgres\_fdw](http://www.postgresql.org/docs/devel/static/postgres-fdw.html),
+[postgres\_fdw](https://www.postgresql.org/docs/devel/static/postgres-fdw.html),
 brings an improvement in this area by leveraging the first condition. In short,
 an object does not need anymore to be a built-in one to be considered as
 shippable for remote execution: if an operator or function, which is

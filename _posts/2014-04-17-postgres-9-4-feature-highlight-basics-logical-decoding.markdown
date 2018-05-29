@@ -19,7 +19,7 @@ tags:
 The second huge feature coming in PostgreSQL 9.4 with [jsonb]
 (postgresql-2/postgres-9-4-feature-highlight-indexing-jsonb/) is called
 [logical decoding]
-(http://www.postgresql.org/docs/devel/static/logicaldecoding.html). In
+(https://www.postgresql.org/docs/devel/static/logicaldecoding.html). In
 short, it is a new plugin facility that can be used to decode changes
 that happen on a database and stream them to external sources. It can
 be used for many things like replication, auditing or even online upgrade
@@ -38,7 +38,7 @@ to be able to decode changes to the database into a coherent format.
 (with particularly the possibility to provide a database name in parameter
 "replication" of a connection string)
   * Addition of [REPLICA IDENTITY]
-(http://www.postgresql.org/docs/devel/static/sql-altertable.html), a table
+(https://www.postgresql.org/docs/devel/static/sql-altertable.html), a table
 parameter to modify how updated and deleted tuple data is written to WAL.
 
 Then, two new utilities are present to help users to grab an understanding

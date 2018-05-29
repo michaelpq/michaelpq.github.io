@@ -78,7 +78,7 @@ Everything is in place, it is time to move on with the new features
 involving triggers. Here is for example the case of a trigger that
 tracks DML activity on the foreign table with an audit table located
 locally using [json data type]
-(http://www.postgresql.org/docs/devel/static/datatype-json.html) and
+(https://www.postgresql.org/docs/devel/static/datatype-json.html) and
 row\_to\_json():
 
     =# CREATE TABLE audit_foreign (relid oid,
@@ -149,7 +149,7 @@ with some data and see the audit changes:
 
 Cool! The foreign table activity is now tracked thanks to the triggers on it.
 Note how this takes advantage as well of the json data type (could be [jsonb]
-(http://www.postgresql.org/docs/devel/static/datatype-json.html) as well).
+(https://www.postgresql.org/docs/devel/static/datatype-json.html) as well).
 
 A last word: constraint triggers are not supported, (foreign tables cannot
 have constraints by the way, they are managed on the remote side).

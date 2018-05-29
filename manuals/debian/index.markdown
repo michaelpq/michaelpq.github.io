@@ -33,8 +33,8 @@ After downloading the net installer, install things with a minimal setting,
 and do *not* install any desktop environments. Once the basic installation is
 done, use the following lines in /etc/apt/sources.list:
 
-    deb http://ftp.jp.debian.org/debian/ sid main contrib non-free
-    deb-src http://ftp.jp.debian.org/debian/ sid main contrib non-free
+    deb https://ftp.jp.debian.org/debian/ sid main contrib non-free
+    deb-src https://ftp.jp.debian.org/debian/ sid main contrib non-free
 
 The mention of "sid" ensures that unstable is used for the repository syncs.
 "contrib" and "non-free" give access to more packages, including non-free

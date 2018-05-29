@@ -42,7 +42,7 @@ that will be available in Postgres 9.6:
     Reviewer: Haribabu Kommi
 
 So, what has been added here is a new system view called [pg\_stat\_wal\_receiver]
-(http://www.postgresql.org/docs/devel/static/monitoring-stats.html#PG-STAT-WAL-RECEIVER-VIEW)
+(https://www.postgresql.org/docs/devel/static/monitoring-stats.html#PG-STAT-WAL-RECEIVER-VIEW)
 that offers to the user a set of information equivalent to the extension
 presented in the previous post, except that this has the advantage to not
 rely on any external things, making it available immediately in-box, and to

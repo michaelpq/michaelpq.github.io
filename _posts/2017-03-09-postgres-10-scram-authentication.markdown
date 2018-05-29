@@ -25,7 +25,7 @@ cannot be reached except by superusers, but things leaking sometimes, using
 MD5 can prove to be insecure in some cases (even if MD5 is strong against
 pre-image attacks for example). Postgres 10 is adding a new authentication
 protocol with the following
-[commit](http://git.postgresql.org/pg/commitdiff/818fd4a67d610991757b610755e3065fb99d80a5):
+[commit](https://git.postgresql.org/pg/commitdiff/818fd4a67d610991757b610755e3065fb99d80a5):
 
     Support SCRAM-SHA-256 authentication (RFC 5802 and 7677).
 

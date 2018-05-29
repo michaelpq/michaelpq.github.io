@@ -17,7 +17,7 @@ tags:
 ---
 
 A couple of days back a new mode has been added in [vacuumdb]
-(http://www.postgresql.org/docs/devel/static/app-vacuumdb.html) for the
+(https://www.postgresql.org/docs/devel/static/app-vacuumdb.html) for the
 support of parallel jobs:
 
     commit: a17923204736d8842eade3517d6a8ee81290fca4

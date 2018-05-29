@@ -25,7 +25,7 @@ tags:
 - cvs
 ---
 Git is a code tree management largely present in many development teams.
-Have a look also [here](http://git-scm.com/).
+Have a look also [here](https://git-scm.com/).
 
 ### Cloning repository
 

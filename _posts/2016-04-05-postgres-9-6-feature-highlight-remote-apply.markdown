@@ -19,7 +19,7 @@ tags:
 ---
 
 While the last commit fest of PostgreSQL 9.6 is moving to an end with a
-soon-to-come [feature freeze](http://www.postgresql.org/message-id/CA+TgmoY56w5FOzeEo+i48qehL+BsVTwy-Q1M0xjUhUCwgGW7-Q@mail.gmail.com),
+soon-to-come [feature freeze](https://www.postgresql.org/message-id/CA+TgmoY56w5FOzeEo+i48qehL+BsVTwy-Q1M0xjUhUCwgGW7-Q@mail.gmail.com),
 here is a short story about one of the features that got committed close
 to the end of it:
 
@@ -92,7 +92,7 @@ this post is written:
   quorum synchronous standbys are being evaluated as well, with an elegant
   design. (However note that the more standbys they are, the more the
   performance penalty when waiting for them with remote\_apply). Everything
-  is happening on [this thread](http://www.postgresql.org/message-id/CAB7nPqSJgDLLsVk_Et-O=NBfJNqx3GbHszCYGvuTLRxHaZV3xQ@mail.gmail.com)
+  is happening on [this thread](https://www.postgresql.org/message-id/CAB7nPqSJgDLLsVk_Et-O=NBfJNqx3GbHszCYGvuTLRxHaZV3xQ@mail.gmail.com)
   lately.
 
 However, be careful when using remote\_apply. As it interacts with WAL

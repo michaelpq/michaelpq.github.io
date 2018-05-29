@@ -32,7 +32,7 @@ PostgreSQL 9.5 illustrated by this commit:
 
     93 files changed, 3945 insertions(+), 4366 deletions(-)
 
-Each user of PostgreSQL knows [WAL](http://www.postgresql.org/docs/devel/static/wal-intro.html)
+Each user of PostgreSQL knows [WAL](https://www.postgresql.org/docs/devel/static/wal-intro.html)
 as being a sort of internal journal used by the system to ensure data
 integrity at recovery with a set a registered REDO actions.
 

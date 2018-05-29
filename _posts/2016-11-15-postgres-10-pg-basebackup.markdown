@@ -22,7 +22,7 @@ pg\_basebackup that will be part of Postgres 10.
 The first one relates to the state of an on-disk backup folder on failure.
 In short, in the event of a failure, pg\_basebackup will remove an folders
 it has created when processing. This has been introduced by
-[commit 9083353](http:// http://git.postgresql.org/pg/commitdiff/9083353).
+[commit 9083353](https:// https://git.postgresql.org/pg/commitdiff/9083353).
 
 There are a couple of things to be aware of when using this feature
 though:
@@ -44,7 +44,7 @@ debugging.
 
 A second thing to be aware of is that support for --xlog-stream=stream
 has been added for the tar mode, support added by
-[commit 56c7d8d](http:// http://git.postgresql.org/pg/commitdiff/56c7d8d).
+[commit 56c7d8d](https:// https://git.postgresql.org/pg/commitdiff/56c7d8d).
 So commands of the following type are in Postgres 10 not a problem anymore:
 
     pg_basebackup -D $PGDATA --xlog-method=stream --format=t
@@ -61,7 +61,7 @@ course untar'ed, but more importantly copied into their correct place.
 A third thing that has been improved in pg\_basebackup is the handling
 of a couple of folders that are now excluded from a base backup. This
 has been added by
-[commit 6ad8ac6](http:// http://git.postgresql.org/pg/commitdiff/6ad8ac6).
+[commit 6ad8ac6](https:// https://git.postgresql.org/pg/commitdiff/6ad8ac6).
 Here is the list of the folders whose symlinks in the source server
 are changed into empty folders in the base backup:
 

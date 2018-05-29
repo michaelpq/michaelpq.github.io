@@ -25,7 +25,7 @@ Windows.
 ### Settings
 
 First, when using a Japanese keyboard, you might want to set up correctly
-a [JP106 keyboard](http://support.microsoft.com/kb/927824/en-us).
+a [JP106 keyboard](https://support.microsoft.com/kb/927824/en-us).
 
 Windows does not use PATH, but Path to detect the folders where binaries
 are automatically looked for. In order to modify it, a simple method
@@ -39,15 +39,15 @@ consists in doing.
 ### Softwares
 
 Installing emacs on Windows is damn easy as GNU proposes packages to
-deploy [here](http://ftp.gnu.org/gnu/emacs/windows/).
+deploy [here](https://ftp.gnu.org/gnu/emacs/windows/).
 
 7zip is essential for your survival as it is extrenely useful for
 decompressing things that you need to install like emacs.
 
-As an antivirus, [clamwin](http://www.clamwin.com/) is an open source
+As an antivirus, [clamwin](https://www.clamwin.com/) is an open source
 solution free of use.
 
-[msysgit](http://msysgit.github.io/) provides an excellent way to have a
+[msysgit](https://msysgit.github.io/) provides an excellent way to have a
 Unix-like environment on Windows. [Home](https://github.com/michaelpq/home)
 has as well on its branch windows, scripts already compatible with Windows
 that are derived from the ones in the Unix/Linux branches. This contains

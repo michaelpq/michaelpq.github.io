@@ -17,7 +17,7 @@ tags:
 ---
 
 Customizing the shape of logs written by a PostgreSQL server is possible
-using a [hook](http://wiki.postgresql.org/images/e/e3/Hooks_in_postgresql.pdf)
+using a [hook](https://wiki.postgresql.org/images/e/e3/Hooks_in_postgresql.pdf)
 present in core code invocated before sending anything to the server logs.
 
 This hook is present in elog.c and is defined as follows:

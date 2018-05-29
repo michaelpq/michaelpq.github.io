@@ -18,7 +18,7 @@ tags:
 ---
 
 Since its introduction in 9.1, [synchronous replication]
-(http://www.postgresql.org/docs/devel/static/warm-standby.html#SYNCHRONOUS-REPLICATION),
+(https://www.postgresql.org/docs/devel/static/warm-standby.html#SYNCHRONOUS-REPLICATION),
 or the ability to wait for a WAL flush confirmation from a standby before
 committing a transaction on the master node (depends on synchronous\_commit
 whose default value is on), ensuring that the transaction committed has not
@@ -60,7 +60,7 @@ synchronous replication or because of another lock.
     (1 row)
 
 Note that there is a [patch submitted for integration to Postgres 9.6]
-(http://www.postgresql.org/message-id/CA+TgmoYd3GTz2_mJfUHF+RPe-bCy75ytJeKVv9x-o+SonCGApw@mail.gmail.com)
+(https://www.postgresql.org/message-id/CA+TgmoYd3GTz2_mJfUHF+RPe-bCy75ytJeKVv9x-o+SonCGApw@mail.gmail.com)
 to make this information more verbose, something particularly interesting
 is that it would be possible to track the type of lock a backend is being
 stuck on, in our case that would be SyncRepLock. Still, this does not offer

@@ -16,22 +16,22 @@ tags:
 
 ---
 Except if you have been cut from the Internet the last week, you have already
-heard of [Heartbleed](http://heartbleed.com/). This good candidate for the "Bug
+heard of [Heartbleed](https://heartbleed.com/). This good candidate for the "Bug
 of the Year 2014" price is already costing a better-not-to-count amount of money
 in maintenance and development for many companies around the world.
 
 It has already been [mentioned]
-(http://blog.hagander.net/archives/219-PostgreSQL-and-the-OpenSSL-Heartbleed-vulnerability.html)
+(https://blog.hagander.net/archives/219-PostgreSQL-and-the-OpenSSL-Heartbleed-vulnerability.html)
 in which cases a PostgreSQL server would be vulnerable, but you might want
 to run some tests to check that the update of openssl on your server is effective.
 After this bug went public on 2014/04/07, many scripts have popped around on the
 net to help you checking if a server is vulnerable to this bug or not. However,
 you need to know that you may not be able to test them directly on a Postgres
 server as Postgres uses a [custom protocol]
-(http://www.postgresql.org/docs/devel/static/protocol-flow.html#AEN102260)
+(https://www.postgresql.org/docs/devel/static/protocol-flow.html#AEN102260)
 before handling the connection to openssl. A connection needs to send first
 a message called SSLRequest described [here]
-(http://www.postgresql.org/docs/devel/static/protocol-message-formats.html),
+(https://www.postgresql.org/docs/devel/static/protocol-message-formats.html),
 consisting of two 32-bit integers, 8 and 80877103. The server then answers
 a single byte, either 'S' if SSL connection is supported, or 'N' if not.
 Once 'S' is received the SSL startup handshake message can be sent for

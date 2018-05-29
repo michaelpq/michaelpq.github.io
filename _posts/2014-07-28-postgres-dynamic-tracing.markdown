@@ -16,12 +16,12 @@ tags:
 
 ---
 Postgres has in-core support for [Dynamic tracing]
-(http://www.postgresql.org/docs/devel/static/dynamic-trace.html), which
+(https://www.postgresql.org/docs/devel/static/dynamic-trace.html), which
 is the possibility to use an external utility to track specific code path
 calls and have an execution trace at disposition for further analysis.
 Enabling this feature can be done when compiling code by specifying
 --enable-dtrace at [configure]
-(http://www.postgresql.org/docs/devel/static/install-procedure.html) step.
+(https://www.postgresql.org/docs/devel/static/install-procedure.html) step.
 Note as well that on Linux systems you will need systemtap installed
 (development package for compilation may be needed depending on your
 platform) to be able to compile code with this support, and extra
