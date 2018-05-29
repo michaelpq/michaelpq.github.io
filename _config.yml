@@ -1,6 +1,6 @@
 name: Michael Paquier - PostgreSQL hacker
 description: Blog about PostgreSQL and other things
-url: http://paquier.xyz
+url: https://paquier.xyz
 kramdown:
 gems: [jekyll-paginate]
 highlighter: rouge
