@@ -25,6 +25,18 @@ tags:
 
 ---
 
+#### 2018: Authentication in PostgreSQL
+
+  * [pdf](/content/materials/20180531_pgcon_auth.pdf)
+  * [odp](/content/materials/20180531_pgcon_auth.odp)
+  * Place: Ottawa, PGCon 2018. Date: 2018/05/31
+
+#### 2018: Corruptions!
+
+  * [pdf](/content/materials/20180531_pgcon_corruptions.pdf)
+  * [odp](/content/materials/20180531_pgcon_corruptions.odp)
+  * Place: Ottawa, PGCon 2018. Date: 2018/05/31
+
 #### 2017: SCRAM authentication
 
   * [pdf](/content/materials/20171206_scram.pdf)
