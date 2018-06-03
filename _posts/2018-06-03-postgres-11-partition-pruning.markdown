@@ -100,6 +100,8 @@ shape:
                                        /           \
                                  child_30_35  child_35_40
 
+And this tree can be done with the following SQL queries:
+
     =# CREATE TABLE child_30_40 PARTITION OF parent_tab
          FOR VALUES FROM (30) TO (40)
          PARTITION BY RANGE(id);
