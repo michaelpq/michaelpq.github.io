@@ -12,8 +12,8 @@ tags:
 - database
 - open
 - source
+- postgres
 - postgresql
-- xc
 - core
 - extension
 - france
@@ -40,7 +40,7 @@ Work area
   * Open source development
   * Relational Database Developer - PostgreSQL
   * Goal: Develop state-of-the-art Database and Open Source software
-  technologies, protect 80 characters per line of code.
+  technologies, protect 75~80 characters per line of code.
 
 Professional experience
 -----------------------
@@ -55,6 +55,7 @@ Professional experience
 
   * **PostgreSQL Global Development Group**, World, Earth
   * PostgreSQL hacker, blogger and module developer.
+  * Committer of upstream core since May 2018.
 
 ### January 2009-December 2012
 
@@ -67,19 +68,18 @@ Professional experience
 
   * **Astek Sud-est**, Sophia-Antipolis, France
   * Consultant for **Amadeus**, specialized in flight ticket booking
-systems.
+  systems.
   * Development of C++/C solutions, support to other teams and customer
-request actions.
+  request actions.
 
 ### January 2007-August 2007
 
   * **Hitachi Ltd**, Hitachi City, Japan
   * Program Vulcanus in Japan. **40 participants for 1,000 applicants**
   * Member of a team in charge of the development of electronic packages
-with new
-  * Conception of heat materials.
+  with new types of heat materials.
   * Creation of cooling designs for electronic package cooled by low-speed
-airflow (patented). Work in Japanese.
+  airflow (patented). Work in Japanese.
 
 ### June 2006-August 2006
 
@@ -87,7 +87,7 @@ airflow (patented). Work in Japanese.
   * Statistical forecast of pipe failures in a water network.
   * Comparison of the efficiency of 2 statistical processes: Yule and Weibull.
   * Creation of a comparison method to evaluate the age of water network of
-Saint-Etienne.
+  Saint-Etienne.
 
 Education
 ---------
@@ -97,7 +97,7 @@ Education
   * **ENSEEIHT**, Toulouse, France
   * 3rd year engineer student.
   * Computational fluid dynamics (CFD): Multiphase flows, turbulence models,
-combustion
+  combustion.
   * Development of efficient software solutions for fluid simulation.
   * Master's degree
   * **Among 10% best students.**
@@ -120,7 +120,7 @@ combustion
 
   * **ENSEEIHT**, Toulouse, France
   * National polytechnic Institute of engineering in Electro-technology,
-Electronics, Computer Science, Hydraulics and Telecommunications
+  Electronics, Computer Science, Hydraulics and Telecommunications
   * 1st year engineer student.
   * Statistics, mechanical engineering, material science.
   * Basic programming: C, C++, Fortran introduction.
@@ -130,15 +130,16 @@ Electronics, Computer Science, Hydraulics and Telecommunications
 
   * **Lycee Berthollet**, Annecy, France
   * Preparatory classes for entrance exams into national engineering
-schools (Grandes ecoles).
+  schools (Grandes ecoles).
   * Deep Mathematics and physics theorical studies: MPSI and MP* (Math
-Otaku times!).
+  Otaku times!).
 
 Languages
 ---------
 
   * French: Native speaker
-  * English: Business level, TOEIC 860 in April 2006
+  * English: Business level, TOEIC 860 in April 2006, TOEFL 101 in
+  December 2007.
   * Japanese: Business level, JLPT 2 passed in December 2008
   * German: Basic level
   * Spanish: Basic level
@@ -151,7 +152,7 @@ IT skills
   * **Windows**: Dev, and stuff.
   * **Linux**: Far more dev, far more stuff.
   * **Mac OSX**: Follower since 10.7~.
-  * **Software development**: GIT, emacs, vi, CVS, Eclipse, etc.
+  * **Software development**: git, emacs, vi, CVS, Eclipse, etc.
 
 ### Programming
 
@@ -172,13 +173,13 @@ Extra-curricular activities
 
 ### Sports and activities
 
-  * Swimming, joggling.
+  * Swimming, joggling, music.
   * Japanese drum: performance in public with Japanese-only team.
 
 ### Awards
 
   * June 1999 : 3rd of the Maths Olympics of Rhone-Alpes area, France
-(approximately 1,000 participants).
+  (approximately 1,000 participants).
   * September 2006 : Award from Vulcanus in Japan program, chosen with
-40 other participants among 1,000 applications. Sponsorised by the EU-Japan
-Center for Industrial Cooperation based in Brussels.
+  40 other participants among 1,000 applications. Sponsorised by the EU-Japan
+  Center for Industrial Cooperation based in Brussels.
