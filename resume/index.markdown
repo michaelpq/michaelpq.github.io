@@ -27,23 +27,20 @@ tags:
 
 ---
 
-Personal information
---------------------
+## Personal information
 
   * Location: Tokyo, Japan
   * Nationality: French
   * Contact: **michael at paquier dot xyz**
 
-Work area
----------
+## Work area
 
   * Open source development
   * Relational Database Developer - PostgreSQL
   * Goal: Develop state-of-the-art Database and Open Source software
   technologies, protect 75~80 characters per line of code.
 
-Professional experience
------------------------
+## Professional experience
 
 ### January 2013-Now
 
@@ -89,8 +86,7 @@ Professional experience
   * Creation of a comparison method to evaluate the age of water network of
   Saint-Etienne.
 
-Education
----------
+## Education
 
 ### September 2007-February 2008
 
@@ -134,8 +130,7 @@ Education
   * Deep Mathematics and physics theorical studies: MPSI and MP* (Math
   Otaku times!).
 
-Languages
----------
+## Languages
 
   * French: Native speaker
   * English: Business level, TOEIC 860 in April 2006, TOEFL 101 in
@@ -144,8 +139,7 @@ Languages
   * German: Basic level
   * Spanish: Basic level
 
-IT skills
----------
+## IT skills
 
 ### Operating systems
 
@@ -163,8 +157,7 @@ IT skills
   * Database stuff: PostgreSQL, SQL in general, some MySQL, and related
   tools.
 
-Extra-curricular activities
----------------------------
+## Extra-curricular activities
 
 ### Club management
 
