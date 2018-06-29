@@ -44,7 +44,8 @@ of PostgreSQL.  The following commit has added them, and is part of 11:
     Reviewed-By: Michael Paquier
     Discussion: https://postgr.es/m/20171231191939.GR2416%40tamriel.snowman.net
 
-Three system roles have been added in version 11:
+Three new [default roles](https://www.postgresql.org/docs/devel/static/default-roles.html)
+have been added in version 11:
 
   * pg\_execute\_server\_program
   * pg\_read\_server\_files
@@ -53,14 +54,14 @@ Three system roles have been added in version 11:
 The first one, pg\_execute\_server\_program, is as described in its name the
 possibility to execute server-side program calls.  This is used in two places:
 
-  * COPY ... FROM PROGRAM, which allows to execute a program which returns
-  data into a pipe fed from or to the table involved.  An example of such a
-  case is copying data from a server-side file which is compressed and
-  cannot be parsed by default.  This is a grammar supported down to Postgres
-  9.3.
-  * file\_fdw, which is a wrapper on top of the internal COPY protocol able
-  to mimic what the parent command can to, which is available since version
-  10.
+  * [COPY ... FROM PROGRAM](https://www.postgresql.org/docs/devel/static/sql-copy.html),
+  which allows to execute a program which returns data into a pipe fed from
+  or to the table involved.  An example of such a case is copying data from
+  a server-side file which is compressed and cannot be parsed by default.
+  This is a grammar supported down to Postgres 9.3.
+  * [file\_fdw](https://www.postgresql.org/docs/10/static/file-fdw.html),
+  which is a wrapper on top of the internal COPY protocol able to mimic
+  what the parent command can to, which is available since version 10.
 
 For example, with the foreign-data wrapper file\_fdw, a superuser can do
 the following operation to copy some data to a table by executing a program.
@@ -115,7 +116,7 @@ as follows and then switch the session it:
        role may specify the program option of a file_fdw foreign table
     LOCATION:  file_fdw_validator, file_fdw.c:280
 
-One new part is this error message which involves the new system role, as
+One new part is this error message which involves the new default role, as
 well as now the possibility to allow the user to define such a table
 by granting to it pg\_execute\_server\_program.
 
@@ -138,14 +139,14 @@ can be queried.
      3 | hoge
     (3 rows)
 
-The second system role added is pg\_read\_server\_files, which can
+The second default role added is pg\_read\_server\_files, which can
 be used for two things:
 
   * Server-side COPY FROM, which was a superuser-only restriction until
   version 10.
   * And more importantly access to *any* files on the server, which is
   a property not to ignore, and a really important thing to not forget
-  when using this new system role.
+  when using this new default role.
 
 The base path used by a process spawned in PostgreSQL is the data folder
 itself, and up to PostgreSQL 10 the following restrictions apply, even
@@ -164,8 +165,8 @@ to.  The firstly-described set of rules still applies for roles which
 are not granted the power of pg\_read\_server\_files with only GRANT
 access to dedicated system functions, like pg\_read\_file for example.
 
-The last system role added is pg\_write\_server\_files, which has a
+The last default role added is pg\_write\_server\_files, which has a
 range more limited as it allows COPY TO to work with non-superuser
-to which is granted the powers of this new system role, so that's
+to which is granted the powers of this new default role, so that's
 still useful for some applications where the server-side data loading
 can be dedicated to roles external to superusers and administrators.
