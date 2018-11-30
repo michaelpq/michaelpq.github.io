@@ -4,7 +4,7 @@ lastmod: 2018-11-30
 date: 2018-11-30 04:50:22+00:00
 layout: post
 type: post
-slug: 2018-11-30-postgres-12-dos-prevention
+slug: postgres-12-dos-prevention
 title: 'Postgres 12 highlight - DOS prevention'
 categories:
 - PostgreSQL-2
