@@ -14,7 +14,6 @@ tags:
 - 9.4
 - logical
 - replication
-- chain
 
 ---
 Working with logical replication and a cluster of nodes heavily linked

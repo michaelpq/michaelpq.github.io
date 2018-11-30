@@ -10,7 +10,6 @@ categories:
 - PostgreSQL-2
 tags:
 - pgcon
-- 2012
 - postgres
 - postgres-xc
 - conference
