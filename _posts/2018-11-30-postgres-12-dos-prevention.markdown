@@ -14,6 +14,9 @@ tags:
 - 12
 - lock
 - connection
+- reindex
+- cluster
+- vacuum
 
 ---
 
