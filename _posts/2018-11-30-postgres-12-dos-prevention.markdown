@@ -60,7 +60,7 @@ the same kind of issues:
 The first two cases have been fixed for PostgreSQL 12, with
 [commit a556549 for VACUUM](https://git.postgresql.org/pg/commitdiff/a556549)
 and [commit f841ceb for TRUNCATE](https://git.postgresql.org/pg/commitdiff/f841ceb).
-Note that similar work has been done a couple of years ado with for example
+Note that similar work has been done a couple of years ago with for example
 [CLUSTER in commit cbe24a6](https://git.postgresql.org/pg/commitdiff/cbe24a6).
 In all those cases, the root of the problem is to make sure that the user
 has the right to take a lock on a relation before attempting it and locking
