@@ -117,3 +117,25 @@ can be controlled using systemctl;
 
     systemctl poweroff
     systemctl reboot
+
+## Manual RPM installation
+
+If Debian SID gets broken because of a package dependency not correctly
+handled in the central repositories, it is always possible to enforce
+the installation of packages manually.  First download the .deb file
+to install, this can be done using apt like that:
+
+    apt download $PACKAGE
+
+If this cannot be found, it is also possible to download it from Debian's
+FTP servers, by first going into one of the
+[mirrors](https://www.debian.org/mirror/list), like
+[this one](ftp.jp.debian.org/debian/), then navigate to
+pool/main/$FIRST\_LETTER\_PACKAGE/$PACKAGE ("main" may change depending
+on the package category).  For example for perl the URL would be
+pool/main/p/perl.  Then finally install the package manually:
+
+    dpkg -i $PACKAGE.deb
+
+Depending on the different dependencies, it may be necessary to repeat
+those steps multiple times for multiple packages.
