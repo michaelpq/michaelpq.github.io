@@ -25,6 +25,12 @@ tags:
 
 ---
 
+#### 2018: How to get a feature committed?
+
+  * [pdf](/content/materials/20181211_feature_commit.pdf)
+  * [odp](/content/materials/20181211_feature_commit.odp)
+  * Place: Tokyo, PGConf Asia 2018. Date: 2018/12/11
+
 #### 2018: Authentication in PostgreSQL
 
   * [pdf](/content/materials/20180531_pgcon_auth.pdf)
