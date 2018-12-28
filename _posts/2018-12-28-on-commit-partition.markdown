@@ -139,7 +139,7 @@ This means that child relations may get truncated uselessly if the parent
 is dropped at the end, but that keeps the code logic simple.  Another thing
 to be aware of is that this bug fix has only found its way down to Postgres
 10, which has added as option PERFORM\_DELETION\_QUIETLY so as the cascading
-removal of the children does not cause noise NOTICE messages.  As nobody
+removal of the children does not cause noisy NOTICE messages.  As nobody
 has complained about this bug for 15 years, and partitions begin (introduced
 in v10) are just beginning to get used in applications that's a limitation
 not worth worrying about.  Note also that ON COMMIT actions are not inherited
