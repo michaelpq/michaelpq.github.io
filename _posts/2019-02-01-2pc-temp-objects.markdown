@@ -75,7 +75,10 @@ used to status of this schema:
   as they can display respectively the current schema in use and the schemas
   in "search\_path".  Note that it is possible to include directly "pg\_temp"
   in "search\_path" as an alias of the temporary schema, and that those
-  functions will return the effective temporary schema name.  For example:
+  functions will return the effective temporary schema name.
+
+Here is an example with search\_path enforced to a temporary schema for those
+functions:
 
     =# SET search_path = 'pg_temp';
     SET
