@@ -43,7 +43,7 @@ connection uses a shared memory slot which is part of max\_connections.
 Hence, it is possible to get into a case where an application bloats the
 connections, and it becomes impossible to connect with a replication
 connection.  This can be rather bad for availability, because this could
-the creation of a new standby after a failover for example.
+prevent the creation of a new standby after a failover for example.
 
 One way to counter that is to connect to the server for base backups and
 standbys with a superuser role.  Still this is not completely right either
