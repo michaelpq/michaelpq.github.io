@@ -53,14 +53,14 @@ cluster:
 Here is how it works.  The tool is able to do three modes now in
 total:
 
-  * --check, the default if nothing is specified and what
+  * \-\-check, the default if nothing is specified and what
   pg\_verify\_checksums was already able to do.  This mode scans all the
   relation file blocks, reporting any mismatch.
-  * --enable, which enables data checksums.  This rewrites all the
+  * \-\-enable, which enables data checksums.  This rewrites all the
   relation file blocks, and finishes the operation by updating the
   control file.  Note that this can be take time depending on the size
   of the instance, and that the tool has no parallel mode.
-  * --disables which disables data checksums by only updating the
+  * \-\-disables which disables data checksums by only updating the
   control file.
 
 Hence, taking a cluster which has data checksums disabled, here is how
@@ -131,7 +131,7 @@ set of two nodes, a primary and a standby:
   * Both primary and standby have data checksums disabled, and the goal
   is to enable data checksums.
   * First, stop cleanly the standby, and enable checksums on it with
-  --enable.
+  \-\-enable.
   * Start the standby, and make it catch up with the primary.
   * Stop cleanly the primary.
   * Promote the standby and do a failover to it.
@@ -164,7 +164,7 @@ been added:
     Discussion: https://postgr.es/m/1535719851.1286.17.camel@credativ.de
 
 
-Note that this is valid only for --check and --enable. Reports are every
+Note that this is valid only for \-\-check and \-\-enable. Reports are every
 second, as follows (this is a fresh instance):
 
     $ pg_checksums --enable --progress
