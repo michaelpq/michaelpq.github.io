@@ -25,6 +25,13 @@ tags:
 
 ---
 
+#### 2019: How to get a feature committed?  Take two
+
+  * [pdf](/content/materials/20190531_feature_commit.pdf)
+  * [odp](/content/materials/20190531_feature_commit.odp)
+  * [Commit Fest data](/content/materials/20190531_cf_data.ods)
+  * Place: Ottawa, PGCon 2019. Date: 2019/05/31
+
 #### 2018: How to get a feature committed?
 
   * [pdf](/content/materials/20181211_feature_commit.pdf)
