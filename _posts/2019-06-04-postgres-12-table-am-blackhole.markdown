@@ -31,7 +31,7 @@ many set of facilities available, like:
 After a heavy refactoring of the code, Postgres 12 ships with a basic
 infrastructure for
 [table access methods](https://www.postgresql.org/docs/devel/tableam.html)
-which allow to customize how table data is stored and accessed.  By default,
+which allows to customize how table data is stored and accessed.  By default,
 all tables in PostgreSQL use the historical heap, which works on a page-based
 method of 8kB present in segment files of 1GB (default sizes), with full
 tuple versions stored.  This means, in simple words, that even updating one
