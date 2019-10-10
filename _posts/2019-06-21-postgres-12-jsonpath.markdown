@@ -19,7 +19,7 @@ tags:
 
 Postgres ships in-core data types for JSON with specific functions and operators
 (json since 9.2, and jsonb which is a binary representation since 9.4).  The
-upcoming Postgres 12 is becoming more complaint with the SQL specifications by
+upcoming Postgres 12 is becoming more compliant with the SQL specifications by
 introducing SQL/JSON path language, introduced mainly by the following commit:
 
     commit: 72b6460336e86ad5cafd3426af6013c7d8457367
