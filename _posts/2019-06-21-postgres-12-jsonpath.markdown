@@ -128,7 +128,7 @@ of functions implemented, it is possible to do some actual lookups in the
 JSON blob.  jsonb\_path\_query() is likely the most interesting one, as it
 allows to directly query a portion of the JSON blob:
 
-    =# SELECT jsonb_path_query(a, '$.name') FROM characters;
+    =# SELECT jsonb_path_query(data, '$.name') FROM characters;
          name
     ---------------
      "Iksdargotso"
