@@ -25,6 +25,12 @@ tags:
 
 ---
 
+#### 2019: PostgreSQL 12 and beyond
+
+  * [pdf](/content/materials/20191115_pgconjp_pg12.pdf)
+  * [odp](/content/materials/20191115_pgconjp_pg12.odp)
+  * Place: Tokyo, PGCon Japan 2019. Date: 2019/11/15
+
 #### 2019: How to get a feature committed?  Take two
 
   * [pdf](/content/materials/20190531_feature_commit.pdf)
@@ -67,7 +73,7 @@ tags:
 
   * Subtitle: Features, standbys and WAL
   * [pdf](/content/materials/20151127_pgconjp_pg95.pdf)
-  * Place: Tokyo, keynote of PgCon Japan 2015. Date: 2015/11/27
+  * Place: Tokyo, keynote of PGCon Japan 2015. Date: 2015/11/27
   * Duration: 50 minutes + questions
 
 #### 2015: Lightning talk, pg_trunc2del
