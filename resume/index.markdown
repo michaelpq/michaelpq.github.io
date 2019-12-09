@@ -44,8 +44,9 @@ tags:
 
 ### January 2013-Now
 
-  * **VMware**, Senior Member of Technical Staff - PostgreSQL, Tokyo, Japan
+  * **VMware**, Staff, Tokyo, Japan
   * Working on PostgreSQL integration, packaging and virtualization
+  * Senior Member of Technical Staff: May 2015 - September 2019
   * Member of Technical Staff: January 2013 - May 2015
 
 ### January 2009-Now
