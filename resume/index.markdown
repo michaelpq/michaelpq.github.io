@@ -4,7 +4,7 @@ date: 2011-02-27 12:13:51+00:00
 layout: page
 type: page
 slug: resume
-title: 'Michael Paquier - resume'
+title: 'Michael Paquier - Resume'
 tags:
 - michael
 - paquier
