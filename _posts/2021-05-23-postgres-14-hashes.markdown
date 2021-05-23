@@ -79,7 +79,7 @@ or even the SQL functions able to build such hashes could call that.
 
 The list of problems is long here, and one thing that I have been working
 on for this release was to put more sanity in this area.  This has resulted
-in a series of commits that basically refactor all the code related to
+in a series of commits that basically refactors all the code related to
 cryptographic hashes, where possible:
 
   * [Move SHA2 routines into new design](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=87ae969)
@@ -107,18 +107,20 @@ gains are neat:
   can work even with the FIPS code mentioned above that would cause a
   hard crash.
 
-The last point is something that has influenced a lot the set of interfaces
-to initialize, update and finalize the hashes supported.  OpenSSL does the
-allocations of all the structures used for the hashes and these remain
-internal, applications manipulating only pointers to them.  The low-level
-hash routines were much more flexible here.  So this has made necessary the
-creation of two routines, one for the allocation of the hash structures and
-a second one to free them.  libpq requires a soft error in the event of
-out-of-memory errors so as client applications can catch errors reliably,
-so several layers required to become more careful with their error reporting.
-The backend uses resource owners to make sure that any allocation done by
-OpenSSL is tracked and that things get cleaned up when the parent context is
-released and free()'d.  Anyway, here is the set of routines designed, as of
+The last point is something that has influenced a lot the design of the
+interfaces to initialize, update and finalize the hashes supported.
+OpenSSL does by itself the allocations of all the structures used for the
+hashes and these remain internal, applications manipulating only pointers to
+them.  The low-level hash routines were much more flexible regarding that,
+as no allocations were required and a set of fixed-size variables would
+do the job.  So this has made necessary the creation of two routines, one
+for the allocation of the hash structures and a second one to free them.
+libpq requires a soft error in the event of out-of-memory errors so as
+client applications can catch errors reliably, so several layers required
+to become more careful with their error reporting.  The backend uses
+resource owners to make sure that any allocation done by OpenSSL is
+tracked and that things get cleaned up when the parent context is released
+and free()'d.  Anyway, here is the set of routines designed, as of
 src/include/common/cryptohash.h (similar for HMAC in
 src/include/common/hmac.h):
 
@@ -129,5 +131,6 @@ src/include/common/hmac.h):
     extern void pg_cryptohash_free(pg_cryptohash_ctx *ctx);
 
 In the long term, this is a solution that can be relied on, and those
-routines can be plugged with other SSL libraries (this may happen in
-the future to offer alternatives to OpenSSL when using Postgres).
+routines can be plugged with other SSL libraries.  This may happen in
+the future to offer alternatives to OpenSSL when using Postgres, a
+different history for a different time.
