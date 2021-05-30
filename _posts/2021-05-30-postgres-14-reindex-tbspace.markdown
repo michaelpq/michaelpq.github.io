@@ -47,7 +47,7 @@ The following feature has been committed into PostgreSQL 14, as of this
 
 The commit message is explicit enough: this adds a new clause to
 [REINDEX](https://www.postgresql.org/docs/devel/sql-reindex.html) called
-TABLESPACE.  The logic behind it is deadly simply, and offers the possibility
+TABLESPACE.  The logic behind it is deadly simple, and offers the possibility
 to move indexes into a new tablespace while rebuilding them.  Originally, this
 was proposed for [CLUSTER](https://www.postgresql.org/docs/devel/sql-cluster.html)
 as well as [VACUUM FULL](https://www.postgresql.org/docs/devel/sql-vacuum.html),
