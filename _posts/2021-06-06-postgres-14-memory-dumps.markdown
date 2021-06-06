@@ -5,7 +5,7 @@ date: 2021-06-06 06:42:22+00:00
 layout: post
 type: post
 slug: postgres-14-memory-dumps
-title: 'Postgres 14 highlight - Memory dumps
+title: 'Postgres 14 highlight - Memory dumps'
 categories:
 - PostgreSQL-2
 tags:
