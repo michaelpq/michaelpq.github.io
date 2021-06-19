@@ -15,7 +15,7 @@ tags:
 - copy
 - monitoring
 
-x---
+---
 
 When it comes to monitoring in PostgreSQL, progress reports, able to give
 the state of an operation at a given point in time, exist since 9.6 and
