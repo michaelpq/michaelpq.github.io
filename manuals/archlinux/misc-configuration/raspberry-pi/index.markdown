@@ -34,3 +34,13 @@ Where NUM can be of the following values:
   * 0 for Auto
   * 1 for Analog out
   * 3 for HDMI
+
+### Issues with HDMI and boot
+
+Some versions of Archlinux ARM may cause the server to not be able to
+complete boot unless directly plugged with an HDMI output.  It is possible
+to force the boot to finish thanks to a hidden option that fakes the existence
+of a HDMI output even if not directly plugged in, thanks to this option set in
+/boot/config.txt:
+
+    hdmi_force_hotplug=1
