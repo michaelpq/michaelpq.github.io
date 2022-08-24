@@ -69,6 +69,13 @@ and for brightness [here](https://wiki.gentoo.org/wiki/ACPI/ThinkPad-special-but
 
 And those really facilitate your life!
 
+## Sound drivers
+
+The sound drivers may not be available on the latest Debian, requiring
+to look at https://github.com/thesofproject/sof-bin/ to install some
+extra files not available yet (see its README.md). As a whole, dmesg
+provides also a lot of debug output.
+
 ## i3 and desktop
 
 ### wifi connection tracking
