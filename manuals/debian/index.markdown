@@ -52,6 +52,9 @@ And the environment should be able to run on SID with all the packages wanted.
 By default Debian does not include the Wifi and WWAN drivers for the thinkpad,
 however, those are available in the package *iwlwifi*. In order to be able to
 install those, add "contrib" and "non-free" to /etc/apt/sources.list.
+Note that depending on the evolution of Debian, these may not be supported,
+requiring to look at git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
+with a combination of a copy of these binaries to /usr/lib/firmware/.
 
 ## USB mounting
 
