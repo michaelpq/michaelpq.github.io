@@ -42,18 +42,24 @@ tags:
 
 ## Professional experience
 
-### January 2013-Now
+### September 2022-Now
 
-  * **VMware**, Staff, Tokyo, Japan
-  * Working on PostgreSQL integration, packaging and virtualization
-  * Senior Member of Technical Staff: May 2015 - September 2019
-  * Member of Technical Staff: January 2013 - May 2015
+  * **Amazon Web Services (AWS)**, Senior Database Engineer, Tokyo, Japan
+  * Working on PostgreSQL things, for Amazon, as a whole.
 
 ### January 2009-Now
 
-  * **PostgreSQL Global Development Group**, World, Earth
+  * **PostgreSQL Global Development Group**, World, Planet Earth
   * PostgreSQL hacker, blogger and module developer.
-  * Committer of upstream core since May 2018.
+  * Committer of upstream since May 2018.
+
+### January 2013-August 2022
+
+  * **VMware**, Staff 2, Tokyo, Japan
+  * Working on PostgreSQL integration, packaging and virtualization
+  * Staff: September 2019 - April 2021
+  * Senior Member of Technical Staff: May 2015 - September 2019
+  * Member of Technical Staff: January 2013 - May 2015
 
 ### January 2009-December 2012
 
@@ -144,19 +150,17 @@ tags:
 
 ### Operating systems
 
-  * **Windows**: Dev, and stuff.
   * **Linux**: Far more dev, far more stuff.
-  * **Mac OSX**: Follower since 10.7~.
-  * **Software development**: git, emacs, vi, CVS, Eclipse, etc.
+  * **macos**: Dev, and stuff.
+  * **Windows**: Less dev, and less stuff.
+  * **Software development**: git, emacs, mutt, i3.
 
 ### Programming
 
-  * Programming Languages: C (main), C++, Fortran, Java, Perl, Python,
-  Ruby, etc.
-  * Environment scripting: bash, shell. emacs user here!
+  * Programming Languages: C (main), C++, Java, Perl, Python, more (?).
+  * Environment scripting: bash.
   * Web applications: HTML, php, some javascript.
-  * Database stuff: PostgreSQL, SQL in general, some MySQL, and related
-  tools.
+  * Database stuff: PostgreSQL, SQL and relational database engines.
 
 ## Extra-curricular activities
 
