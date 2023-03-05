@@ -5,7 +5,7 @@ kramdown:
 gems: [jekyll-paginate]
 highlighter: rouge
 permalink: /:categories/:title/
-paginate: 10
+paginate: 5
 paginate_path: page:num
 tag_title_prefix: 'Posts tagged as &ldquo;'
 tag_title_suffix: '&ldquo;'
