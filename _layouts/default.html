@@ -35,22 +35,25 @@
 <!-- Header part with title and page menus -->
 <div id="header">
   <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-
-  <!-- List all page top items -->
-  <ul>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/">Home</a></li>
-    <li><a href="/manuals/">Manuals</a></li>
-    <li><a href="/presentations/">Presentations</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/resume/">Resume</a></li>
-    <li><a href="/tag/">Tags</a></li>
-  </ul>
 </div>
+
 <div class="colmask menu">
    <!-- Main content column -->
    <div class="colleft">
-      <div class="col1">
+       <div class="col1">
+       <div id="topmenu">
+           <!-- Top-menu items -->
+           <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/manuals/">Manuals</a></li>
+           <li><a href="/presentations/">Presentations</a></li>
+           <li><a href="/projects/">Projects</a></li>
+           <li><a href="/resume/">Resume</a></li>
+           <li><a href="/tag/">Tags</a></li>
+           <li style="float:right"><a href="/about/">About</a></li>
+           </ul>
+       </div>
+
         <!-- Print content in presence of a post -->
         {% if page.type == 'post' or page.type == 'page' or page.type == 'error' or page.type == 'tag' %}
           {{ content }}

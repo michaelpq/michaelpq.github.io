@@ -55,47 +55,53 @@ img {
 #header p,
 #header h1,
 #header h2 {
-	padding:.4em 15px 0 15px;
+	padding:10px 15px 10px 50px;
 	margin:0;
 }
-#header ul {
+#header h1 a {
+	text-decoration: none;
+}
+#topmenu ul {
 	clear:left;
 	float:left;
+	background:#eeeeee;
 	width:100%;
 	list-style:none;
-	margin:10px 0 0 0;
+	margin:0px 0 0 0;
 	padding:0;
 }
-#header ul li {
-	display:inline;
+#topmenu ul li {
+	display:block;
 	list-style:none;
 	margin:0;
 	padding:0;
 }
-#header ul li a {
-	display:block;
+#topmenu ul li a {
+	display:run-in;
 	float:left;
-	margin:0 0 0 1px;
+	margin:0 0 0 0px;
 	padding:3px 10px;
 	text-align:center;
 	background:#eee;
+	font-size: x-large;
+	font-weight: bold;
 	color:#000000;
 	text-decoration:none;
 	position:relative;
-	left:15px;
+	left:0px;
 	line-height:1.3em;
 }
-#header ul li a:hover {
+#topmenu ul li a:hover {
 	background:#336699;
 	color:#ffffff;
 }
-#header ul li a.active,
-#header ul li a.active:hover {
+#topmenu ul li a.active,
+#topmenu ul li a.active:hover {
 	color:#ffffff;
 	background:#000000;
 	font-weight:bold;
 }
-#header ul li a span {
+#topmenu ul li a span {
 	display:block;
 }
 /* 'widths' sub menu */
