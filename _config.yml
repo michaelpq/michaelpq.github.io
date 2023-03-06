@@ -1,8 +1,8 @@
-name: Michael Paquier - PostgreSQL committer
+title: Michael Paquier - PostgreSQL committer
 description: Blog about PostgreSQL and other things
 url: https://paquier.xyz
 kramdown:
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 highlighter: rouge
 permalink: /:categories/:title/
 paginate: 5
