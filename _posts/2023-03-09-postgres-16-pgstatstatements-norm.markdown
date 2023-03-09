@@ -145,10 +145,12 @@ TABLE AS:
 
     =# SELECT calls, query FROM pg_stat_statements
          WHERE lower(query) ~ 'create table';
-     calls |                  query                  
-    -------+-----------------------------------------
+     calls |                  query
+     -------+-----------------------------------------
          1 | CREATE TABLE norm_tab AS SELECT $1 AS a
     (1 row)
 
-The capabilities are still limited, though the basics are in place to allow
-much more in terms of normalization via the manipulation of utility nodes.
+The capabilities are still limited, though the basic infrastructure is in
+place to allow much more in terms of normalization via the manipulation of
+utility nodes.  Hopefully others will come up with new ideas to extend all
+that, let's see how it goes.
