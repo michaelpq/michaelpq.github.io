@@ -146,7 +146,7 @@ TABLE AS:
     =# SELECT calls, query FROM pg_stat_statements
          WHERE lower(query) ~ 'create table';
      calls |                  query
-     -------+-----------------------------------------
+    -------+-----------------------------------------
          1 | CREATE TABLE norm_tab AS SELECT $1 AS a
     (1 row)
 
