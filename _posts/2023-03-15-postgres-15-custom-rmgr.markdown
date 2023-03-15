@@ -19,7 +19,7 @@ tags:
 ---
 
 Postgres 15 has a [release note page](https://www.postgresql.org/docs/15/release-15.html)
-full of items, and this commit is one of the fun entries from the point of
+full of items, and this commit is one of the fun parts from the point of
 view of a hacker:
 
     commit: 5c279a6d350205cc98f91fb8e1d3e4442a6b25d1
