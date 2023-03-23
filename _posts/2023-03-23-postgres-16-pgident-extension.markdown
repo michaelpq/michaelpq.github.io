@@ -17,7 +17,7 @@ tags:
 
 ---
 
-Phase two of the improvements done in PostgreSQL 16 for authentication
+The second phase of the improvements done in PostgreSQL 16 for authentication
 configuration involve
 [pg_ident.conf](https://www.postgresql.org/docs/devel/auth-username-maps.html),
 mainly with this [commit](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commit;h=efb6f4a):
