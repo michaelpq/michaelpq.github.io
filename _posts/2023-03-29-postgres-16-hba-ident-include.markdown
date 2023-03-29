@@ -43,10 +43,10 @@ mainly with this
     Discussion: https://postgr.es/m/20220223045959.35ipdsvbxcstrhya@jrouhaud
 
 This feature is at the core of making pg\_hba.conf and pg\_ident.conf more
-in-line with postgresql.conf, even if the parsing logic of the first two is not
-the same as the third one as GUCs require their own thing, while HBA and
-ident files need to handle full entries made of a sequence of items.  And some
-of these items can be lists, additionally.
+in-line with postgresql.conf, even if the parsing logic of the first two is
+not the same as the third one as GUCs require their own thing, while HBA and
+ident files need to handle full entries made of a sequence of items.  And
+some of these items can be lists, additionally.
 
 Up to PostgreSQL 15, inclusion of files is possible in pg\_hba.conf within a
 list for databases and users, by defining a file path prefixed by '@'.  This
