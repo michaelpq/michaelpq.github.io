@@ -69,17 +69,17 @@ as follows:
 The following successive attempts are done to try to get WAL:
 
     1424966099438
-    cp: cannot stat '/home/ioltas/archive/5432/000000010000000000000004': No such file or directory
+    cp: cannot stat '/to/path/archive/5432/000000010000000000000004': No such file or directory
     1424966099539
-    cp: cannot stat '/home/ioltas/archive/5432/000000010000000000000004': No such file or directory
+    cp: cannot stat '/to/path/archive/5432/000000010000000000000004': No such file or directory
     # 101 ms of difference
 
 And then after switching to 20s:
 
     1424966322364
-    cp: cannot stat '/home/ioltas/archive/5432/000000010000000000000005': No such file or directory
+    cp: cannot stat '/to/path/archive/5432/000000010000000000000005': No such file or directory
     1424966342387
-    cp: cannot stat '/home/ioltas/archive/5432/000000010000000000000005': No such file or directory
+    cp: cannot stat '/to/path/archive/5432/000000010000000000000005': No such file or directory
     # 20023ms of difference
 
 Something else to note is that the wait processing has been switched from
