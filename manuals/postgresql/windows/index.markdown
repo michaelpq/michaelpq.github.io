@@ -82,9 +82,12 @@ Using Chocolatey seems to be the only alternative with meson:
     choco install winflexbison
     choco install sed
     choco install gzip
+    # This one is necessary for a "perl" command.
     choco install strawberryperl
+    # This one is necessary for a "diff" command and the regression tests.
+    choco install diffutils
 
-Something like that may be tequired for the automatic dependency check for
+Something like that may be required for the automatic dependency check for
 PL/Python.  But it may be preferable to just disable the switch entirely:
 
     choco install python
@@ -96,7 +99,16 @@ Then run a command like that for the installation:
     meson compile
     meson install
 
+Note that the compiler detected will depend on the terminal where the meson
+commands are run: using a simple Command Prompt will likely find out
+Chocolatey's gcc version.  In order to use Visual Studio's compiler, using
+the Command Prompt for VS is mandatory.
+
 A run of the tests can be done as follows:
 
     cd builddir/
     meson test
+
+Here is an equivalent of installcheck:
+
+    meson test --setup running regress-running/regress
