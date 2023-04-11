@@ -63,3 +63,40 @@ the MSVC scripts need absolutely to use stuff from [ActiveState Perl]
 (https://www.activestate.com). Use the free Standard Distribution. Be as
 well sure that the perl version from msysgit is *not* in Path/PATH as
 the MSVC scripts do not work with it.
+
+### Chocolatey and meson
+
+ActiveState does not offer a perl binary in a PATH by default, so first
+run that from PowerShell:
+
+    state activate --default
+
+A different, and much more appealing alternative is to use StrawberryPerl
+these days.  Really, ActivePerl integration is honestly BS because it requires
+a project to be activated with a "state activate --default" command to give
+access to a "perl" command, located within the local cache data (AppData\)
+for the OS user.
+
+Using Chocolatey seems to be the only alternative with meson:
+
+    choco install winflexbison
+    choco install sed
+    choco install gzip
+    choco install strawberryperl
+
+Something like that may be tequired for the automatic dependency check for
+PL/Python.  But it may be preferable to just disable the switch entirely:
+
+    choco install python
+
+Then run a command like that for the installation:
+
+    meson setup -Dplpython=disabled -Dprefix=C:\Users\Administrator\pgsql builddir
+    cd builddir/
+    meson compile
+    meson install
+
+A run of the tests can be done as follows:
+
+    cd builddir/
+    meson test
