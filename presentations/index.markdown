@@ -25,6 +25,11 @@ tags:
 
 ---
 
+#### 2023: Authentication and Configuration
+
+  * [pdf](/content/materials/20230531_pgcon_auth.pdf)
+  * Place: Ottawa, PGCon 2023. Date: 2023/05/31
+
 #### 2019: PostgreSQL 12 and beyond
 
   * [pdf](/content/materials/20191115_pgconjp_pg12.pdf)
