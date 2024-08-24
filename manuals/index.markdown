@@ -20,15 +20,10 @@ tags:
 The following sub-sections are available from here:
 
   * [Archlinux](/manuals/archlinux/)
-  * [Cryptocurrency](/manuals/cryptocurrency/)
   * [Debuggers](/manuals/debug-manual/)
   * [Debian](/manuals/debian/)
-  * [ESX and vSphere](/manuals/esx-and-vsphere/)
   * [Games](/manuals/games/)
   * [Git](/manuals/git-manual/)
   * [GPG](/manuals/gpg/)
-  * [Jenkins](/manuals/jenkins/)
   * [OpenSSL](/manuals/openssl/)
   * [PostgreSQL](/manuals/postgresql/)
-  * [Windows](/manuals/windows/)
-
