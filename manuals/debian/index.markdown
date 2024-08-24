@@ -26,6 +26,7 @@ come to a fully-blown desktop environment with the following characteristics:
   * i3 is used as desktop, meaning that X is used as display manager.
   * a SIM card can be potentially used.
   * acpi is used to trigger keyboard events.
+  * Firmware updates can be automatically managed without Windows.
 
 ## Installing Unstable (SID)
 
@@ -110,16 +111,6 @@ Here are some useful packages as well:
 
 *ttf-bitstream-vera* is a nice font package that can be used.
 
-## mutt
-
-mutt may complain about the following error:
-
-    1) warning "GPGME: CMS protocol not available"
-
-This can be countered by installing the package gpgsm:
-
-    apt-get install gpgsm
-
 ## Power control
 
 Debian does not create a "wheel" group or "power" group, but those
@@ -149,3 +140,25 @@ pool/main/p/perl.  Then finally install the package manually:
 
 Depending on the different dependencies, it may be necessary to repeat
 those steps multiple times for multiple packages.
+
+## Firmware updates
+
+Things go through [fwupd](https://github.com/fwupd/fwupd), flawlessly
+and automatically.  A package of the same name should be installed to
+make this utility available.  Some useful commands.
+
+Get the list of devices set on the device:
+
+    fwupdmgr get-devices
+
+Refresh the latest firmware metadata:
+
+    fwupdmgr refresh
+
+If updates are available, display them:
+
+    fwupdmgr get-updates
+
+Perform a set of firware updates:
+
+    fwupdmgr update
