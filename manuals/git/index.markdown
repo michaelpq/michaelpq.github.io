@@ -428,22 +428,18 @@ Here is how to create quickly a tarball of a subfolder:
 
     git archive -o ~/to/output/subfolder.tar.gz HEAD:subfolder
 
-### Migration
+### Worktree
 
-Transferring a CVS repository to a GIT one is pretty simple.
+This can be used to managed multiple branches in a single repository,
+useful when working on stable branches of a project.  Some commands
+to remember.
 
-You need first to install the following packages: git-cvs cvsps. In
-ArchLinux, git-cvs is missing, so using an RPM-based box like CentOS
-makes it well.
-
-    yum install git-cvs cvsps
-
-Then, simply run the following command in a given folder $FOLDER.
-
-    mkdir $FOLDER
-    cd $FOLDER
-    git cvsimport -v -d :pserver:anonymous@example.com:/sources/classpath \
-        $MODULE_NAME
+    # Add a new worktree
+	git worktree add $PATH $BRANCH
+	# List existing worktree
+	git worktree list
+	# Remove a worktree
+	git worktree remove $PATH
 
 ### Creating repository from root parent
 

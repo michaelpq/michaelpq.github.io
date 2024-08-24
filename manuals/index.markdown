@@ -19,11 +19,11 @@ tags:
 
 The following sub-sections are available from here:
 
-  * [Archlinux](/manuals/archlinux/)
   * [Debug](/manuals/debug/)
   * [Debian](/manuals/debian/)
   * [Games](/manuals/games/)
   * [git](/manuals/git/)
   * [GPG](/manuals/gpg/)
+  * [Linux](/manuals/linux/)
   * [OpenSSL](/manuals/openssl/)
   * [PostgreSQL](/manuals/postgresql/)

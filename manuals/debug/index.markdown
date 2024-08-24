@@ -108,7 +108,7 @@ source, here simply "MyData".
 Makes the program stop when the object chosen has its value equal. It
 is also possible to use this functionnality with other operators.
 
-###  3. About watchpoints
+###  About watchpoints
 
 Cause the program to stop if $OBJECT_NAME value changes.
 
@@ -128,7 +128,7 @@ changed. This will clear the watchpoint after stopping.
 
     watch $OBJECT_NAME::$DATA
 
-### 4. Run an application
+### Run an application
 
 First launch an application.
 
@@ -165,7 +165,7 @@ code.
 
     file $PROGRAM_NAME
 
-### 5. Manipulate values
+### Manipulate values
 
 After launching GDB and the application properly, it is time to analyze
 the code. Print a value.
@@ -202,7 +202,7 @@ within the process. It overwrites the existing value.
 
     set $VARIABLE_NAME = $VALUE
 
-### 6. Go through the code
+### Go through the code
 
 Run the program until completion, or to the next breakpoint.
 
@@ -222,8 +222,8 @@ Or go down N lines in a row
 This is similar to step, but it will not go into a function. 'next 10'
 will advance 10 lines.
 
-    next
-    n
+    next 10
+    n 10
 
 
 This will run until the current stack frame returns. The value returned
@@ -237,7 +237,7 @@ permits to have a larger view of the code running through.
 
     list
 
-### 7. Code visibility
+### Code visibility
 
 Make coincide the core file with the application wanted.
 
@@ -248,13 +248,13 @@ this folder.
 
     path $FOLDER_PATH
 
-### 8. Multi-thread debugging
+### Multi-thread debugging
 
 Attach gdb to a parent and fallback automatically to a new child forked.
 
     set follow-fork-mode child
 
-### 9. Extras
+### Extras
 
 Hitting enter with no command will repeat the last command. Most commands
 have one letter abbreviations.

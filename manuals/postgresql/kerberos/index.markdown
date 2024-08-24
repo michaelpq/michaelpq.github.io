@@ -76,7 +76,7 @@ realm cited above, configuration is saved as /etc/krb5.conf:
 
 Now create the KDC database for the realm setup with the following command
 (if the database does not create, you may have to create by yourself
-/var/lib/krb5kdc which is the default path of the database for ArchLinux,
+/var/lib/krb5kdc which is the default path of the database for Linux,
 and note as well that a password is expected here):
 
     kdb5_util create -s
