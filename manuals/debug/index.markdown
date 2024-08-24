@@ -3,8 +3,8 @@ author: Michael Paquier
 date: 2011-02-28 13:06:25+00:00
 layout: page
 type: page
-slug: gdb-manual
-title: 'Manual for debugging - gdb and lldb'
+slug: gdb
+title: Debugging - gdb and lldb'
 tags:
 - gdb
 - lldb

@@ -3,8 +3,8 @@ author: Michael Paquier
 date: 2011-02-28 13:01:45+00:00
 layout: page
 type: page
-slug: git-manual
-title: GIT Manual
+slug: git
+title: git
 tags:
 - git
 - manual
@@ -24,8 +24,8 @@ tags:
 - manage
 - cvs
 ---
-Git is a code tree management largely present in many development teams.
-Have a look also [here](https://git-scm.com/).
+
+[git](https://git-scm.com/) is a code tree management tool.
 
 ### Cloning repository
 

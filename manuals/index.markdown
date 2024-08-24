@@ -20,10 +20,10 @@ tags:
 The following sub-sections are available from here:
 
   * [Archlinux](/manuals/archlinux/)
-  * [Debuggers](/manuals/debug-manual/)
+  * [Debug](/manuals/debug/)
   * [Debian](/manuals/debian/)
   * [Games](/manuals/games/)
-  * [Git](/manuals/git-manual/)
+  * [git](/manuals/git/)
   * [GPG](/manuals/gpg/)
   * [OpenSSL](/manuals/openssl/)
   * [PostgreSQL](/manuals/postgresql/)
