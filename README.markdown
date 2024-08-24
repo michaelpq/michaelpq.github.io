@@ -17,7 +17,7 @@ The installation of this blog can be done with the following steps.
     gem update --system
     gem install jekyll
 
-  3) Run server on http://0.0.0.0:4000
+  3) Run server on http://127.0.0.1:4000
 
     jekyll server
 
@@ -30,4 +30,4 @@ Content materials in content/materials are under the license provided on
 each document.
 
 Blog articles and pages are licensed under
-[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
