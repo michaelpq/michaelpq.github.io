@@ -25,6 +25,12 @@ tags:
 
 ---
 
+#### 2024: Injection Points
+
+  * [pdf](/content/materials/20241206_pgconjp_inj.pdf)
+  * [odp](/content/materials/20241206_pgconjp_inj.odp)
+  * Place: Tokyo, PGCon Japan 2024. Date: 2024/12/06
+
 #### 2023: Authentication and Configuration
 
   * [pdf](/content/materials/20230531_pgcon_auth.pdf)
