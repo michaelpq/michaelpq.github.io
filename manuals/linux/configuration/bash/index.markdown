@@ -123,3 +123,9 @@ display the escape sequence for the Enter key: ^M.
                the current shell (EXIT)
   * Ctrl + Z   Send the signal SIGTSTP to the current task, which suspends it.
                To return to it later enter fg 'process name' (foreground).
+
+## Commands
+
+This is useful to run a command in a loop, until a failure happens:
+
+    while ./command; do :; done
