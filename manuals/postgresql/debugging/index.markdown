@@ -48,11 +48,11 @@ this test library before any other:
 valgrind is useful to find memory problems in Postgres, try to use with
 something like the attached.
 
-    valgrind --suppress
     valgrind \
         --suppressions=$PG_SOURCE/src/tools/valgrind.supp \
         --trace-children=yes --track-origins=yes --read-var-info=yes \
-        postgres -D REST_OF_ARGS
+		--leak-check=full --log-file=$PGDATA/valgrind.log \
+        postgres -D $PGDATA
 
 ### Corrupting pages
 
