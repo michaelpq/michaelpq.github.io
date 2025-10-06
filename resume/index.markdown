@@ -44,14 +44,15 @@ tags:
 
 ### September 2022-Now
 
-  * **Amazon Web Services (AWS)**, Senior Database Engineer, Tokyo, Japan
+  * **Amazon Web Services (AWS)**, Principal Software Engineer, Tokyo, Japan
+  * Senior Software Engineer: September 2022 - September 2025
   * Working on PostgreSQL things, for Amazon, as a whole.
 
 ### January 2009-Now
 
   * **PostgreSQL Global Development Group**, World, Planet Earth
   * PostgreSQL hacker, blogger and module developer.
-  * Committer of upstream since May 2018.
+  * Committer since May 2018.
 
 ### January 2013-August 2022
 
