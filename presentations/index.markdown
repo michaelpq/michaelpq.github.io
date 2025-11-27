@@ -25,6 +25,12 @@ tags:
 
 ---
 
+#### 2025: pgstats and Postgres 18
+
+  * [pdf](/content/materials/20251121_pgconjp_pgstats.pdf)
+  * [odp](/content/materials/20251121_pgconjp_pgstats.odp)
+  * Place: Tokyo, PGCon Japan 2025. Date: 2025/11/21
+
 #### 2024: Injection Points
 
   * [pdf](/content/materials/20241206_pgconjp_inj.pdf)
