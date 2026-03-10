@@ -55,8 +55,8 @@ For instance
 Sets a breakpoint at line 100 of the file called foo.cpp. Here is how to set
 a breakpoint for a function.
 
-  break $FILE_NAME:$FUNCTION_NAME
-  break $FUNCTION_NAME
+    break $FILE_NAME:$FUNCTION_NAME
+    break $FUNCTION_NAME
 
 If the function is unique in the program run, it is not even necessary to
 specify a file name. Make a breakpoint at a special object (C++ oriented).
