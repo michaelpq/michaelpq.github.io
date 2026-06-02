@@ -69,7 +69,7 @@ tags:
   * Packaging of solutions based on Open Source Softwares (mainly DB)
   * Community-based work and support of PostgreSQL and Postgres-XC.
 
-### Mars 2008-Aout 2008
+### Mars 2008-August 2008
 
   * **Astek Sud-est**, Sophia-Antipolis, France
   * Consultant for **Amadeus**, specialized in flight ticket booking
