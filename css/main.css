@@ -136,20 +136,24 @@ img {
 /* Hamburger button, shown only on small screens. Collapsing the menu
  * behind it is handled by js/nav.js (see the js-collapsible/nav-open
  * classes below) - without JS the full list just stays visible.
- * Styled with a visible border/background and a "Menu" label so it
- * reads clearly as a tappable control rather than a bare icon. */
+ * Stretches to fill the full height of the bar (like a typical mobile
+ * app-bar menu button) and carries a "Menu" label so it reads clearly
+ * as a tappable control rather than a bare icon. */
 .menu-toggle-btn {
 	display:none;
 	align-items:center;
+	justify-content:center;
 	gap:10px;
-	height:52px;
-	margin:10px auto;	/* auto left/right centers it on the bar */
+	width:100%;
+	height:auto;		/* stretches to fill .topmenu-bar, see the
+				 * align-items:stretch default combined
+				 * with that wrapper's min-height */
+	margin:0;
 	padding:0 22px;
 	cursor:pointer;
 	box-sizing:border-box;
-	border:1px solid #cccccc;
-	border-radius:8px;
-	background:#ffffff;
+	border:none;
+	background:none;
 	color:#222222;
 	font-size:1.15em;
 	font-weight:bold;
@@ -174,7 +178,6 @@ img {
 .menu-toggle-btn:hover,
 .menu-toggle-btn:focus-visible {
 	background:#336699;
-	border-color:#336699;
 	color:#ffffff;
 }
 .menu-toggle-btn:hover .menu-toggle-icon span,
@@ -183,21 +186,25 @@ img {
 }
 .menu-toggle-btn:focus-visible {
 	outline:2px solid #223a52;
-	outline-offset:2px;
+	outline-offset:-2px;
 }
 
 @media (max-width:700px) {
-	#topmenu {
+	/* .topmenu-bar and #topmenu-list are separate blocks stacked on
+	 * top of each other, rather than two lines of the same flex
+	 * container - that keeps the toggle button's row height fixed
+	 * regardless of whether the list below it is open or not. */
+	.topmenu-bar {
 		display:flex;
-		flex-wrap:wrap;
+		min-height:56px;
 	}
 	.menu-toggle-btn {
 		display:flex;
 	}
 	#topmenu-list {
+		display:flex;
 		flex-direction:column;
 		width:100%;
-		order:2;
 	}
 	#topmenu-list li,
 	#topmenu-list li.menu-right {

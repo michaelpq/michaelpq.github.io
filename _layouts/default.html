@@ -45,10 +45,12 @@
      JS the full list stays visible and usable, JS only adds the collapse
      behaviour once it can also provide a way to open it back up. -->
 <nav id="topmenu" aria-label="Main navigation">
-    <button type="button" id="menu-toggle" class="menu-toggle-btn" aria-expanded="false" aria-controls="topmenu-list">
-        <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="menu-toggle-text">Menu</span>
-    </button>
+    <div class="topmenu-bar">
+        <button type="button" id="menu-toggle" class="menu-toggle-btn" aria-expanded="false" aria-controls="topmenu-list">
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle-text">Menu</span>
+        </button>
+    </div>
     <ul id="topmenu-list">
         <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
         <li><a href="/manuals/"{% if page.url contains "/manuals" %} class="active"{% endif %}>Manuals</a></li>
