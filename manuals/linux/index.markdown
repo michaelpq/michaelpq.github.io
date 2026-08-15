@@ -17,6 +17,4 @@ tags:
 ---
 The following sub-sections are available from here:
 
-  * [Coding](/manuals/linux/coding/)
   * [Configuration](/manuals/linux/configuration/)
-  * [Installation](/manuals/linux/installation/)

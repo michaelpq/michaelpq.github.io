@@ -20,7 +20,6 @@ tags:
 The following sub-sections are available from here:
 
   * [Debug](/manuals/debug/)
-  * [Debian](/manuals/debian/)
   * [git](/manuals/git/)
   * [gnuplot](/manuals/gnuplot/)
   * [GPG](/manuals/gpg/)

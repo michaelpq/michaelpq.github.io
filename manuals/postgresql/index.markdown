@@ -18,16 +18,11 @@ tags:
 ---
 The following sections are available from here:
 
-  * [Buildfarm](/manuals/postgresql/buildfarm/)
   * [Debugging](/manuals/postgresql/debugging/)
-  * [Development](/manuals/postgresql/development/)
   * [FlameGraph](/manuals/postgresql/flamegraph/)
   * [Hardware](/manuals/postgresql/hardware/)
   * [Kerberos](/manuals/postgresql/kerberos/)
   * [Maintenance](/manuals/postgresql/maintenance/)
-  * [Parse configuration files](/manuals/postgresql/parse-config-files/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
   * [Profiling with perf](/manuals/postgresql/perf/)
   * [Settings](/manuals/postgresql/settings/)
-  * [Useful queries](/manuals/postgresql/useful-queries/)
-  * [Windows](/manuals/postgresql/windows/)
