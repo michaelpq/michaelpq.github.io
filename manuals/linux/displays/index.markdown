@@ -3,13 +3,14 @@ author: Michael Paquier
 date: 2013-01-03 12:08:04+00:00
 layout: page
 type: page
-slug: screen
-title: 'Linux - screen'
+slug: displays
+title: 'Linux - Display'
 tags:
 - web
 - server
 - linux
-- screen
+- display
+- xrandr
 - mirror
 - dual
 - hdmi

@@ -20,5 +20,5 @@ The following sub-sections are available from here:
   * [bash](/manuals/linux/bash/)
   * [irssi](/manuals/linux/irssi/)
   * [iptables](/manuals/linux/iptables/)
+  * [Display](/manuals/linux/displays/)
   * [Kernel settings](/manuals/linux/kernel/)
-  * [screen](/manuals/linux/screen/)
