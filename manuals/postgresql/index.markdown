@@ -1,5 +1,5 @@
 ---
-author: Michael Paqioer
+author: Michael Paquier
 date: 2012-08-03 11:37:18+00:00
 layout: page
 type: page
