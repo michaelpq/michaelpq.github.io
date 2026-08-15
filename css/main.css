@@ -5,9 +5,6 @@ body {
 			 * in old versions of IE */
 	width:100%;
 	background:#ffffff;
-	min-width:600px; /* Minimum width of layout - remove line if not
-			  * required. The min-width property does not work
-			  * in old versions of Internet Explorer */
 	font: 15.34px Helvetica, Arial, sans-serif;
 }
 a {
@@ -21,6 +18,12 @@ a:hover {
 h1, h2, h3 {
 	margin:.8em 0 .2em 0;
 	padding:0;
+}
+/* Post teasers on the index page are semantically entries in a list,
+ * not the page's own heading, so they're marked up as h2 - this keeps
+ * them visually sized like the h1 they used to be. */
+.entry-title {
+	font-size:2em;
 }
 p {
 	margin:.4em 0 .8em 0;
@@ -55,19 +58,45 @@ img {
 #header p,
 #header h1,
 #header h2 {
-	padding:10px 15px 10px 50px;
+	padding:10px 15px 4px 15px;
 	margin:0;
 }
 #header h1 a {
 	text-decoration: none;
+	color:#336699;
+	letter-spacing:.01em;
+}
+/* Scope down the global blue-block hover for the large title link, a
+ * plain color shift reads better than a big background box */
+#header h1 a:hover {
+	background:none;
+	color:#223a52;
+}
+#header .tagline {
+	padding:0 15px 14px 15px;
+	margin:0;
+	font-size:.85em;
+	font-weight:normal;
+	color:#666666;
+}
+#topmenu {
+	position:sticky;
+	top:0;
+	z-index:30;
+	clear:both;
+	display:block;
+	width:100%;
+	background:#f4f4f4;
+	border-bottom:1px solid #dddddd;
+	box-sizing:border-box;
 }
 #topmenu ul {
-	clear:left;
-	float:left;
-	background:#eeeeee;
-	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
 	list-style:none;
-	margin:0px 0 0 0;
+	width:100%;
+	margin:0;
 	padding:0;
 }
 #topmenu ul li {
@@ -76,20 +105,19 @@ img {
 	margin:0;
 	padding:0;
 }
+#topmenu ul li.menu-right {
+	margin-left:auto;
+}
 #topmenu ul li a {
-	display:run-in;
-	float:left;
-	margin:0 0 0 0px;
-	padding:3px 10px;
+	display:block;
+	padding:12px 16px;
 	text-align:center;
-	background:#eee;
-	font-size: large;
-	font-weight: bold;
-	color:#000000;
+	font-size:1.05em;
+	font-weight:bold;
+	color:#222222;
 	text-decoration:none;
-	position:relative;
-	left:0px;
-	line-height:1.3em;
+	line-height:1.2em;
+	transition:background-color .15s ease, color .15s ease;
 }
 #topmenu ul li a:hover {
 	background:#336699;
@@ -98,11 +126,98 @@ img {
 #topmenu ul li a.active,
 #topmenu ul li a.active:hover {
 	color:#ffffff;
-	background:#000000;
+	background:#223a52;
 	font-weight:bold;
 }
 #topmenu ul li a span {
 	display:block;
+}
+
+/* Hamburger button, shown only on small screens. Collapsing the menu
+ * behind it is handled by js/nav.js (see the js-collapsible/nav-open
+ * classes below) - without JS the full list just stays visible.
+ * Styled with a visible border/background and a "Menu" label so it
+ * reads clearly as a tappable control rather than a bare icon. */
+.menu-toggle-btn {
+	display:none;
+	align-items:center;
+	gap:10px;
+	height:52px;
+	margin:10px auto;	/* auto left/right centers it on the bar */
+	padding:0 22px;
+	cursor:pointer;
+	box-sizing:border-box;
+	border:1px solid #cccccc;
+	border-radius:8px;
+	background:#ffffff;
+	color:#222222;
+	font-size:1.15em;
+	font-weight:bold;
+	font-family:inherit;
+}
+.menu-toggle-icon {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	gap:5px;
+	width:22px;
+	height:17px;
+	flex-shrink:0;
+}
+.menu-toggle-icon span {
+	display:block;
+	width:100%;
+	height:3px;
+	background:#222222;
+	border-radius:2px;
+}
+.menu-toggle-btn:hover,
+.menu-toggle-btn:focus-visible {
+	background:#336699;
+	border-color:#336699;
+	color:#ffffff;
+}
+.menu-toggle-btn:hover .menu-toggle-icon span,
+.menu-toggle-btn:focus-visible .menu-toggle-icon span {
+	background:#ffffff;
+}
+.menu-toggle-btn:focus-visible {
+	outline:2px solid #223a52;
+	outline-offset:2px;
+}
+
+@media (max-width:700px) {
+	#topmenu {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.menu-toggle-btn {
+		display:flex;
+	}
+	#topmenu-list {
+		flex-direction:column;
+		width:100%;
+		order:2;
+	}
+	#topmenu-list li,
+	#topmenu-list li.menu-right {
+		width:100%;
+		margin-left:0;
+	}
+	#topmenu-list li a {
+		padding:14px 16px;
+		text-align:left;
+		border-top:1px solid #dddddd;
+	}
+	/* Only collapse the menu once JS has confirmed it can also open it
+	 * back up (js/nav.js adds this class on load). Without JS the full
+	 * list stays visible and usable. */
+	#topmenu.js-collapsible #topmenu-list {
+		display:none;
+	}
+	#topmenu.js-collapsible.nav-open #topmenu-list {
+		display:flex;
+	}
 }
 /* 'widths' sub menu */
 #layoutdims {
@@ -160,6 +275,37 @@ img {
 			 * minus left and right padding) */
 	left:31%;	/* (Right column width) plus (left column left
 			 * and right padding) plus (right column left padding) */
+	padding-top:1em;	/* Breathing room below the sticky top menu;
+				 * col1 gets this for free from its own
+				 * heading margins, col2's first heading
+				 * doesn't since .sidebar-block zeroes it */
+}
+/* Below this width the fixed percentage 2-column layout gets too cramped
+ * (search box/sponsor button no longer fit) - stack the columns instead */
+@media (max-width:700px) {
+	.menu .colleft {
+		right:0;
+	}
+	.menu .col1,
+	.menu .col2 {
+		width:100%;
+		left:0;
+		box-sizing:border-box;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	#search {
+		max-width:100%;
+	}
+	/* Comfortable ~44px touch targets on phones */
+	.follow-link {
+		padding:10px 14px;
+		min-height:44px;
+	}
+	.search-submit {
+		flex:0 0 44px;
+		width:44px;
+	}
 }
 /* Footer styles */
 #footer {
@@ -171,23 +317,6 @@ img {
 #footer p {
 	padding:10px;
 	margin:0;
-}
-/* Search box */
-.search
-{
-        padding-bottom: 0px;
-}
-.search li
-{
-        list-style: none;
-        margin: 0 0 0em 0;
-        padding-left: 1em;
-        text-indent: -1em;
-}
-.search time
-{
-        margin-left: 0em;
-        color: #fafafa;
 }
 /* Search box form */
 #search
@@ -204,4 +333,89 @@ img {
         border: 1px solid #888888;
         padding: 6px 8%;
         color: #2b2b2b;
+}
+.search-row {
+	display:flex;
+	align-items:stretch;
+}
+#search .search-row input[type="text"] {
+	flex:1 1 auto;
+	width:auto;
+	border-radius:4px 0 0 4px;
+}
+.search-submit {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex:0 0 40px;
+	width:40px;
+	margin:0;
+	padding:0;
+	font:inherit;
+	border:1px solid #888888;
+	border-left:none;
+	border-radius:0 4px 4px 0;
+	background:#fafafa;
+	color:#333333;
+	cursor:pointer;
+	appearance:none;
+	-webkit-appearance:none;
+}
+.search-submit:hover {
+	background:#336699;
+	border-color:#336699;
+	color:#ffffff;
+}
+
+/* Sidebar layout: consistent spacing/headings across Search, Follow, Sponsor */
+.sidebar-block {
+	margin:0 0 1.6em 0;
+}
+.sidebar-block h2 {
+	font-size:1.1em;
+	margin:0 0 .5em 0;
+	padding-bottom:.3em;
+	border-bottom:1px solid #e0e0e0;
+}
+
+/* Follow links: Github + RSS feeds as a compact icon row instead of
+ * three separately-labeled stacks */
+.follow-links {
+	display:flex;
+	flex-wrap:wrap;
+	gap:8px;
+}
+.follow-link {
+	display:inline-flex;
+	align-items:center;
+	gap:6px;
+	padding:6px 10px;
+	background:#fafafa;
+	border:1px solid #dddddd;
+	border-radius:6px;
+	color:#222222;
+	text-decoration:none;
+	font-size:.9em;
+}
+.follow-link:hover {
+	background:#336699;
+	border-color:#336699;
+	color:#ffffff;
+}
+
+/* Shared inline icon sizing; currentColor keeps icons in sync with
+ * link/button text and hover color */
+.icon {
+	width:16px;
+	height:16px;
+	flex-shrink:0;
+	fill:currentColor;
+	vertical-align:middle;
+}
+.icon.icon-stroke {
+	fill:none;
+	stroke:currentColor;
+	stroke-width:2;
+	stroke-linecap:round;
+	stroke-linejoin:round;
 }
