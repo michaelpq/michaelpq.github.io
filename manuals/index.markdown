@@ -15,3 +15,4 @@ The following sub-sections are available from here:
   * [Linux](/manuals/linux/)
   * [PostgreSQL](/manuals/postgresql/)
   * [Tools](/manuals/tools/)
+{: .manual-links}

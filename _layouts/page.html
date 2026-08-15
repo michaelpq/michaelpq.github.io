@@ -15,21 +15,37 @@ layout: default
 {% assign breadcrumb_url = '' %}
 
 {% assign count = 0 %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
 <!-- Build each breadcrumb item -->
 {% for item in words %}
   {% assign count = count | plus: 1 %}
   {% assign breadcrumb_url = breadcrumb_url | append: item | append: '/' %}
   <!-- Particular case for base folder -->
   {% if breadcrumb_url == '/' %}
-    <a href="{{breadcrumb_url}}">Home</a>
+    {% assign crumb_label = 'Home' %}
   {% else %}
-    <a href="{{breadcrumb_url}}">{{item}}</a>
+    <!-- Prefer a curated label (acronyms, product names) over a
+         generic title-cased version of the raw URL slug -->
+    {% assign crumb_label = site.data.breadcrumb_labels[item] %}
+    {% unless crumb_label %}
+      {% assign crumb_words = item | replace: '-', ' ' | split: ' ' %}
+      {% assign crumb_label = '' %}
+      {% for w in crumb_words %}
+        {% assign capped_word = w | capitalize %}
+        {% assign crumb_label = crumb_label | append: capped_word %}
+        {% unless forloop.last %}{% assign crumb_label = crumb_label | append: ' ' %}{% endunless %}
+      {% endfor %}
+    {% endunless %}
   {% endif %}
-  <!-- Skip last element -->
-  {% if words.size != count %}
-    &#187;
+  <!-- Last element is the current page: plain text, not a link -->
+  {% if words.size == count %}
+    <span class="breadcrumb-current">{{ crumb_label }}</span>
+  {% else %}
+    <a href="{{breadcrumb_url}}">{{ crumb_label }}</a>
+    <span class="breadcrumb-sep">&#187;</span>
   {% endif %}
 {% endfor %}
+</nav>
 
 <h2>{{ page.title }}</h2>
 

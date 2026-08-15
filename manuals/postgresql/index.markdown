@@ -20,3 +20,4 @@ The following sections are available from here:
   * [Maintenance](/manuals/postgresql/maintenance/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
   * [Settings](/manuals/postgresql/settings/)
+{: .manual-links}

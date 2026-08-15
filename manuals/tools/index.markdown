@@ -19,3 +19,4 @@ The following sub-sections are available from here:
   * [GPG](/manuals/tools/gpg/)
   * [OpenSSL](/manuals/tools/openssl/)
   * [Profiling with perf](/manuals/tools/perf/)
+{: .manual-links}

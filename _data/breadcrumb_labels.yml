@@ -1,0 +1,9 @@
+# Overrides for breadcrumb segments that shouldn't just be title-cased
+# from their URL slug (acronyms, product names with unusual casing).
+# Anything not listed here falls back to a generic "Title Case" of the
+# slug (see _layouts/page.html).
+postgresql: PostgreSQL
+gpg: GPG
+openssl: OpenSSL
+iptables: iptables
+flamegraph: FlameGraph

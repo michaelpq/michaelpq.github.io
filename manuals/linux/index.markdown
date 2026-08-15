@@ -18,3 +18,4 @@ The following sub-sections are available from here:
   * [iptables](/manuals/linux/iptables/)
   * [Display](/manuals/linux/displays/)
   * [Kernel settings](/manuals/linux/kernel/)
+{: .manual-links}

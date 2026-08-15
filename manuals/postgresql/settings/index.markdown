@@ -22,3 +22,4 @@ The following sections are available here:
   * [Logging](/manuals/postgresql/settings/logging/)
   * [Memory](/manuals/postgresql/settings/memory/)
   * [Planner](/manuals/postgresql/settings/planner/)
+{: .manual-links}
