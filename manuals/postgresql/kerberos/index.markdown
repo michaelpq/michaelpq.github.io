@@ -3,7 +3,7 @@ author: Michael Paquier
 date: 2015-08-20 14:14:18+00:00
 layout: page
 type: page
-slug: perf
+slug: kerberos
 title: PostgreSQL - Kerberos and GSSAPI
 tags:
 - postgres
