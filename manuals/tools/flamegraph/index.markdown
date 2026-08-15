@@ -4,7 +4,7 @@ date: 2025-07-07 14:14:18+00:00
 layout: page
 type: page
 slug: flamegraph
-title: PostgreSQL - FlameGraph
+title: FlameGraph
 tags:
 - postgres
 - postgresql
@@ -14,8 +14,9 @@ tags:
 ---
 
 FlameGraph is a utility tool able to produce pictures of profiles,
-for example taken with perf.  First close the upstream repository
-with the following command:
+for example taken with [perf](/manuals/postgresql/perf/), which is
+used throughout this page. First clone the upstream repository with
+the following command:
 
     git clone https://github.com/brendangregg/FlameGraph flamegraph
 

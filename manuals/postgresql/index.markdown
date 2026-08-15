@@ -19,7 +19,6 @@ tags:
 The following sections are available from here:
 
   * [Debugging](/manuals/postgresql/debugging/)
-  * [FlameGraph](/manuals/postgresql/flamegraph/)
   * [Hardware](/manuals/postgresql/hardware/)
   * [Kerberos](/manuals/postgresql/kerberos/)
   * [Maintenance](/manuals/postgresql/maintenance/)

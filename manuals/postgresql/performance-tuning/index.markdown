@@ -20,7 +20,8 @@ tags:
 - trick
 ---
 Here are a couple of tips to boost the performance of a PostgreSQL database
-server.
+server. For I/O scheduler and kernel/sysctl tuning, see the
+[Linux - Kernel settings](/manuals/linux/kernel/) page.
 
   1. What to avoid
   2. Some general tricks
@@ -28,9 +29,7 @@ server.
   4. Indexing
   5. Vacuum
   6. Analyze
-  7. I/O scheduler
-  8. stats\_temp\_directory on a ramdisk
-  9. Kernel tuning
+  7. stats\_temp\_directory on a ramdisk
 
 ### 1. What to avoid
 
@@ -91,23 +90,7 @@ should always do it manually after substantial database changes
 (loads, etc.), and also do it as part of any VACUUM process done
 manually.
 
-### 7. I/O scheduler
-
-The Linux kernel comes up with a set of scheduler that can be used to
-alleviate the I/O behavior on disks and partitions.
-
-  * noop, fine with SSDs, but can kill local disks on no-reordering
-of writes. Has more effects for sequential I/O writes like WAL flush
-by having pg\_xlog on a different partition for example.
-  * deadline, great for Postgres but interactive workloads are impacted
-by it.
-  * cfq, a good balance for everything, and it is the default on Linux.
-
-It is usually better to stick with the default scheduler except when
-trying to solve a specific issue, also everything else than cfq would
-perform badly on non-enterprise class storages (SAN).
-
-### 8. stats_temp_directory on a ramdisk
+### 7. stats_temp_directory on a ramdisk
 
 stats\_temp\_directory is a directory where temporary statistics are
 stored, and they do not need to persist. pg\_stat\_tmp is the default.
@@ -127,18 +110,3 @@ Add new partition to /etc/fstab with a new dedicated entry:
 In postgresql.conf, add that, and then reload it:
 
     stats_temp_directory = '$TEMP_STAT_FOLDER'
-
-### 9. Kernel tuning
-
-On systems facing heavy write load, tuning /etc/sysctl.conf like that
-is worth doing:
-
-    vm.dirty_background_ratio = 0
-    vm.dirty_ratio = 0
-
-In concurrent heavy-read loads, this setting can be useful for 3.13
-kernels.
-
-    kernel.sched_autogroup_enabled
-
-Turning off swap may be as well a good idea.

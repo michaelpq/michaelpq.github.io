@@ -17,4 +17,8 @@ tags:
 ---
 The following sub-sections are available from here:
 
-  * [Configuration](/manuals/linux/configuration/)
+  * [bash](/manuals/linux/bash/)
+  * [irssi](/manuals/linux/irssi/)
+  * [iptables](/manuals/linux/iptables/)
+  * [Kernel settings](/manuals/linux/kernel/)
+  * [screen](/manuals/linux/screen/)

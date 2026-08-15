@@ -78,3 +78,8 @@ View profile recorded:
 With a graph:
 
     perf report -g
+
+### Visualizing a profile
+
+A perf profile recorded above can be turned into a flame graph for
+easier analysis, see the [FlameGraph](/manuals/tools/flamegraph/) page.

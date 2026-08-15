@@ -3,8 +3,8 @@ author: Michael Paquier
 date: 2013-01-03 12:08:04+00:00
 layout: page
 type: page
-slug: Linux - screen
-title: screen
+slug: screen
+title: 'Linux - screen'
 tags:
 - web
 - server
