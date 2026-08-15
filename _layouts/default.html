@@ -90,13 +90,22 @@
 
           {% if paginator.total_pages > 1 %}
           <div class="pagination">
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path | prepend: '/' | replace: '//', '/' }}">&laquo; Prev</a>
+            {% if paginator.page > 1 %}
+              <a href="{{ '/' | replace: '//', '/' }}">&lt;&lt;<span class="pagination-label"> Start</span></a>
             {% else %}
-              <span>&laquo; Prev</span>
+              <span>&lt;&lt;<span class="pagination-label"> Start</span></span>
             {% endif %}
 
-            {% for page in (1..paginator.total_pages) %}
+            {% assign page_range_start = paginator.page | minus: 2 %}
+            {% if page_range_start < 1 %}
+              {% assign page_range_start = 1 %}
+            {% endif %}
+            {% assign page_range_end = paginator.page | plus: 2 %}
+            {% if page_range_end > paginator.total_pages %}
+              {% assign page_range_end = paginator.total_pages %}
+            {% endif %}
+
+            {% for page in (page_range_start..page_range_end) %}
               {% if page == paginator.page %}
                 <em>{{ page }}</em>
               {% elsif page == 1 %}
@@ -106,10 +115,10 @@
               {% endif %}
             {% endfor %}
 
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path | prepend: '/' | replace: '//', '/' }}">Next &raquo;</a>
+            {% if paginator.page < paginator.total_pages %}
+              <a href="{{ site.paginate_path | prepend: '/' | replace: '//', '/' | replace: ':num', paginator.total_pages }}"><span class="pagination-label">End </span>&gt;&gt;</a>
             {% else %}
-              <span>Next &raquo;</span>
+              <span><span class="pagination-label">End </span>&gt;&gt;</span>
             {% endif %}
           </div>
           {% endif %} <!-- paginator loop -->

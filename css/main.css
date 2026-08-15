@@ -313,6 +313,21 @@ img {
 		flex:0 0 44px;
 		width:44px;
 	}
+	.pagination {
+		justify-content:center;
+	}
+	.pagination > a,
+	.pagination > span,
+	.pagination > em {
+		min-width:44px;
+		min-height:44px;
+		padding:8px 12px;
+	}
+	/* Drop the "Start"/"End" wording once space is tight, the << / >>
+	 * arrows next to a number-only bar stay self-explanatory */
+	.pagination .pagination-label {
+		display:none;
+	}
 }
 /* Footer styles */
 #footer {
@@ -425,4 +440,70 @@ img {
 	stroke-width:2;
 	stroke-linecap:round;
 	stroke-linejoin:round;
+}
+
+/* Pagination bar (Start / page numbers / End at the bottom of the post
+ * index). Pill-style row matching the follow-links treatment: current
+ * page reads as a filled, non-clickable badge, live links invert to
+ * the site's accent color on hover, and boundary Start/End links turn
+ * into a visibly disabled pill instead of disappearing. */
+.pagination {
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	gap:6px;
+	margin:1.5em 0 0 0;
+	padding-top:1em;
+	border-top:1px solid #e0e0e0;
+}
+.pagination > a,
+.pagination > span,
+.pagination > em {
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	min-width:1.4em;
+	box-sizing:border-box;
+	padding:6px 10px;
+	border:1px solid #dddddd;
+	border-radius:6px;
+	font-size:.9em;
+	font-style:normal;
+	line-height:1.2em;
+	text-decoration:none;
+}
+.pagination > a {
+	background:#fafafa;
+	color:#336699;
+	transition:background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.pagination > a:hover {
+	background:#336699;
+	border-color:#336699;
+	color:#ffffff;
+}
+.pagination > span {
+	background:#f7f7f7;
+	border-color:#eeeeee;
+	color:#bbbbbb;
+	cursor:default;
+}
+.pagination > em {
+	background:#223a52;
+	border-color:#223a52;
+	color:#ffffff;
+	font-weight:bold;
+}
+/* The Start/End label wrapped inside the pill's <a>/<span> should read
+ * as plain text, not a second nested pill - reset it so it always
+ * inherits whatever color the enclosing link/span/badge is showing.
+ * white-space:pre keeps the leading/trailing space next to << / >>
+ * intact - as a flex item this label starts its own line box, and
+ * plain whitespace collapsing would otherwise trim that space away. */
+.pagination-label {
+	background:none;
+	border:none;
+	padding:0;
+	color:inherit;
+	white-space:pre;
 }
