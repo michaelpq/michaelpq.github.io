@@ -4,10 +4,8 @@ date: 2014-04-03 14:14:18+00:00
 layout: page
 type: page
 slug: perf
-title: PostgreSQL - Profiling with perf
+title: Profiling with perf
 tags:
-- postgres
-- postgresql
 - performance
 - cpu
 - calls

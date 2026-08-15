@@ -18,3 +18,4 @@ The following sub-sections are available from here:
   * [gnuplot](/manuals/tools/gnuplot/)
   * [GPG](/manuals/tools/gpg/)
   * [OpenSSL](/manuals/tools/openssl/)
+  * [Profiling with perf](/manuals/tools/perf/)

@@ -19,5 +19,4 @@ The following sections are available from here:
   * [Kerberos](/manuals/postgresql/kerberos/)
   * [Maintenance](/manuals/postgresql/maintenance/)
   * [Performance tuning](/manuals/postgresql/performance-tuning/)
-  * [Profiling with perf](/manuals/postgresql/perf/)
   * [Settings](/manuals/postgresql/settings/)

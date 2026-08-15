@@ -12,7 +12,7 @@ tags:
 ---
 
 FlameGraph is a utility tool able to produce pictures of profiles,
-for example taken with [perf](/manuals/postgresql/perf/), which is
+for example taken with [perf](/manuals/tools/perf/), which is
 used throughout this page. First clone the upstream repository with
 the following command:
 
