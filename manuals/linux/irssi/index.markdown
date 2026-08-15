@@ -9,7 +9,6 @@ tags:
 - irssi
 - channel
 - talk
-- tip
 - irc
 - programming
 - server

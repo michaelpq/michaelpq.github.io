@@ -7,12 +7,9 @@ slug: gnuplot
 title: Manual for GNUplot
 tags:
 - gnuplot
-- manual
 - graph
 - plot
 - line
-- test
-- memo
 - multiple
 - smooth
 

@@ -7,10 +7,6 @@ slug: git
 title: git
 tags:
 - git
-- manual
-- tip
-- general
-- idea
 - branch
 - tag
 - push
@@ -18,8 +14,6 @@ tags:
 - repository
 - clone
 - fetch
-- michael
-- paquier
 - patch
 - manage
 - cvs

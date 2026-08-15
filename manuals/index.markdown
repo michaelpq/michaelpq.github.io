@@ -6,14 +6,7 @@ type: page
 slug: manuals
 title: Manuals - menu
 tags:
-- michael
-- paquier
 - developer
-- manual
-- help
-- menu
-- choice
-- stuff
 
 ---
 

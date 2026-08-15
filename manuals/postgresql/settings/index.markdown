@@ -10,7 +10,6 @@ tags:
 - postgresql
 - settings
 - memory
-- menu
 - performance
 - checkpoint
 - logging

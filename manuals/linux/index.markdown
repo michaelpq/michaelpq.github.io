@@ -6,14 +6,10 @@ type: page
 slug: linux
 title: 'Linux - Menu'
 tags:
-- manual
 - linux
 - distribution
-- linux
 - tips
 - installation
-- scratch
-- experience
 ---
 The following sub-sections are available from here:
 

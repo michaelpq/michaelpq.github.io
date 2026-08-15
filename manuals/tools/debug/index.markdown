@@ -11,15 +11,7 @@ tags:
 - linux
 - windows
 - debug
-- manual
-- beginner
-- way
-- doing
-- help
 - command
-- essential
-- experience
-- linux
 - osx
 ---
 ## gdb

@@ -6,18 +6,12 @@ type: page
 slug: openssl
 title: OpenSSL manual
 tags:
-- git
-- manual
-- tip
-- general
-- idea
 - ssl
 - encryption
 - key
 - certificate
 - openssl
 - csr
-- encryption
 - client
 
 ---

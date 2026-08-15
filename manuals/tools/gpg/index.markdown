@@ -6,11 +6,6 @@ type: page
 slug: gpg
 title: GPG manual
 tags:
-- git
-- manual
-- tip
-- general
-- idea
 - GPG
 - encryption
 - email

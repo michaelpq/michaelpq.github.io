@@ -19,7 +19,6 @@ tags:
 - flush
 - create
 - rules
-- protection
 ---
 Set up a basic firewall in Arch with iptables.
 

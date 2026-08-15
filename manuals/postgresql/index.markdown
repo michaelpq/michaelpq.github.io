@@ -10,10 +10,6 @@ tags:
 - database
 - postgres
 - postgresql
-- world
-- advanced
-- relational
-- menu
 - debugging
 ---
 The following sections are available from here:

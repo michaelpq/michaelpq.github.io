@@ -6,8 +6,6 @@ type: page
 slug: flamegraph
 title: FlameGraph
 tags:
-- postgres
-- postgresql
 - performance
 - cpu
 

@@ -6,7 +6,6 @@ type: page
 slug: kernel
 title: 'Linux - Kernel settings'
 tags:
-- manual
 - linux
 - kernel
 - settings

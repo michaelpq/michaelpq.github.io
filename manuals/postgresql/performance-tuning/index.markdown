@@ -17,7 +17,6 @@ tags:
 - vacuum
 - bloat
 - index
-- trick
 ---
 Here are a couple of tips to boost the performance of a PostgreSQL database
 server. For I/O scheduler and kernel/sysctl tuning, see the

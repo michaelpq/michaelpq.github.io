@@ -16,9 +16,6 @@ tags:
 - avoid
 - check
 - recommendation
-- advice
-- tip
-- trick
 - performance
 ---
 On this page are presented recommendations and general guidelines for

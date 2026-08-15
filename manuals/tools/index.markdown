@@ -6,10 +6,8 @@ type: page
 slug: tools
 title: Tools - Menu
 tags:
-- manual
 - tools
 - development
-- menu
 ---
 
 The following sub-sections are available from here:
