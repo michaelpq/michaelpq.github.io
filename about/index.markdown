@@ -44,6 +44,6 @@ report issues [there](https://github.com/michaelpq/michaelpq.github.io).
 
 If you found that my work or this blog helped you, feel free to donate
 in bitcoins using `19pPKPjEwgiTr4pcd2LvKrW7nHi5pAYxPC` as address to send
-them, or just have a look at the sponsor button on the right.
+them.
 
 ![Bitcoin donation address QR code](/content/bitcoin_donation_qr.svg)

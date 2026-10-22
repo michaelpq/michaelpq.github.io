@@ -288,7 +288,7 @@ img {
 				 * doesn't since .sidebar-block zeroes it */
 }
 /* Below this width the fixed percentage 2-column layout gets too cramped
- * (search box/sponsor button no longer fit) - stack the columns instead */
+ * (search box button no longer fit) - stack the columns instead */
 @media (max-width:700px) {
 	.menu .colleft {
 		right:0;
@@ -389,7 +389,7 @@ img {
 	color:#ffffff;
 }
 
-/* Sidebar layout: consistent spacing/headings across Search, Follow, Sponsor */
+/* Sidebar layout: consistent spacing/headings across Search, Follow */
 .sidebar-block {
 	margin:0 0 1.6em 0;
 }
